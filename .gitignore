@@ -5,3 +5,6 @@ website/_site/
 # Python virtual environment
 .venv/
 __pycache__/
+
+# Workshop source docx files - not committed for now
+_internal/info_workshop/*.docx
