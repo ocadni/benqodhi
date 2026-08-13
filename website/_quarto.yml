@@ -1,0 +1,35 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "BENQODHI"
+  description: "Benchmarking Quantum Optimization: from Datasets to Health Innovation"
+  # site-url: "https://<org>.github.io/benqodhi/"   # fill in once the repo location is known
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: workshop.qmd
+        text: Workshop
+      - href: program.qmd
+        text: Program
+      - href: speakers.qmd
+        text: Speakers
+      - href: problems/index.qmd
+        text: Problems
+      - href: contribute.qmd
+        text: Contribute
+    right:
+      - icon: github
+        href: https://github.com/<org>/benqodhi   # fill in once the repo exists
+  page-footer:
+    left: "BENQODHI · JRC exploratory activity (JRC.F.7 / JRC.S.4)"
+    right: "[Contact](mailto:JRC-F7-CONFERENCES@ec.europa.eu)"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    link-external-newwindow: true

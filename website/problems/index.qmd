@@ -1,0 +1,61 @@
+---
+title: "Problems"
+subtitle: "Candidate benchmark problems for BENQODHI"
+---
+
+BENQODHI is building a set of candidate benchmark problems at the intersection of
+optimisation, life sciences and health. This page tracks the working-table themes for
+the Day 2 working session and the candidate problems proposed so far.
+
+Candidates are welcome from anyone — see [Contribute](../contribute.qmd) for how to
+propose one.
+
+## Common template
+
+Every candidate problem is described using the same structure, so proposals, working
+notes and finished problem pages all stay comparable:
+
+1. **Use case** — the biological or clinical task, and why it matters
+2. **Formal problem** — objective, decision variables, constraints
+3. **Instances** — real, synthetic or generated; provenance, scale, format
+4. **Source of difficulty** — why it is hard
+5. **Baselines** — current methods and available implementations
+6. **Metrics** — success measures, resource accounting
+7. **Ready vs. missing** — honest gap analysis
+8. **Next action** — one named person, one concrete step
+
+## Day 2 working-table themes
+
+These are the four working-table themes proposed for the Day 2 morning session
+(see [Program](../program.qmd)). They are a starting point for grouping candidate
+problems, not a final classification.
+
+| Table | Theme |
+|---|---|
+| 1 | Large-scale bioinformatics and genomics optimisation, and NP-hard problems |
+| 2 | AI / QML |
+| 3 | Radiotherapy and other hard health problems, medical imaging |
+| 4 | Benchmark framework: instances, baselines, repository and reporting |
+
+## Candidate problems
+
+::: {.callout-note}
+No problem pages have been published yet. Candidates below are starting points drawn
+from early background work and have not been reviewed or validated — treat them as
+placeholders, not committed content.
+:::
+
+| Problem | Likely table | Status |
+|---|---|---|
+| RNA secondary structure prediction | 1 or 2 | Not yet written up |
+| Radiotherapy treatment planning | 3 | Not yet written up |
+| Multiple sequence alignment | 1 | Not yet written up |
+| Phylogenetic tree search | 1 | Not yet written up |
+| Haplotype phasing | 1 | Not yet written up |
+| Metabolic flux balance analysis | 1 | Not yet written up |
+
+## Datasets
+
+No benchmark datasets have been published yet. Once instances exist for a problem,
+they will be linked from that problem's page, along with generator code where
+applicable.

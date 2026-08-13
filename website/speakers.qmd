@@ -1,0 +1,55 @@
+---
+title: "Speakers"
+subtitle: "Invited speakers and contributors"
+---
+
+::: {.callout-note}
+Titles and abstracts are being collected from speakers and will be added here as they
+arrive. See [Program](program.qmd) for timing.
+:::
+
+## Day 1 speakers
+
+| Speaker | Institution | Title | Abstract |
+|---|---|---|---|
+| Federico Ricci-Tersenghi | Sapienza University of Rome, Dept. of Physics — Italy | [tbc]{.tbc} | [tbc]{.tbc} |
+| Daniel J. Egger | IBM Research Europe, Zurich — Switzerland | [tbc]{.tbc} | [tbc]{.tbc} |
+| Miguel A. Gonzalez Ballester | ICREA and Universitat Pompeu Fabra — Spain | [tbc]{.tbc} | [tbc]{.tbc} |
+| Hao Wang | Leiden Institute of Advanced Computer Science (LIACS), Leiden University — The Netherlands | [tbc]{.tbc} | [tbc]{.tbc} |
+| Guglielmo Mazzola | SISSA, Trieste — Italy | [tbc]{.tbc} | [tbc]{.tbc} |
+| Zev Kronenberg | PacBio — USA | [tbc]{.tbc} | [tbc]{.tbc} |
+| Aurora Maurizio | Centre for Omics Sciences, IRCCS Ospedale San Raffaele, Milan — Italy | [tbc]{.tbc} | [tbc]{.tbc} |
+| Miguel Ponce de Leon | Barcelona Supercomputing Centre — Spain | [tbc]{.tbc} | [tbc]{.tbc} |
+| Francesco Zamponi | Sapienza University of Rome, Dept. of Physics — Italy | [tbc]{.tbc} | [tbc]{.tbc} |
+| CINECA (speaker tbc) | CINECA — Italy | [tbc]{.tbc} | [tbc]{.tbc} |
+| Diego Reforgiato Recupero | University of Cagliari, Dept. of Mathematics and Computer Science — Italy | [tbc]{.tbc} | [tbc]{.tbc} |
+| Carlo Mancini Terracciano | Sapienza University of Rome, Dept. of Physics — Italy | [tbc]{.tbc} | [tbc]{.tbc} |
+| Alessandro Zani and Sergio Consoli | European Commission, JRC — Italy | [tbc]{.tbc} | [tbc]{.tbc} |
+
+## Day 2 — policy session
+
+Proposed panel for the moderated round table: DG CNECT, DG SANTE, DG DEFIS, DG RTD
+(institutions and named speakers to be confirmed), plus one scientific voice from the
+workshop. Short interventions expected from Tolias (DG SANTE) and Domps (DG DEFIS).
+Moderator to be confirmed.
+
+## Day 2 — working-table contributors
+
+Day 2 morning's parallel working tables draw on a mix of scientific contributors,
+facilitators and rapporteurs. The list below is indicative and subject to change as
+attendance and interests are confirmed — see [Problems](problems/index.qmd) for the
+table themes.
+
+| Working table | Possible scientific contributors |
+|---|---|
+| 1 — Large-scale bioinformatics/genomics, NP-hard problems | Zev Kronenberg, Aurora Maurizio, Miguel Ponce de Leon |
+| 2 — AI / QML | Francesco Zamponi, Guglielmo Mazzola, Hao Wang |
+| 3 — Radiotherapy and other hard health problems | Carlo Mancini Terracciano, Diego Reforgiato Recupero, Miguel A. Gonzalez Ballester |
+| 4 — Benchmark framework | Federico Ricci-Tersenghi, Vito Palmisano, Gabriele Spada, Vedran Dunjko (if confirmed) |
+
+Note: Daniel J. Egger will not be present on Day 2.
+
+## Organisers
+
+- **Organisers:** Indaco Biazzo · Antonio Puertas Gallardo · Tobias Wiesenthal
+- **Workshop coordination and logistics:** Ilse Verspreet

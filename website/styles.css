@@ -1,0 +1,11 @@
+/* BENQODHI site — minimal overrides */
+
+.quarto-title-banner {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.tbc {
+  color: #888;
+  font-style: italic;
+}

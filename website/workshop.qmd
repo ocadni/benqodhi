@@ -1,0 +1,56 @@
+---
+title: "The BENQODHI Workshop"
+subtitle: "Expert workshop on quantum computing and optimization for life sciences and health"
+---
+
+## When and where
+
+**10–11 September 2026 · JRC Ispra, Italy**
+
+Day 1 takes place in Building 27B, Day 2 in Building 36. A social programme (aperitivo
+and dinner) is planned for the evening of Day 1.
+
+## What the workshop does
+
+BENQODHI convenes experts in quantum computing, optimisation, AI, biology and health to
+define credible, open benchmarks for transparent comparison across quantum, hybrid, AI,
+and classical approaches.
+
+The two days are structured around four themes:
+
+- **Foundations & use cases** (Day 1) — invited talks covering benchmarking practice
+  and concrete use cases from bioinformatics, genomics and health.
+- **Benchmark design** (Day 2 morning) — parallel working tables turning Day 1's
+  exchanges into concrete candidate benchmark problems.
+- **JRC quantum laboratories** (Day 2 midday) — a guided visit.
+- **European strategy** (Day 2 afternoon) — a policy session connecting the technical
+  work to European decisions on quantum and hybrid computing for health and biology.
+
+See the [program page](program.qmd) for the detailed timing and the
+[speakers page](speakers.qmd) for who is contributing.
+
+## Target outputs
+
+- Three focused candidate benchmark dossiers.
+- One shared framework note covering instances, baselines, metrics, resource
+  accounting, reporting and repository needs.
+- A named owner for every follow-up.
+
+## Invited speakers and institutional contributors
+
+Professors and researchers from Sapienza University of Rome, Leiden University, IBM
+Research Europe (Zurich), ICREA and Universitat Pompeu Fabra, SISSA, PacBio, IRCCS
+Ospedale San Raffaele, Barcelona Supercomputing Centre, CINECA and the University of
+Cagliari.
+
+Representatives from DG CNECT, DG SANTE, DG DEFIS and the EuroHPC Joint Undertaking are
+also invited to contribute.
+
+## Organisers
+
+Organised by JRC.F.7 within the BENQODHI exploratory activity granted by JRC.S.4.
+
+- **Organisers:** Indaco Biazzo · Antonio Puertas Gallardo · Tobias Wiesenthal
+- **Workshop coordination and logistics:** Ilse Verspreet
+
+**More information:** [JRC-F7-CONFERENCES@ec.europa.eu](mailto:JRC-F7-CONFERENCES@ec.europa.eu)

@@ -1,0 +1,30 @@
+---
+title: "Contribute"
+subtitle: "Propose a problem, or leave a suggestion"
+---
+
+BENQODHI is being built in the open. Suggestions on how to organise the workshop, the
+benchmark problems, or the repository itself are welcome from anyone — not only
+workshop participants.
+
+## Propose a problem
+
+If you have a candidate optimisation problem from health or biology that could become
+a BENQODHI benchmark, use the [common template](problems/index.qmd#common-template)
+and open it as a GitHub Discussion.
+
+<!-- Update this link once the repository location is confirmed -->
+[Open the Discussions board →](https://github.com/<org>/benqodhi/discussions)
+
+## Leave a suggestion
+
+The Discussions board is also the shared place to leave ideas on:
+
+- how the Day 2 working tables should be organised,
+- possible problems for the Day 2 round table,
+- anything else about the workshop or the repository.
+
+## Prefer not to use GitHub?
+
+Reply by email to the organisers and we will post on your behalf:
+[JRC-F7-CONFERENCES@ec.europa.eu](mailto:JRC-F7-CONFERENCES@ec.europa.eu)

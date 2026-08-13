@@ -1,0 +1,76 @@
+---
+title: "Program"
+subtitle: "10–11 September 2026 · JRC Ispra"
+---
+
+::: {.callout-note}
+Speaker titles are still being confirmed and will be updated on this page as they
+arrive. Timings are as currently planned and may still shift slightly.
+:::
+
+## Day 1 — 10 September 2026: Foundations and Use Cases
+
+### Morning — Foundations and benchmarking practice · Building 27B
+
+| Time | Session |
+|---|---|
+| 08:30–09:15 | Registration and arrival |
+| 09:15–09:50 | Opening and workshop framing — JRC management (tbc) and organisers |
+| 09:50–10:30 | Federico Ricci-Tersenghi — Sapienza University of Rome, Dept. of Physics |
+| 10:30–11:00 | *Coffee break* |
+| 11:00–11:40 | Daniel J. Egger — IBM Research Europe, Zurich |
+| 11:40–12:20 | Miguel A. Gonzalez Ballester — ICREA and Universitat Pompeu Fabra |
+| 12:20–14:00 | *Lunch (Building 101)* |
+
+### Afternoon — Use cases · Building 27B
+
+| Time | Session |
+|---|---|
+| 14:00–14:20 | Hao Wang — Leiden Institute of Advanced Computer Science (LIACS), Leiden University |
+| 14:20–14:40 | Guglielmo Mazzola — SISSA, Trieste |
+| 14:40–15:00 | Zev Kronenberg — PacBio |
+| 15:00–15:20 | Aurora Maurizio — Centre for Omics Sciences, IRCCS Ospedale San Raffaele, Milan |
+| 15:20–15:40 | Miguel Ponce de Leon — Barcelona Supercomputing Centre |
+| 15:40–16:10 | *Coffee break* |
+| 16:10–16:30 | Francesco Zamponi — Sapienza University of Rome, Dept. of Physics |
+| 16:30–16:50 | CINECA (speaker tbc) |
+| 16:50–17:10 | Diego Reforgiato Recupero — University of Cagliari |
+| 17:10–17:30 | Carlo Mancini Terracciano — Sapienza University of Rome, Dept. of Physics |
+| 17:30–17:50 | Alessandro Zani and Sergio Consoli — European Commission, JRC |
+| 18:00–18:20 | Transfer from JRC Ispra to hotels in Angera |
+
+Morning talk slots: 30 min + 10 min Q&A. Afternoon talk slots: 17 min + 3 min Q&A.
+
+### Evening
+
+19:30–21:00 (tbc) — Aperitivo and dinner, Lido La Noce, Angera.
+
+---
+
+## Day 2 — 11 September 2026: Benchmark Design, Quantum-Lab Visit and Strategy
+
+### Morning — Parallel focus groups and recap · Building 36
+
+| Time | Session |
+|---|---|
+| 08:30–09:00 | Arrival — entrance check |
+| 09:00–10:30 | Parallel working tables (facilitators tbc) — see [Problems](problems/index.qmd) for the working-table themes |
+| 10:30–11:00 | *Coffee break* |
+| 11:00–11:20 | Working-table recap (rapporteurs tbc) |
+| 11:20–12:00 | Plenary consolidation — workshop organisers |
+| 12:00–13:00 | *Lunch* |
+| 13:00–14:20 | Guided visit to the JRC quantum laboratories |
+| 14:20–14:30 | Return and transition |
+
+### Afternoon — European quantum infrastructure, policy and benchmarking · Building 36
+
+| Time | Session |
+|---|---|
+| 14:30–14:35 | Opening remarks |
+| 14:35–14:55 | EuroHPC Joint Undertaking / CINECA (speaker tbc) |
+| 14:55–15:15 | European Commission, DG CNECT (speaker tbc) |
+| 15:15–15:55 | Moderated round table — DG CNECT, DG SANTE, DG DEFIS, DG RTD (tbc) |
+| 15:55–16:00 | Closing — workshop organisers |
+
+See the [speakers page](speakers.qmd) for affiliations, titles and abstracts as they are
+confirmed.
