@@ -1,0 +1,7 @@
+website/.quarto/
+website/_site/
+.DS_Store
+
+# Python virtual environment
+.venv/
+__pycache__/
