@@ -1,30 +1,104 @@
 ---
-title: "Contribute"
-subtitle: "Propose a problem, or leave a suggestion"
+title: "Share an Idea"
+subtitle: "A simple way to contribute before the BENQODHI workshop"
+body-class: contribution-page
 ---
 
-BENQODHI is being built in the open. Suggestions on how to organise the workshop, the
-benchmark problems, or the repository itself are welcome from anyone — not only
-workshop participants.
+Before the workshop, we invite participants to leave short ideas that can help shape
+the discussion at JRC Ispra. This can be a candidate benchmark problem, a suggestion
+for the working session, a question for the panel, or a practical note about datasets,
+metrics or baselines.
 
-## Propose a problem
+This is intentionally lightweight. You do not need a polished proposal or a long
+document. A few clear sentences are enough.
 
-If you have a candidate optimisation problem from health or biology that could become
-a BENQODHI benchmark, use the [common template](problems/index.qmd#common-template)
-and open it as a GitHub Discussion.
+::: {.contribution-call}
+::: {.contribution-call-text}
+## Leave a Short Note
 
-<!-- Update this link once the repository location is confirmed -->
-[Open the Discussions board →](https://github.com/<org>/benqodhi/discussions)
+Submit one idea at a time. The organisers will read the notes before the workshop and
+use them to prepare the working session and discussion.
+:::
 
-## Leave a suggestion
+::: {.contribution-call-action}
+[Submit an idea](https://github.com/ocadni/benqodhi/issues/new?template=workshop-contribution.yml){.primary-action}
+:::
+:::
 
-The Discussions board is also the shared place to leave ideas on:
+## Where Ideas Live
 
-- how the Day 2 working tables should be organised,
-- possible problems for the Day 2 round table,
-- anything else about the workshop or the repository.
+Ideas are collected as public GitHub Issues in the BENQODHI repository. Each issue is
+just one short contribution.
 
-## Prefer not to use GitHub?
+::: {.read-links}
+[Read submitted ideas](https://github.com/ocadni/benqodhi/issues?q=is%3Aissue%20label%3Aworkshop-idea){.secondary-action}
+:::
 
-Reply by email to the organisers and we will post on your behalf:
+If GitHub is inconvenient, send your idea by email:
 [JRC-F7-CONFERENCES@ec.europa.eu](mailto:JRC-F7-CONFERENCES@ec.europa.eu)
+
+## What Kind of Idea?
+
+::: {.contribution-grid}
+::: {.contribution-card}
+::: {.goal-number}
+01
+:::
+### Session Organisation
+
+How should the small working session be organised? Which themes should be discussed
+together? What would make the session useful?
+:::
+
+::: {.contribution-card}
+::: {.goal-number}
+02
+:::
+### Panel Discussion
+
+Suggest a question that should be asked during the panel or closing discussion.
+:::
+
+::: {.contribution-card}
+::: {.goal-number}
+03
+:::
+### Candidate Problems
+
+Propose a health or biology optimization problem that could be discussed as a possible
+BENQODHI benchmark.
+:::
+
+::: {.contribution-card}
+::: {.goal-number}
+04
+:::
+### Practical Notes
+
+Suggest useful datasets, baselines, metrics, software, references or related benchmark
+initiatives.
+:::
+:::
+
+## How to Contribute
+
+Use the GitHub form:
+
+1. Open the [idea form](https://github.com/ocadni/benqodhi/issues/new?template=workshop-contribution.yml).
+2. Choose the type of idea.
+3. Write a short description.
+4. Add optional links or references.
+
+That is all. The organisers will collect the ideas before the workshop.
+
+## If You Propose a Problem
+
+If your idea is a candidate benchmark problem, please mention:
+
+- what the biological or health use case is,
+- what needs to be optimized,
+- what data or instances might be available,
+- why the problem is hard or interesting,
+- which baselines or metrics could be useful.
+
+Partial sketches are welcome.

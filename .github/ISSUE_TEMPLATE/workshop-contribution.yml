@@ -1,0 +1,40 @@
+name: Workshop idea
+description: Share a short idea before the BENQODHI workshop.
+title: "[Idea] "
+labels:
+  - workshop-idea
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing an idea for the BENQODHI workshop. A short note is enough.
+  - type: dropdown
+    id: idea_type
+    attributes:
+      label: Type of idea
+      options:
+        - Candidate benchmark problem
+        - Session organisation
+        - Panel question
+        - Dataset, baseline or metric
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+      description: Write the idea in a few sentences.
+      placeholder: |
+        Example: I suggest discussing radiotherapy planning as a benchmark because...
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Optional context
+      description: Add links, datasets, references, baselines, metrics, or a few words on why this matters.
+      placeholder: |
+        Links, papers, repositories, people to involve, or any extra detail.
+    validations:
+      required: false

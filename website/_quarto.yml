@@ -22,7 +22,7 @@ website:
         text: Contribute
     right:
       - icon: github
-        href: https://github.com/<org>/benqodhi   # fill in once the repo exists
+        href: https://github.com/ocadni/benqodhi
   page-footer:
     left: "BENQODHI · JRC exploratory activity (JRC.F.7 / JRC.S.4)"
     right: "[Contact](mailto:JRC-F7-CONFERENCES@ec.europa.eu)"
