@@ -25,11 +25,11 @@ If GitHub is inconvenient, send your idea by email:
 
 ::: {.example-ideas}
 ::: {.example-idea}
-### Radiotherapy planning as a benchmark problem
+### Haplotype phasing as a benchmark problem
 
-Radiotherapy treatment planning is a concrete health optimization problem that could
-be discussed as a BENQODHI benchmark. Useful notes would include objectives,
-constraints, available instances, baselines and evaluation metrics.
+Haplotype phasing is a concrete genomics optimization problem that could be discussed
+as a BENQODHI benchmark. It has real sequencing use cases, known baselines, public
+truth sets, and a natural route toward combinatorial formulations.
 :::
 
 ::: {.example-idea}
