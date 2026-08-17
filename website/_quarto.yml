@@ -14,8 +14,6 @@ website:
         text: Workshop
       - href: program.qmd
         text: Program
-      - href: speakers.qmd
-        text: Speakers
       - href: problems/index.qmd
         text: Problems
       - href: contribute.qmd

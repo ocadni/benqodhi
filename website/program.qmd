@@ -72,5 +72,4 @@ Morning talk slots: 30 min + 10 min Q&A. Afternoon talk slots: 17 min + 3 min Q&
 | 15:15–15:55 | Moderated round table — DG CNECT, DG SANTE, DG DEFIS, DG RTD (tbc) |
 | 15:55–16:00 | Closing — workshop organisers |
 
-See the [speakers page](speakers.qmd) for affiliations, titles and abstracts as they are
-confirmed.
+Speaker titles and abstracts will be added to the programme as they are confirmed.

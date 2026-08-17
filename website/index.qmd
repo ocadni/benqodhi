@@ -13,12 +13,12 @@ JRC exploratory activity
 
 # BENQODHI
 
-## Benchmarking quantum optimization for health and biology
+## BENchmarking Quantum Optimization: from Datasets to Health Innovation
 
-Can quantum computing make a measurable difference on optimization problems that
-matter in life sciences? BENQODHI brings together quantum computing, optimisation,
-AI, biology and health experts to define open benchmarks for fair comparison across
-classical, AI-based, hybrid and quantum approaches.
+BENQODHI brings together optimisation, biology, health, AI and quantum-computing
+experts to define open benchmarks for problems that matter in life sciences and
+health. The goal is fair comparison across classical, AI-based, hybrid and quantum
+approaches.
 
 ::: {.hero-actions}
 [Workshop](workshop.qmd){.primary-action}

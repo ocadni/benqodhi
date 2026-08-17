@@ -26,8 +26,7 @@ The two days are structured around four themes:
 - **European strategy** (Day 2 afternoon) — a policy session connecting the technical
   work to European decisions on quantum and hybrid computing for health and biology.
 
-See the [program page](program.qmd) for the detailed timing and the
-[speakers page](speakers.qmd) for who is contributing.
+See the [program page](program.qmd) for the detailed timing.
 
 ## Target outputs
 
