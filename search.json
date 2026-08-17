@@ -135,30 +135,16 @@
   {
     "objectID": "contribute.html",
     "href": "contribute.html",
-    "title": "Contribute",
+    "title": "Share an Idea",
     "section": "",
-    "text": "BENQODHI is being built in the open. Suggestions on how to organise the workshop, the benchmark problems, or the repository itself are welcome from anyone — not only workshop participants."
+    "text": "Before the workshop, participants can leave short ideas to help shape the discussion at JRC Ispra. One idea is enough: a candidate benchmark problem, a suggestion for the working session, a panel question, or a practical note about datasets, metrics or baselines.\nIdeas are collected as public GitHub Issues. Choose the closest type: candidate problem, session organisation, panel question, dataset/baseline/metric, or other.\nIf GitHub is inconvenient, send your idea by email: JRC-F7-CONFERENCES@ec.europa.eu"
   },
   {
-    "objectID": "contribute.html#propose-a-problem",
-    "href": "contribute.html#propose-a-problem",
-    "title": "Contribute",
-    "section": "Propose a problem",
-    "text": "Propose a problem\nIf you have a candidate optimisation problem from health or biology that could become a BENQODHI benchmark, use the common template and open it as a GitHub Discussion.\n\nOpen the Discussions board →"
-  },
-  {
-    "objectID": "contribute.html#leave-a-suggestion",
-    "href": "contribute.html#leave-a-suggestion",
-    "title": "Contribute",
-    "section": "Leave a suggestion",
-    "text": "Leave a suggestion\nThe Discussions board is also the shared place to leave ideas on:\n\nhow the Day 2 working tables should be organised,\npossible problems for the Day 2 round table,\nanything else about the workshop or the repository."
-  },
-  {
-    "objectID": "contribute.html#prefer-not-to-use-github",
-    "href": "contribute.html#prefer-not-to-use-github",
-    "title": "Contribute",
-    "section": "Prefer not to use GitHub?",
-    "text": "Prefer not to use GitHub?\nReply by email to the organisers and we will post on your behalf: JRC-F7-CONFERENCES@ec.europa.eu"
+    "objectID": "contribute.html#example-ideas",
+    "href": "contribute.html#example-ideas",
+    "title": "Share an Idea",
+    "section": "Example Ideas",
+    "text": "Example Ideas\n\n\nRadiotherapy planning as a benchmark problem\nRadiotherapy treatment planning is a concrete health optimization problem that could be discussed as a BENQODHI benchmark. Useful notes would include objectives, constraints, available instances, baselines and evaluation metrics.\n\n\nDay 2 working-table structure\nThe Day 2 morning session could be organised around three provisional tables: bioinformatics, health problems, and machine learning or quantum/benchmark practice. Participants can suggest different tables, additional themes or a simpler format.\n\n\nIf your idea is a candidate benchmark problem, please mention:\n\nwhat the biological or health use case is,\nwhat needs to be optimized,\nwhat data or instances might be available,\nwhy the problem is hard or interesting,\nwhich baselines or metrics could be useful.\n\nPartial sketches are welcome."
   },
   {
     "objectID": "index.html",

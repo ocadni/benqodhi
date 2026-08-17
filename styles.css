@@ -181,6 +181,37 @@ body {
   border-top: 1px solid var(--benq-line);
 }
 
+.idea-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+  margin: 1.4rem 0 1.25rem;
+}
+
+.example-ideas {
+  margin: 0.7rem 0 1.4rem;
+  border-top: 1px solid var(--benq-line);
+}
+
+.example-idea {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--benq-line);
+  color: var(--benq-muted);
+  font-size: 0.95rem;
+}
+
+.example-idea h3 {
+  margin: 0 0 0.25rem;
+  color: var(--benq-ink);
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.example-idea p {
+  margin-bottom: 0;
+}
+
 .text-link {
   color: var(--benq-teal);
   font-weight: 700;
