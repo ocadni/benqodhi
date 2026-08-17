@@ -1,5 +1,6 @@
 website/.quarto/
 website/_site/
+.quarto-cache/
 .DS_Store
 
 # Python virtual environment

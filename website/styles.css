@@ -1,11 +1,210 @@
-/* BENQODHI site — minimal overrides */
+/* BENQODHI site - minimal overrides */
+
+:root {
+  --benq-ink: #1c2423;
+  --benq-muted: #5f6c68;
+  --benq-line: #d8dfdc;
+  --benq-paper: #fbfbf8;
+  --benq-teal: #0f766e;
+  --benq-gold: #b8872d;
+}
+
+body {
+  background: var(--benq-paper);
+  color: var(--benq-ink);
+}
 
 .quarto-title-banner {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
+.landing-page .quarto-title-block.default {
+  display: none;
+}
+
+.navbar {
+  border-bottom: 1px solid var(--benq-line);
+}
+
+.landing-hero {
+  position: relative;
+  overflow: hidden;
+  margin: 1rem 0 3.25rem;
+  padding: clamp(2.5rem, 7vw, 5.5rem) 0 clamp(1.75rem, 5vw, 3rem);
+  border-top: 1px solid var(--benq-line);
+  border-bottom: 1px solid var(--benq-line);
+  background: transparent;
+}
+
+.landing-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: clamp(7rem, 18vw, 14rem);
+  height: 3px;
+  background: var(--benq-gold);
+}
+
+.hero-copy {
+  max-width: 860px;
+}
+
+.eyebrow,
+.goal-number {
+  color: var(--benq-gold);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.landing-hero h1 {
+  margin: 0.4rem 0 0;
+  font-size: clamp(3.2rem, 8vw, 7rem);
+  line-height: 0.95;
+}
+
+.landing-hero h2 {
+  max-width: 720px;
+  margin-top: 1rem;
+  color: var(--benq-ink);
+  font-size: clamp(1.25rem, 3vw, 2.15rem);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.landing-hero p {
+  max-width: 740px;
+  color: var(--benq-muted);
+  font-size: 1.06rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+.primary-action,
+.secondary-action {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--benq-teal);
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.primary-action {
+  background: var(--benq-teal);
+  color: #fff;
+}
+
+.primary-action:hover {
+  color: #fff;
+  background: #0b5f59;
+}
+
+.secondary-action {
+  color: var(--benq-teal);
+  background: transparent;
+}
+
+.hero-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  max-width: 860px;
+  margin-top: clamp(2rem, 6vw, 4rem);
+  border: 1px solid var(--benq-line);
+  background: var(--benq-line);
+}
+
+.fact {
+  padding: 1rem;
+  background: var(--benq-paper);
+  color: var(--benq-muted);
+  font-size: 0.95rem;
+}
+
+.fact strong {
+  color: var(--benq-ink);
+}
+
+.section-heading {
+  margin-top: 3rem;
+  border-top: 1px solid var(--benq-line);
+}
+
+.section-heading h2 {
+  margin-top: 1.15rem;
+}
+
+.goal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 3rem;
+}
+
+.goal-card {
+  min-height: 245px;
+  padding: 1.25rem;
+  border: 1px solid var(--benq-line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.goal-card h3 {
+  margin-top: 0.8rem;
+  font-size: 1.25rem;
+}
+
+.goal-card p {
+  color: var(--benq-muted);
+}
+
+.split-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  margin: 2rem 0 3rem;
+}
+
+.split-copy {
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--benq-line);
+}
+
+.text-link {
+  color: var(--benq-teal);
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
 .tbc {
   color: #888;
   font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .landing-hero {
+    padding-bottom: 2.5rem;
+  }
+
+  .hero-facts,
+  .goal-grid,
+  .split-section {
+    grid-template-columns: 1fr;
+  }
+
+  .goal-card {
+    min-height: auto;
+  }
 }

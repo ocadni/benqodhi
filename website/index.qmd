@@ -1,55 +1,107 @@
 ---
 title: "BENQODHI"
 subtitle: "BENchmarking Quantum Optimization: from Datasets to Health Innovation"
+title-block-banner: false
+body-class: landing-page
 ---
 
-## Can quantum computing make a measurable difference for optimization problems in health and biology?
+::: {.landing-hero}
+::: {.hero-copy}
+::: {.eyebrow}
+JRC exploratory activity
+:::
+
+# BENQODHI
+
+## Benchmarking quantum optimization for health and biology
+
+Can quantum computing make a measurable difference on optimization problems that
+matter in life sciences? BENQODHI brings together quantum computing, optimisation,
+AI, biology and health experts to define open benchmarks for fair comparison across
+classical, AI-based, hybrid and quantum approaches.
+
+::: {.hero-actions}
+[Workshop](workshop.qmd){.primary-action}
+[Contribute](contribute.qmd){.secondary-action}
+:::
+:::
+
+::: {.hero-facts}
+::: {.fact}
+**10-11 Sept 2026**  
+JRC Ispra, Italy
+:::
+::: {.fact}
+**Open benchmarks**  
+Reusable problem instances
+:::
+::: {.fact}
+**Comparable evidence**  
+Baselines, metrics, resources
+:::
+:::
+:::
 
 BENQODHI is a European Commission Joint Research Centre (JRC) exploratory activity.
-It brings together experts in quantum computing, optimisation, AI, biology and health
-to define credible, open benchmarks for transparent comparison across quantum, hybrid,
-AI, and classical approaches.
+It is shaped around a simple question: which health and biology optimization problems
+are specific, measurable and useful enough to become shared benchmarks?
 
-The project is organised around three goals:
+::: {.section-heading}
+## Three Commitments
+:::
 
-::: {.columns}
-
-::: {.column width="33%"}
-### 01 / Focus
+::: {.goal-grid}
+::: {.goal-card}
+::: {.goal-number}
+01
+:::
+### Focus
 **Make the questions real.**
 Optimization challenges rooted in health and biology — not generic combinatorial
 problems dressed in biological vocabulary.
 :::
 
-::: {.column width="33%"}
-### 02 / Method
+::: {.goal-card}
+::: {.goal-number}
+02
+:::
+### Method
 **Make comparisons fair.**
 Instances, baselines, metrics and resource accounting that let classical, AI-based,
 hybrid and quantum methods be compared on equal terms.
 :::
 
-::: {.column width="33%"}
-### 03 / Outcome
+::: {.goal-card}
+::: {.goal-number}
+03
+:::
+### Outcome
 **Make evidence reusable.**
 A practical pathway toward open benchmark resources the community can build on.
 :::
 
 :::
 
+::: {.split-section}
+::: {.split-copy}
 ## Origin: the BENQODHI workshop
 
 The project's first milestone is the **BENQODHI Workshop**, 10–11 September 2026 at
 JRC Ispra, Italy. The workshop convenes invited speakers and contributors to sketch a
 first set of candidate benchmark problems and a shared framework for building them out.
 
-[More about the workshop →](workshop.qmd)
+[More about the workshop →](workshop.qmd){.text-link}
+:::
 
+::: {.split-copy}
 ## Get involved
 
 Problem proposals, suggestions and ideas are welcome from anyone, not only workshop
 participants.
 
-[How to contribute →](contribute.qmd)
+[How to contribute →](contribute.qmd){.text-link}
+:::
+:::
 
 ---
 
