@@ -4,94 +4,42 @@ subtitle: "A simple way to contribute before the BENQODHI workshop"
 body-class: contribution-page
 ---
 
-Before the workshop, we invite participants to leave short ideas that can help shape
-the discussion at JRC Ispra. This can be a candidate benchmark problem, a suggestion
-for the working session, a question for the panel, or a practical note about datasets,
-metrics or baselines.
+Before the workshop, participants can leave short ideas to help shape the discussion
+at JRC Ispra. One idea is enough: a candidate benchmark problem, a suggestion for the
+working session, a panel question, or a practical note about datasets, metrics or
+baselines.
 
-This is intentionally lightweight. You do not need a polished proposal or a long
-document. A few clear sentences are enough.
-
-::: {.contribution-call}
-::: {.contribution-call-text}
-## Leave a Short Note
-
-Submit one idea at a time. The organisers will read the notes before the workshop and
-use them to prepare the working session and discussion.
-:::
-
-::: {.contribution-call-action}
+::: {.idea-actions}
 [Submit an idea](https://github.com/ocadni/benqodhi/issues/new?template=workshop-contribution.yml){.primary-action}
-:::
-:::
-
-## Where Ideas Live
-
-Ideas are collected as public GitHub Issues in the BENQODHI repository. Each issue is
-just one short contribution.
-
-::: {.read-links}
 [Read submitted ideas](https://github.com/ocadni/benqodhi/issues?q=is%3Aissue%20label%3Aworkshop-idea){.secondary-action}
 :::
+
+Ideas are collected as public GitHub Issues. Choose the closest type:
+**candidate problem**, **session organisation**, **panel question**,
+**dataset/baseline/metric**, or **other**.
 
 If GitHub is inconvenient, send your idea by email:
 [JRC-F7-CONFERENCES@ec.europa.eu](mailto:JRC-F7-CONFERENCES@ec.europa.eu)
 
-## What Kind of Idea?
+## Example Ideas
 
-::: {.contribution-grid}
-::: {.contribution-card}
-::: {.goal-number}
-01
-:::
-### Session Organisation
+::: {.example-ideas}
+::: {.example-idea}
+### Radiotherapy planning as a benchmark problem
 
-How should the small working session be organised? Which themes should be discussed
-together? What would make the session useful?
+Radiotherapy treatment planning is a concrete health optimization problem that could
+be discussed as a BENQODHI benchmark. Useful notes would include objectives,
+constraints, available instances, baselines and evaluation metrics.
 :::
 
-::: {.contribution-card}
-::: {.goal-number}
-02
-:::
-### Panel Discussion
+::: {.example-idea}
+### Day 2 working-table structure
 
-Suggest a question that should be asked during the panel or closing discussion.
-:::
-
-::: {.contribution-card}
-::: {.goal-number}
-03
-:::
-### Candidate Problems
-
-Propose a health or biology optimization problem that could be discussed as a possible
-BENQODHI benchmark.
-:::
-
-::: {.contribution-card}
-::: {.goal-number}
-04
-:::
-### Practical Notes
-
-Suggest useful datasets, baselines, metrics, software, references or related benchmark
-initiatives.
+The Day 2 morning session could be organised around three provisional tables:
+bioinformatics, health problems, and machine learning or quantum/benchmark practice.
+Participants can suggest different tables, additional themes or a simpler format.
 :::
 :::
-
-## How to Contribute
-
-Use the GitHub form:
-
-1. Open the [idea form](https://github.com/ocadni/benqodhi/issues/new?template=workshop-contribution.yml).
-2. Choose the type of idea.
-3. Write a short description.
-4. Add optional links or references.
-
-That is all. The organisers will collect the ideas before the workshop.
-
-## If You Propose a Problem
 
 If your idea is a candidate benchmark problem, please mention:
 

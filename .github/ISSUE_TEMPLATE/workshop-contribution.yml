@@ -12,6 +12,7 @@ body:
     id: idea_type
     attributes:
       label: Type of idea
+      description: Pick the closest option.
       options:
         - Candidate benchmark problem
         - Session organisation
@@ -24,7 +25,7 @@ body:
     id: idea
     attributes:
       label: Idea
-      description: Write the idea in a few sentences.
+      description: A few sentences are enough.
       placeholder: |
         Example: I suggest discussing radiotherapy planning as a benchmark because...
     validations:
@@ -33,7 +34,7 @@ body:
     id: context
     attributes:
       label: Optional context
-      description: Add links, datasets, references, baselines, metrics, or a few words on why this matters.
+      description: Add links, references, names, datasets, baselines or metrics if useful.
       placeholder: |
         Links, papers, repositories, people to involve, or any extra detail.
     validations:
