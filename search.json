@@ -18,7 +18,7 @@
     "href": "program.html#day-2-11-september-2026-benchmark-design-quantum-lab-visit-and-strategy",
     "title": "Program",
     "section": "Day 2 — 11 September 2026: Benchmark Design, Quantum-Lab Visit and Strategy",
-    "text": "Day 2 — 11 September 2026: Benchmark Design, Quantum-Lab Visit and Strategy\n\nMorning — Parallel focus groups and recap · Building 36\n\n\n\nTime\nSession\n\n\n\n\n08:30–09:00\nArrival — entrance check\n\n\n09:00–10:30\nParallel working tables (facilitators tbc) — see Problems for the working-table themes\n\n\n10:30–11:00\nCoffee break\n\n\n11:00–11:20\nWorking-table recap (rapporteurs tbc)\n\n\n11:20–12:00\nPlenary consolidation — workshop organisers\n\n\n12:00–13:00\nLunch\n\n\n13:00–14:20\nGuided visit to the JRC quantum laboratories\n\n\n14:20–14:30\nReturn and transition\n\n\n\n\n\nAfternoon — European quantum infrastructure, policy and benchmarking · Building 36\n\n\n\n\n\n\n\nTime\nSession\n\n\n\n\n14:30–14:35\nOpening remarks\n\n\n14:35–14:55\nEuroHPC Joint Undertaking / CINECA (speaker tbc)\n\n\n14:55–15:15\nEuropean Commission, DG CNECT (speaker tbc)\n\n\n15:15–15:55\nModerated round table — DG CNECT, DG SANTE, DG DEFIS, DG RTD (tbc)\n\n\n15:55–16:00\nClosing — workshop organisers\n\n\n\nSee the speakers page for affiliations, titles and abstracts as they are confirmed."
+    "text": "Day 2 — 11 September 2026: Benchmark Design, Quantum-Lab Visit and Strategy\n\nMorning — Parallel focus groups and recap · Building 36\n\n\n\nTime\nSession\n\n\n\n\n08:30–09:00\nArrival — entrance check\n\n\n09:00–10:30\nParallel working tables (facilitators tbc) — see Problems for the working-table themes\n\n\n10:30–11:00\nCoffee break\n\n\n11:00–11:20\nWorking-table recap (rapporteurs tbc)\n\n\n11:20–12:00\nPlenary consolidation — workshop organisers\n\n\n12:00–13:00\nLunch\n\n\n13:00–14:20\nGuided visit to the JRC quantum laboratories\n\n\n14:20–14:30\nReturn and transition\n\n\n\n\n\nAfternoon — European quantum infrastructure, policy and benchmarking · Building 36\n\n\n\n\n\n\n\nTime\nSession\n\n\n\n\n14:30–14:35\nOpening remarks\n\n\n14:35–14:55\nEuroHPC Joint Undertaking / CINECA (speaker tbc)\n\n\n14:55–15:15\nEuropean Commission, DG CNECT (speaker tbc)\n\n\n15:15–15:55\nModerated round table — DG CNECT, DG SANTE, DG DEFIS, DG RTD (tbc)\n\n\n15:55–16:00\nClosing — workshop organisers\n\n\n\nSpeaker titles and abstracts will be added to the programme as they are confirmed."
   },
   {
     "objectID": "workshop.html",
@@ -39,7 +39,7 @@
     "href": "workshop.html#what-the-workshop-does",
     "title": "The BENQODHI Workshop",
     "section": "What the workshop does",
-    "text": "What the workshop does\nBENQODHI convenes experts in quantum computing, optimisation, AI, biology and health to define credible, open benchmarks for transparent comparison across quantum, hybrid, AI, and classical approaches.\nThe two days are structured around four themes:\n\nFoundations & use cases (Day 1) — invited talks covering benchmarking practice and concrete use cases from bioinformatics, genomics and health.\nBenchmark design (Day 2 morning) — parallel working tables turning Day 1’s exchanges into concrete candidate benchmark problems.\nJRC quantum laboratories (Day 2 midday) — a guided visit.\nEuropean strategy (Day 2 afternoon) — a policy session connecting the technical work to European decisions on quantum and hybrid computing for health and biology.\n\nSee the program page for the detailed timing and the speakers page for who is contributing."
+    "text": "What the workshop does\nBENQODHI convenes experts in quantum computing, optimisation, AI, biology and health to define credible, open benchmarks for transparent comparison across quantum, hybrid, AI, and classical approaches.\nThe two days are structured around four themes:\n\nFoundations & use cases (Day 1) — invited talks covering benchmarking practice and concrete use cases from bioinformatics, genomics and health.\nBenchmark design (Day 2 morning) — parallel working tables turning Day 1’s exchanges into concrete candidate benchmark problems.\nJRC quantum laboratories (Day 2 midday) — a guided visit.\nEuropean strategy (Day 2 afternoon) — a policy session connecting the technical work to European decisions on quantum and hybrid computing for health and biology.\n\nSee the program page for the detailed timing."
   },
   {
     "objectID": "workshop.html#target-outputs",
@@ -61,41 +61,6 @@
     "title": "The BENQODHI Workshop",
     "section": "Organisers",
     "text": "Organisers\nOrganised by JRC.F.7 within the BENQODHI exploratory activity granted by JRC.S.4.\n\nOrganisers: Indaco Biazzo · Antonio Puertas Gallardo · Tobias Wiesenthal\nWorkshop coordination and logistics: Ilse Verspreet\n\nMore information: JRC-F7-CONFERENCES@ec.europa.eu"
-  },
-  {
-    "objectID": "speakers.html",
-    "href": "speakers.html",
-    "title": "Speakers",
-    "section": "",
-    "text": "Note\n\n\n\nTitles and abstracts are being collected from speakers and will be added here as they arrive. See Program for timing."
-  },
-  {
-    "objectID": "speakers.html#day-1-speakers",
-    "href": "speakers.html#day-1-speakers",
-    "title": "Speakers",
-    "section": "Day 1 speakers",
-    "text": "Day 1 speakers\n\n\n\n\n\n\n\n\n\nSpeaker\nInstitution\nTitle\nAbstract\n\n\n\n\nFederico Ricci-Tersenghi\nSapienza University of Rome, Dept. of Physics — Italy\ntbc\ntbc\n\n\nDaniel J. Egger\nIBM Research Europe, Zurich — Switzerland\ntbc\ntbc\n\n\nMiguel A. Gonzalez Ballester\nICREA and Universitat Pompeu Fabra — Spain\ntbc\ntbc\n\n\nHao Wang\nLeiden Institute of Advanced Computer Science (LIACS), Leiden University — The Netherlands\ntbc\ntbc\n\n\nGuglielmo Mazzola\nSISSA, Trieste — Italy\ntbc\ntbc\n\n\nZev Kronenberg\nPacBio — USA\ntbc\ntbc\n\n\nAurora Maurizio\nCentre for Omics Sciences, IRCCS Ospedale San Raffaele, Milan — Italy\ntbc\ntbc\n\n\nMiguel Ponce de Leon\nBarcelona Supercomputing Centre — Spain\ntbc\ntbc\n\n\nFrancesco Zamponi\nSapienza University of Rome, Dept. of Physics — Italy\ntbc\ntbc\n\n\nCINECA (speaker tbc)\nCINECA — Italy\ntbc\ntbc\n\n\nDiego Reforgiato Recupero\nUniversity of Cagliari, Dept. of Mathematics and Computer Science — Italy\ntbc\ntbc\n\n\nCarlo Mancini Terracciano\nSapienza University of Rome, Dept. of Physics — Italy\ntbc\ntbc\n\n\nAlessandro Zani and Sergio Consoli\nEuropean Commission, JRC — Italy\ntbc\ntbc"
-  },
-  {
-    "objectID": "speakers.html#day-2-policy-session",
-    "href": "speakers.html#day-2-policy-session",
-    "title": "Speakers",
-    "section": "Day 2 — policy session",
-    "text": "Day 2 — policy session\nProposed panel for the moderated round table: DG CNECT, DG SANTE, DG DEFIS, DG RTD (institutions and named speakers to be confirmed), plus one scientific voice from the workshop. Short interventions expected from Tolias (DG SANTE) and Domps (DG DEFIS). Moderator to be confirmed."
-  },
-  {
-    "objectID": "speakers.html#day-2-working-table-contributors",
-    "href": "speakers.html#day-2-working-table-contributors",
-    "title": "Speakers",
-    "section": "Day 2 — working-table contributors",
-    "text": "Day 2 — working-table contributors\nDay 2 morning’s parallel working tables draw on a mix of scientific contributors, facilitators and rapporteurs. The list below is indicative and subject to change as attendance and interests are confirmed — see Problems for the table themes.\n\n\n\n\n\n\n\nWorking table\nPossible scientific contributors\n\n\n\n\n1 — Large-scale bioinformatics/genomics, NP-hard problems\nZev Kronenberg, Aurora Maurizio, Miguel Ponce de Leon\n\n\n2 — AI / QML\nFrancesco Zamponi, Guglielmo Mazzola, Hao Wang\n\n\n3 — Radiotherapy and other hard health problems\nCarlo Mancini Terracciano, Diego Reforgiato Recupero, Miguel A. Gonzalez Ballester\n\n\n4 — Benchmark framework\nFederico Ricci-Tersenghi, Vito Palmisano, Gabriele Spada, Vedran Dunjko (if confirmed)\n\n\n\nNote: Daniel J. Egger will not be present on Day 2."
-  },
-  {
-    "objectID": "speakers.html#organisers",
-    "href": "speakers.html#organisers",
-    "title": "Speakers",
-    "section": "Organisers",
-    "text": "Organisers\n\nOrganisers: Indaco Biazzo · Antonio Puertas Gallardo · Tobias Wiesenthal\nWorkshop coordination and logistics: Ilse Verspreet"
   },
   {
     "objectID": "problems/index.html",
@@ -144,21 +109,21 @@
     "href": "contribute.html#example-ideas",
     "title": "Share an Idea",
     "section": "Example Ideas",
-    "text": "Example Ideas\n\n\nRadiotherapy planning as a benchmark problem\nRadiotherapy treatment planning is a concrete health optimization problem that could be discussed as a BENQODHI benchmark. Useful notes would include objectives, constraints, available instances, baselines and evaluation metrics.\n\n\nDay 2 working-table structure\nThe Day 2 morning session could be organised around three provisional tables: bioinformatics, health problems, and machine learning or quantum/benchmark practice. Participants can suggest different tables, additional themes or a simpler format.\n\n\nIf your idea is a candidate benchmark problem, please mention:\n\nwhat the biological or health use case is,\nwhat needs to be optimized,\nwhat data or instances might be available,\nwhy the problem is hard or interesting,\nwhich baselines or metrics could be useful.\n\nPartial sketches are welcome."
+    "text": "Example Ideas\n\n\nHaplotype phasing as a benchmark problem\nHaplotype phasing is a concrete genomics optimization problem that could be discussed as a BENQODHI benchmark. It has real sequencing use cases, known baselines, public truth sets, and a natural route toward combinatorial formulations.\n\n\nDay 2 working-table structure\nThe Day 2 morning session could be organised around three provisional tables: bioinformatics, health problems, and machine learning or quantum/benchmark practice. Participants can suggest different tables, additional themes or a simpler format.\n\n\nIf your idea is a candidate benchmark problem, please mention:\n\nwhat the biological or health use case is,\nwhat needs to be optimized,\nwhat data or instances might be available,\nwhy the problem is hard or interesting,\nwhich baselines or metrics could be useful.\n\nPartial sketches are welcome."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "BENQODHI",
     "section": "",
-    "text": "JRC exploratory activity\n\n\n\n\n\nCan quantum computing make a measurable difference on optimization problems that matter in life sciences? BENQODHI brings together quantum computing, optimisation, AI, biology and health experts to define open benchmarks for fair comparison across classical, AI-based, hybrid and quantum approaches.\n\nWorkshop Contribute\n\n\n\n\n\n\n10-11 Sept 2026\nJRC Ispra, Italy\n\n\nOpen benchmarks\nReusable problem instances\n\n\nComparable evidence\nBaselines, metrics, resources\nBENQODHI is a European Commission Joint Research Centre (JRC) exploratory activity. It is shaped around a simple question: which health and biology optimization problems are specific, measurable and useful enough to become shared benchmarks?\nOrganised by JRC.F.7 within the BENQODHI exploratory activity granted by JRC.S.4. Organisers: Indaco Biazzo · Antonio Puertas Gallardo · Tobias Wiesenthal. Workshop coordination and logistics: Ilse Verspreet."
+    "text": "JRC exploratory activity\n\n\n\n\n\nBENQODHI brings together optimisation, biology, health, AI and quantum-computing experts to define open benchmarks for problems that matter in life sciences and health. The goal is fair comparison across classical, AI-based, hybrid and quantum approaches.\n\nWorkshop Contribute\n\n\n\n\n\n\n10-11 Sept 2026\nJRC Ispra, Italy\n\n\nOpen benchmarks\nReusable problem instances\n\n\nComparable evidence\nBaselines, metrics, resources\nBENQODHI is a European Commission Joint Research Centre (JRC) exploratory activity. It is shaped around a simple question: which health and biology optimization problems are specific, measurable and useful enough to become shared benchmarks?\nOrganised by JRC.F.7 within the BENQODHI exploratory activity granted by JRC.S.4. Organisers: Indaco Biazzo · Antonio Puertas Gallardo · Tobias Wiesenthal. Workshop coordination and logistics: Ilse Verspreet."
   },
   {
-    "objectID": "index.html#benchmarking-quantum-optimization-for-health-and-biology",
-    "href": "index.html#benchmarking-quantum-optimization-for-health-and-biology",
+    "objectID": "index.html#benchmarking-quantum-optimization-from-datasets-to-health-innovation",
+    "href": "index.html#benchmarking-quantum-optimization-from-datasets-to-health-innovation",
     "title": "BENQODHI",
     "section": "",
-    "text": "Can quantum computing make a measurable difference on optimization problems that matter in life sciences? BENQODHI brings together quantum computing, optimisation, AI, biology and health experts to define open benchmarks for fair comparison across classical, AI-based, hybrid and quantum approaches.\n\nWorkshop Contribute"
+    "text": "BENQODHI brings together optimisation, biology, health, AI and quantum-computing experts to define open benchmarks for problems that matter in life sciences and health. The goal is fair comparison across classical, AI-based, hybrid and quantum approaches.\n\nWorkshop Contribute"
   },
   {
     "objectID": "index.html#three-commitments",
