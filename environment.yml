@@ -1,0 +1,15 @@
+# Conda environment for the BENQODHI repository.
+#
+# Create:   conda env create -f environment.yml
+# Activate: conda activate benqodhi
+# Update:   conda env update -f environment.yml --prune
+#
+# Note: the conda-forge `quarto` package is community-maintained, not published
+# by the Quarto team, and may lag behind the latest PyPI release. If you need a
+# specific/newer version, use the venv + pip route in SETUP.md instead.
+name: benqodhi
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - quarto

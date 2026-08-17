@@ -1,0 +1,10 @@
+website/.quarto/
+website/_site/
+.DS_Store
+
+# Python virtual environment
+.venv/
+__pycache__/
+
+# Workshop source docx files - not committed for now
+_internal/info_workshop/*.docx
