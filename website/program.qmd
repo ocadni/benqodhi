@@ -8,9 +8,9 @@ Speaker titles are still being confirmed and will be updated on this page as the
 arrive. Timings are as currently planned and may still shift slightly.
 :::
 
-## Day 1 — 10 September 2026: Foundations and Use Cases
+## Day 1 — 10 September 2026: Foundations, Algorithms and Use Cases
 
-### Morning — Foundations and benchmarking practice · Building 27B
+### Morning — Foundational talks · Building 27B
 
 | Time | Session |
 |---|---|
@@ -22,7 +22,7 @@ arrive. Timings are as currently planned and may still shift slightly.
 | 11:40–12:20 | Miguel A. Gonzalez Ballester — ICREA and Universitat Pompeu Fabra |
 | 12:20–14:00 | *Lunch (Building 101)* |
 
-### Afternoon — Use cases · Building 27B
+### Afternoon — Algorithms, benchmarking approaches, problems and use cases · Building 27B
 
 | Time | Session |
 |---|---|

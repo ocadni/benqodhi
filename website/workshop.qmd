@@ -16,10 +16,13 @@ BENQODHI convenes experts in quantum computing, optimisation, AI, biology and he
 define credible, open benchmarks for transparent comparison across quantum, hybrid, AI,
 and classical approaches.
 
-The two days are structured around four themes:
+The two days are structured around five moments:
 
-- **Foundations & use cases** (Day 1) — invited talks covering benchmarking practice
-  and concrete use cases from bioinformatics, genomics and health.
+- **Foundational talks** (Day 1 morning) — framing talks on optimisation,
+  benchmarking practice and quantum/hybrid computing.
+- **Technical talks, problems and use cases** (Day 1 afternoon) — shorter talks on
+  algorithms, benchmarking approaches, candidate problems and concrete use cases from
+  bioinformatics, genomics and health.
 - **Benchmark design** (Day 2 morning) — parallel working tables turning Day 1's
   exchanges into concrete candidate benchmark problems.
 - **JRC quantum laboratories** (Day 2 midday) — a guided visit.
