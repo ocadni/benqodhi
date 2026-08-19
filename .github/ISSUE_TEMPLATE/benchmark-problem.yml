@@ -1,0 +1,64 @@
+name: Candidate benchmark problem
+description: Propose a problem that could become part of the BENQODHI benchmark database.
+title: "[Problem] "
+labels:
+  - workshop-idea
+  - benchmark-problem
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to suggest a concrete optimisation problem for the BENQODHI benchmark database. Partial proposals are welcome, but please be as specific as you can.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem summary
+      description: What is the optimisation problem, in one short paragraph?
+      placeholder: |
+        Example: Haplotype phasing asks us to reconstruct the two haplotypes of a diploid genome from sequencing reads while minimizing inconsistencies between reads and inferred haplotypes.
+    validations:
+      required: true
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Biological or health use case
+      description: Why does this problem matter for life sciences, health, or biomedical research?
+    validations:
+      required: true
+  - type: textarea
+    id: formulation
+    attributes:
+      label: Optimisation formulation
+      description: What is being optimized? Mention variables, objective, constraints, or known formulations if available.
+      placeholder: |
+        Objective, constraints, graph/QUBO/Ising formulation, integer program, routing model, scheduling model, etc.
+    validations:
+      required: false
+  - type: textarea
+    id: data
+    attributes:
+      label: Data, instances, or generators
+      description: Which real datasets, public instances, synthetic generators, or privacy-safe examples could be used?
+    validations:
+      required: false
+  - type: textarea
+    id: baselines
+    attributes:
+      label: Baselines and metrics
+      description: Which existing methods and evaluation metrics should a benchmark compare against?
+    validations:
+      required: false
+  - type: textarea
+    id: difficulty
+    attributes:
+      label: Why this is a good benchmark
+      description: What makes the problem hard, relevant, scalable, or useful for comparing classical, AI-based, hybrid, and quantum methods?
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References or contacts
+      description: Add links to papers, datasets, repositories, tools, or people who should be involved.
+    validations:
+      required: false

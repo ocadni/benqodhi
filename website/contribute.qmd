@@ -1,27 +1,69 @@
 ---
-title: "Share an Idea"
-subtitle: "A simple way to contribute before the BENQODHI workshop"
+title: "Contribute"
+subtitle: "Help shape the BENQODHI benchmark database and workshop discussion"
 body-class: contribution-page
 ---
 
-Before the workshop, participants can leave short ideas to help shape the discussion
-at JRC Ispra. One idea is enough: a candidate benchmark problem, a suggestion for the
-working session, a panel question, or a practical note about datasets, metrics or
-baselines.
+Before the workshop, we are asking for two specific kinds of contribution:
+candidate problems for the BENQODHI benchmark database, and proposals for how to
+structure the Day 2 round table and focus groups.
 
 ::: {.idea-actions}
-[Submit an idea](https://github.com/ocadni/benqodhi/issues/new?template=workshop-contribution.yml){.primary-action}
-[Read submitted ideas](https://github.com/ocadni/benqodhi/issues?q=is%3Aissue%20label%3Aworkshop-idea){.secondary-action}
+[Propose a benchmark problem](https://github.com/ocadni/benqodhi/issues/new?template=benchmark-problem.yml){.primary-action}
+[Propose a round-table structure](https://github.com/ocadni/benqodhi/issues/new?template=round-table.yml){.secondary-action}
+[Read submitted contributions](https://github.com/ocadni/benqodhi/issues?q=is%3Aissue%20label%3Aworkshop-idea){.secondary-action}
 :::
 
-Ideas are collected as public GitHub Issues. Choose the closest type:
-**candidate problem**, **session organisation**, **panel question**,
-**dataset/baseline/metric**, or **other**.
+Contributions are collected as public GitHub Issues so participants can read,
+compare and refine proposals before the workshop.
 
 If GitHub is inconvenient, send your idea by email:
 [JRC-F7-CONFERENCES@ec.europa.eu](mailto:JRC-F7-CONFERENCES@ec.europa.eu)
 
-## Example Ideas
+## 1. Candidate problems for the benchmark database
+
+Use this route to propose an optimisation problem that could become part of the
+BENQODHI benchmark database. The issue form asks for:
+
+- the problem summary,
+- the biological or health use case,
+- the optimisation formulation,
+- possible datasets, instances or generators,
+- baselines and metrics,
+- why the problem is a good benchmark,
+- references, tools or contacts.
+
+The proposal does not need to be complete. A clear partial proposal is useful if
+it identifies what is known, what is missing and what should be discussed at the
+workshop.
+
+::: {.idea-actions}
+[Open the problem template](https://github.com/ocadni/benqodhi/issues/new?template=benchmark-problem.yml){.primary-action}
+[Example problem proposal](https://github.com/ocadni/benqodhi/issues/1){.secondary-action}
+:::
+
+## 2. Round-table and focus-group structure
+
+Use this route to propose how the Day 2 round table or parallel focus groups
+should be organised. The issue form asks for:
+
+- the proposed format,
+- topics, tables or discussion blocks,
+- roles such as facilitator, rapporteur or moderator,
+- expected outputs,
+- timing and practical constraints,
+- risks or open decisions.
+
+Good proposals should help the workshop produce concrete outputs: candidate
+benchmark priorities, common metadata, dataset and repository needs, evaluation
+metrics, and follow-up actions.
+
+::: {.idea-actions}
+[Open the round-table template](https://github.com/ocadni/benqodhi/issues/new?template=round-table.yml){.primary-action}
+[Example round-table proposal](https://github.com/ocadni/benqodhi/issues/2){.secondary-action}
+:::
+
+## Example contributions
 
 ::: {.example-ideas}
 ::: {.example-idea}
@@ -33,20 +75,10 @@ truth sets, and a natural route toward combinatorial formulations.
 :::
 
 ::: {.example-idea}
-### Day 2 working-table structure
+### Day 2 round-table structure
 
-The Day 2 morning session could be organised around three provisional tables:
-bioinformatics, health problems, and machine learning or quantum/benchmark practice.
-Participants can suggest different tables, additional themes or a simpler format.
+The Day 2 session could combine parallel expert tables, rapporteur summaries and
+a plenary consolidation step. Participants can suggest table themes, roles,
+outputs, timing or a simpler format.
 :::
 :::
-
-If your idea is a candidate benchmark problem, please mention:
-
-- what the biological or health use case is,
-- what needs to be optimized,
-- what data or instances might be available,
-- why the problem is hard or interesting,
-- which baselines or metrics could be useful.
-
-Partial sketches are welcome.

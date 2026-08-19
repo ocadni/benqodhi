@@ -1,0 +1,57 @@
+name: Round-table structure
+description: Propose how to organise the BENQODHI workshop round table or focus groups.
+title: "[Round table] "
+labels:
+  - workshop-idea
+  - round-table
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to propose how the workshop round table, focus groups, or Day 2 discussion should be organised.
+  - type: textarea
+    id: format
+    attributes:
+      label: Proposed format
+      description: How should the round table or focus groups be structured?
+      placeholder: |
+        Example: Three parallel expert tables of 3-4 people, followed by rapporteur summaries and a plenary consolidation.
+    validations:
+      required: true
+  - type: textarea
+    id: topics
+    attributes:
+      label: Topics or tables
+      description: Which tables, themes, or discussion blocks should be included?
+    validations:
+      required: true
+  - type: textarea
+    id: roles
+    attributes:
+      label: Roles
+      description: Who should facilitate, report back, moderate, or contribute? Named people are optional.
+    validations:
+      required: false
+  - type: textarea
+    id: outputs
+    attributes:
+      label: Expected outputs
+      description: What should the session produce by the end?
+      placeholder: |
+        Example: shortlist of benchmark candidates, required metadata, repository structure decisions, open questions, next actions.
+    validations:
+      required: true
+  - type: textarea
+    id: timing
+    attributes:
+      label: Timing and practical constraints
+      description: How much time is needed? Are there constraints around room layout, hybrid participation, lab visit timing, or reporting?
+    validations:
+      required: false
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks or open decisions
+      description: What could make the format fail, and what should organisers decide before the workshop?
+    validations:
+      required: false
