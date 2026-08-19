@@ -67,11 +67,11 @@ metrics, and follow-up actions.
 
 ::: {.example-ideas}
 ::: {.example-idea}
-### Haplotype phasing as a benchmark problem
+### Multiple sequence alignment as a benchmark problem
 
-Haplotype phasing is a concrete genomics optimization problem that could be discussed
-as a BENQODHI benchmark. It has real sequencing use cases, known baselines, public
-truth sets, and a natural route toward combinatorial formulations.
+Multiple sequence alignment is a central bioinformatics optimisation problem with
+a compact mathematical definition: find gap-augmented versions of several
+sequences that minimize a sum-of-pairs alignment cost.
 :::
 
 ::: {.example-idea}
