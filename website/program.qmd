@@ -8,42 +8,43 @@ Speaker titles are still being confirmed and will be updated on this page as the
 arrive. Timings are as currently planned and may still shift slightly.
 :::
 
-## Day 1 — 10 September 2026: Foundations, Algorithms and Use Cases
+## Day 1 — 10 September 2026: Foundations and Use Cases
 
-### Morning — Foundational talks · Building 27B
-
-| Time | Session |
-|---|---|
-| 08:30–09:15 | Registration and arrival |
-| 09:15–09:50 | Opening and workshop framing — JRC management (tbc) and organisers |
-| 09:50–10:30 | Federico Ricci-Tersenghi — Sapienza University of Rome, Dept. of Physics |
-| 10:30–11:00 | *Coffee break* |
-| 11:00–11:40 | Daniel J. Egger — IBM Research Europe, Zurich |
-| 11:40–12:20 | Miguel A. Gonzalez Ballester — ICREA and Universitat Pompeu Fabra |
-| 12:20–14:00 | *Lunch (Building 101)* |
-
-### Afternoon — Algorithms, benchmarking approaches, problems and use cases · Building 27B
+### Morning — Foundations and benchmarking practice · Building 27B
 
 | Time | Session |
 |---|---|
-| 14:00–14:20 | Hao Wang — Leiden Institute of Advanced Computer Science (LIACS), Leiden University |
-| 14:20–14:40 | Guglielmo Mazzola — SISSA, Trieste |
-| 14:40–15:00 | Zev Kronenberg — PacBio |
-| 15:00–15:20 | Aurora Maurizio — Centre for Omics Sciences, IRCCS Ospedale San Raffaele, Milan |
-| 15:20–15:40 | Miguel Ponce de Leon — Barcelona Supercomputing Centre |
+| 08:30–09:15 | Registration and arrival<br>Registration, informal networking and hybrid connection check. |
+| 09:15–09:50 | Opening and workshop framing<br>Speakers: opening remarks by JRC management representatives (tbc), followed by workshop organisers<br>Institution: European Commission, Joint Research Centre (JRC), Ispra<br>Title: to be confirmed |
+| 09:50–10:25 | Vedran Dunjko<br>Institution: Leiden University, The Netherlands<br>Title: to be confirmed |
+| 10:25–10:55 | *Coffee break* |
+| 10:55–11:30 | Miguel A. Gonzalez Ballester<br>Institution: ICREA and Universitat Pompeu Fabra, Spain<br>Title: to be confirmed |
+| 11:30–12:05 | Federico Ricci-Tersenghi<br>Institution: Sapienza University of Rome, Department of Physics, Italy<br>Title: to be confirmed |
+| 12:05–12:30 | Daniel J. Egger<br>Institution: IBM Research Europe, Zurich, Switzerland<br>Title: to be confirmed |
+| 12:30–14:00 | *Lunch*<br>Building 101 |
+
+### Afternoon — Use cases · Building 27B
+
+| Time | Session |
+|---|---|
+| 14:00–14:20 | Hao Wang<br>Institution: Leiden Institute of Advanced Computer Science (LIACS), Leiden University, The Netherlands<br>Title: to be confirmed |
+| 14:20–14:40 | Guglielmo Mazzola<br>Institution: SISSA, Trieste, Italy<br>Title: to be confirmed |
+| 14:40–15:00 | Zev Kronenberg<br>Institution: PacBio, USA<br>Title: to be confirmed |
+| 15:00–15:20 | Aurora Maurizio<br>Institution: Centre for Omics Sciences, IRCCS Ospedale San Raffaele, Milan, Italy<br>Title: to be confirmed |
+| 15:20–15:40 | Miguel Ponce de Leon<br>Institution: Barcelona Supercomputing Centre, Spain<br>Title: to be confirmed |
 | 15:40–16:10 | *Coffee break* |
-| 16:10–16:30 | Francesco Zamponi — Sapienza University of Rome, Dept. of Physics |
-| 16:30–16:50 | CINECA (speaker tbc) |
-| 16:50–17:10 | Diego Reforgiato Recupero — University of Cagliari |
-| 17:10–17:30 | Carlo Mancini Terracciano — Sapienza University of Rome, Dept. of Physics |
-| 17:30–17:50 | Alessandro Zani and Sergio Consoli — European Commission, JRC |
+| 16:10–16:30 | Francesco Zamponi<br>Institution: Sapienza University of Rome, Department of Physics, Italy<br>Title: to be confirmed |
+| 16:30–16:50 | CINECA speaker to be confirmed<br>Institution: CINECA, Italy<br>Title: to be confirmed |
+| 16:50–17:10 | Diego Reforgiato Recupero<br>Institution: University of Cagliari, Department of Mathematics and Computer Science, Italy<br>Title: to be confirmed |
+| 17:10–17:30 | Carlo Mancini Terracciano<br>Institution: Sapienza University of Rome, Department of Physics, Italy<br>Title: to be confirmed |
+| 17:30–17:50 | Sergio Consoli<br>Institution: European Commission, Joint Research Centre (JRC), Italy<br>Title: to be confirmed |
 | 18:00–18:20 | Transfer from JRC Ispra to hotels in Angera |
 
-Morning talk slots: 30 min + 10 min Q&A. Afternoon talk slots: 17 min + 3 min Q&A.
+Morning session slots: 30 min + 5 min Q&A. Afternoon session slots: 17 min + 3 min Q&A.
 
-### Evening
+### Evening — Social programme
 
-19:30–21:00 (tbc) — Aperitivo and dinner, Lido La Noce, Angera.
+19:30–21:00 (tbc) — Aperitivo and dinner, Lido La Noce, Viale Libertà 4, Angera, Italy.
 
 ---
 
@@ -54,22 +55,22 @@ Morning talk slots: 30 min + 10 min Q&A. Afternoon talk slots: 17 min + 3 min Q&
 | Time | Session |
 |---|---|
 | 08:30–09:00 | Arrival — entrance check |
-| 09:00–10:30 | Parallel working tables (facilitators tbc) — see [Problems](problems/index.qmd) for the working-table themes |
-| 10:30–11:00 | *Coffee break* |
-| 11:00–11:20 | Working-table recap (rapporteurs tbc) |
-| 11:20–12:00 | Plenary consolidation — workshop organisers |
-| 12:00–13:00 | *Lunch* |
-| 13:00–14:20 | Guided visit to the JRC quantum laboratories |
-| 14:20–14:30 | Return and transition |
+| 09:00–09:15 | Introduction |
+| 09:15–10:45 | Parallel focus groups<br>Facilitators: to be confirmed<br>Focus: problem-focused groups; benchmark dataset and repository architecture |
+| 10:45–11:15 | *Coffee break* |
+| 11:15–11:35 | Focus-group recap<br>Speakers: focus-group rapporteurs, to be confirmed |
+| 11:35–12:15 | Plenary consolidation<br>Facilitators: workshop organisers |
+| 12:15–13:15 | *Lunch* |
+| 13:15–14:00 | Guided visit to the quantum labs<br>Guides: to be confirmed<br>Institution: European Commission, Joint Research Centre (JRC), Ispra<br>Visit focus: to be confirmed |
+| 14:00–14:10 | Return and transition<br>Return to the room and prepare for the closing session. |
 
 ### Afternoon — European quantum infrastructure, policy and benchmarking · Building 36
 
 | Time | Session |
 |---|---|
-| 14:30–14:35 | Opening remarks |
-| 14:35–14:55 | EuroHPC Joint Undertaking / CINECA (speaker tbc) |
-| 14:55–15:15 | European Commission, DG CNECT (speaker tbc) |
-| 15:15–15:55 | Moderated round table — DG CNECT, DG SANTE, DG DEFIS, DG RTD (tbc) |
+| 14:10–14:15 | Opening remarks |
+| 14:15–14:55 | Speakers to be confirmed<br>Institutions: to be confirmed<br>Title: to be confirmed |
+| 14:55–15:55 | Moderated round table<br>Contributors: DG CNECT, DG SANTE, DG DEFIS, JRC.F.7, EuroHPC, CINECA<br>Moderator: to be confirmed<br>Title: to be confirmed |
 | 15:55–16:00 | Closing — workshop organisers |
 
 Speaker titles and abstracts will be added to the programme as they are confirmed.

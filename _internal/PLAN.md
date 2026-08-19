@@ -1,105 +1,190 @@
 # BENQODHI Workshop — Plan
 
-**Workshop:** 10–11 September 2026 · JRC Ispra, Buildings 27B and 36
-**Organisers:** Indaco Biazzo · Antonio Puertas Gallardo · Tobias Wiesenthal
-**Coordination and logistics:** Ilse Verspreet
-**Status:** working draft, v0.2 · revised 12 August 2026
+**Workshop:** 10-11 September 2026 · JRC Ispra, Buildings 27B and 36  
+**Organisers:** Indaco Biazzo · Antonio Puertas Gallardo · Tobias Wiesenthal  
+**Coordination and logistics:** Ilse Verspreet  
+**Status:** working draft, v0.3 · revised 17 August 2026
 
-This document tracks organisation of the workshop and the supporting GitHub repo/website.
-It stays in `_internal/` so it is not published by the Quarto site.
+This document tracks organisation of the workshop and the supporting GitHub
+repo/website. It stays in `_internal/`, so it is not published by the Quarto site.
 
 ---
 
-## 1. Timeline
+## 1. Current status
+
+### Done
+
+- Public GitHub repo exists: <https://github.com/ocadni/benqodhi>
+- Quarto website is set up and renders locally with `./run.sh render`.
+- GitHub Pages publishing through GitHub Actions is working.
+- `gh-pages` branch has been initialized.
+- Homepage has been simplified and visually improved.
+- Homepage subtitle now uses the BENQODHI acronym expansion:
+  **BENchmarking Quantum Optimization: from Datasets to Health Innovation**.
+- Speakers page has been removed from the public website.
+- Contribution page now uses a simple "share an idea" flow.
+- GitHub Issues are used for pre-workshop ideas, with label `workshop-idea`.
+- Two seed issues are open:
+  - Haplotype phasing as a candidate benchmark:
+    <https://github.com/ocadni/benqodhi/issues/1>
+  - Proposal for Day 2 expert tables:
+    <https://github.com/ocadni/benqodhi/issues/2>
+
+### Current public site structure
+
+- Home
+- Workshop
+- Program
+- Problems
+- Contribute
+
+No separate Speakers page is currently planned. Speaker titles and abstracts can be
+added directly to the Program page when available.
+
+---
+
+## 2. Immediate next step
+
+The next important action is to write and send the speaker/participant email.
+
+The email should ask for:
+
+1. **Talk title and abstract**
+   - title;
+   - 3-5 line abstract;
+   - confirmation of talk slot.
+
+2. **One optional pre-workshop idea**
+   - a candidate benchmark problem;
+   - a suggestion for the Day 2 expert tables;
+   - a panel/discussion question;
+   - a useful dataset, metric, baseline or reference.
+
+3. **Use the contribution page**
+   - link to the website contribution page;
+   - link to existing submitted ideas;
+   - email fallback for people who do not want to use GitHub.
+
+Suggested deadline for titles and abstracts: **Friday 28 August 2026**.
+
+Open point: confirm whether this is the deadline to use before sending the email.
+
+---
+
+## 3. Updated timeline
 
 | When | Action |
 |---|---|
-| Now → Mon 17 Aug | Set up public GitHub repo, enable Discussions, Quarto site skeleton; seed Discussions with 1–2 example problems; draft speaker email |
-| Tue 18 Aug | Send the speaker email (title/abstract ask + round-table problem prompt + link to Discussions) |
-| Mon 24 Aug | Reminder nudge — most invitees back from summer break around this time |
-| **Fri 28 Aug** | **Deadline: titles + abstracts back** (suggested; confirm with organisers) |
-| 28 Aug → 4 Sep | Publish agenda with real titles as they arrive; curate Discussions input into candidate problems per Day 2 table |
-| Fri 4 Sep | Freeze agenda and Day 2 table/participant allocation |
-| 7–9 Sep | Practical-info email to participants (venue, hybrid link); test hybrid setup |
-| 10–11 Sep | Workshop |
-
-Open point: exact deadline date should be confirmed by the organisers — 28 Aug is a suggestion, chosen to land after most people are back from holiday and still leave ~10 days to finalise the agenda.
-
----
-
-## 2. Day 2 structure (context, from the internal prep notes)
-
-**Morning — parallel working tables, 09:00–10:30** (Building 36). Four working tables, not yet confirmed as final:
-
-1. Large-scale bioinformatics/genomics optimisation and NP-hard problems
-2. AI / QML
-3. Radiotherapy and other hard health problems, medical imaging
-4. Benchmark framework — instances, baselines, repository, reporting
-
-Fallback if four tables prove infeasible: merge tables 1 and 2 into one bioinformatics/biological-networks table.
-
-**Common output template**, one per scientific table (this is the template to reuse everywhere — shared doc, website problem pages, Day 2 output forms):
-
-> use case → formal problem → data/instance provenance and scale → source of computational difficulty → candidate baselines → intended measures of success → what's ready vs. missing → named next action
-
-Table 4 turns the other three tables' outputs into a shared framework note.
-
-Indicative contributors per table (not final allocations): Table 1 — Kronenberg, Maurizio, Ponce-de-Leon; Table 2 — Zamponi, Mazzola, Wang; Table 3 — Mancini Terracciano, Reforgiato Recupero, Gonzalez Ballester; Table 4 — Ricci-Tersenghi, Palmisano, Spada, Dunjko (if confirmed). Daniel J. Egger will not be present on Day 2.
-
-Facilitator/rapporteur pool (to be assigned): Zani, Bertolini, Chizzini, Leoni, Petrillo, Travagnin, Schuh, Curion, Ceresa, Consoli, Del Bono, Palmisano, Scala.
-
-**Afternoon** (Building 36): quantum-lab visit 13:00–14:20, then the policy session 14:30–16:00, with a moderated round table 15:10–15:50 (DG CNECT, DG SANTE, DG DEFIS, DG RTD perspectives plus one scientific voice). Open items there: infrastructure/access speaker (EuroHPC JU / CINECA, tbc), research & innovation contact (awaiting reply from Carolina, DG assumed RTD), round-table moderator (Tobias or Indaco), and short interventions from Tolias (SANTE) and Domps (DEFIS).
-
-All speaker titles on both days are currently "to be confirmed" — this is what the speaker email needs to resolve.
+| Done | Set up public repo, Quarto site, local run script, GitHub Pages deployment |
+| Done | Create simple contribution page and seed GitHub Issues |
+| Next | Draft speaker/participant email |
+| Tue 18 Aug | Send email asking for title, abstract and optional contribution idea |
+| Mon 24 Aug | Reminder nudge |
+| **Fri 28 Aug** | **Suggested deadline: titles and abstracts back** |
+| 28 Aug-4 Sep | Add confirmed titles/abstracts to Program page; review submitted ideas |
+| Fri 4 Sep | Freeze agenda and Day 2 table format/participant allocation |
+| 7-9 Sep | Practical-info email to participants; test hybrid setup |
+| 10-11 Sep | Workshop |
 
 ---
 
-## 3. Speaker email
+## 4. Day 2 structure
 
-One combined email, sent once the repo/site/Discussions are live (so the links work).
+Current proposal: small expert tables during the Day 2 morning session.
 
-**Ask 1 — talk details.** Title, 3–5 line abstract, and confirmation of slot length (30+10 min Q&A for Day 1 morning slots, 17+3 min for Day 1 afternoon slots).
+- Around **3-4 experts per table**.
+- Start with **three provisional tables**.
+- Leave room for **at least one additional table** if participants suggest a useful
+  theme.
 
-**Ask 2 — Day 2 round table.** Ask speakers to start thinking of a candidate problem or open question for the Day 2 working tables / policy round table — just a seed idea, not a full write-up yet.
+### Proposed tables
 
-**Ask 3 — shared input.** Link to the GitHub Discussions where they can leave suggestions on structure, propose a problem, or comment on others' ideas in advance. For anyone who'd rather not use GitHub: offer to post on their behalf if they just reply by email.
+1. **Bioinformatics and biological data problems**
+   - genomics, biological networks, sequence comparison, phasing, alignment,
+     metabolic networks.
 
-**Deadline:** Friday 28 August for titles and abstracts (see §1).
+2. **Health optimization problems**
+   - radiotherapy planning, medical imaging workflows, resource allocation,
+     scheduling, logistics or other clinical optimization problems.
 
-I can draft the actual email text once you confirm the deadline and repo/Discussions link.
+3. **Benchmark organisation, measures and governance**
+   - datasets and instances, baselines, metrics, resource accounting, repository
+     structure, and fair comparison of classical, AI-based, hybrid and quantum
+     methods.
+
+Possible fourth table:
+
+- machine learning / QML, if participants can frame these cases clearly as
+  optimization benchmarks;
+- quantum/hybrid methods and infrastructure;
+- another theme proposed through the contribution page.
+
+### Roles
+
+Each table could have:
+
+- a **facilitator**, to keep discussion focused and inclusive;
+- a **rapporteur**, to capture main points and prepare a short plenary recap.
+
+### Shared table template
+
+Problem-oriented tables could fill a short template:
+
+> candidate problem/theme -> biological or health use case -> optimization
+> formulation -> data or instances -> baselines -> metrics -> what is missing ->
+> next step
+
+The benchmark/governance table could fill:
+
+> minimum benchmark metadata -> metrics and reporting rules -> resource accounting ->
+> repository structure -> open decisions after the workshop
 
 ---
 
-## 4. Shared pre-workshop input document
+## 5. Pre-workshop ideas
 
-**GitHub Discussions** in the repo, since the repo is being set up anyway and it keeps contributions attributed, threaded, and easy to fold into problem pages later.
+Ideas live as GitHub Issues:
 
-- Seed it with 1–2 example problems *before* sending the email — an empty forum gets no first post.
-- Repo needs to be public for Discussions to work without adding friction (private repos require sign-in that many external invitees won't have set up).
-- Offer the email-reply escape hatch (see §3, Ask 3) for anyone who won't use GitHub.
+- Submit form:
+  <https://github.com/ocadni/benqodhi/issues/new?template=workshop-contribution.yml>
+- Read submitted ideas:
+  <https://github.com/ocadni/benqodhi/issues?q=is%3Aissue%20label%3Aworkshop-idea>
 
----
+Keep this lightweight. The workshop is small, so the goal is not a large discussion
+forum. The goal is simply to collect useful seed ideas before the meeting.
 
-## 5. GitHub repo / website
-
-Public repo, Quarto site published to GitHub Pages.
-
-Minimum content for the site:
-
-- **Workshop info pages** — agenda, speakers (titles/abstracts as they arrive), practical info (venue, hybrid link) — sourced from the existing agenda/leaflet docs, kept up to date as speaker details come in.
-- **Problems section** — one page per candidate problem, using the common output template from §2 (use case / formal problem / instances / source of difficulty / baselines / metrics / ready-vs-missing / next action).
-- **Contribute page** — how to propose a problem, with a link to Discussions.
-
-`_internal/` (this file and similar planning material) stays out of the rendered site by virtue of the underscore prefix, which Quarto excludes by convention.
-
-**On `draft/main.tex`:** it's raw material, not ready to publish as-is. Before any of it goes on the public site it needs conversion to markdown and a careful review — some of its claims about current state-of-the-art methods and benchmarks look like they need fact-checking rather than being taken at face value. Treat it as a starting point for the problem write-ups, not as source of truth.
+If someone does not want to use GitHub, they can reply by email and the organisers can
+collect or post the idea on their behalf.
 
 ---
 
-## 6. Open items — not yet decided, don't pre-decide these
+## 6. Website and repo notes
 
-- Four-table vs. merged-table structure for Day 2 (§2)
-- Facilitator/rapporteur assignment per table
-- Policy session: infrastructure speaker, RTD contact, round-table moderator, Tolias/Domps slots
-- Speaker titles/abstracts for both days
-- Anything about benchmark-suite naming, code/data licensing, or long-term repo governance — deliberately out of scope until there's real content and real contributors to decide with; don't lock this in now.
+- Public website source lives in `website/`.
+- Generated site lives in `website/_site/` and is ignored.
+- Local rendering:
+  - `./run.sh render`
+  - `./run.sh preview`
+- Contribution issue template:
+  `.github/ISSUE_TEMPLATE/workshop-contribution.yml`
+- Internal planning material lives in `_internal/` and is not published.
+
+`_internal/draft/main.tex` is raw material for candidate problems. It should not be
+published as-is. Use it as a starting point, then review and fact-check before turning
+content into public problem pages or GitHub issues.
+
+---
+
+## 7. Open items
+
+- Confirm the title/abstract deadline before sending email.
+- Draft and send the speaker/participant email.
+- Decide whether Day 2 uses 3 tables or adds a 4th table.
+- Assign facilitators and rapporteurs.
+- Confirm whether machine learning/QML belongs in its own table.
+- Confirm whether health resource allocation belongs in the health optimization table.
+- Policy session: infrastructure/access speaker, RTD contact, round-table moderator,
+  and short interventions still need confirmation.
+- Add confirmed titles and abstracts to the Program page.
+- Curate submitted GitHub Issues into Day 2 table preparation notes.
+- Later: convert selected candidate problems into public problem pages.

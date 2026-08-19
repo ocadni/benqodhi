@@ -1,12 +1,13 @@
-# benqodhi
-Open benchmarks for optimisation problems in life sciences and health — real, synthetic or theoretical — enabling fair comparison across classical, AI-based, hybrid and quantum methods. Home of the BENQODHI workshop (JRC Ispra, 10–11 Sept 2026). Working draft: problems and naming open to community input.
+# BENQODHI
 
-## Repository layout
+This repository contains the source for the BENQODHI website:
 
-- [`website/`](website/) — the Quarto website (source for the published site)
-- [`_internal/`](_internal/) — planning material, not published (excluded from the site by convention)
+https://ocadni.github.io/benqodhi/
 
-## Setup
+The website introduces BENQODHI, an open benchmarking initiative for optimisation
+problems in life sciences and health. It includes information about the BENQODHI
+workshop, the programme, benchmark problem descriptions, and guidance for
+contributing new problems.
 
-See [`SETUP.md`](SETUP.md) for how to install Quarto (via Python venv or conda) and
-preview/render the website locally.
+The site is built with Quarto from the files in [`website/`](website/). Setup and
+local rendering instructions are available in [`SETUP.md`](SETUP.md).
