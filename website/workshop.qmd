@@ -18,11 +18,12 @@ and classical approaches.
 
 The two days are structured around five moments:
 
-- **Foundational talks** (Day 1 morning) — framing talks on optimisation,
-  benchmarking practice and quantum/hybrid computing.
+- **Foundational talks** (Day 1 morning) — framing talks on quantum computing,
+  quantum machine learning, optimisation problems, computational complexity and
+  benchmark practices.
 - **Technical talks, problems and use cases** (Day 1 afternoon) — shorter talks on
-  algorithms, benchmarking approaches, candidate problems and concrete use cases from
-  bioinformatics, genomics and health.
+  optimisation problems, algorithmic approaches, benchmarking methods, candidate
+  problems and concrete use cases from bioinformatics, genomics and health.
 - **Benchmark design** (Day 2 morning) — parallel working tables turning Day 1's
   exchanges into concrete candidate benchmark problems.
 - **JRC quantum laboratories** (Day 2 midday) — a guided visit.
@@ -33,10 +34,16 @@ See the [program page](program.qmd) for the detailed timing.
 
 ## Target outputs
 
-- Three focused candidate benchmark dossiers.
-- One shared framework note covering instances, baselines, metrics, resource
-  accounting, reporting and repository needs.
-- A named owner for every follow-up.
+- Concrete benchmark problems to add to the BENQODHI repository, or links to
+  existing benchmark resources where they already exist.
+- Data sources for benchmark instances, including real datasets, synthetic instances
+  and generators where appropriate.
+- Metrics, baselines and candidate algorithms for comparison across classical,
+  AI-based, hybrid and quantum approaches.
+- A website where the selected problems are clearly described, referenced and kept
+  comparable through a shared structure.
+- A starting point for the final benchmark repository and, if participants agree, a
+  collaborative workshop-paper output.
 
 ## Invited speakers and institutional contributors
 
