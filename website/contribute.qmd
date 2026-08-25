@@ -6,7 +6,7 @@ body-class: contribution-page
 
 Before the workshop, we are asking for two specific kinds of contribution:
 candidate problems for the BENQODHI benchmark database, and proposals for how to
-structure the Day 2 round table and focus groups.
+structure the Day 2 morning round tables and focus groups.
 
 ::: {.idea-actions}
 [Propose a benchmark problem](https://github.com/ocadni/benqodhi/issues/new?template=benchmark-problem.yml){.primary-action}
@@ -42,10 +42,10 @@ workshop.
 [Example problem proposal](https://github.com/ocadni/benqodhi/issues/1){.secondary-action}
 :::
 
-## 2. Round-table and focus-group structure
+## 2. Morning round-table and focus-group structure
 
-Use this route to propose how the Day 2 round table or parallel focus groups
-should be organised. The issue form asks for:
+Use this route to propose how the Day 2 morning round tables and parallel focus
+groups should be organised. The issue form asks for:
 
 - the proposed format,
 - topics, tables or discussion blocks,
