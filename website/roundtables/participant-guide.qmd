@@ -39,20 +39,22 @@ Tables 1-3 should identify candidate health and life-science problems that could
 
 Each scientific table should return:
 
-- a shortlist of candidate problems selected for further work, around three or more where useful;
+- a shortlist of candidate problems selected for further work, around two or three;
 - for each candidate, a concise judgment of scientific relevance, computational bottleneck, available benchmark ingredients, missing pieces and readiness;
 - one recommended next action that would make the candidate more benchmarkable;
 - one answer to the transversal governance question.
 
 ### Questions for Each Candidate
 
-1. **Scientific need:** What is the health or life-science challenge, and why is it important enough to benchmark?
-2. **Computational bottleneck:** What exactly is hard computationally, and is the core task optimization, inference, sampling, simulation, reconstruction, learning, or a mixture?
-3. **Benchmark ingredients:** What data, formulation, instances, baselines, metrics and validation routes already exist, and what is still missing?
-4. **Readiness and next step:** Is the candidate ready, promising, exploratory or out of scope, and what single action would most improve its benchmarkability?
-5. **Transversal — sustaining the ecosystem (infrastructure, community, scientific governance):**
+1. **Scientific need:** What is the health or life-science challenge, and why is it worth benchmarking?
+2. **Computational task:** What is computationally hard, and what kind of task is it — optimization, inference, sampling, simulation, learning?
+3. **Readiness and next step:** What already exists and what is missing, and what single step would most improve its benchmarkability?
 
-   BENQODHI only works if what this table produces feeds one connected, durable ecosystem rather than a silo. Thinking of the three pillars — the shared **infrastructure** that hosts and maintains it, the **community** that keeps contributing, and the **scientific governance** that keeps it credible — how can this table best feed the third pillar, scientific governance: what would it take for the problems, data and baselines coming out of this table to be curated, reviewed and trusted as credible science over time, and what governance role should this table's own community play in setting and upholding those standards?
+### Transversal Governance Question (once per table)
+
+**Sustaining the ecosystem (infrastructure, community, scientific governance):**
+
+BENQODHI only works if what this table produces feeds one connected, durable ecosystem rather than a silo. Thinking of the three pillars — the shared **infrastructure** that hosts and maintains it, the **community** that keeps contributing, and the **scientific governance** that keeps it credible — how can this table best feed the third pillar, scientific governance: what would it take for the problems, data and baselines coming out of this table to be curated, reviewed and trusted as credible science over time, and what governance role should this table's own community play in setting and upholding those standards?
 
 ### Table 1 - Genomics, Molecular Biology and Life Sciences
 
