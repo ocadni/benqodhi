@@ -180,7 +180,11 @@ Each note taker should:
 
 ## Guide for Rapporteurs
 
-At the end of the morning, each table will present its conclusions in the plenary session. The rapporteur should be brief and selective, presenting from the note taker's document and slides.
+Each table chooses one rapporteur. At the end of the morning, the rapporteur
+presents the table's conclusions in the plenary session, working from the table's
+documents and slides — which the note takers have pushed and uploaded to the
+repository, and which are shown during the recap. The rapporteur should be brief
+and selective.
 
 Each rapporteur should present:
 
