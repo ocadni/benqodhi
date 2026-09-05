@@ -16,8 +16,6 @@ website:
         text: Program
       - href: roundtables/index.qmd
         text: Round Tables
-      - href: problems/index.qmd
-        text: Problems
       - href: contribute.qmd
         text: Contribute
     right:
