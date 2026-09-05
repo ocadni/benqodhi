@@ -1,0 +1,145 @@
+---
+title: "Day 2 Round Table Participant Guide"
+subtitle: "Discussion structure for the BENQODHI morning round tables"
+---
+
+# BENQODHI Day 2 Morning - Round Table Participant Guide
+
+*Participant guide for the Day 2 morning round tables, 11 September 2026.*
+
+## Aim and Scope
+
+The Day 2 morning round tables are designed to collect focused expert input for a possible BENQODHI workshop output such as paper, report, roadmap or policy note. The central question is how important challenges in health and the life sciences can become credible, reusable benchmarks for classical, AI-based, hybrid and quantum algorithms.
+
+The preferred focus is on optimization problems, because optimization is often presented as one of the main near-term applications of quantum computing. However, the discussion should not be restricted to optimization if another computational task is scientifically important and can be stated clearly enough to be assessed. Inference, sampling, simulation, reconstruction and learning problems can also be considered when they have a clear health or life-science motivation and a plausible route to benchmarkability.
+
+The session is not expected to create a complete benchmark repository during the workshop. The objective is more precise: to identify which problems, infrastructure choices, community mechanisms and policy instruments would make a future benchmark repository or ecosystem useful beyond the workshop.
+
+The discussion should therefore stay close to the following path:
+
+**health or life-science challenge -> computational bottleneck -> candidate benchmark -> available evidence and missing pieces -> fair comparison of algorithms -> next benchmark-building action**
+
+Participants will also receive a separate seed/problem brief with more detailed candidate problems and background material. This guide is only the discussion structure.
+
+## Expected Output
+
+Each table should produce material that can be used after the workshop in a paper or report. The rapporteur should capture conclusions in a concise form, not as full minutes.
+
+Each table should aim to return:
+
+- one or two main conclusions;
+- one concrete candidate problem, infrastructure need, or policy/instrument need;
+- the most important missing piece;
+- one recommendation for post-workshop follow-up.
+
+A separate plenary reporting template will be prepared so that each table can share its main answers at the end of the morning.
+
+## Common Question for All Tables
+
+Every table should close by answering the same transversal question from its own perspective:
+
+**What should this table contribute to a durable benchmark ecosystem, so that the output is scientifically credible, reusable, and useful for future research, infrastructure decisions, community building and policy or funding instruments?**
+
+This common question is intended to connect the five discussions. Tables 1-3 should answer it mainly through scientific candidate problems. Table 4 should answer it through benchmark infrastructure and federation. Table 5 should answer it through infrastructure, community and policy instruments.
+
+## Readiness Scale
+
+Use this scale when judging candidate scientific problems or benchmark components.
+
+| Level | Meaning |
+|---|---|
+| Ready | Can plausibly become a benchmark with existing data, formulation, baselines and metrics, possibly after limited curation. |
+| Promising | Scientifically valuable and computationally relevant, but key pieces are missing: data, formulation, baselines, metrics, ownership or validation. |
+| Exploratory | Interesting and potentially relevant, but too immature, broad or unclear for benchmark design at this stage. |
+| Out of scope | Not suitable for the current workshop aims, or too far from benchmarkable computational problems in health and the life sciences. |
+
+## Tables 1-3 - Scientific Challenge Tables
+
+Tables 1-3 should identify candidate health and life-science problems that could become benchmarkable. The seed themes below, and the separate seed/problem brief, are only starting points. Participants are encouraged to propose other problems from their own expertise. Each table should then select the strongest one or two candidates for discussion, whether they come from the seeds or from the participants.
+
+For each candidate, the table should focus on four questions:
+
+1. **Scientific need:** What is the health or life-science challenge, and why is it important enough to benchmark?
+2. **Computational bottleneck:** What exactly is hard computationally, and is the core task optimization, inference, sampling, simulation, reconstruction, learning, or a mixture?
+3. **Benchmark ingredients:** What data, formulation, instances, baselines, metrics and validation routes already exist, and what is still missing?
+4. **Readiness and next step:** Is the candidate ready, promising, exploratory or out of scope, and what single action would most improve its benchmarkability?
+
+Each scientific table should also answer the common transversal question.
+
+### Table 1 - Genomics, Molecular Biology and Life Sciences
+
+Seed themes:
+
+- haplotype phasing and related variant-interpretation problems;
+- RNA/DNA sequence similarity, matching, alignment or structure prediction;
+- phylogenetic, hierarchical clustering or MQTC-like tree reconstruction problems;
+- genomic benchmark-data standards, truth sets and difficult genomic regions;
+- molecular or biological-network problems with a clear computational task and domain-relevant metric.
+
+Focus for the table: identify which life-science problems are important, computationally precise and realistic enough to assess for benchmarkability.
+
+### Table 2 - Medical Imaging, Diagnostics, Machine Learning and QML
+
+Seed themes:
+
+- medical image reconstruction, segmentation, classification or generation;
+- quantum machine-learning approaches for imaging, diagnosis or biomedical data analysis;
+- explainable machine learning in health, including feature selection, rule extraction and interpretable model compression;
+- Boltzmann-machine, QBoost-style, diffusion-model or related model families attached to a concrete biomedical target;
+- diagnostic inference and uncertainty quantification.
+
+Focus for the table: identify which ML, QML, imaging or diagnostic problems are concrete enough to become fair and useful benchmarks, and which remain too abstract.
+
+### Table 3 - Mechanistic Medicine, Clinical Decisions and Operational Optimization
+
+Seed themes:
+
+- radiotherapy treatment planning;
+- mechanistic-modelling problems such as network reconstruction, context-specific model extraction, parameter inference, model calibration and intervention search;
+- healthcare scheduling, routing and resource allocation;
+- molecular docking or other biomedical/pharmaceutical graph-optimization problems;
+- simulation-based optimization where objective evaluations are costly, stochastic or model-dependent.
+
+Focus for the table: identify which mechanistic, clinical or operational problems preserve real health meaning while remaining precise enough to benchmark.
+
+## Table 4 - Benchmark, Repository and Federation
+
+Table 4 should define what the future benchmark repository or ecosystem needs in order to turn candidate problems into reusable benchmarks. Its role is not to choose the scientific priorities, but to clarify the benchmark structure, repository model and federation route.
+
+Questions for the table:
+
+1. **Minimum benchmark entry:** What must a problem entry contain before it can be shared: domain description, data provenance, formulation, instances, baselines, metrics, license, version, contact person, checker or validation route?
+2. **Fair comparison and review:** What must a submitted result report to make classical, AI-based, hybrid and quantum algorithms comparable, and what review process is needed before accepting a benchmark entry?
+3. **Repository and federation:** Should future health and life-science candidates be added to the La Sapienza repository, placed in a companion layer, or connected through a federated model with existing benchmark initiatives?
+4. **First practical step:** What is the smallest useful infrastructure release that could be committed to after the workshop?
+
+Table 4 should also answer the common transversal question.
+
+## Table 5 - Infrastructure, Community and Policy Instruments
+
+Table 5 should clarify how the benchmark effort seeded by the workshop could become a sustained ecosystem rather than a one-off output. Its role is not to decide the scientific candidate problems. Its role is to identify the infrastructure, community model and policy or funding instruments that would make credible benchmarking possible over time.
+
+The table should consider both what is available now and what should become available in the near future.
+
+Questions for the table:
+
+1. **Infrastructure:** What shared infrastructure is needed to sustain the benchmark ecosystem: repository hosting, curation, versioning, maintenance, data governance, validation, access to EuroHPC or quantum resources, or other support?
+2. **Community:** Who should contribute problems, data, baselines, results, review and maintenance, and what incentives would make these contributions credible and sustained?
+3. **Available instruments:** Which existing instruments could support this now: European or national calls, research infrastructures, EuroHPC access, quantum-computing access, health-data initiatives, challenge platforms, standardisation routes, or other mechanisms?
+4. **Future instruments:** What new or adapted instruments would be useful in the coming years so that benchmark contributions become part of funded projects, community practice or infrastructure support?
+5. **Policy recommendation:** What concrete recommendation or open policy question should appear in the BENQODHI paper, report or roadmap?
+
+Table 5 should also answer the common transversal question.
+
+## Plenary Report-Back
+
+At the end of the morning, each table should report back using the shared plenary template. The report-back should be short and focused on material that can be reused after the workshop.
+
+Each table should be ready to share:
+
+- the main answer to its table-specific questions;
+- the main answer to the common transversal question;
+- one candidate problem, infrastructure need, or policy/instrument need;
+- the strongest reason why it matters;
+- the most important missing piece;
+- the recommended next benchmark-building action.

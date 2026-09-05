@@ -52,6 +52,10 @@ Morning session slots: 30 min + 5 min Q&A. Afternoon session slots: 17 min + 3 m
 
 ### Morning — Parallel focus groups and recap · Building 36
 
+The morning working material is available in the
+[round-table participant guide](roundtables/participant-guide.qmd) and the
+[seed problem brief](roundtables/seed-problem-brief.qmd).
+
 | Time | Session |
 |---|---|
 | 08:30–09:00 | Arrival — entrance check |

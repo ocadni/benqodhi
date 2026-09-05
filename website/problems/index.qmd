@@ -8,7 +8,8 @@ optimisation, life sciences and health. This page tracks the working-table theme
 the Day 2 working session and the candidate problems proposed so far.
 
 Candidates are welcome from anyone — see [Contribute](../contribute.qmd) for how to
-propose one.
+propose one. The Day 2 [seed problem brief](../roundtables/seed-problem-brief.qmd)
+collects starting points for the working-table discussion.
 
 ## Common template
 

@@ -32,6 +32,15 @@ The two days are structured around five moments:
 
 See the [program page](program.qmd) for the detailed timing.
 
+## Day 2 round-table material
+
+The Day 2 morning round tables use two public working documents:
+
+- [Participant guide](roundtables/participant-guide.qmd) — the discussion scope,
+  table structure, common transversal question and expected outputs.
+- [Seed problem brief](roundtables/seed-problem-brief.qmd) — candidate problems,
+  benchmark assets and infrastructure or policy examples for expert review.
+
 ## Target outputs
 
 - Concrete benchmark problems to add to the BENQODHI repository, or links to

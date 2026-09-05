@@ -1,0 +1,786 @@
+---
+title: "Day 2 Seed Problem Brief"
+subtitle: "Candidate problems, benchmark assets and infrastructure examples"
+---
+
+# BENQODHI Day 2 Morning - Seed Problem Brief
+
+*Draft companion document for the Day 2 morning round tables, 11 September 2026.*
+
+## Purpose
+
+This document collects seed problems, benchmark assets and infrastructure examples
+for the Day 2 round-table discussions. It is meant to support the discussion, not
+to constrain it. Participants should feel free to propose better, more relevant or
+more mature problems from their own expertise.
+
+The seeds below are starting points for expert judgment. For each table, the useful
+question is not "is this a quantum problem?" but:
+
+**Can this become a credible benchmark, with a clear objective, usable data or
+instances, strong classical baselines, meaningful metrics, and a fair route for
+comparing classical, AI-based, hybrid and quantum methods?**
+
+## How to Read the Seeds
+
+The table assignment is provisional. Some seeds deliberately sit between tables,
+and part of the workshop task is to decide where they belong.
+
+Readiness labels:
+
+- **Ready / near-ready:** clear objective, data or instances, baselines and metrics
+  mostly exist; needs packaging or curation.
+- **Promising:** scientifically important and plausibly benchmarkable, but needs a
+  clearer formulation, instances, baselines or validation route.
+- **Formulation needed:** interesting and potentially useful, but the table must
+  first define the benchmarkable subproblem.
+- **Asset / infrastructure:** not a problem to rank solvers on, but useful for
+  data quality, governance, repository design or policy support.
+- **Control / caution:** useful as a negative control or boundary case, but should
+  not be oversold as a flagship health benchmark.
+
+## Table 1 - Genomics, Molecular Biology and Life Sciences
+
+### Read-based haplotype assembly / phasing
+
+- **Benchmark shape:** reconstruct parental haplotypes from sequencing reads,
+  often through the weighted Minimum Error Correction objective [[1](#ref-1)].
+- **Why it matters:** phase information supports variant interpretation, allele-
+  specific expression, population genetics and diploid or polyploid assembly.
+- **Available material:** GIAB, precisionFDA, Platinum Genomes/Pedigree, HPRC,
+  WhatsHap and HapCUT2 are useful data and tooling anchors [[4](#ref-4), [5](#ref-5), [2](#ref-2), [3](#ref-3)].
+- **Readiness:** ready / near-ready if fragment-matrix instances are frozen and
+  benchmarked separately from alternative phasing formulations.
+- **Expert judgment needed:** which genomic regions, technologies, coverage levels
+  and truth metrics should define the first instance set?
+
+### RNA secondary-structure optimization
+
+- **Benchmark shape:** select base pairs or stems to optimize a fixed energy score;
+  pseudoknot-free cases provide a strong dynamic-programming control, while
+  pseudoknot-capable variants are harder [[6](#ref-6), [8](#ref-8)].
+- **Why it matters:** relevant to non-coding RNA annotation, RNA design and mRNA
+  therapeutics.
+- **Available material:** ArchiveII, bpRNA-1m, RNAStrAlign, CompaRNA and ViennaRNA
+  are possible anchors [[7](#ref-7), [6](#ref-6)].
+- **Readiness:** ready / near-ready if the energy model, candidate-stem generator
+  and pseudoknot policy are frozen.
+- **Expert judgment needed:** should the benchmark focus on nested structures,
+  pseudoknotted structures, or both as separate tracks?
+
+### Multiple sequence alignment
+
+- **Benchmark shape:** align several sequences with a fixed sum-of-pairs score, or
+  isolate a smaller guide-tree / TSP-like subproblem. Multiple sequence alignment
+  is computationally hard in its general form [[9](#ref-9)].
+- **Why it matters:** foundational for comparative genomics and protein/RNA family
+  analysis.
+- **Available material:** BAliBASE, PREFAB, SABmark, MAFFT, Clustal Omega, MUSCLE
+  and T-Coffee are possible resources [[10](#ref-10)].
+- **Readiness:** promising but restricted; full QUBO encodings scale poorly.
+- **Expert judgment needed:** is there a small, meaningful alignment subproblem
+  that remains biologically useful and solver-comparable?
+
+### Closest String / Closest Substring
+
+- **Benchmark shape:** find a consensus string minimizing maximum or summed Hamming
+  distance to input sequences. This is a clean sequence-optimization problem, with
+  known hardness results for standard variants [[11](#ref-11)].
+- **Why it matters:** relevant to primer/probe design, motif finding, barcoding and
+  consensus sequence construction.
+- **Available material:** standard artificial and real-gene instances can be
+  curated; exact ILP and parameterized algorithms can certify small cases.
+- **Readiness:** near-ready; needs curated instances and certified optima.
+- **Expert judgment needed:** does this represent a meaningful biological benchmark
+  or mainly a clean sequence-optimization test?
+
+### Genome rearrangement / block and median distances
+
+- **Benchmark shape:** minimize operations such as reversals, transpositions, block
+  moves or DCJ operations between genomes, or solve genome-median variants [[12](#ref-12)].
+- **Why it matters:** models structural genome evolution, comparative genomics and
+  cancer-genome rearrangement.
+- **Available material:** gene-order datasets and simulated genomes are possible,
+  but the operation model must be fixed.
+- **Readiness:** formulation needed.
+- **Expert judgment needed:** which operation model is biologically meaningful and
+  precise enough for a first benchmark?
+
+### Multiple-sequence LCS / Shortest Common Supersequence
+
+- **Benchmark shape:** find a longest common subsequence or shortest common
+  supersequence across multiple sequences. General multi-sequence variants are
+  computationally hard [[13](#ref-13)].
+- **Why it matters:** relates to sequence comparison and assembly-like string
+  problems.
+- **Available material:** public or synthetic string-set instances are possible.
+- **Readiness:** formulation needed; likely a lower-priority variant.
+- **Expert judgment needed:** does it add value beyond closest string or overlap
+  ordering?
+
+### Maximum-parsimony phylogeny
+
+- **Benchmark shape:** infer an evolutionary tree minimizing a parsimony score.
+  This gives a cleaner combinatorial proxy than full maximum-likelihood phylogeny,
+  which mixes tree search with continuous likelihood optimization [[14](#ref-14), [15](#ref-15)].
+- **Why it matters:** relevant to pathogen surveillance, tumor evolution and
+  evolutionary reconstruction.
+- **Available material:** TreeBASE, GAPDH-style datasets, simulated alignments,
+  TNT, PAUP*, IQ-TREE and RAxML-NG can support baselines or comparison [[14](#ref-14), [15](#ref-15)].
+- **Readiness:** promising; needs curated small-to-medium instances with certified
+  or best-known optima.
+- **Expert judgment needed:** should maximum parsimony be used as the clean
+  combinatorial proxy, while full maximum likelihood stays out of scope?
+
+### Minimum Quartet Tree Cost
+
+- **Benchmark shape:** build an unrooted binary tree minimizing summed quartet
+  topology costs [[16](#ref-16)].
+- **Why it matters:** relevant to phylogenetic trees, hierarchical clustering,
+  pathogen classification and biological data organization.
+- **Available material:** exact-small-instance methods are useful anchors; public
+  MQTC instance libraries appear limited [[16](#ref-16)].
+- **Readiness:** formulation needed; no clear quantum formulation is currently
+  identified here.
+- **Expert judgment needed:** can the workshop define the first useful MQTC
+  instance family and baseline protocol?
+
+### De novo assembly as fixed overlap ordering
+
+- **Benchmark shape:** solve a Hamiltonian-path or TSP-like ordering problem on a
+  fixed overlap graph. This is only a narrow proxy for end-to-end genome
+  assembly [[17](#ref-17), [18](#ref-18)].
+- **Why it matters:** connects to genome assembly, but only through a carefully
+  defined benchmarkable slice.
+- **Available material:** GAGE/GAGE-B, phiX174 and QUAST can help, if the derived
+  overlap graph is published [[18](#ref-18), [19](#ref-19)].
+- **Readiness:** promising if narrowly scoped.
+- **Expert judgment needed:** how do we avoid presenting the overlap-ordering
+  proxy as end-to-end genome assembly?
+
+### Tree containment in phylogenetic networks
+
+- **Benchmark shape:** decide whether a phylogenetic network contains a given tree,
+  or minimize violations in a checkable embedding [[20](#ref-20)].
+- **Why it matters:** relevant to reticulate evolution and evolutionary networks.
+- **Available material:** a QUBO formulation exists, but a solver-ready benchmark
+  corpus still needs work [[20](#ref-20)].
+- **Readiness:** formulation needed; likely lower priority.
+- **Expert judgment needed:** is this too niche for a first health/life-science
+  benchmark release?
+
+### Lattice HP protein folding
+
+- **Benchmark shape:** fold a simplified hydrophobic-polar chain on a lattice to
+  maximize hydrophobic contacts [[21](#ref-21)].
+- **Why it matters:** useful as a classic calibration problem, but weak as a real
+  health or biology application.
+- **Available material:** standard synthetic sequences and known optima exist.
+- **Readiness:** ready as a control / caution case.
+- **Expert judgment needed:** should it be included only as a transparent toy
+  control, or excluded to keep the benchmark health-relevant?
+
+### Genomic truth assets: GIAB, Platinum, HPRC, precisionFDA
+
+- **Benchmark shape:** not an optimization problem; these are truth sets, reference
+  materials, comparison tools and governance models [[4](#ref-4), [5](#ref-5)].
+- **Why it matters:** they show what a trusted biological benchmark needs:
+  provenance, versioning, difficult regions, uncertainty and comparison tooling.
+- **Available material:** GIAB, Platinum Genomes/Pedigree, HPRC, precisionFDA,
+  hap.py and vcfeval [[4](#ref-4), [5](#ref-5)].
+- **Readiness:** ready as an asset / governance model.
+- **Expert judgment needed:** which practices should be adopted for problem
+  instances across the benchmark ecosystem?
+
+## Table 2 - Medical Imaging, Diagnostics, Machine Learning and QML
+
+### Sparse feature / best-subset selection
+
+- **Benchmark shape:** choose a small feature panel with a fixed loss and
+  cardinality or sparsity penalty. Best-subset selection is a standard
+  optimization formulation; QUBO-style feature-selection work also exists in
+  biomedical settings [[22](#ref-22), [23](#ref-23)].
+- **Why it matters:** supports interpretability, assay-cost reduction and compact
+  clinical or omics models.
+- **Available material:** MedMNIST, TCGA/GEO, UCI-style datasets, lasso and mixed-
+  integer baselines; derived Q matrices can be frozen [[24](#ref-24)].
+- **Readiness:** ready / near-ready if preprocessing, splits and Q matrices are
+  fixed.
+- **Expert judgment needed:** which health target and feature representation make
+  the benchmark clinically meaningful rather than just a QUBO exercise?
+
+### QBoost sparse ensemble selection
+
+- **Benchmark shape:** select or weight a sparse subset of pre-trained weak
+  classifiers using a fixed QUBO objective [[25](#ref-25)].
+- **Why it matters:** interpretable ensemble selection may be useful for biomedical
+  classifiers.
+- **Available material:** QBoost literature, medical or UCI-style datasets, frozen
+  weak-learner matrices [[25](#ref-25)].
+- **Readiness:** ready / near-ready after instance construction.
+- **Expert judgment needed:** should this be framed as interpretability-constrained
+  model selection rather than a speedup claim?
+
+### Optimal sparse rule lists / rule extraction
+
+- **Benchmark shape:** learn a short ordered rule list minimizing classification
+  loss plus a length penalty [[26](#ref-26)].
+- **Why it matters:** transparent rules are attractive in clinical decision support.
+- **Available material:** CORELS and public tabular datasets can provide optimality
+  certificates and baselines [[26](#ref-26)].
+- **Readiness:** formulation needed for a quantum or QUBO track.
+- **Expert judgment needed:** what clinical target, binning and antecedent
+  dictionary would make the rule-list task scientifically meaningful?
+
+### Counterfactual / actionable-recourse optimization
+
+- **Benchmark shape:** find the smallest feasible feature change that flips a
+  frozen model's prediction, subject to actionability constraints [[27](#ref-27)].
+- **Why it matters:** relevant to explainable AI, although outputs must be framed
+  as model recourse, not treatment advice.
+- **Available material:** OCEAN, MACE and public tabular models can support
+  certifiable instances [[27](#ref-27)].
+- **Readiness:** formulation needed.
+- **Expert judgment needed:** what actionability constraints are scientifically and
+  ethically acceptable in a health benchmark?
+
+### Boltzmann / RBM energy optimization
+
+- **Benchmark shape:** separate two tracks: MAP or ground-state search on a fixed
+  energy model is rankable; training and sampling are not clean optimization
+  benchmarks [[28](#ref-28), [29](#ref-29)].
+- **Why it matters:** energy-based models are relevant to quantum machine learning,
+  but often blur optimization and sampling.
+- **Available material:** QBM/RBM literature and small MedMNIST-seeded models.
+- **Readiness:** promising only for the MAP / ground-state track.
+- **Expert judgment needed:** should the table keep only a fixed-energy MAP track
+  and defer training/sampling?
+
+### SVM training as QUBO
+
+- **Benchmark shape:** discretize the SVM dual into a binary QUBO, while keeping
+  clear that the native SVM problem has strong convex-optimization baselines [[30](#ref-30), [31](#ref-31)].
+- **Why it matters:** useful as a methodological control, but not as a flagship
+  benchmark.
+- **Available material:** published QUBO demonstrations and public biomedical
+  datasets [[30](#ref-30), [31](#ref-31)].
+- **Readiness:** ready as a control / caution case.
+- **Expert judgment needed:** should it be included only to expose encoding
+  artifacts, not as a flagship benchmark?
+
+### Binary CT reconstruction / segmentation
+
+- **Benchmark shape:** assign binary or discrete pixel/material labels to fit
+  projection data or a sinogram [[32](#ref-32)].
+- **Why it matters:** connects to medical imaging reconstruction and segmentation.
+- **Available material:** published D-Wave hybrid work exists, but public derived
+  QUBO/sinogram instances need construction [[32](#ref-32)].
+- **Readiness:** formulation needed.
+- **Expert judgment needed:** can a public non-clinical imaging instance be derived
+  with a fixed objective and meaningful image-quality metrics?
+
+### Quantum diffusion / generative models for medical imaging
+
+- **Benchmark shape:** currently unclear as an optimization benchmark; generative
+  training and image quality metrics do not give a simple solver-independent
+  objective.
+- **Why it matters:** medically interesting and visible, but benchmark shape is
+  weak for optimization.
+- **Available material:** early quantum generative-imaging work exists, but should
+  not be treated as an optimization benchmark unless a fixed discrete objective is
+  defined [[33](#ref-33)].
+- **Readiness:** control / caution; likely out of scope unless reframed as a fixed
+  discrete subproblem.
+- **Expert judgment needed:** is there any concrete optimization slice, or should
+  this be excluded from the benchmark problem list?
+
+### AutoML / hyperparameter optimization in health
+
+- **Benchmark shape:** mixed discrete-continuous, training-budget dominated and
+  hard to certify as a fair solver benchmark.
+- **Why it matters:** important in practice, but not yet a clean benchmark object.
+- **Available material:** possible future proxy through frozen-grid or tabular
+  surrogate benchmarks, following the spirit of HPO benchmark design [[34](#ref-34)].
+- **Readiness:** control / caution; proxy only.
+- **Expert judgment needed:** should this be deferred until a fixed surrogate or
+  categorical-grid formulation is defined?
+
+## Table 3 - Mechanistic Medicine, Clinical Decisions and Operational Optimization
+
+### Molecular docking as a conflict or compatibility graph
+
+- **Benchmark shape:** derive a graph from ligand-receptor configurations and solve
+  maximum-weight clique or maximum independent set [[35](#ref-35), [36](#ref-36)].
+- **Why it matters:** relevant to virtual screening and drug discovery; some
+  formulations map naturally to neutral-atom hardware [[37](#ref-37)].
+- **Available material:** PDBbind, CASF-2016, PoseBusters, Astex, AutoDock Vina and
+  Pasqal docking instances/code are possible anchors [[38](#ref-38), [37](#ref-37)].
+- **Readiness:** near-ready if derived graphs, exact certificates and pose-quality
+  metrics are released.
+- **Expert judgment needed:** how should graph-objective quality be connected to
+  physical docking validity such as pose RMSD?
+
+### Fixed-backbone side-chain packing / discrete protein design
+
+- **Benchmark shape:** choose one rotamer per residue on a fixed backbone to
+  minimize pairwise energy [[39](#ref-39)].
+- **Why it matters:** relevant to protein design and refinement; naturally discrete.
+- **Available material:** Rosetta-style energy matrices, cost-function-network
+  instances and Toulbar2 exact baselines [[40](#ref-40)].
+- **Readiness:** near-ready, pending licensing and score-function versioning.
+- **Expert judgment needed:** can license-compatible energy tables and exact
+  certificates be shared?
+
+### Home Health Care Routing and Scheduling Problem
+
+- **Benchmark shape:** assign and route caregivers to patients under skills, time
+  windows, synchronization, precedence and continuity constraints [[41](#ref-41)].
+- **Why it matters:** real health logistics problem with direct operational value.
+- **Available material:** Mankowska-Meisel-Bierwirth instances and University of
+  Halle data resources [[41](#ref-41)].
+- **Readiness:** formulation needed for a quantum/hybrid track; classical OR
+  instances exist.
+- **Expert judgment needed:** what is the smallest realistic subproblem that keeps
+  the essential health-care constraints?
+
+### Nurse rostering
+
+- **Benchmark shape:** assign nurses to shifts under coverage, labor rules,
+  preferences and fairness penalties [[42](#ref-42)].
+- **Why it matters:** clinically relevant workforce-planning problem with mature
+  public benchmark infrastructure.
+- **Available material:** INRC 2010, INRC-II, schedulingbenchmarks.org and KU
+  Leuven resources [[42](#ref-42), [43](#ref-43), [44](#ref-44)].
+- **Readiness:** ready / near-ready.
+- **Expert judgment needed:** should this be a first-release anchor even if it is
+  less specific to biology than other candidates?
+
+### Operating-room / patient-admission scheduling
+
+- **Benchmark shape:** allocate cases, patients or resources to rooms, days and
+  blocks under capacity and policy constraints [[45](#ref-45)].
+- **Why it matters:** high-impact hospital operations problem.
+- **Available material:** CHOIR / University of Twente operating-room scheduling
+  instances and PAS/PASU-style datasets [[45](#ref-45)].
+- **Readiness:** formulation needed; one variant must be selected.
+- **Expert judgment needed:** which deterministic core is best for a first
+  benchmark before adding stochastic extensions?
+
+### Radiotherapy beam-angle or beamlet/aperture selection
+
+- **Benchmark shape:** isolate a discrete beam-angle, beamlet or aperture selection
+  problem using frozen dose-influence matrices and a fixed inner protocol [[46](#ref-46), [47](#ref-47)].
+- **Why it matters:** oncology planning is clinically meaningful and already linked
+  to hybrid optimization work.
+- **Available material:** matRad, CORT, TROTS, OpenKBP and published quantum or
+  quantum-inspired radiotherapy studies [[46](#ref-46), [47](#ref-47)].
+- **Readiness:** promising / near-ready after public instance packaging.
+- **Expert judgment needed:** which discrete slice preserves enough clinical
+  meaning while remaining fair for algorithm comparison?
+
+### Context-specific metabolic model extraction
+
+- **Benchmark shape:** select active reactions in a genome-scale metabolic model
+  using a fixed MILP or reaction-selection variant [[48](#ref-48), [49](#ref-49)].
+- **Why it matters:** relevant to cancer metabolism, tissue-specific models and
+  drug-target discovery.
+- **Available material:** Recon3D, Human-GEM/Human1, BiGG, MEMOTE, GTEx/TCGA and
+  COBRA-style tooling [[49](#ref-49)].
+- **Readiness:** formulation needed; model version and preprocessing must be frozen.
+- **Expert judgment needed:** which exact MILP/reaction-selection objective should
+  define the benchmark?
+
+### Sparse gene-regulatory network reconstruction / Boolean-network inference
+
+- **Benchmark shape:** infer directed edges or Boolean rules from expression data
+  under sparsity, fit and in-degree constraints [[51](#ref-51)].
+- **Why it matters:** mechanism discovery from omics and single-cell data.
+- **Available material:** DREAM5, BEELINE and Boolean-network resources [[50](#ref-50), [51](#ref-51)].
+- **Readiness:** formulation needed.
+- **Expert judgment needed:** what frozen inference objective avoids comparing
+  different modeling assumptions rather than solvers?
+
+### Treatment / intervention optimization in mechanistic models
+
+- **Benchmark shape:** find a small intervention set or schedule that drives a
+  Boolean or mechanistic model toward a target phenotype [[52](#ref-52)].
+- **Why it matters:** connects optimization to biological or clinical intervention
+  hypotheses.
+- **Available material:** Cell Collective, GINsim, BioModels and model-checking /
+  SAT / ILP methods [[53](#ref-53), [54](#ref-54)].
+- **Readiness:** formulation needed.
+- **Expert judgment needed:** how should outputs be validated and framed so they
+  are hypotheses, not treatment recommendations?
+
+### Mechanistic ODE parameter estimation / model calibration
+
+- **Benchmark shape:** continuous simulation-based fitting of mechanistic model
+  parameters; not a clean near-term quantum optimization benchmark as stated.
+- **Why it matters:** scientifically important for systems biology and mechanistic
+  medicine.
+- **Available material:** PEtab, BioPreDyn-bench and pyPESTO [[55](#ref-55), [56](#ref-56)].
+- **Readiness:** control / caution; rescue only through a discrete carve-out.
+- **Expert judgment needed:** is there a discrete subproblem such as model
+  selection, experiment selection or dose-schedule selection that can be benchmarked?
+
+### Epidemic intervention on networks
+
+- **Benchmark shape:** choose nodes, links or mobility controls in a networked
+  epidemic model, trading health impact against socioeconomic cost.
+- **Why it matters:** public-health relevance and direct JRC interest.
+- **Available material:** mobility and epidemic-control data could support a
+  packaged benchmark if release-compatible instances and certificates are prepared.
+- **Readiness:** promising; needs packaged instances and certificates or best-known
+  values.
+- **Expert judgment needed:** should this become a native contribution of the
+  benchmark effort?
+
+## Table 4 - Benchmark, Repository and Federation
+
+### QOBLIB
+
+- **What it offers:** model-independent problem classes, open repository, solution
+  records, feasibility checkers and standardized reporting [[57](#ref-57)].
+- **Use as seed for:** repository architecture, application/algorithm/system track
+  separation, checked formulations and transparent MIP-to-QUBO reductions.
+- **Decision needed:** which QOBLIB practices should be adopted directly, and which
+  must be adapted for health and life-science data?
+
+### MQLib and QPLIB
+
+- **What they offer:** established optimization libraries and common formats for
+  Max-Cut/QUBO or quadratic-programming problems [[58](#ref-58), [59](#ref-59)].
+- **Use as seed for:** baseline discipline and interoperability with existing
+  solver ecosystems.
+- **Decision needed:** should each benchmark entry include both a domain-native
+  representation and a solver-native representation?
+
+### MIPLIB, OR-Library and TSPLIB
+
+- **What they offer:** long-lived curation, stable instance IDs, known bounds and
+  versioned benchmark collections [[60](#ref-60), [61](#ref-61), [62](#ref-62)].
+- **Use as seed for:** immutable releases, best-known values, known-optimum records
+  and "benchmark set inside a larger collection" design.
+- **Decision needed:** how should the future repository prevent silent changes to
+  instances or results?
+
+### DIMACS and SATLIB challenge traditions
+
+- **What they offer:** canonical encodings, challenge rounds, certificate checking
+  and generated planted instances [[63](#ref-63)].
+- **Use as seed for:** validation scripts, challenge tracks and exact-small-instance
+  tiers.
+- **Decision needed:** should the repository run periodic frozen challenge rounds
+  in addition to living submissions?
+
+### CASP, CAFA, CAMI and DREAM
+
+- **What they offer:** domain-specific benchmark communities, hidden or time-delayed
+  evaluation, biological adjudication and task governance [[64](#ref-64), [65](#ref-65), [66](#ref-66), [50](#ref-50)].
+- **Use as seed for:** adding biological relevance above raw objective value.
+- **Decision needed:** which benchmark tracks need domain review or held-out truth,
+  rather than only solver objective scores?
+
+### GIAB and precisionFDA
+
+- **What they offer:** versioned truth sets, stratified evaluation regions,
+  standardized comparison containers and public challenges [[4](#ref-4), [5](#ref-5)].
+- **Use as seed for:** genomic truth governance, data provenance, checksums and
+  reproducible comparison tools.
+- **Decision needed:** which practices should be mandatory for biological data
+  assets in the repository?
+
+### MLPerf / MLCommons
+
+- **What it offers:** accuracy gates, resource accounting, open/closed divisions and
+  reviewed submissions [[67](#ref-67)].
+- **Use as seed for:** reporting rules for AI, hybrid and quantum runs.
+- **Decision needed:** how should the repository separate application claims from
+  algorithmic or system-performance claims?
+
+### QED-C, HamLib and robust-benchmarking methods
+
+- **What they offer:** application-oriented quantum benchmarks, Hamiltonian
+  libraries, time-to-target reporting and fair comparison methodology [[68](#ref-68), [69](#ref-69)].
+- **Use as seed for:** comparison protocol, tuning-budget disclosure and
+  hardware-agnostic reporting.
+- **Decision needed:** which quantum-specific reporting fields are mandatory from
+  the first release?
+
+### Minimum repository entry
+
+- **Likely required fields:** domain description, native formulation, solver-native
+  formulation, instance files, generator or preprocessing code, provenance, license,
+  version, contact person, baseline results, metrics, feasibility checker, resource
+  accounting and raw logs.
+- **Useful models:** QOBLIB, MLPerf/MLCommons, MIPLIB and GIAB provide complementary
+  examples for defining this minimum entry [[57](#ref-57), [67](#ref-67), [60](#ref-60), [4](#ref-4)].
+- **Decision needed:** what is the minimum viable schema for the first public
+  release?
+
+## Table 5 - Infrastructure, Community and Policy Instruments
+
+### Infrastructure as a public good
+
+- **Seed issue:** a durable benchmark ecosystem needs hosting, curation, versioning,
+  maintenance, validation and long-term ownership.
+- **Policy angle:** should this be treated as public-good infrastructure rather than
+  a one-off academic output?
+- **Policy context:** European quantum policy already emphasizes infrastructure,
+  benchmarking, standards and coordination [[70](#ref-70), [71](#ref-71), [72](#ref-72)].
+- **Decision needed:** what would make the benchmark repository worth sustained
+  European support?
+
+### Funded projects feeding the ecosystem
+
+- **Seed issue:** projects could be asked or encouraged to contribute problem
+  definitions, data, baselines, results, negative findings and rankings back into
+  the shared repository.
+- **Policy angle:** this could become a deliverable, call expectation or community
+  contribution model.
+- **Policy context:** Horizon Europe, Digital Europe and EuroHPC JU are possible
+  policy contexts for contribution requirements or incentives [[73](#ref-73), [70](#ref-70)].
+- **Decision needed:** how can this be made useful without becoming bureaucratic
+  burden?
+
+### Community incentives and credit
+
+- **Seed issue:** research groups, software developers, health experts and hardware
+  vendors need incentives to contribute and maintain benchmark entries.
+- **Possible mechanisms:** DOI-backed releases, citation credit, CRediT roles,
+  annual results papers, leaderboards with audit trails, challenge calls and
+  vendor/community commitments [[74](#ref-74), [57](#ref-57)].
+- **Decision needed:** what incentive would actually motivate sustained contribution?
+
+### Federation with existing initiatives
+
+- **Seed issue:** the benchmark should connect to existing repositories, challenge
+  platforms, truth resources and benchmark traditions rather than becoming a silo.
+- **Possible partners by analogy:** QOBLIB, QED-C, MLCommons, GIAB, precisionFDA,
+  CASP, CAFA, CAMI, DREAM and EuroHPC-related initiatives [[57](#ref-57), [68](#ref-68), [67](#ref-67), [4](#ref-4), [5](#ref-5), [64](#ref-64), [65](#ref-65), [66](#ref-66), [50](#ref-50), [73](#ref-73)].
+- **Decision needed:** what should be federated, mirrored, reused or kept as a
+  companion layer?
+
+### EuroHPC, EuroQCS and quantum / HPC access
+
+- **Seed issue:** credible benchmarks need access to classical HPC, AI compute and
+  quantum systems under reproducible access conditions.
+- **Available instruments:** EuroHPC JU, EuroQCS / EuroHPC quantum-computing and
+  simulation infrastructure, CINECA and other host sites, national hybrid HPC-QC
+  platforms [[73](#ref-73), [71](#ref-71), [70](#ref-70)].
+- **Decision needed:** what access model is needed for health and life-science
+  benchmark runs?
+
+### AI-quantum infrastructure and AI Factories / Gigafactories
+
+- **Seed issue:** AI is both a comparator and a possible accelerator of quantum
+  research; future benchmark work may need AI compute as well as quantum access.
+- **Available instruments:** AI Factories / Gigafactories and EuroHPC-led AI compute
+  infrastructure are relevant policy context [[70](#ref-70), [73](#ref-73)].
+- **Decision needed:** should the benchmark ecosystem explicitly compare quantum,
+  hybrid and advanced AI approaches on the same health/life-science problems?
+
+### Standardisation, assurance and benchmarking
+
+- **Seed issue:** policy documents repeatedly emphasize benchmarks, standards,
+  measurement and assurance as necessary for a credible quantum ecosystem.
+- **Possible routes:** CEN/CENELEC JTC22, ISO/IEC, ETSI, IEEE, Quantum Flagship
+  standardisation work, application-level benchmarking and monitoring frameworks [[71](#ref-71), [75](#ref-75)].
+- **Decision needed:** should the benchmark repository aim to become an input to
+  standards or assurance discussions?
+
+### Funding and programme instruments
+
+- **Seed issue:** maintenance and contribution need a funding route after the
+  workshop activity ends.
+- **Possible instruments:** Horizon Europe, Digital Europe Programme, EuroHPC JU,
+  Quantum Europe Research and Innovation Initiative, Quantum Grand Challenges,
+  Quantum Competence and Acceleration Centres, EIC / EIC STEP Scaleup, InvestEU,
+  public procurement of innovation and national quantum programmes [[70](#ref-70), [73](#ref-73)].
+- **Decision needed:** which instrument is realistic for repository maintenance,
+  benchmark curation, challenge calls or compute access?
+
+### Health data governance and responsible communication
+
+- **Seed issue:** health benchmarks need data governance, privacy, clinical
+  non-use disclaimers where appropriate, and careful communication of timelines.
+- **Policy angle:** benchmark evidence can help separate realistic progress from
+  premature quantum-advantage claims [[69](#ref-69), [72](#ref-72)].
+- **Decision needed:** what governance and communication rules should be visible in
+  the first benchmark release?
+
+### Dual-use, sovereignty and strategic autonomy
+
+- **Seed issue:** quantum and AI are strategic technologies; health benchmarks sit
+  inside a broader policy context of sovereignty, supply chains and dual-use risk.
+- **Policy angle:** openness, scientific reproducibility and strategic safeguards
+  need to be balanced [[76](#ref-76), [70](#ref-70)].
+- **Decision needed:** what should remain open by default, and what safeguards are
+  needed for sensitive data, infrastructure access or strategic claims?
+
+## Cross-Table Issues to Decide
+
+- Which two or three candidates are most suitable for a first release?
+- Which candidates should be kept only as controls, cautions or future work?
+- Which candidates require a domain-native representation in addition to QUBO,
+  Ising, MIP, CP or graph formats?
+- Which data licenses or privacy constraints block public release?
+- Which benchmark entries need exact small instances, hardware-sized stress tests
+  and larger realistic instances?
+- Which baselines are strong enough to avoid strawman comparisons?
+- Which results should be accepted as negative or boundary-setting evidence?
+- Who would own the first problem entry, baseline, checker and repository release?
+
+## References
+
+<a id="ref-1"></a>[1] Wang, R.-S., Wu, L.-Y., Li, Z.-P., and Zhang, X.-S. "Haplotype reconstruction from SNP fragments by minimum error correction." *Bioinformatics* 21(10), 2456-2462 (2005). <https://doi.org/10.1093/bioinformatics/bti352>.
+
+<a id="ref-2"></a>[2] Patterson, M., Marschall, T., Pisanti, N., et al. "WhatsHap: Weighted Haplotype Assembly for Future-Generation Sequencing Reads." *Journal of Computational Biology* 22(6), 498-509 (2015). <https://doi.org/10.1089/cmb.2014.0157>.
+
+<a id="ref-3"></a>[3] Edge, P., Bafna, V., and Bansal, V. "HapCUT2: robust and accurate haplotype assembly for diverse sequencing technologies." *Genome Research* 27, 801-812 (2017). <https://doi.org/10.1101/gr.213462.116>; repository: <https://github.com/vibansal/HapCUT2>.
+
+<a id="ref-4"></a>[4] Genome in a Bottle, NIST. <https://www.nist.gov/programs-projects/genome-bottle>.
+
+<a id="ref-5"></a>[5] Olson, N. D., Wagner, J., McDaniel, J., et al. "precisionFDA Truth Challenge V2: Calling variants from short- and long-reads in difficult-to-map regions." *Cell Genomics* 2(5), 100129 (2022). <https://doi.org/10.1016/j.xgen.2022.100129>; challenge results: <https://precision.fda.gov/challenges/10/results>.
+
+<a id="ref-6"></a>[6] Lorenz, R., Bernhart, S. H., Hoener zu Siederdissen, C., et al. "ViennaRNA Package 2.0." *Algorithms for Molecular Biology* 6, 26 (2011). <https://doi.org/10.1186/1748-7188-6-26>; repository: <https://github.com/ViennaRNA/ViennaRNA>.
+
+<a id="ref-7"></a>[7] Puton, T., Kozlowski, L. P., Rother, K. M., and Bujnicki, J. M. "CompaRNA: a server for continuous benchmarking of automated methods for RNA secondary structure prediction." *Nucleic Acids Research* 41(7), 4307-4323 (2013). <https://doi.org/10.1093/nar/gkt101>; service: <https://genesilico.pl/comparna/>.
+
+<a id="ref-8"></a>[8] Zaborniak, T., Giraldo, J., Mueller, H., et al. "A QUBO model of the RNA folding problem optimized by variational hybrid quantum annealing." *IEEE QCE* (2022). <https://doi.org/10.1109/QCE53715.2022.00037>; Fox, D. M., MacDermaid, C. M., Schreij, A. M. A., et al. "RNA folding using quantum computers." *PLoS Computational Biology* 18(4), e1010032 (2022). <https://doi.org/10.1371/journal.pcbi.1010032>.
+
+<a id="ref-9"></a>[9] Wang, L., and Jiang, T. "On the complexity of multiple sequence alignment." *Journal of Computational Biology* 1(4), 337-348 (1994). <https://doi.org/10.1089/cmb.1994.1.337>.
+
+<a id="ref-10"></a>[10] Thompson, J. D., Koehl, P., Ripp, R., and Poch, O. "BAliBASE 3.0: latest developments of the multiple sequence alignment benchmark." *Proteins* 61(1), 127-136 (2005). <https://doi.org/10.1002/prot.20527>.
+
+<a id="ref-11"></a>[11] Frances, M., and Litman, A. "On covering problems of codes." *Theory of Computing Systems* 30, 113-119 (1997); Lanctot, J. K., Li, M., Ma, B., Wang, S., and Zhang, L. "Distinguishing string selection problems." *Information and Computation* 185(1), 41-55 (2003).
+
+<a id="ref-12"></a>[12] Caprara, A. "Sorting by reversals is difficult." *RECOMB* (1997); Bulteau, L., Fertin, G., and Rusu, I. "Sorting by transpositions is difficult." *SIAM Journal on Discrete Mathematics* 26(3), 1148-1180 (2012).
+
+<a id="ref-13"></a>[13] Maier, D. "The complexity of some problems on subsequences and supersequences." *Journal of the ACM* 25(2), 322-336 (1978).
+
+<a id="ref-14"></a>[14] TreeBASE, repository of phylogenetic information. <https://www.treebase.org/>.
+
+<a id="ref-15"></a>[15] Minh, B. Q., Schmidt, H. A., Chernomor, O., et al. "IQ-TREE 2: New models and efficient methods for phylogenetic inference in the genomic era." *Molecular Biology and Evolution* 37(5), 1530-1534 (2020). <https://doi.org/10.1093/molbev/msaa015>.
+
+<a id="ref-16"></a>[16] Cilibrasi, R., and Vitanyi, P. M. B. "A fast quartet tree heuristic for hierarchical clustering." *Pattern Recognition* 44(3), 662-677 (2011); Consoli, P. A., Darby-Dowman, K., Mladenovic, N., and Moreno-Perez, J. A. "An exact algorithm for the Minimum Quartet Tree Cost problem." *4OR* 17, 401-425 (2019). <https://doi.org/10.1007/s10288-018-0394-2>.
+
+<a id="ref-17"></a>[17] Boev, A. S., et al. "Genome assembly using quantum and quantum-inspired annealing." *Scientific Reports* 11, 13183 (2021). <https://doi.org/10.1038/s41598-021-88321-5>.
+
+<a id="ref-18"></a>[18] Salzberg, S. L., et al. "GAGE: A critical evaluation of genome assemblies and assembly algorithms." *Genome Research* 22(3), 557-567 (2012). <https://doi.org/10.1101/gr.131383.111>.
+
+<a id="ref-19"></a>[19] Gurevich, A., Saveliev, V., Vyahhi, N., and Tesler, G. "QUAST: quality assessment tool for genome assemblies." *Bioinformatics* 29(8), 1072-1075 (2013). <https://doi.org/10.1093/bioinformatics/btt086>.
+
+<a id="ref-20"></a>[20] Dinneen, M. J., Ghodla, P. S., and Linz, S. "A QUBO formulation for the Tree Containment problem." *Theoretical Computer Science* 936 (2023). <https://doi.org/10.1016/j.tcs.2022.09.012>.
+
+<a id="ref-21"></a>[21] Perdomo-Ortiz, A., Dickson, N., Drew-Brook, M., Rose, G., and Aspuru-Guzik, A. "Finding low-energy conformations of lattice protein models by quantum annealing." *Scientific Reports* 2, 571 (2012). <https://doi.org/10.1038/srep00571>.
+
+<a id="ref-22"></a>[22] Bertsimas, D., King, A., and Mazumder, R. "Best subset selection via a modern optimization lens." *Annals of Statistics* 44(2), 813-852 (2016). <https://doi.org/10.1214/15-AOS1388>.
+
+<a id="ref-23"></a>[23] Romero, S., Gupta, S., Gatlin, V., Chapkin, R. S., and Cai, J. J. "Quantum annealing for enhanced feature selection in single-cell RNA sequencing data analysis." *Quantum Machine Intelligence* 7 (2025). <https://doi.org/10.1007/s42484-025-00312-1>.
+
+<a id="ref-24"></a>[24] Yang, J., Shi, R., Wei, D., et al. "MedMNIST v2 - A large-scale lightweight benchmark for 2D and 3D biomedical image classification." *Scientific Data* 10, 41 (2023). <https://doi.org/10.1038/s41597-022-01721-8>; <https://medmnist.com/>.
+
+<a id="ref-25"></a>[25] Neven, H., Denchev, V. S., Rose, G., and Macready, W. G. "QBoost: Large scale classifier training with adiabatic quantum optimization." *Proceedings of ACML*, PMLR 25, 333-348 (2012). <https://proceedings.mlr.press/v25/neven12.html>.
+
+<a id="ref-26"></a>[26] Angelino, E., Larus-Stone, N., Alabi, D., Seltzer, M., and Rudin, C. "Learning Certifiably Optimal Rule Lists for Categorical Data." *Journal of Machine Learning Research* 18(234), 1-78 (2018). <https://jmlr.org/papers/v18/17-716.html>; repository: <https://github.com/corels/corels>.
+
+<a id="ref-27"></a>[27] Parmentier, A., and Vidal, T. "Optimal Counterfactual Explanations in Tree Ensembles." *Proceedings of ICML* (2021). <https://proceedings.mlr.press/v139/parmentier21a.html>; repository: <https://github.com/vidalt/OCEAN>.
+
+<a id="ref-28"></a>[28] Amin, M. H., Andriyash, E., Rolfe, J., Kulchytskyy, B., and Melko, R. "Quantum Boltzmann Machine." *Physical Review X* 8, 021050 (2018). <https://doi.org/10.1103/PhysRevX.8.021050>.
+
+<a id="ref-29"></a>[29] Dixit, V., Niu, R., Albash, T., et al. "Training restricted Boltzmann machines with a D-Wave quantum annealer." *Frontiers in Physics* 9, 589626 (2021). <https://doi.org/10.3389/fphy.2021.589626>.
+
+<a id="ref-30"></a>[30] Willsch, D., Willsch, M., De Raedt, H., and Michielsen, K. "Support vector machines on the D-Wave quantum annealer." *Computer Physics Communications* 248, 107006 (2020). <https://doi.org/10.1016/j.cpc.2019.107006>.
+
+<a id="ref-31"></a>[31] Date, P., Arthur, D., and Pusey-Nazzaro, L. "QUBO formulations for training machine learning models." *Scientific Reports* 11 (2021). <https://doi.org/10.1038/s41598-021-89461-4>.
+
+<a id="ref-32"></a>[32] Jun, K., and Lee, H. "Quantum optimization algorithms for CT image segmentation from X-ray data." *Scientific Reports* 15, 20649 (2025). <https://doi.org/10.1038/s41598-025-08453-w>.
+
+<a id="ref-33"></a>[33] Yeter-Aydeniz, K., et al. "Hybrid quantum-classical latent diffusion models for medical image generation." Preprint (2025). <https://arxiv.org/abs/2508.09903>.
+
+<a id="ref-34"></a>[34] Eggensperger, K., et al. "HPOBench: A Collection of Reproducible Multi-Fidelity Benchmark Problems for HPO." *NeurIPS Datasets and Benchmarks* (2021). <https://arxiv.org/abs/2109.06716>.
+
+<a id="ref-35"></a>[35] Ding, Q.-M., Huang, Y.-M., and Yuan, X. "Molecular docking via quantum approximate optimization algorithm." *Physical Review Applied* 21, 034036 (2024). <https://doi.org/10.1103/PhysRevApplied.21.034036>.
+
+<a id="ref-36"></a>[36] Yanagisawa, K., Fujie, T., et al. "QUBO Problem Formulation of Fragment-Based Protein-Ligand Flexible Docking." *Entropy* 26(5), 397 (2024). <https://doi.org/10.3390/e26050397>.
+
+<a id="ref-37"></a>[37] Garrigues, A., et al. "Towards molecular docking with neutral atoms." Preprint (2024). <https://arxiv.org/abs/2402.06770>; Pasqal molecular-docking repository: <https://github.com/pasqal-io/Molecular-Docking>.
+
+<a id="ref-38"></a>[38] Trott, O., and Olson, A. J. "AutoDock Vina: improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading." *Journal of Computational Chemistry* 31, 455-461 (2010). <https://doi.org/10.1002/jcc.21334>.
+
+<a id="ref-39"></a>[39] Kingsford, C. L., Chazelle, B., and Singh, M. "Solving and analyzing side-chain positioning problems using linear and integer programming." *Bioinformatics* 21(7), 1028-1039 (2005). <https://academic.oup.com/bioinformatics/article/21/7/1028/269065>.
+
+<a id="ref-40"></a>[40] Toulbar2 weighted constraint satisfaction / cost-function network solver. <https://toulbar2.github.io/toulbar2/>; repository: <https://github.com/toulbar2/toulbar2>.
+
+<a id="ref-41"></a>[41] Mankowska, D. S., Meisel, F., and Bierwirth, C. "The home health care routing and scheduling problem with interdependent services." *Health Care Management Science* 17, 15-30 (2014). <https://doi.org/10.1007/s10729-013-9243-1>; instance page: <https://prodlog.wiwi.uni-halle.de/forschung/research_data/hhcrsp/?lang=en>.
+
+<a id="ref-42"></a>[42] Ceschia, S., Dang, N. T. T., De Causmaecker, P., Haspeslagh, S., and Schaerf, A. "Second International Nurse Rostering Competition (INRC-II) - problem description and rules." *Annals of Operations Research* 274, 171-186 (2019). <https://doi.org/10.1007/s10479-018-2816-0>.
+
+<a id="ref-43"></a>[43] Ikeda, K., Nakamura, Y., and Humble, T. S. "Application of quantum annealing to nurse scheduling problem." *Scientific Reports* 9, 12837 (2019). <https://doi.org/10.1038/s41598-019-49172-3>.
+
+<a id="ref-44"></a>[44] KU Leuven CODeS, personnel scheduling and nurse rostering benchmark data. <https://gent.cs.kuleuven.be/nurserostering.html>.
+
+<a id="ref-45"></a>[45] Leeftink, A. G., and Hans, E. W. "Case mix classification and a benchmark set for surgery scheduling." *Journal of Scheduling* 21, 17-33 (2018). <https://doi.org/10.1007/s10951-017-0539-8>; CHOIR benchmark instances: <https://www.utwente.nl/en/choir/research/benchmark-orscheduling/>.
+
+<a id="ref-46"></a>[46] Wieser, H.-P., Cisternas, E., Wahl, N., et al. "Development of the open-source dose calculation and optimization toolkit matRad." *Medical Physics* 44(6), 2556-2568 (2017). <https://doi.org/10.1002/mp.12251>; repository: <https://github.com/e0404/matrad>.
+
+<a id="ref-47"></a>[47] Nazareth, D. P., and Spaans, J. D. "First application of quantum annealing to IMRT beamlet intensity optimization." *Physics in Medicine & Biology* 60, 4137-4148 (2015). <https://doi.org/10.1088/0031-9155/60/10/4137>.
+
+<a id="ref-48"></a>[48] Vlassis, N., Pacheco, M. P., and Sauter, T. "Fast reconstruction of compact context-specific metabolic network models." *PLoS Computational Biology* 10(1), e1003424 (2014). <https://doi.org/10.1371/journal.pcbi.1003424>.
+
+<a id="ref-49"></a>[49] Robinson, J. L., Kocabas, P., Wang, H., et al. "An atlas of human metabolism." *Science Signaling* 13, eaaz1482 (2020). <https://doi.org/10.1126/scisignal.aaz1482>; Human-GEM repository: <https://github.com/SysBioChalmers/Human-GEM>.
+
+<a id="ref-50"></a>[50] DREAM challenges. <https://dreamchallenges.org/>.
+
+<a id="ref-51"></a>[51] Pratapa, A., Jalihal, A. P., Law, J. N., Bharadwaj, A., and Murali, T. M. "Benchmarking algorithms for gene regulatory network inference from single-cell transcriptomic data." *Nature Methods* 17, 147-154 (2020). <https://doi.org/10.1038/s41592-019-0690-6>; BEELINE repository: <https://github.com/murali-group/Beeline>.
+
+<a id="ref-52"></a>[52] Akutsu, T., Hayashida, M., Ching, W.-K., and Ng, M. K. "Control of Boolean networks: hardness results and algorithms for tree structured networks." *Journal of Theoretical Biology* 244(4), 670-679 (2007). <https://doi.org/10.1016/j.jtbi.2006.09.023>.
+
+<a id="ref-53"></a>[53] Cell Collective. <https://cellcollective.org/>.
+
+<a id="ref-54"></a>[54] BioModels. <https://www.ebi.ac.uk/biomodels/>.
+
+<a id="ref-55"></a>[55] Schmiester, L., Schalte, Y., Bergmann, F. T., et al. "PEtab - interoperable specification of parameter estimation problems in systems biology." *PLoS Computational Biology* 17(1), e1008646 (2021). <https://doi.org/10.1371/journal.pcbi.1008646>.
+
+<a id="ref-56"></a>[56] Villaverde, A. F., Henriques, D., Smallbone, K., et al. "BioPreDyn-bench: a suite of benchmark problems for dynamic modelling in systems biology." *BMC Systems Biology* 9, 8 (2015). <https://doi.org/10.1186/s12918-015-0144-4>.
+
+<a id="ref-57"></a>[57] Koch, T., Bernal Neira, D. E., Chen, Y., et al. "The Quantum Optimization Benchmarking Library." *Nature Computational Science* 6, 653-671 (2026). <https://doi.org/10.1038/s43588-026-00991-1>; QOBLIB: <https://zib-aopt.github.io/QOBLIB/>; repository: <https://github.com/ZIB-AOPT/QOBLIB>.
+
+<a id="ref-58"></a>[58] Dunning, I., Gupta, S., and Silberholz, J. "What works best when? A systematic evaluation of heuristics for Max-Cut and QUBO." *INFORMS Journal on Computing* 30(3), 608-624 (2018). <https://doi.org/10.1287/ijoc.2017.0798>; MQLib: <https://github.com/MQLib/MQLib>.
+
+<a id="ref-59"></a>[59] QPLIB, a library of quadratic programming instances. <https://qplib.zib.de/>.
+
+<a id="ref-60"></a>[60] MIPLIB 2017 benchmark collection. <https://miplib.zib.de/>.
+
+<a id="ref-61"></a>[61] Beasley, J. E. "OR-Library: distributing test problems by electronic mail." *Journal of the Operational Research Society* 41, 1069-1072 (1990). <https://people.brunel.ac.uk/~mastjjb/jeb/info.html>.
+
+<a id="ref-62"></a>[62] Reinelt, G. "TSPLIB - A Traveling Salesman Problem Library." *ORSA Journal on Computing* 3(4), 376-384 (1991). <https://doi.org/10.1287/ijoc.3.4.376>.
+
+<a id="ref-63"></a>[63] SATLIB, the Satisfiability Library. <https://www.cs.ubc.ca/~hoos/SATLIB/benchm.html>.
+
+<a id="ref-64"></a>[64] Critical Assessment of Protein Structure Prediction (CASP). <https://predictioncenter.org/>.
+
+<a id="ref-65"></a>[65] Critical Assessment of Function Annotation (CAFA). <https://biofunctionprediction.org/cafa/>.
+
+<a id="ref-66"></a>[66] Critical Assessment of Metagenome Interpretation (CAMI). <https://www.cami-challenge.org/>.
+
+<a id="ref-67"></a>[67] MLCommons, MLPerf Inference documentation and rules. <https://docs.mlcommons.org/inference/>; <https://github.com/mlcommons/inference_policies/blob/master/inference_rules.adoc>.
+
+<a id="ref-68"></a>[68] Quantum Economic Development Consortium, Application-Oriented Quantum Computing Benchmarks. <https://github.com/SRI-International/QC-App-Oriented-Benchmarks>.
+
+<a id="ref-69"></a>[69] Ronnow, T. F., Wang, Z., Job, J., et al. "Defining and detecting quantum speedup." *Science* 345, 420-424 (2014). <https://doi.org/10.1126/science.1252319>.
+
+<a id="ref-70"></a>[70] European Commission, "Quantum Europe Strategy: Quantum Europe in a Changing World", COM(2025) 363 final.
+
+<a id="ref-71"></a>[71] European Quantum Flagship, *Strategic Research and Industry Agenda 2030* (2024).
+
+<a id="ref-72"></a>[72] European Commission Joint Research Centre, *Outlook Report on Quantum Technologies*.
+
+<a id="ref-73"></a>[73] Council Regulation (EU) 2021/1173 establishing the European High Performance Computing Joint Undertaking. <https://eur-lex.europa.eu/eli/reg/2021/1173/oj>; EuroHPC JU: <https://eurohpc-ju.europa.eu/>.
+
+<a id="ref-74"></a>[74] CRediT contributor roles taxonomy. <https://credit.niso.org/>.
+
+<a id="ref-75"></a>[75] Quantum Technology Coordination Group, *Shaping a European Strategy in Quantum Technology* (2025).
+
+<a id="ref-76"></a>[76] European Declaration on Quantum Technologies (2023).

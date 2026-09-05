@@ -1,0 +1,45 @@
+---
+title: "Round Tables"
+subtitle: "Day 2 working material for benchmark design"
+---
+
+The Day 2 morning session turns the workshop discussion into focused material for
+a possible BENQODHI paper, report, roadmap or benchmark-repository plan.
+
+Participants should use these documents as working aids. The seed problems are
+starting points only; tables are encouraged to propose stronger or more relevant
+problems from their own expertise.
+
+::: {.idea-actions}
+[Participant guide](participant-guide.qmd){.primary-action}
+[Seed problem brief](seed-problem-brief.qmd){.secondary-action}
+[Workshop programme](../program.qmd){.secondary-action}
+:::
+
+## Documents
+
+### Participant guide
+
+The participant guide defines the scope of the morning, the common transversal
+question for all tables, the readiness scale, and the expected output from each
+working table.
+
+[Open the participant guide](participant-guide.qmd){.text-link}
+
+### Seed problem brief
+
+The seed problem brief collects candidate scientific problems, benchmark assets
+and infrastructure or policy examples. It is intended to support expert judgment,
+not to constrain the discussion.
+
+[Open the seed problem brief](seed-problem-brief.qmd){.text-link}
+
+## Table Structure
+
+| Table | Focus |
+|---|---|
+| 1 | Genomics, molecular biology and life sciences |
+| 2 | Medical imaging, diagnostics, machine learning and QML |
+| 3 | Mechanistic medicine, clinical decisions and operational optimization |
+| 4 | Benchmark, repository and federation |
+| 5 | Infrastructure, community and policy instruments |
