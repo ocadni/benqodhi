@@ -42,7 +42,7 @@ Each scientific table should return:
 - a shortlist of candidate problems selected for further work, around three or more where useful;
 - for each candidate, a concise judgment of scientific relevance, computational bottleneck, available benchmark ingredients, missing pieces and readiness;
 - one recommended next action that would make the candidate more benchmarkable;
-- one answer to the common question.
+- one answer to the transversal governance question.
 
 ### Questions for Each Candidate
 
@@ -50,7 +50,9 @@ Each scientific table should return:
 2. **Computational bottleneck:** What exactly is hard computationally, and is the core task optimization, inference, sampling, simulation, reconstruction, learning, or a mixture?
 3. **Benchmark ingredients:** What data, formulation, instances, baselines, metrics and validation routes already exist, and what is still missing?
 4. **Readiness and next step:** Is the candidate ready, promising, exploratory or out of scope, and what single action would most improve its benchmarkability?
-5. **Common question for all tables:** What should this table contribute to a durable benchmark ecosystem, so that the output is scientifically credible, reusable, and useful for future research, infrastructure decisions, community building and policy or funding instruments?
+5. **Transversal — sustaining the ecosystem (infrastructure, community, scientific governance):**
+
+   BENQODHI only works if what this table produces feeds one connected, durable ecosystem rather than a silo. Thinking of the three pillars — the shared **infrastructure** that hosts and maintains it, the **community** that keeps contributing, and the **scientific governance** that keeps it credible — how can this table best feed the third pillar, scientific governance: what would it take for the problems, data and baselines coming out of this table to be curated, reviewed and trusted as credible science over time, and what governance role should this table's own community play in setting and upholding those standards?
 
 ### Table 1 - Genomics, Molecular Biology and Life Sciences
 
@@ -111,7 +113,7 @@ Table 4 should return:
 - the minimum reporting rules needed for fair comparison across classical, AI-based, hybrid and quantum methods;
 - a recommendation on whether the future repository should be standalone, federated, or connected to an existing benchmark initiative;
 - one smallest practical infrastructure step after the workshop;
-- one answer to the common question.
+- one answer to the transversal governance question.
 
 ### Questions for Table 4
 
@@ -119,7 +121,9 @@ Table 4 should return:
 2. **Fair comparison and review:** What must a submitted result report to make classical, AI-based, hybrid and quantum algorithms comparable, and what review process is needed before accepting a benchmark entry?
 3. **Repository and federation:** Should future health and life-science candidates be added to the La Sapienza repository, placed in a companion layer, or connected through a federated model with existing benchmark initiatives?
 4. **First practical step:** What is the smallest useful infrastructure release that could be committed to after the workshop?
-5. **Common question for all tables:** What should this table contribute to a durable benchmark ecosystem, so that the output is scientifically credible, reusable, and useful for future research, infrastructure decisions, community building and policy or funding instruments?
+5. **Transversal — sustaining the ecosystem (infrastructure, community, scientific governance):**
+
+   BENQODHI only works if what this table produces feeds one connected, durable ecosystem rather than a silo. Thinking of the three pillars — the shared **infrastructure** that hosts and maintains it, the **community** that keeps contributing, and the **scientific governance** that keeps it credible — how can this table best feed the third pillar, scientific governance: what would it take for the problems, data and baselines coming out of this table to be curated, reviewed and trusted as credible science over time, and what governance role should this table's own community play in setting and upholding those standards?
 
 ## Table 5 - Infrastructure, Community and Policy Instruments
 
@@ -136,7 +140,7 @@ Table 5 should return:
 - the instruments that are already available now;
 - the instruments or adaptations that should be available in the coming years;
 - one policy or funding recommendation for the paper, report or roadmap;
-- one answer to the common question.
+- one answer to the transversal governance question.
 
 ### Questions for Table 5
 
@@ -145,7 +149,9 @@ Table 5 should return:
 3. **Available instruments:** Which existing instruments could support this now: European or national calls, research infrastructures, EuroHPC access, quantum-computing access, health-data initiatives, challenge platforms, standardisation routes, or other mechanisms?
 4. **Future instruments:** What new or adapted instruments would be useful in the coming years so that benchmark contributions become part of funded projects, community practice or infrastructure support?
 5. **Policy recommendation:** What concrete recommendation or open policy question should appear in the BENQODHI paper, report or roadmap?
-6. **Common question for all tables:** What should this table contribute to a durable benchmark ecosystem, so that the output is scientifically credible, reusable, and useful for future research, infrastructure decisions, community building and policy or funding instruments?
+6. **Transversal — sustaining the ecosystem (infrastructure, community, scientific governance):**
+
+   BENQODHI only works if what this table produces feeds one connected, durable ecosystem rather than a silo. Thinking of the three pillars — the shared **infrastructure** that hosts and maintains it, the **community** that keeps contributing, and the **scientific governance** that keeps it credible — how can this table best feed the third pillar, scientific governance: what would it take for the problems, data and baselines coming out of this table to be curated, reviewed and trusted as credible science over time, and what governance role should this table's own community play in setting and upholding those standards?
 
 ## Guide for Note Takers
 
@@ -159,7 +165,7 @@ For each table, record:
 - the reason it matters;
 - the most important missing piece;
 - the next benchmark-building action;
-- the table's answer to the common question.
+- the table's answer to the transversal governance question.
 
 ## Guide for Rapporteurs
 
@@ -172,4 +178,4 @@ Each rapporteur should present:
 - the strongest reason why it matters;
 - the most important missing piece;
 - the recommended next benchmark-building action;
-- the table's answer to the common question.
+- the table's answer to the transversal governance question.
