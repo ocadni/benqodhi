@@ -151,21 +151,32 @@ Table 5 should return:
 
 ## Guide for Note Takers
 
-The note taker should capture conclusions, not full minutes. Notes should be short
-enough to be reused after the workshop in a paper, report, roadmap or policy note.
+Each table has one or two note takers working on a laptop with an AI-assisted
+editor (for example Kiro or VS Code). Their job is not to keep full minutes but to
+capture the table's conclusions and draft the table's written answers live during
+the session, so the output is ready by the recap.
 
-For each table, record:
+Each note taker should:
 
-- the strongest conclusions;
-- the main candidate problem, infrastructure need, or policy/instrument need;
-- the reason it matters;
-- the most important missing piece;
-- the next benchmark-building action;
-- the table's answer to the transversal governance question.
+- capture conclusions, not a transcript — short enough to be reused afterwards in a
+  paper, report, roadmap or policy note;
+- draft the table's answers directly into its file under
+  [`roundtable-outputs/`](https://github.com/ocadni/benqodhi/tree/main/roundtable-outputs)
+  (one file per table, with the table's questions already in place), using the AI
+  assistant to tidy and structure the notes as the discussion goes;
+- for the table, record the strongest conclusions, the main candidate problem /
+  infrastructure need / policy or instrument need, why it matters, the most
+  important missing piece, the next benchmark-building action, and the table's
+  answer to the transversal governance question;
+- **push the completed document to the BENQODHI repository** at the end of the
+  session;
+- where useful, prepare a **short set of slides** for the recap and plenary and add
+  them under `roundtable-outputs/slides/`, so the presentations live in the
+  repository and can be reused in the closing sessions.
 
 ## Guide for Rapporteurs
 
-At the end of the morning, each table will present its conclusions in the plenary session. The rapporteur should be brief and selective.
+At the end of the morning, each table will present its conclusions in the plenary session. The rapporteur should be brief and selective, presenting from the note taker's document and slides.
 
 Each rapporteur should present:
 

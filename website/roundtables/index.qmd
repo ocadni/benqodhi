@@ -41,5 +41,5 @@ not to constrain the discussion.
 | 1 | Genomics, molecular biology and life sciences |
 | 2 | Medical imaging, diagnostics, machine learning and QML |
 | 3 | Mechanistic medicine, clinical decisions and operational optimization |
-| 4 | Benchmark, repository and federation |
+| 4 | Benchmarking methods and the repository |
 | 5 | Infrastructure, community and policy instruments |

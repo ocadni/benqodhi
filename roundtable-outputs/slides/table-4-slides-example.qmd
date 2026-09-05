@@ -1,0 +1,44 @@
+---
+title: "Table 4 — Benchmarking methods and the repository"
+subtitle: "Day 2 recap · BENQODHI · 11 September 2026"
+author: "Rapporteur: C. Example"
+format: revealjs
+---
+
+<!-- EXAMPLE deck. Render with: quarto render table-4-slides-example.qmd
+     Replace the content with the table's real conclusions. -->
+
+## Main conclusion
+
+A fair comparison across classical, AI, hybrid and quantum methods needs:
+
+- a **fixed target** (same problem, same instances, stated quality target)
+- **honest reporting**: quality, time, resources, number of runs
+- above all, a **strong classical baseline**
+
+## Main need
+
+A **public, versioned repository** with, per problem:
+
+- description, instances, at least one baseline, metrics, license, owner
+- an automatic **checker** to validate results
+
+## Why it matters / what's missing
+
+- **Why:** without agreed reporting and strong baselines, "quantum advantage"
+  claims cannot be trusted or reproduced
+- **Missing:** owners for the first release, and an agreed minimum reporting format
+
+## Next action
+
+Commit to **one problem class** as a first release:
+
+- one curated instance set, one classical baseline, one checker
+- a named owner and a target date — start small, then grow
+
+## Transversal governance
+
+- every accepted benchmark has a **named owner** and passes a **light review**
+  (strong baseline, valid instances, complete reporting)
+- the table's community acts as first reviewers and maintains the reporting
+  standard as methods evolve
