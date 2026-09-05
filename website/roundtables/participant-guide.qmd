@@ -28,8 +28,8 @@ Participants will also receive a separate [seed/problem brief](seed-problem-brie
 | 1 | Genomics, molecular biology and life sciences | A shortlist of candidate problems judged for benchmarkability. |
 | 2 | Medical imaging, diagnostics, machine learning and QML | A shortlist of candidate problems judged for benchmarkability. |
 | 3 | Mechanistic medicine, clinical decisions and operational optimization | A shortlist of candidate problems judged for benchmarkability. |
-| 4 | Benchmark, repository and federation | A minimum benchmark-entry model and a practical repository/federation route. |
-| 5 | Infrastructure, community and policy instruments | A short view of available and missing instruments, plus one policy or funding recommendation. |
+| 4 | Benchmarking methods and the repository | Agreed measures for fair comparison, an instance-selection principle, and a practical first release. |
+| 5 | Infrastructure, community and policy instruments | The value of the effort, how it could be financed and sustained, and one policy or funding recommendation. |
 
 ## Tables 1-3 - Scientific Challenge Tables
 
@@ -101,27 +101,25 @@ Use this scale when judging candidate scientific problems.
 | Exploratory | Interesting and potentially relevant, but too immature, broad or unclear for benchmark design at this stage. |
 | Out of scope | Not suitable for the current workshop aims, or too far from benchmarkable computational problems in health and the life sciences. |
 
-## Table 4 - Benchmark, Repository and Federation
+## Table 4 - Benchmarking Methods and the Repository
 
-Table 4 should define what the future benchmark repository or ecosystem needs in order to turn candidate problems into reusable benchmarks. Its role is not to choose the scientific priorities, but to clarify the benchmark structure, repository model and federation route.
+Table 4 gathers people experienced in benchmarking computational methods - classical, AI-based and quantum. Its role is not to choose the scientific priorities, but to work out how to turn candidate problems into benchmarks that let these different kinds of methods be compared fairly: the right measures, well-chosen instances, and a practical route to getting something online and kept credible over time.
 
 ### Expected Output for Table 4
 
 Table 4 should return:
 
-- the minimum information that a benchmark entry should contain;
-- the minimum reporting rules needed for fair comparison across classical, AI-based, hybrid and quantum methods;
-- a recommendation on whether the future repository should be standalone, federated, or connected to an existing benchmark initiative;
-- one smallest practical infrastructure step after the workshop;
+- what has to be agreed, and what has to be measured, for a fair comparison across classical, AI-based, hybrid and quantum methods;
+- a principle for selecting meaningful benchmark instances;
+- a practical view of what "online" means for BENQODHI, how instances and results should be versioned, and the smallest first release the group can commit to with a date;
 - one answer to the transversal governance question.
 
 ### Questions for Table 4
 
-1. **Minimum benchmark entry:** What must a problem entry contain before it can be shared: domain description, data provenance, formulation, instances, baselines, metrics, license, version, contact person, checker or validation route?
-2. **Fair comparison and review:** What must a submitted result report to make classical, AI-based, hybrid and quantum algorithms comparable, and what review process is needed before accepting a benchmark entry?
-3. **Repository and federation:** Should future health and life-science candidates be added to the La Sapienza repository, placed in a companion layer, or connected through a federated model with existing benchmark initiatives?
-4. **First practical step:** What is the smallest useful infrastructure release that could be committed to after the workshop?
-5. **Transversal — sustaining the ecosystem (infrastructure, community, scientific governance):**
+1. **Fair comparison across methods:** When the same problem is tackled by classical, AI-based, hybrid and quantum methods, what has to be agreed so the comparison is honest, and what should be measured?
+2. **Good benchmark instances:** How should problem instances be chosen so the benchmark is meaningful and not trivially settled by one type of method?
+3. **"Online" in practice, and versioning:** Getting something online means concrete choices: a hosting platform, an owner, and a way to version instances and results as they evolve. What does "online" mean in practice for BENQODHI, how should instances and results be versioned so comparisons stay valid over time, and what is the smallest first release the group can commit to with a date attached?
+4. **Transversal — sustaining the ecosystem (infrastructure, community, scientific governance):**
 
    BENQODHI only works if what this table produces feeds one connected, durable ecosystem rather than a silo. Thinking of the three pillars — the shared **infrastructure** that hosts and maintains it, the **community** that keeps contributing, and the **scientific governance** that keeps it credible — how can this table best feed the third pillar, scientific governance: what would it take for the problems, data and baselines coming out of this table to be curated, reviewed and trusted as credible science over time, and what governance role should this table's own community play in setting and upholding those standards?
 
@@ -135,21 +133,17 @@ The table should consider both what is available now and what should become avai
 
 Table 5 should return:
 
-- the main infrastructure needs for a credible benchmark ecosystem;
-- the community roles and incentives that would make contributions realistic;
-- the instruments that are already available now;
-- the instruments or adaptations that should be available in the coming years;
-- one policy or funding recommendation for the paper, report or roadmap;
+- the value of a shared benchmarking effort, and to whom it matters;
+- how the infrastructure and contributing community could be financed, created and sustained, including which instruments exist now and which are still missing;
+- a view on whether this could grow into a connected ecosystem of benchmarks, and one concrete policy or funding recommendation for the paper, report or roadmap;
 - one answer to the transversal governance question.
 
 ### Questions for Table 5
 
-1. **Infrastructure:** What shared infrastructure is needed to sustain the benchmark ecosystem: repository hosting, curation, versioning, maintenance, data governance, validation, access to EuroHPC or quantum resources, or other support?
-2. **Community:** Who should contribute problems, data, baselines, results, review and maintenance, and what incentives would make these contributions credible and sustained?
-3. **Available instruments:** Which existing instruments could support this now: European or national calls, research infrastructures, EuroHPC access, quantum-computing access, health-data initiatives, challenge platforms, standardisation routes, or other mechanisms?
-4. **Future instruments:** What new or adapted instruments would be useful in the coming years so that benchmark contributions become part of funded projects, community practice or infrastructure support?
-5. **Policy recommendation:** What concrete recommendation or open policy question should appear in the BENQODHI paper, report or roadmap?
-6. **Transversal — sustaining the ecosystem (infrastructure, community, scientific governance):**
+1. **Value:** Why would funders, institutions and the community find a shared benchmarking effort worth supporting — for example, being able to assess new projects and claims against agreed benchmarks rather than self-reported results?
+2. **Financing and sustaining it:** How can the shared infrastructure and the contributing community be financed, created and kept alive? Which existing instruments could support it now (calls, research infrastructures, compute and quantum access, health-data initiatives, standardisation routes), and what new or adapted ones would be needed so that contributing to benchmarks becomes part of funded work rather than volunteer effort?
+3. **Toward an ecosystem:** Could this grow into a connected ecosystem of benchmarks across fields rather than a one-off, and what would that take? What single concrete recommendation or open policy question should the paper carry?
+4. **Transversal — sustaining the ecosystem (infrastructure, community, scientific governance):**
 
    BENQODHI only works if what this table produces feeds one connected, durable ecosystem rather than a silo. Thinking of the three pillars — the shared **infrastructure** that hosts and maintains it, the **community** that keeps contributing, and the **scientific governance** that keeps it credible — how can this table best feed the third pillar, scientific governance: what would it take for the problems, data and baselines coming out of this table to be curated, reviewed and trusted as credible science over time, and what governance role should this table's own community play in setting and upholding those standards?
 
