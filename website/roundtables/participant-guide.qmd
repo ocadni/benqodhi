@@ -25,21 +25,21 @@ Participants will also receive a separate [seed/problem brief](seed-problem-brie
 
 | Table | Main role | Expected output |
 |---|---|---|
-| 1 | Genomics, molecular biology and life sciences | One or two candidate problems judged for benchmarkability. |
-| 2 | Medical imaging, diagnostics, machine learning and QML | One or two candidate problems judged for benchmarkability. |
-| 3 | Mechanistic medicine, clinical decisions and operational optimization | One or two candidate problems judged for benchmarkability. |
+| 1 | Genomics, molecular biology and life sciences | A shortlist of candidate problems judged for benchmarkability. |
+| 2 | Medical imaging, diagnostics, machine learning and QML | A shortlist of candidate problems judged for benchmarkability. |
+| 3 | Mechanistic medicine, clinical decisions and operational optimization | A shortlist of candidate problems judged for benchmarkability. |
 | 4 | Benchmark, repository and federation | A minimum benchmark-entry model and a practical repository/federation route. |
 | 5 | Infrastructure, community and policy instruments | A short view of available and missing instruments, plus one policy or funding recommendation. |
 
 ## Tables 1-3 - Scientific Challenge Tables
 
-Tables 1-3 should identify candidate health and life-science problems that could become benchmarkable. The seed themes below, and the separate [seed/problem brief](seed-problem-brief.qmd), are only starting points. Participants are encouraged to propose other problems from their own expertise. Each table should then select the strongest one or two candidates for discussion, whether they come from the seeds or from the participants.
+Tables 1-3 should identify candidate health and life-science problems that could become benchmarkable. The seed themes below, and the separate [seed/problem brief](seed-problem-brief.qmd), are only starting points. Participants are encouraged to propose other problems from their own expertise. Each table should then select the strongest candidates for discussion, whether they come from the seeds or from the participants.
 
 ### Expected Output for Tables 1-3
 
 Each scientific table should return:
 
-- one or two candidate problems selected for further work;
+- a shortlist of candidate problems selected for further work, around three or more where useful;
 - for each candidate, a concise judgment of scientific relevance, computational bottleneck, available benchmark ingredients, missing pieces and readiness;
 - one recommended next action that would make the candidate more benchmarkable;
 - one answer to the common question.
@@ -154,7 +154,7 @@ enough to be reused after the workshop in a paper, report, roadmap or policy not
 
 For each table, record:
 
-- the one or two strongest conclusions;
+- the strongest conclusions;
 - the main candidate problem, infrastructure need, or policy/instrument need;
 - the reason it matters;
 - the most important missing piece;
@@ -168,7 +168,7 @@ At the end of the morning, each table will present its conclusions in the plenar
 Each rapporteur should present:
 
 - the table's main conclusion;
-- one candidate problem, infrastructure need, or policy/instrument need;
+- the main candidate problem(s), infrastructure need, or policy/instrument need;
 - the strongest reason why it matters;
 - the most important missing piece;
 - the recommended next benchmark-building action;
