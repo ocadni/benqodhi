@@ -19,7 +19,7 @@ The discussion should therefore stay close to the following path:
 
 **health or life-science challenge -> computational bottleneck -> candidate benchmark -> available evidence and missing pieces -> fair comparison of algorithms -> next benchmark-building action**
 
-Participants will also receive a separate seed/problem brief with more detailed candidate problems and background material. This guide is only the discussion structure.
+Participants will also receive a separate [seed/problem brief](seed-problem-brief.qmd) with more detailed candidate problems and background material. This guide is only the discussion structure.
 
 ## Expected Output
 
@@ -55,7 +55,7 @@ Use this scale when judging candidate scientific problems or benchmark component
 
 ## Tables 1-3 - Scientific Challenge Tables
 
-Tables 1-3 should identify candidate health and life-science problems that could become benchmarkable. The seed themes below, and the separate seed/problem brief, are only starting points. Participants are encouraged to propose other problems from their own expertise. Each table should then select the strongest one or two candidates for discussion, whether they come from the seeds or from the participants.
+Tables 1-3 should identify candidate health and life-science problems that could become benchmarkable. The seed themes below, and the separate [seed/problem brief](seed-problem-brief.qmd), are only starting points. Participants are encouraged to propose other problems from their own expertise. Each table should then select the strongest one or two candidates for discussion, whether they come from the seeds or from the participants.
 
 For each candidate, the table should focus on four questions:
 
