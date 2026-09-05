@@ -160,19 +160,23 @@ Each note taker should:
 
 - capture conclusions, not a transcript — short enough to be reused afterwards in a
   paper, report, roadmap or policy note;
-- draft the table's answers directly into its file under
+- draft the table's answers directly into its subfolder under
   [`roundtable-outputs/`](https://github.com/ocadni/benqodhi/tree/main/roundtable-outputs)
-  (one file per table, with the table's questions already in place), using the AI
-  assistant to tidy and structure the notes as the discussion goes;
+  (one folder per table, starting from an `answers.md` with the table's questions
+  already in place), using the AI assistant to tidy and structure the notes as the
+  discussion goes;
+- add **as many files as useful** in the table's folder — a second notes file, a
+  per-candidate file, or a deck — so more than one person can work in parallel
+  without editing the same file;
 - for the table, record the strongest conclusions, the main candidate problem /
   infrastructure need / policy or instrument need, why it matters, the most
   important missing piece, the next benchmark-building action, and the table's
   answer to the transversal governance question;
-- **push the completed document to the BENQODHI repository** at the end of the
+- **push the completed documents to the BENQODHI repository** at the end of the
   session;
-- where useful, prepare a **short set of slides** for the recap and plenary and add
-  them under `roundtable-outputs/slides/`, so the presentations live in the
-  repository and can be reused in the closing sessions.
+- where useful, prepare a **short set of slides** for the recap and plenary in the
+  same table folder, so the presentations live in the repository and can be reused
+  in the closing sessions.
 
 ## Guide for Rapporteurs
 

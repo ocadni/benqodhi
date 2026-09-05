@@ -5,7 +5,7 @@ author: "Rapporteur: C. Example"
 format: revealjs
 ---
 
-<!-- EXAMPLE deck. Render with: quarto render table-4-slides-example.qmd
+<!-- EXAMPLE deck. Render with: quarto render slides-example.qmd
      Replace the content with the table's real conclusions. -->
 
 ## Main conclusion
