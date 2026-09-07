@@ -124,23 +124,22 @@ Table 5 should clarify how the benchmark effort seeded by the workshop could bec
 
 The table should consider both what is available now and what should become available in the near future.
 
+### Questions for Table 5
+
+1. **Value:** Who would use a shared benchmark effort, and why is it worth supporting?
+2. **Financing and sustaining it:** How can the shared infrastructure and contributing community be financed, created and kept alive? Which existing instruments could support it now?
+3. **Toward an ecosystem:** Could this grow beyond a one-off output, and what recommendation should the paper carry?
+4. **Transversal — sustaining the ecosystem (infrastructure, community, scientific governance):**
+
+   BENQODHI only works if what this table produces feeds one connected, durable ecosystem rather than a silo. Thinking of the three pillars — the shared **infrastructure** that hosts and maintains it, the **community** that keeps contributing, and the **scientific governance** that keeps it credible — how can this table best feed the third pillar, scientific governance: what would it take for the problems, data and baselines coming out of this table to be curated, reviewed and trusted as credible science over time, and what governance role should this table's own community play in setting and upholding those standards?
+
 ### Expected Output for Table 5
 
 Table 5 should return:
 
-- the value of a shared benchmarking effort, and to whom it matters;
-- how the infrastructure and contributing community could be financed, created and sustained, including which instruments exist now and which are still missing;
-- a view on whether this could grow into a connected ecosystem of benchmarks, and one concrete policy or funding recommendation for the paper, report or roadmap;
-- one answer to the transversal governance question.
-
-### Questions for Table 5
-
-1. **Value:** Why would funders, institutions and the community find a shared benchmarking effort worth supporting — for example, being able to assess new projects and claims against agreed benchmarks rather than self-reported results?
-2. **Financing and sustaining it:** How can the shared infrastructure and the contributing community be financed, created and kept alive? Which existing instruments could support it now (calls, research infrastructures, compute and quantum access, health-data initiatives, standardisation routes), and what new or adapted ones would be needed so that contributing to benchmarks becomes part of funded work rather than volunteer effort?
-3. **Toward an ecosystem:** Could this grow into a connected ecosystem of benchmarks across fields rather than a one-off, and what would that take? What single concrete recommendation or open policy question should the paper carry?
-4. **Transversal — sustaining the ecosystem (infrastructure, community, scientific governance):**
-
-   BENQODHI only works if what this table produces feeds one connected, durable ecosystem rather than a silo. Thinking of the three pillars — the shared **infrastructure** that hosts and maintains it, the **community** that keeps contributing, and the **scientific governance** that keeps it credible — how can this table best feed the third pillar, scientific governance: what would it take for the problems, data and baselines coming out of this table to be curated, reviewed and trusted as credible science over time, and what governance role should this table's own community play in setting and upholding those standards?
+- short answers to the questions above;
+- possible instruments to finance and sustain the effort;
+- one recommendation for the paper, report or roadmap.
 
 ## Guide for Note Takers
 
