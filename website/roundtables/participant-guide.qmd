@@ -28,7 +28,7 @@ Participants will also receive a separate [problem brief](seed-problem-brief.qmd
 | 1 | Genomics, molecular biology and life sciences | A shortlist of candidate problems judged for benchmarkability. |
 | 2 | Medical imaging, diagnostics, machine learning and QML | A shortlist of candidate problems judged for benchmarkability. |
 | 3 | Mechanistic medicine, clinical decisions and operational optimization | A shortlist of candidate problems judged for benchmarkability. |
-| 4 | Benchmarking methods and the repository | Agreed measures for fair comparison, an instance-selection principle, and a practical first release. |
+| 4 | Benchmarking methods and the repository | A practical route to put benchmark material online and keep it credible. |
 | 5 | Infrastructure, community and policy instruments | The value of the effort, how it could be financed and sustained, and one policy or funding recommendation. |
 
 ## Tables 1-3 - Scientific Challenge Tables
@@ -97,22 +97,22 @@ Focus for the table: identify which mechanistic, clinical or operational problem
 
 ## Table 4 - Benchmarking Methods and the Repository
 
-Table 4 gathers people experienced in benchmarking computational methods - classical, AI-based and quantum. Its role is not to choose the scientific priorities, but to work out how to turn candidate problems into benchmarks that let these different kinds of methods be compared fairly: the right measures, well-chosen instances, and a practical route to getting something online and kept credible over time.
+Table 4 gathers people experienced in benchmarking computational methods - classical, AI-based and quantum. Its role is to define a practical route for getting BENQODHI benchmark material online and keeping it credible over time.
 
 ### Expected Output for Table 4
 
 Table 4 should return:
 
-- what has to be agreed, and what has to be measured, for a fair comparison across classical, AI-based, hybrid and quantum methods;
-- a principle for selecting meaningful benchmark instances;
-- a practical view of what "online" means for BENQODHI, how instances and results should be versioned, and the smallest first release the group can commit to with a date;
+- what benchmarking-method experts can contribute to the BENQODHI benchmark effort;
+- the simplest practical route to put benchmark material online;
+- how that online material should be maintained and kept credible over time;
 - one answer to the transversal governance question.
 
 ### Questions for Table 4
 
-1. **Fair comparison across methods:** When the same problem is tackled by classical, AI-based, hybrid and quantum methods, what has to be agreed so the comparison is honest, and what should be measured?
-2. **Good benchmark instances:** How should problem instances be chosen so the benchmark is meaningful and not trivially settled by one type of method?
-3. **"Online" in practice, and versioning:** Getting something online means concrete choices: a hosting platform, an owner, and a way to version instances and results as they evolve. What does "online" mean in practice for BENQODHI, how should instances and results be versioned so comparisons stay valid over time, and what is the smallest first release the group can commit to with a date attached?
+1. **Benchmarking-method expertise:** What can experts in classical, AI-based and quantum benchmarking contribute?
+2. **Getting online:** What is the simplest practical route to put benchmark material online?
+3. **Keeping it credible:** Who should maintain it, and how should updates be reviewed?
 4. **Transversal — sustaining the ecosystem (infrastructure, community, scientific governance):**
 
    BENQODHI only works if what this table produces feeds one connected, durable ecosystem rather than a silo. Thinking of the three pillars — the shared **infrastructure** that hosts and maintains it, the **community** that keeps contributing, and the **scientific governance** that keeps it credible — how can this table best feed the third pillar, scientific governance: what would it take for the problems, data and baselines coming out of this table to be curated, reviewed and trusted as credible science over time, and what governance role should this table's own community play in setting and upholding those standards?
