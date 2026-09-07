@@ -33,7 +33,25 @@ Participants will also receive a separate [seed/problem brief](seed-problem-brie
 
 ## Tables 1-3 - Scientific Challenge Tables
 
-Tables 1-3 should identify candidate health and life-science problems that could become benchmarkable. The seed themes below, and the separate [seed/problem brief](seed-problem-brief.qmd), are only starting points. Participants are encouraged to propose other problems from their own expertise. Each table should then select the strongest candidates for discussion, whether they come from the seeds or from the participants.
+Tables 1-3 should identify candidate health and life-science problems that could become benchmarkable. The discussion starters below, and the separate [seed/problem brief](seed-problem-brief.qmd), are only starting points. Participants are encouraged to propose other problems from their own expertise.
+
+Each table should first collect possible candidate problems, whether they come from the prompts, from the seed/problem brief or from participants. The table should then select the strongest candidates for discussion and answer the questions below for each selected candidate.
+
+### Questions to Answer
+
+#### For Each Candidate Problem
+
+Each selected candidate problem should answer these three questions:
+
+1. **Scientific need:** What is the health or life-science challenge, and why is it worth benchmarking?
+2. **Computational task:** What is computationally hard, and what kind of task is it — optimization, inference, sampling, simulation, learning?
+3. **Readiness and next step:** What already exists and what is missing, and what single step would most improve its benchmarkability?
+
+#### Common Question to Answer Once per Table
+
+**Sustaining the ecosystem (infrastructure, community, scientific governance):**
+
+BENQODHI only works if what this table produces feeds one connected, durable ecosystem rather than a silo. Thinking of the three pillars — the shared **infrastructure** that hosts and maintains it, the **community** that keeps contributing, and the **scientific governance** that keeps it credible — how can this table best feed the third pillar, scientific governance: what would it take for the problems, data and baselines coming out of this table to be curated, reviewed and trusted as credible science over time, and what governance role should this table's own community play in setting and upholding those standards?
 
 ### Expected Output for Tables 1-3
 
@@ -42,23 +60,11 @@ Each scientific table should return:
 - a shortlist of candidate problems selected for further work, around two or three;
 - for each candidate, a concise judgment of scientific relevance, computational bottleneck, available benchmark ingredients, missing pieces and readiness;
 - one recommended next action that would make the candidate more benchmarkable;
-- one answer to the transversal governance question.
-
-### Questions for Each Candidate
-
-1. **Scientific need:** What is the health or life-science challenge, and why is it worth benchmarking?
-2. **Computational task:** What is computationally hard, and what kind of task is it — optimization, inference, sampling, simulation, learning?
-3. **Readiness and next step:** What already exists and what is missing, and what single step would most improve its benchmarkability?
-
-### Transversal Governance Question (once per table)
-
-**Sustaining the ecosystem (infrastructure, community, scientific governance):**
-
-BENQODHI only works if what this table produces feeds one connected, durable ecosystem rather than a silo. Thinking of the three pillars — the shared **infrastructure** that hosts and maintains it, the **community** that keeps contributing, and the **scientific governance** that keeps it credible — how can this table best feed the third pillar, scientific governance: what would it take for the problems, data and baselines coming out of this table to be curated, reviewed and trusted as credible science over time, and what governance role should this table's own community play in setting and upholding those standards?
+- one answer to the common governance question.
 
 ### Table 1 - Genomics, Molecular Biology and Life Sciences
 
-Seed themes:
+Discussion starters for possible candidate problems:
 
 - haplotype phasing and related variant-interpretation problems;
 - RNA/DNA sequence similarity, matching, alignment or structure prediction;
@@ -70,7 +76,7 @@ Focus for the table: identify which life-science problems are important, computa
 
 ### Table 2 - Medical Imaging, Diagnostics, Machine Learning and QML
 
-Seed themes:
+Discussion starters for possible candidate problems:
 
 - medical image reconstruction, segmentation, classification or generation;
 - quantum machine-learning approaches for imaging, diagnosis or biomedical data analysis;
@@ -82,7 +88,7 @@ Focus for the table: identify which ML, QML, imaging or diagnostic problems are 
 
 ### Table 3 - Mechanistic Medicine, Clinical Decisions and Operational Optimization
 
-Seed themes:
+Discussion starters for possible candidate problems:
 
 - radiotherapy treatment planning;
 - mechanistic-modelling problems such as network reconstruction, context-specific model extraction, parameter inference, model calibration and intervention search;
