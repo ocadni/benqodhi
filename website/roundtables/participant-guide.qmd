@@ -47,7 +47,7 @@ Each selected candidate problem should answer these three questions:
 2. **Computational task:** What is computationally hard, and what kind of task is it — optimization, inference, sampling, simulation, learning?
 3. **Readiness and next step:** What already exists and what is missing, and what single step would most improve its benchmarkability?
 
-#### Common Question to Answer Once per Table
+#### Transversal Question for All Tables (Answer Once per Table)
 
 **Sustaining the ecosystem (infrastructure, community, scientific governance):**
 
@@ -60,7 +60,7 @@ Each scientific table should return:
 - a shortlist of candidate problems selected for further work, around two or three;
 - for each candidate, a concise judgment of scientific relevance, computational bottleneck, available benchmark ingredients, missing pieces and readiness;
 - one recommended next action that would make the candidate more benchmarkable;
-- one answer to the common governance question.
+- one answer to the transversal governance question.
 
 ### Table 1 - Genomics, Molecular Biology and Life Sciences
 
