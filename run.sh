@@ -27,7 +27,10 @@ case "${CMD}" in
     ;;
   render)
     cd "${SITE_DIR}"
-    exec quarto render
+    quarto render
+    cd "${ROOT_DIR}"
+    python3 workshop/roundtable/publish_table_guides.py || \
+      echo "WARNING: round-table guide publication failed; keeping rendered site." >&2
     ;;
   *)
     echo "Usage: ./run.sh [preview|render]" >&2

@@ -1,7 +1,7 @@
 # Table 5 — Infrastructure, community and policy instruments
 
 - **Date:** 11 September 2026
-- **Note takers:**
+- **Note takers:** Gabriele Leoni
 - **Rapporteur:**
 
 ## Answers to the table's questions

@@ -29,6 +29,10 @@ jobs:
         with:
           path: website
 
+      - name: Publish round-table guides
+        run: python3 workshop/roundtable/publish_table_guides.py
+        continue-on-error: true
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

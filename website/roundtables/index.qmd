@@ -20,9 +20,8 @@ problems from their own expertise.
 
 ### Participant guide
 
-The participant guide defines the scope of the morning, the common transversal
-question for all tables, the readiness scale, and the expected output from each
-working table.
+The participant guide defines the scope of the morning and the current table
+division, including participants and note-takers.
 
 [Open the participant guide](participant-guide.qmd){.text-link}
 
@@ -36,10 +35,14 @@ not to constrain the discussion.
 
 ## Table Structure
 
-| Table | Focus |
-|---|---|
-| 1 | Genomics, molecular biology and life sciences |
-| 2 | Medical imaging, diagnostics, machine learning and QML |
-| 3 | Mechanistic medicine, clinical decisions and operational optimization |
-| 4 | Benchmarking methods and the repository |
-| 5 | Infrastructure, community and policy instruments |
+Each table has its own guide. The editable source files live under
+`workshop/roundtable/table-N/table-guide.md`; GitHub Pages republishes these HTML
+pages when the site is rebuilt.
+
+| Table | Focus | Guide |
+|---|---|---|
+| 1 | Genomics, molecular biology and life sciences | [HTML](table-1/table-guide.html) · [PDF](table-1/table-guide.pdf) |
+| 2 | Medical imaging, diagnostics, machine learning and QML | [HTML](table-2/table-guide.html) · [PDF](table-2/table-guide.pdf) |
+| 3 | Mechanistic medicine, clinical decisions and operational optimization | [HTML](table-3/table-guide.html) · [PDF](table-3/table-guide.pdf) |
+| 4 | Benchmarking methods and the repository | [HTML](table-4/table-guide.html) · [PDF](table-4/table-guide.pdf) |
+| 5 | Infrastructure, community and policy instruments | [HTML](table-5/table-guide.html) · [PDF](table-5/table-guide.pdf) |
