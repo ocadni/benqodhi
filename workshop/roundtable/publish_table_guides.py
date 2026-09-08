@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Publish workshop table guides into the rendered Quarto site.
+"""Publish workshop round-table documents into the rendered Quarto site.
 
-The canonical table-guide Markdown files live under workshop/roundtable/table-N/.
-This script keeps that source of truth in place and exposes each guide as a
-website page under website/_site/roundtables/table-N/table-guide.html.
+The canonical Markdown files live under workshop/roundtable/table-N/. This script
+keeps that source of truth in place and exposes each guide and answers file as
+website pages under website/_site/roundtables/table-N/.
 
 Rendering is intentionally permissive: each table is handled independently, and
 the script falls back to a small built-in Markdown renderer if Quarto is not
@@ -38,8 +38,10 @@ def normalize_links(markdown: str) -> str:
     replacements = [
         ("../../../website/roundtables/seed-problem-brief.qmd", "../seed-problem-brief.html"),
         ("../../website/roundtables/seed-problem-brief.qmd", "../seed-problem-brief.html"),
-        ("../../../website/roundtables/participant-guide.qmd", "../participant-guide.html"),
-        ("../../website/roundtables/participant-guide.qmd", "../participant-guide.html"),
+        ("../../../website/roundtables/participant-guide.qmd", "../index.html"),
+        ("../../website/roundtables/participant-guide.qmd", "../index.html"),
+        ("../../../website/roundtables/index.qmd", "../index.html"),
+        ("../../website/roundtables/index.qmd", "../index.html"),
     ]
     for old, new in replacements:
         markdown = markdown.replace(old, new)
@@ -87,6 +89,12 @@ def render_fallback_markdown(markdown: str) -> str:
         stripped = line.strip()
 
         if not stripped:
+            index += 1
+            continue
+
+        if stripped.startswith("<!--"):
+            while index < len(lines) and "-->" not in lines[index]:
+                index += 1
             index += 1
             continue
 
@@ -215,7 +223,6 @@ def page_shell(title: str, body: str, notice: str | None = None) -> str:
 <body>
   <nav class="guide-nav">
     <a href="../index.html">Round Tables</a>
-    <a href="../participant-guide.html">Participant Guide</a>
     <a href="../seed-problem-brief.html">Seed Problem Brief</a>
   </nav>
   {notice_html}
@@ -233,14 +240,14 @@ def write_fallback_page(destination: Path, title: str, markdown: str, notice: st
     destination.write_text(page_shell(title, body, notice=notice), encoding="utf-8")
 
 
-def render_with_quarto(src: Path, destination_dir: Path) -> tuple[bool, str]:
+def render_with_quarto(src: Path, destination_dir: Path, output_name: str) -> tuple[bool, str]:
     quarto = shutil.which("quarto")
     if not quarto:
         return False, "quarto not found on PATH"
 
     with tempfile.TemporaryDirectory(prefix="benqodhi-table-guide-") as tmp_name:
         tmp_dir = Path(tmp_name)
-        tmp_src = tmp_dir / "table-guide.md"
+        tmp_src = tmp_dir / src.name
         tmp_src.write_text(normalize_links(src.read_text(encoding="utf-8")), encoding="utf-8")
 
         cmd = [
@@ -250,58 +257,68 @@ def render_with_quarto(src: Path, destination_dir: Path) -> tuple[bool, str]:
             "--to",
             "html",
             "--output",
-            "table-guide.html",
+            output_name,
         ]
         completed = subprocess.run(cmd, cwd=tmp_dir, capture_output=True, text=True)
         if completed.returncode != 0:
             message = (completed.stderr or completed.stdout or "unknown quarto error").strip()
             return False, message
 
-        rendered = tmp_dir / "table-guide.html"
+        rendered = tmp_dir / output_name
         if not rendered.exists():
-            return False, "quarto did not produce table-guide.html"
-        shutil.copy2(rendered, destination_dir / "table-guide.html")
+            return False, f"quarto did not produce {output_name}"
+        shutil.copy2(rendered, destination_dir / output_name)
 
-        asset_dir = tmp_dir / "table-guide_files"
+        asset_dir = tmp_dir / f"{Path(output_name).stem}_files"
         if asset_dir.exists():
-            shutil.copytree(asset_dir, destination_dir / "table-guide_files", dirs_exist_ok=True)
+            shutil.copytree(asset_dir, destination_dir / asset_dir.name, dirs_exist_ok=True)
 
     return True, ""
 
 
-def publish_table(table_id: str, title: str, root: Path) -> str | None:
+def publish_markdown(src: Path, dst_html: Path, title: str) -> str | None:
+    dst_html.parent.mkdir(parents=True, exist_ok=True)
+    success, message = render_with_quarto(src, dst_html.parent, dst_html.name)
+    if success:
+        return None
+
+    write_fallback_page(dst_html, title, src.read_text(encoding="utf-8"))
+    warning = message.splitlines()[0] if message else "unknown issue"
+    return f"{src.name}: Quarto skipped ({warning}); wrote fallback page"
+
+
+def publish_table(table_id: str, title: str, root: Path) -> list[str]:
     src_dir = root / "workshop" / "roundtable" / table_id
-    src = src_dir / "table-guide.md"
     dst_dir = root / "website" / "_site" / "roundtables" / table_id
-    dst_html = dst_dir / "table-guide.html"
+    warnings: list[str] = []
 
-    if not src.exists():
-        write_fallback_page(
-            dst_html,
-            title,
-            f"# {title}\n\nThe source file `{src.relative_to(root)}` is missing.",
-            notice="This guide could not be rendered because the source Markdown file is missing.",
-        )
-        return f"{table_id}: missing source, wrote fallback page"
+    docs = [
+        ("table-guide.md", "table-guide.html", title),
+        ("answers.md", "answers.html", f"{title} - Answers"),
+    ]
 
-    dst_dir.mkdir(parents=True, exist_ok=True)
-    success, message = render_with_quarto(src, dst_dir)
-    if not success:
-        write_fallback_page(
-            dst_html,
-            title,
-            src.read_text(encoding="utf-8"),
-        )
-        warning = message.splitlines()[0] if message else "unknown issue"
-        result = f"{table_id}: Quarto skipped ({warning}); wrote fallback page"
-    else:
-        result = None
+    for src_name, output_name, doc_title in docs:
+        src = src_dir / src_name
+        dst_html = dst_dir / output_name
+        if not src.exists():
+            write_fallback_page(
+                dst_html,
+                doc_title,
+                f"# {doc_title}\n\nThe source file `{src.relative_to(root)}` is missing.",
+                notice="This document could not be rendered because the source Markdown file is missing.",
+            )
+            warnings.append(f"{src_name}: missing source, wrote fallback page")
+            continue
+
+        warning = publish_markdown(src, dst_html, doc_title)
+        if warning:
+            warnings.append(warning)
 
     pdf = src_dir / "table-guide.pdf"
     if pdf.exists():
         shutil.copy2(pdf, dst_dir / "table-guide.pdf")
 
-    return result
+    return warnings
 
 
 def main() -> int:
@@ -312,14 +329,15 @@ def main() -> int:
     warnings = []
     for table_id, title in TABLES.items():
         try:
-            warning = publish_table(table_id, title, root)
+            table_warnings = publish_table(table_id, title, root)
         except Exception as exc:  # Keep the site deployable even on unexpected input.
-            warning = f"{table_id}: unexpected error ({exc}); skipped"
-        if warning:
-            warnings.append(warning)
-            print(f"WARNING: {warning}", file=sys.stderr)
+            table_warnings = [f"unexpected error ({exc}); skipped"]
+        if table_warnings:
+            warnings.extend(f"{table_id}: {warning}" for warning in table_warnings)
+            for warning in table_warnings:
+                print(f"WARNING: {table_id}: {warning}", file=sys.stderr)
         else:
-            print(f"Published {table_id}/table-guide.html")
+            print(f"Published {table_id}/table-guide.html and answers.html")
 
     if warnings:
         print("Finished with warnings; site publication remains non-blocking.", file=sys.stderr)

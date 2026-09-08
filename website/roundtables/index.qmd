@@ -3,46 +3,68 @@ title: "Round Tables"
 subtitle: "Day 2 working material for benchmark design"
 ---
 
-The Day 2 morning session turns the workshop discussion into focused material for
-a possible BENQODHI paper, report, roadmap or benchmark-repository plan.
+# BENQODHI Day 2 Morning - Round Tables
 
-Participants should use these documents as working aids. The seed problems are
-starting points only; tables are encouraged to propose stronger or more relevant
-problems from their own expertise.
+*Working page for the Day 2 morning round tables, 11 September 2026.*
+
+## Aim and Scope
+
+The Day 2 morning round tables collect focused expert input for a possible
+BENQODHI workshop output such as a paper, report, roadmap or policy note. The
+central question is how important challenges in health and the life sciences can
+become credible, reusable benchmarks for classical, AI-based, hybrid and quantum
+algorithms.
+
+The preferred focus is optimization problems, because optimization is often
+presented as one of the main near-term applications of quantum computing. The
+discussion can also include inference, sampling, simulation, reconstruction and
+learning problems when they have a clear health or life-science motivation and a
+plausible route to benchmarkability.
+
+The objective is to identify which problems, infrastructure choices, community
+mechanisms and policy instruments would make a future benchmark repository or
+ecosystem useful beyond the workshop.
 
 ::: {.idea-actions}
-[Participant guide](participant-guide.qmd){.primary-action}
-[Seed problem brief](seed-problem-brief.qmd){.secondary-action}
+[Seed problem brief](seed-problem-brief.qmd){.primary-action}
 [Workshop programme](../program.qmd){.secondary-action}
 :::
 
-## Documents
+## Round Table Division
 
-### Participant guide
+The detailed questions and discussion prompts are kept in each table's own guide.
+The answers pages expose the live working files that note-takers update during or
+after the session.
 
-The participant guide defines the scope of the morning and the current table
-division, including participants and note-takers.
+| Table | Focus | Participants | Note-takers | Guide |
+|---|---|---|---|---|
+| 1 | Genomics, molecular biology and life sciences | Francesco Zamponi; Zev Kronenberg; Aurora Maurizio | Gabriele Leoni; Mario Chizzini | [HTML](table-1/table-guide.html) · [PDF](table-1/table-guide.pdf) |
+| 2 | Medical imaging, diagnostics, machine learning and QML | Hao Wang; Miguel Angel Gonzalez Ballester; Guglielmo Mazzola (placement tbc) | Alessandro Zani; Lea Schuh | [HTML](table-2/table-guide.html) · [PDF](table-2/table-guide.pdf) |
+| 3 | Mechanistic medicine, clinical decisions and operational optimization | Miguel Ponce de Leon; Gabriele Spada; Carlo Mancini Terracciano; Federico Ricci-Tersenghi | Diego Reforgiato Recupero; Sergio Consoli | [HTML](table-3/table-guide.html) · [PDF](table-3/table-guide.pdf) |
+| 4 | Benchmarking methods and the repository | Vito Palmisano; Mario Ceresa; Rene Chatwell (morning attendance tbc) | Luca Del Bono; Federico Celauro | [HTML](table-4/table-guide.html) · [PDF](table-4/table-guide.pdf) |
+| 5 | Infrastructure, community and policy instruments | Tobias Wiesenthal; Doru Tanasa; Kyriacos Hatzaras; Yiannos Tolias; Frederic Domps | Mauro Petrillo; Antonio Puertas Gallardo | [HTML](table-5/table-guide.html) · [PDF](table-5/table-guide.pdf) |
 
-[Open the participant guide](participant-guide.qmd){.text-link}
+Facilitators and rapporteurs are still to be confirmed.
 
-### Seed problem brief
+## Live Table Answers
 
-The seed problem brief collects candidate scientific problems, benchmark assets
-and infrastructure or policy examples. It is intended to support expert judgment,
-not to constrain the discussion.
+The editable sources live in `workshop/roundtable/table-N/answers.md`. GitHub
+Pages republishes these HTML pages whenever the site is rebuilt.
 
-[Open the seed problem brief](seed-problem-brief.qmd){.text-link}
-
-## Table Structure
-
-Each table has its own guide. The editable source files live under
-`workshop/roundtable/table-N/table-guide.md`; GitHub Pages republishes these HTML
-pages when the site is rebuilt.
-
-| Table | Focus | Guide |
+| Table | Focus | Answers |
 |---|---|---|
-| 1 | Genomics, molecular biology and life sciences | [HTML](table-1/table-guide.html) · [PDF](table-1/table-guide.pdf) |
-| 2 | Medical imaging, diagnostics, machine learning and QML | [HTML](table-2/table-guide.html) · [PDF](table-2/table-guide.pdf) |
-| 3 | Mechanistic medicine, clinical decisions and operational optimization | [HTML](table-3/table-guide.html) · [PDF](table-3/table-guide.pdf) |
-| 4 | Benchmarking methods and the repository | [HTML](table-4/table-guide.html) · [PDF](table-4/table-guide.pdf) |
-| 5 | Infrastructure, community and policy instruments | [HTML](table-5/table-guide.html) · [PDF](table-5/table-guide.pdf) |
+| 1 | Genomics, molecular biology and life sciences | [Open answers](table-1/answers.html) |
+| 2 | Medical imaging, diagnostics, machine learning and QML | [Open answers](table-2/answers.html) |
+| 3 | Mechanistic medicine, clinical decisions and operational optimization | [Open answers](table-3/answers.html) |
+| 4 | Benchmarking methods and the repository | [Open answers](table-4/answers.html) |
+| 5 | Infrastructure, community and policy instruments | [Open answers](table-5/answers.html) |
+
+## Working Material
+
+The [seed problem brief](seed-problem-brief.qmd) collects candidate scientific
+problems, benchmark assets and infrastructure or policy examples. It is intended
+to support expert judgment, not to constrain the discussion.
+
+Each table guide and answers page is generated from the canonical Markdown files
+under `workshop/roundtable/table-N/`, so updates to those files become visible on
+the website after the GitHub Pages build.

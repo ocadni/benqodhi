@@ -34,10 +34,10 @@ See the [program page](program.qmd) for the detailed timing.
 
 ## Day 2 round-table material
 
-The Day 2 morning round tables use two public working documents:
+The Day 2 morning round tables use public working material:
 
-- [Participant guide](roundtables/participant-guide.qmd) — the discussion scope,
-  table structure, common transversal question and expected outputs.
+- [Round tables](roundtables/index.qmd) — the discussion scope, table division,
+  table guides and live table answers.
 - [Seed problem brief](roundtables/seed-problem-brief.qmd) — candidate problems,
   benchmark assets and infrastructure or policy examples for expert review.
 

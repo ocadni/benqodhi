@@ -1,44 +1,9 @@
 ---
-title: "Day 2 Round Table Participant Guide"
-subtitle: "Overview and table division for the BENQODHI morning round tables"
+title: "Round Tables"
+subtitle: "This page has moved"
 ---
 
-# BENQODHI Day 2 Morning - Round Table Participant Guide
-
-*Participant guide for the Day 2 morning round tables, 11 September 2026.*
-
-## Aim and Scope
-
-The Day 2 morning round tables are designed to collect focused expert input for a
-possible BENQODHI workshop output such as paper, report, roadmap or policy note.
-The central question is how important challenges in health and the life sciences
-can become credible, reusable benchmarks for classical, AI-based, hybrid and
-quantum algorithms.
-
-The preferred focus is on optimization problems, because optimization is often
-presented as one of the main near-term applications of quantum computing. However,
-the discussion should not be restricted to optimization if another computational
-task is scientifically important and can be stated clearly enough to be assessed.
-Inference, sampling, simulation, reconstruction and learning problems can also be
-considered when they have a clear health or life-science motivation and a
-plausible route to benchmarkability.
-
-The objective is to identify which problems, infrastructure choices,
-community mechanisms and policy instruments would make a future benchmark
-repository or ecosystem useful beyond the workshop.
-
-The detailed questions and discussion prompts are now kept in each table's own
-guide. The shared seed material remains available in the
-[seed problem brief](seed-problem-brief.qmd).
-
-## Round Table Division
-
-| Table | Focus | Participants | Note-takers | Guide |
-|---|---|---|---|---|
-| 1 | Genomics, molecular biology and life sciences | Francesco Zamponi; Zev Kronenberg; Aurora Maurizio | Gabriele Leoni; Mario Chizzini | [HTML](table-1/table-guide.html) · [PDF](table-1/table-guide.pdf) |
-| 2 | Medical imaging, diagnostics, machine learning and QML | Hao Wang; Miguel Angel Gonzalez Ballester; Guglielmo Mazzola (placement tbc) | Alessandro Zani; Lea Schuh | [HTML](table-2/table-guide.html) · [PDF](table-2/table-guide.pdf) |
-| 3 | Mechanistic medicine, clinical decisions and operational optimization | Miguel Ponce de Leon; Gabriele Spada; Carlo Mancini Terracciano; Federico Ricci-Tersenghi | Diego Reforgiato Recupero; Sergio Consoli | [HTML](table-3/table-guide.html) · [PDF](table-3/table-guide.pdf) |
-| 4 | Benchmarking methods and the repository | Vito Palmisano; Mario Ceresa; Rene Chatwell (morning attendance tbc) | Luca Del Bono; Federico Celauro | [HTML](table-4/table-guide.html) · [PDF](table-4/table-guide.pdf) |
-| 5 | Infrastructure, community and policy instruments | Tobias Wiesenthal; Doru Tanasa; Kyriacos Hatzaras; Yiannos Tolias; Frederic Domps | Mauro Petrillo; Antonio Puertas Gallardo | [HTML](table-5/table-guide.html) · [PDF](table-5/table-guide.pdf) |
-
-Facilitators and rapporteurs are still to be confirmed.
+```{=html}
+<meta http-equiv="refresh" content="0; url=index.html">
+<p>The participant guide is now part of the <a href="index.html">Round Tables</a> page.</p>
+```

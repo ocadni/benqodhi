@@ -124,4 +124,4 @@ One concrete recommendation with a named mechanism beats five aspirations.
 ---
 
 *Full question set and background: `table-guide.md` in this folder, and the
-[participant guide](../../../website/roundtables/participant-guide.qmd).*
+[round tables page](../../../website/roundtables/index.qmd).*

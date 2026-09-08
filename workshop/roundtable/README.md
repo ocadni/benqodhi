@@ -11,7 +11,7 @@ paper, report, roadmap or policy note, and for the Day 2 closing sessions.
   editor (for example Kiro or VS Code).
 - Each subfolder starts with an `answers.md` file that already contains the table's
   questions from the
-  [participant guide](../../website/roundtables/participant-guide.qmd) — the job is to
+  [round tables page](../../website/roundtables/index.qmd) — the job is to
   fill in the answers and the conclusions live during the session.
 - A table may add **as many files as it finds useful** — for example a second notes
   file, a per-candidate file, or a slide deck. This lets more than one person work
@@ -35,7 +35,7 @@ paper, report, roadmap or policy note, and for the Day 2 closing sessions.
   fresh document.
 - `table-N/table-guide.md` (with a printable `table-guide.pdf`) — the table's own
   questions and short guide, extracted from the
-  [participant guide](../../website/roundtables/participant-guide.qmd) so each table has
+  [round tables page](../../website/roundtables/index.qmd) so each table has
   only what it needs on the table.
 - [`table-5/steering-notes.md`](table-5/steering-notes.md) (and its PDF) — notes for
   whoever moderates Table 5.
