@@ -23,8 +23,7 @@ Inference, sampling, simulation, reconstruction and learning problems can also b
 considered when they have a clear health or life-science motivation and a
 plausible route to benchmarkability.
 
-The session is not expected to create a complete benchmark repository during the
-workshop. The objective is to identify which problems, infrastructure choices,
+The objective is to identify which problems, infrastructure choices,
 community mechanisms and policy instruments would make a future benchmark
 repository or ecosystem useful beyond the workshop.
 
@@ -36,10 +35,10 @@ guide. The shared seed material remains available in the
 
 | Table | Focus | Participants | Note-takers | Guide |
 |---|---|---|---|---|
-| 1 | Genomics, molecular biology and life sciences | Francesco Zamponi; Zev Kronenberg; Aurora Maurizio | Lorenzo Arsini; Mario Chizzini | [HTML](table-1/table-guide.html) · [PDF](table-1/table-guide.pdf) |
+| 1 | Genomics, molecular biology and life sciences | Francesco Zamponi; Zev Kronenberg; Aurora Maurizio | Gabriele Leoni; Mario Chizzini | [HTML](table-1/table-guide.html) · [PDF](table-1/table-guide.pdf) |
 | 2 | Medical imaging, diagnostics, machine learning and QML | Hao Wang; Miguel Angel Gonzalez Ballester; Guglielmo Mazzola (placement tbc) | Alessandro Zani; Lea Schuh | [HTML](table-2/table-guide.html) · [PDF](table-2/table-guide.pdf) |
 | 3 | Mechanistic medicine, clinical decisions and operational optimization | Miguel Ponce de Leon; Gabriele Spada; Carlo Mancini Terracciano; Federico Ricci-Tersenghi | Diego Reforgiato Recupero; Sergio Consoli | [HTML](table-3/table-guide.html) · [PDF](table-3/table-guide.pdf) |
 | 4 | Benchmarking methods and the repository | Vito Palmisano; Mario Ceresa; Rene Chatwell (morning attendance tbc) | Luca Del Bono; Federico Celauro | [HTML](table-4/table-guide.html) · [PDF](table-4/table-guide.pdf) |
-| 5 | Infrastructure, community and policy instruments | Tobias Wiesenthal; Doru Tanasa; Kyriacos Hatzaras; Yiannos Tolias; Frederic Domps | Mauro | [HTML](table-5/table-guide.html) · [PDF](table-5/table-guide.pdf) |
+| 5 | Infrastructure, community and policy instruments | Tobias Wiesenthal; Doru Tanasa; Kyriacos Hatzaras; Yiannos Tolias; Frederic Domps | Mauro Petrillo; Antonio Puertas Gallardo | [HTML](table-5/table-guide.html) · [PDF](table-5/table-guide.pdf) |
 
 Facilitators and rapporteurs are still to be confirmed.
