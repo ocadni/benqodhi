@@ -26,7 +26,6 @@ Wi-Fi access for workshop participants is provided on the JRC guest network.
 
 | Time | Item | Location |
 |---|---|---|
-| 08:30–09:15 | Registration and arrival | Building 27B |
 | 10:25–10:55 | Coffee break | Building 27B |
 | 12:30–14:00 | Lunch | Building 101 |
 | 15:40–16:10 | Coffee break | Building 27B |
@@ -37,10 +36,9 @@ Wi-Fi access for workshop participants is provided on the JRC guest network.
 |---|---|---|
 | 08:30–09:00 | Arrival — entrance check | Building 36 |
 | 10:45–11:15 | Coffee break | Building 36 |
-| 12:15–13:15 | Lunch | to be confirmed |
+| 12:15–13:15 | Lunch | Building 36 |
+| 13:15–14:30 | Laboratory Visit | Building 24 EMSL |
 
-Please let the workshop coordination know in advance of any dietary requirements or
-allergies.
 
 ## Transport timetables and airport shuttles
 
@@ -48,20 +46,19 @@ allergies.
 
 | Time | Transfer |
 |---|---|
-| Day 1, 18:00–18:20 | JRC Ispra → hotels in Angera |
-| Day 1, evening | Hotels in Angera → social dinner venue walking distance |
-| Day 2, morning | Hotels in Angera → JRC Ispra (to be confirmed) |
+| Day 1, 18:00–18:20 | JRC Ispra Building 27B  → hotels in Angera |
+| Day 1, 19:30 | Hotels in Angera → Lido LaNoce social dinner walking distance |
+| Day 2, morning 08:15–08:30 | Hotels in Angera → JRC Ispra entrance check Walking distance Building 36  |
 
 ### Airport shuttles
 
 Arrival and departure shuttles between the airports and Angera / JRC Ispra are being
-organised. Details to be confirmed.
+organized. Details to be confirmed.
 
 | Airport | Direction | Time | Notes |
 |---|---|---|---|
-| Milano Malpensa (MXP) | Airport → Angera / JRC Ispra | to be confirmed | closest airport to JRC Ispra |
 | Milano Malpensa (MXP) | Angera / JRC Ispra → Airport | to be confirmed | |
-| Milano Linate (LIN) | both directions | to be confirmed | |
+| Other Milano Airports/ Train Stations | both directions | to be confirmed | |
 
 Participants are asked to share their arrival and departure times with the workshop
 coordination so that shuttle capacity can be planned.
