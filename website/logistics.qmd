@@ -14,14 +14,11 @@ Wi-Fi access for workshop participants is provided on the JRC guest network.
 
 | Item | Detail |
 |---|---|
-| Network (SSID) | to be confirmed |
-| Access method | to be confirmed |
-| Credentials | distributed at registration |
+| Network (SSID) | EC_Guest |
+| username | guest_jrc@jrc |
+| Password | guest_jrc |
 | Validity | 10–11 September 2026 |
 
-Guest credentials are personal and are handed out at the registration desk on Day 1.
-If you have trouble connecting, ask at the registration desk or contact the workshop
-coordination.
 
 ## Coffee breaks and lunches
 
@@ -52,7 +49,7 @@ allergies.
 | Time | Transfer |
 |---|---|
 | Day 1, 18:00–18:20 | JRC Ispra → hotels in Angera |
-| Day 1, evening | Hotels in Angera → social dinner venue (to be confirmed) |
+| Day 1, evening | Hotels in Angera → social dinner venue walking distance |
 | Day 2, morning | Hotels in Angera → JRC Ispra (to be confirmed) |
 
 ### Airport shuttles
@@ -73,7 +70,7 @@ coordination so that shuttle capacity can be planned.
 
 The JRC Ispra site is an access-controlled facility. Bring a valid photo ID (passport
 or national identity card) matching the name used at registration. Allow extra time for
-the entrance check, in particular on Day 2 (08:30–09:00).
+the entrance check, in particular on Day 1 (08:30–09:00).
 
 ## Social dinner
 
@@ -85,7 +82,7 @@ the entrance check, in particular on Day 2 (08:30–09:00).
 | Format | Aperitivo and dinner |
 | Venue | Lido La Noce |
 | Address | Viale Libertà 4, Angera, Italy |
-| Transfer | from hotels in Angera (to be confirmed) |
+| Transfer | from hotels in Angera walking distance |
 
 The social dinner is open to registered participants on the social-dinner list. Please
 confirm your attendance and any dietary requirements with the workshop coordination.
