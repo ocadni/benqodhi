@@ -1,0 +1,97 @@
+---
+title: "Logistics and Timetables"
+subtitle: "Practical information for participants · 10–11 September 2026 · JRC Ispra"
+---
+
+::: {.callout-note}
+Practical details are still being confirmed and will be updated on this page as they
+arrive. Timings are as currently planned and may still shift slightly.
+:::
+
+## Internet credentials
+
+Wi-Fi access for workshop participants is provided on the JRC guest network.
+
+| Item | Detail |
+|---|---|
+| Network (SSID) | to be confirmed |
+| Access method | to be confirmed |
+| Credentials | distributed at registration |
+| Validity | 10–11 September 2026 |
+
+Guest credentials are personal and are handed out at the registration desk on Day 1.
+If you have trouble connecting, ask at the registration desk or contact the workshop
+coordination.
+
+## Coffee breaks and lunches
+
+### Day 1 — 10 September 2026 · Building 27B
+
+| Time | Item | Location |
+|---|---|---|
+| 08:30–09:15 | Registration and arrival | Building 27B |
+| 10:25–10:55 | Coffee break | Building 27B |
+| 12:30–14:00 | Lunch | Building 101 |
+| 15:40–16:10 | Coffee break | Building 27B |
+
+### Day 2 — 11 September 2026 · Building 36
+
+| Time | Item | Location |
+|---|---|---|
+| 08:30–09:00 | Arrival — entrance check | Building 36 |
+| 10:45–11:15 | Coffee break | Building 36 |
+| 12:15–13:15 | Lunch | to be confirmed |
+
+Please let the workshop coordination know in advance of any dietary requirements or
+allergies.
+
+## Transport timetables and airport shuttles
+
+### On-site transfers
+
+| Time | Transfer |
+|---|---|
+| Day 1, 18:00–18:20 | JRC Ispra → hotels in Angera |
+| Day 1, evening | Hotels in Angera → social dinner venue (to be confirmed) |
+| Day 2, morning | Hotels in Angera → JRC Ispra (to be confirmed) |
+
+### Airport shuttles
+
+Arrival and departure shuttles between the airports and Angera / JRC Ispra are being
+organised. Details to be confirmed.
+
+| Airport | Direction | Time | Notes |
+|---|---|---|---|
+| Milano Malpensa (MXP) | Airport → Angera / JRC Ispra | to be confirmed | closest airport to JRC Ispra |
+| Milano Malpensa (MXP) | Angera / JRC Ispra → Airport | to be confirmed | |
+| Milano Linate (LIN) | both directions | to be confirmed | |
+
+Participants are asked to share their arrival and departure times with the workshop
+coordination so that shuttle capacity can be planned.
+
+### Access to the JRC site
+
+The JRC Ispra site is an access-controlled facility. Bring a valid photo ID (passport
+or national identity card) matching the name used at registration. Allow extra time for
+the entrance check, in particular on Day 2 (08:30–09:00).
+
+## Social dinner
+
+**Evening of Day 1 — 10 September 2026**
+
+| Item | Detail |
+|---|---|
+| Time | 19:30–21:00 (to be confirmed) |
+| Format | Aperitivo and dinner |
+| Venue | Lido La Noce |
+| Address | Viale Libertà 4, Angera, Italy |
+| Transfer | from hotels in Angera (to be confirmed) |
+
+The social dinner is open to registered participants on the social-dinner list. Please
+confirm your attendance and any dietary requirements with the workshop coordination.
+
+---
+
+**Workshop coordination and logistics:** Ilse Verspreet
+
+**More information:** [JRC-F7-CONFERENCES@ec.europa.eu](mailto:JRC-F7-CONFERENCES@ec.europa.eu)

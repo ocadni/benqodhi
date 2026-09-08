@@ -16,6 +16,8 @@ website:
         text: Program
       - href: roundtables/index.qmd
         text: Round Tables
+      - href: logistics.qmd
+        text: Logistics
       - href: contribute.qmd
         text: Contribute
     right:
