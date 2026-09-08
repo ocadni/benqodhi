@@ -3,11 +3,6 @@ title: "Program"
 subtitle: "10–11 September 2026 · JRC Ispra"
 ---
 
-::: {.callout-note}
-Speaker titles are still being confirmed and will be updated on this page as they
-arrive. Timings are as currently planned and may still shift slightly.
-:::
-
 ## Day 1 — 10 September 2026: Foundations and Use Cases
 
 ### Morning — Foundations and benchmarking practice · Building 27B
@@ -15,7 +10,7 @@ arrive. Timings are as currently planned and may still shift slightly.
 | Time | Session |
 |---|---|
 | 08:30–09:15 | Registration and arrival<br>Registration, informal networking and hybrid connection check. |
-| 09:15–09:50 | Opening and workshop framing<br>Speakers: opening remarks by JRC management representatives (tbc), followed by workshop organisers<br>Institution: European Commission, Joint Research Centre (JRC), Ispra<br>Title: to be confirmed |
+| 09:15–09:50 | Opening and workshop framing<br>Institution: European Commission, Joint Research Centre (JRC), Ispra |
 | 09:50–10:25 | Vedran Dunjko<br>Institution: Leiden University, The Netherlands<br>Title: The Provable Frontier of Quantum Machine Learning<br>Abstract: Quantum machine learning is shifting from proposing quantum models to determining precisely when quantum resources can improve learning. I will survey recent progress at this frontier: rigorous separations between quantum and classical learners, advantages enabled by quantum data or privileged quantum information, and generative models combining classical trainability with quantumly intractable sampling. Particular attention will be paid to the assumptions, access models and classical benchmarks underlying these results. Finally, I will ponder how these theoretical advances might be translated into useful methods for the biological and life sciences. |
 | 10:25–10:55 | *Coffee break* |
 | 10:55–11:30 | Miguel A. González Ballester<br>Institution: Universitat Pompeu Fabra (UPF), Barcelona Supercomputing Center (BSC) and ICREA, Barcelona, Spain<br>Title: Quantum computing for interpretable AI in healthcare<br>Abstract: Deep learning has had a profound effect in all walks of life, not least in medical research. The impressive performance of these methods is partly due to the development of very efficient approaches to solve highly overparameterized neural networks. Conversely, this leads to the problem of trust and interpretability of these complex models, which are key aspects in the medical domain. In this talk, we will see several works performed in our lab focusing on explainability and uncertainty modelling for a variety of clinical applications. We will then delve into the interface between machine learning and quantum computing, and explore early works on the development of quantum machine learning approaches for healthcare. First, we will show some results on the establishment of quantum diffusion models for medical image analysis. Finally, we will link back to explainability, formulating a quantum annealing framework for explainable deep learning. |
@@ -40,11 +35,9 @@ arrive. Timings are as currently planned and may still shift slightly.
 | 17:30–17:50 | Sergio Consoli<br>Institution: European Commission, Joint Research Centre (JRC), Unit F.7, Ispra (VA), Italy<br>Title: On the Minimum Quartet Tree Cost problem for the quartet method of hierarchical clustering<br>Abstract: Given a set of n data objects and their pairwise distances, the Minimum Quartet Tree Cost (MQTC) problem seeks an optimal full unrooted binary tree by minimizing the sum of costs across all consistent embedded quartet topologies. The MQTC problem provides a powerful framework for hierarchical clustering without requiring strong prior structural assumptions, making it particularly valuable in health technologies and computational biology for constructing phylogenetic trees, analyzing viral/bacterial genomes, and classifying unknown pathogens into distinct groups or classes.<br><br>Because MQTC is an NP-hard combinatorial optimization problem, scalable exact solution approaches remain a challenge. This talk will present a summary of existing metaheuristics for MQTC alongside a foundational exact solution algorithm that generates exact gold-standard benchmarks for small problem sizes. Importantly, the underlying structural construction mechanisms of these MQTC solution algorithms present compelling properties for quantum algorithmic design. The presenter highlights MQTC as an ideal candidate benchmark problem for testing exact small-scale quantum optimization approaches and quantum routing. Finally, it is suggested to explore potential pathways toward efficient quantum methods—either through quantum-native formulations of existing MQTC metaheuristics or hybrid classical-quantum exact algorithms. |
 | 18:00–18:20 | Transfer from JRC Ispra to hotels in Angera |
 
-Morning session slots: 30 min + 5 min Q&A. Afternoon session slots: 17 min + 3 min Q&A.
-
 ### Evening — Social programme
 
-19:30–21:00 (tbc) — Aperitivo and dinner, Lido La Noce, Viale Libertà 4, Angera, Italy.
+19:30–21:00 — Aperitivo and dinner, Lido La Noce, Viale Libertà 4, Angera, Italy.
 
 ---
 
@@ -60,7 +53,7 @@ The morning working material is available on the
 |---|---|
 | 08:30–09:00 | Arrival — entrance check |
 | 09:00–09:15 | Introduction |
-| 09:15–10:45 | Parallel focus groups<br>Facilitators: to be confirmed<br>Table 5 note taker: Gabriele Leoni<br>Focus: problem-focused groups; benchmark dataset and repository architecture |
+| 09:15–10:45 | Parallel focus groups<br>Working material: [round tables page](roundtables/index.qmd) |
 | 10:45–11:15 | *Coffee break* |
 | 11:15–12:15 | Focus-group recap and plenary consolidation<br>Speakers: focus-group rapporteurs and workshop organisers |
 | 12:15–13:15 | *Lunch* |
@@ -72,8 +65,6 @@ The morning working material is available on the
 | Time | Session |
 |---|---|
 | 14:10–14:15 | Opening remarks<br>Speakers: workshop organisers |
-| 14:15–15:30 | Short presentations — the future of quantum computing in Europe<br>Confirmed speaker: Vito Palmisano<br>Institution: CINECA, Italy<br>Title: The Quantum Landscape - State of the Art, Architectures and Installations<br>Abstract: The Quantum Computing landscape is evolving rapidly, driven by different qubit technologies, major industry players, and public investments being made. In Europe, this momentum is also thanks to the EuroHPC Joint Undertaking (JU), which has deployed a federation of six flagship quantum computers across key hosting sites in Italy (CINECA), Germany (LRZ), France (GENCI), Spain (BSC), Czechia (IT4I), and Poland (PCSS). Italy is also investing heavily in the sector, with major installations spread throughout the country, including the IQM 'Lagrange' system at Politecnico di Torino and the 64-qubit Partenope machine within the Naples Quantum Bay at Federico II University. A central role is played by CINECA, where a 54-qubit IQM superconducting quantum computer and a 140-qubit Pasqal neutral-atom quantum simulator are being tightly coupled with the supercomputer Leonardo to enable advanced hybrid workflows.<br><br>Confirmed speaker: Kyriacos Hatzaras<br>Institution: DG CNECT, European Commission<br>Topic and title: to be confirmed<br>Format: short presentation, approximately 5 min<br><br>Confirmed speaker: Doru Tanasa<br>Institution: DG CNECT, European Commission<br>Title: to be confirmed<br>Topic: current status of EC initiatives in quantum, the Quantum Europe Strategy, the upcoming Quantum Act, and the changes brought in early 2026 by the amendment of the EuroHPC Regulation<br><br>Confirmed speaker: Rene Chatwell<br>Institution: EuroHPC Joint Undertaking<br>Title: to be confirmed<br>Topic: to be confirmed<br><br>Other invited speakers (to be confirmed): representatives of DG DEFIS and DG SANTE<br>Format: 10–15 min each — plans, resources, infrastructure and access, challenges, policy and vision |
-| 15:30–15:55 | Open discussion and workshop conclusions<br>Focus: exchange on the workshop's conclusions<br>Moderator: to be confirmed |
+| 14:15–15:30 | Short presentations — the future of quantum computing in Europe<br>Doru Tanasa<br>Institution: DG CNECT, European Commission<br>Abstract: Overview of current European Commission initiatives in quantum technologies, including the Quantum Europe Strategy, the upcoming Quantum Act and the recent EuroHPC developments shaping quantum and hybrid computing access in Europe.<br><br>Rene Chatwell<br>Institution: EuroHPC Joint Undertaking<br><br>Kyriacos Hatzaras<br>Institution: DG CNECT, European Commission<br>Title: Quantum Computing for Health in Europe: An Overview<br><br>Vito Palmisano<br>Institution: CINECA, Italy<br>Title: The Quantum Landscape - State of the Art, Architectures and Installations<br>Abstract: The Quantum Computing landscape is evolving rapidly, driven by different qubit technologies, major industry players, and public investments being made. In Europe, this momentum is also thanks to the EuroHPC Joint Undertaking (JU), which has deployed a federation of six flagship quantum computers across key hosting sites in Italy (CINECA), Germany (LRZ), France (GENCI), Spain (BSC), Czechia (IT4I), and Poland (PCSS). Italy is also investing heavily in the sector, with major installations spread throughout the country, including the IQM 'Lagrange' system at Politecnico di Torino and the 64-qubit Partenope machine within the Naples Quantum Bay at Federico II University. A central role is played by CINECA, where a 54-qubit IQM superconducting quantum computer and a 140-qubit Pasqal neutral-atom quantum simulator are being tightly coupled with the supercomputer Leonardo to enable advanced hybrid workflows.<br><br>DG DEFIS representative (to be confirmed)<br><br>DG SANTE representative (to be confirmed)<br><br>Indaco Biazzo<br>Institution: European Commission, Joint Research Centre (JRC), Ispra<br>Title: JRC Quantum Group<br>Abstract: A short overview of the JRC Quantum Group's activities.|
+| 15:30–15:55 | Open discussion and workshop conclusions |
 | 15:55–16:00 | Closing — workshop organisers |
-
-Speaker titles and abstracts will be added to the programme as they are confirmed.

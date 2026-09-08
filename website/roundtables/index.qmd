@@ -39,9 +39,9 @@ after the session.
 | Table | Focus | Participants | Note-takers | Guide |
 |---|---|---|---|---|
 | 1 | Genomics, molecular biology and life sciences | Francesco Zamponi; Zev Kronenberg; Aurora Maurizio | Gabriele Leoni; Mario Chizzini | [HTML](table-1/table-guide.html) · [PDF](table-1/table-guide.pdf) |
-| 2 | Medical imaging, diagnostics, machine learning and QML | Hao Wang; Miguel Angel Gonzalez Ballester; Guglielmo Mazzola (placement tbc) | Alessandro Zani; Lea Schuh | [HTML](table-2/table-guide.html) · [PDF](table-2/table-guide.pdf) |
+| 2 | Medical imaging, diagnostics, machine learning and QML | Hao Wang; Miguel Angel Gonzalez Ballester; Guglielmo Mazzola| Alessandro Zani; Lea Schuh | [HTML](table-2/table-guide.html) · [PDF](table-2/table-guide.pdf) |
 | 3 | Mechanistic medicine, clinical decisions and operational optimization | Miguel Ponce de Leon; Gabriele Spada; Carlo Mancini Terracciano; Federico Ricci-Tersenghi | Diego Reforgiato Recupero; Sergio Consoli | [HTML](table-3/table-guide.html) · [PDF](table-3/table-guide.pdf) |
-| 4 | Benchmarking methods and the repository | Vito Palmisano; Mario Ceresa; Rene Chatwell (morning attendance tbc) | Luca Del Bono; Federico Celauro | [HTML](table-4/table-guide.html) · [PDF](table-4/table-guide.pdf) |
+| 4 | Benchmarking methods and the repository | Vito Palmisano; Mario Ceresa; Rene Chatwell | Luca Del Bono; Federico Celauro | [HTML](table-4/table-guide.html) · [PDF](table-4/table-guide.pdf) |
 | 5 | Infrastructure, community and policy instruments | Tobias Wiesenthal; Doru Tanasa; Kyriacos Hatzaras; Yiannos Tolias; Frederic Domps | Mauro Petrillo; Antonio Puertas Gallardo | [HTML](table-5/table-guide.html) · [PDF](table-5/table-guide.pdf) |
 
 Facilitators and rapporteurs are still to be confirmed.
