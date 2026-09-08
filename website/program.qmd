@@ -7,10 +7,12 @@ subtitle: "10–11 September 2026 · JRC Ispra"
 
 ### Morning — Foundations and benchmarking practice · Building 27B
 
+**Chair:** Indaco Biazzo
+
 | Time | Session |
 |---|---|
 | 08:30–09:15 | Registration and arrival<br>Registration, informal networking and hybrid connection check. |
-| 09:15–09:50 | Opening and workshop framing<br>Institution: European Commission, Joint Research Centre (JRC), Ispra |
+| 09:15–09:50 | Opening and workshop framing<br>Speakers: Tobias Wiesenthal, Head of Unit, JRC.F.7; Marusca Gnecchi, Deputy Head of Unit, JRC.S.4; workshop organisers<br>Institution: European Commission, Joint Research Centre (JRC), Ispra |
 | 09:50–10:25 | Vedran Dunjko<br>Institution: Leiden University, The Netherlands<br>Title: The Provable Frontier of Quantum Machine Learning<br>Abstract: Quantum machine learning is shifting from proposing quantum models to determining precisely when quantum resources can improve learning. I will survey recent progress at this frontier: rigorous separations between quantum and classical learners, advantages enabled by quantum data or privileged quantum information, and generative models combining classical trainability with quantumly intractable sampling. Particular attention will be paid to the assumptions, access models and classical benchmarks underlying these results. Finally, I will ponder how these theoretical advances might be translated into useful methods for the biological and life sciences. |
 | 10:25–10:55 | *Coffee break* |
 | 10:55–11:30 | Miguel A. González Ballester<br>Institution: Universitat Pompeu Fabra (UPF), Barcelona Supercomputing Center (BSC) and ICREA, Barcelona, Spain<br>Title: Quantum computing for interpretable AI in healthcare<br>Abstract: Deep learning has had a profound effect in all walks of life, not least in medical research. The impressive performance of these methods is partly due to the development of very efficient approaches to solve highly overparameterized neural networks. Conversely, this leads to the problem of trust and interpretability of these complex models, which are key aspects in the medical domain. In this talk, we will see several works performed in our lab focusing on explainability and uncertainty modelling for a variety of clinical applications. We will then delve into the interface between machine learning and quantum computing, and explore early works on the development of quantum machine learning approaches for healthcare. First, we will show some results on the establishment of quantum diffusion models for medical image analysis. Finally, we will link back to explainability, formulating a quantum annealing framework for explainable deep learning. |
@@ -19,6 +21,10 @@ subtitle: "10–11 September 2026 · JRC Ispra"
 | 12:30–14:00 | *Lunch*<br>Building 101 |
 
 ### Afternoon — Use cases · Building 27B
+
+**Chair until coffee break:** Lea Schuh
+
+**Chair after coffee break:** Mario Ceresa
 
 | Time | Session |
 |---|---|
@@ -61,6 +67,8 @@ The morning working material is available on the
 | 14:00–14:10 | Return and transition<br>Return to the room and prepare for the closing session. |
 
 ### Afternoon — Quantum computing: technology, resources and policy · Building 36
+
+**Chair:** Antonio Puertas Gallardo
 
 | Time | Session |
 |---|---|
