@@ -1,12 +1,12 @@
 # Table 5 — Infrastructure, community and policy instruments
 
 - **Date:** 11 September 2026
-- **Note takers:** Gabriele Leoni
+- **Note takers:** Antonio Puertas Gallardo, Mauro Petrillo
 - **Rapporteur:**
 
 ## Answers to the table's questions
 
-### Q1 — Value
+### Q1 — Value What Value ?
 
 Why would funders, institutions and the community find a shared benchmarking effort
 worth supporting — for example, being able to assess new projects and claims
