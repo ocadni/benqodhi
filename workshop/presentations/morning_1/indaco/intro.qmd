@@ -12,11 +12,10 @@ format:
   --ink: #20252a;
   --muted: #5b6570;
   --paper: #fbfaf6;
-  --panel: #f1f3f1;
+  --panel: #f2f4f2;
   --line: #dfe4e6;
   --accent: #176f73;
   --accent-2: #9a5c20;
-  --white: #ffffff;
 }
 
 * {
@@ -32,67 +31,70 @@ body {
   color: var(--ink);
   font-family: Aptos, "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   font-size: 20px;
-  line-height: 1.45;
+  line-height: 1.42;
   margin: 0;
 }
 
-a {
-  color: var(--accent);
-}
-
-.talk {
+.deck {
   margin: 0 auto;
   max-width: 1180px;
-  padding: 0 28px 80px;
+  padding: 0 30px;
 }
 
-.section {
+.panel {
   border-top: 1px solid var(--line);
-  min-height: auto;
-  padding: 76px 0;
+  min-height: 94vh;
+  padding: 64px 0;
 }
 
-.hero {
-  align-items: center;
+.panel:first-child {
   border-top: 0;
-  display: grid;
-  gap: 54px;
-  grid-template-columns: 1fr 0.9fr;
-  padding-top: 96px;
 }
 
-.eyebrow {
+.panel-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(94vh - 128px);
+}
+
+.kicker {
   color: var(--muted);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0;
+  margin-bottom: 16px;
   text-transform: uppercase;
+}
+
+.slide-number {
+  color: var(--accent-2);
 }
 
 h1,
 h2,
 h3 {
   letter-spacing: 0;
-  line-height: 1.08;
+  line-height: 1.06;
   margin: 0;
 }
 
 h1 {
-  font-size: 5.7rem;
+  font-size: 5.8rem;
   font-weight: 850;
-  margin: 22px 0 16px;
 }
 
 h2 {
-  font-size: 2.6rem;
-  font-weight: 790;
-  max-width: 900px;
+  font-size: 3.2rem;
+  font-weight: 820;
+  max-width: 980px;
 }
 
 h3 {
   color: var(--accent);
-  font-size: 1.05rem;
-  font-weight: 800;
+  font-size: 1.08rem;
+  font-weight: 820;
+  margin-bottom: 9px;
 }
 
 p {
@@ -101,254 +103,135 @@ p {
 
 .subtitle {
   border-left: 7px solid var(--accent);
-  font-size: 1.38rem;
-  font-weight: 720;
-  line-height: 1.22;
-  margin-top: 18px;
-  padding-left: 18px;
-}
-
-.one-line {
-  border-top: 2px solid var(--line);
-  font-size: 1.35rem;
+  font-size: 1.45rem;
   font-weight: 760;
-  margin-top: 42px;
-  padding-top: 18px;
-}
-
-.image-frame {
-  margin: 0;
-}
-
-.image-frame img {
-  border: 1px solid var(--line);
-  display: block;
-  height: auto;
-  width: 100%;
-}
-
-.hero .image-frame img {
-  aspect-ratio: 1.2;
-  object-fit: cover;
-}
-
-figcaption,
-.source-note {
-  color: var(--muted);
-  font-size: 0.74rem;
-  line-height: 1.3;
-  margin-top: 8px;
-}
-
-.lead {
-  border-left: 7px solid var(--accent);
-  font-size: 1.35rem;
-  font-weight: 620;
-  line-height: 1.35;
-  margin-top: 24px;
-  max-width: 920px;
+  line-height: 1.2;
+  margin-top: 22px;
+  max-width: 760px;
   padding-left: 18px;
 }
 
-.news-grid,
-.streams {
-  display: grid;
-  gap: 34px;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 36px;
+.main-cue {
+  border-top: 2px solid var(--line);
+  font-size: 1.5rem;
+  font-weight: 780;
+  line-height: 1.22;
+  margin-top: 42px;
+  max-width: 900px;
+  padding-top: 20px;
 }
 
-.news-card,
-.cue,
-.metric,
-.stream {
+.cue-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px;
+}
+
+.cue-list div,
+.two-col > div,
+.roundtable-grid > div,
+.output-grid > div {
   border-top: 4px solid var(--line);
   padding-top: 16px;
 }
 
-.news-card {
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-top: 6px solid var(--accent-2);
-  padding: 20px;
-}
-
-.news-card .date {
-  color: var(--muted);
-  font-size: 0.75rem;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.news-card h3 {
-  color: var(--ink);
-  font-size: 1.25rem;
-  margin: 10px 0;
-}
-
-.news-card p,
-.cue p,
-.metric p,
-.stream p,
-.stream li {
-  font-size: 0.95rem;
-}
-
-.news-card p {
-  margin-bottom: 12px;
-}
-
-.cue-grid {
-  display: grid;
-  gap: 26px;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 36px;
-}
-
-.cue:nth-child(2),
-.metric:nth-child(2),
-.metric:nth-child(5) {
+.cue-list div:nth-child(2),
+.two-col > div:nth-child(2),
+.roundtable-grid > div:nth-child(2),
+.output-grid > div:nth-child(2) {
   border-color: var(--accent);
 }
 
-.cue:nth-child(3),
-.metric:nth-child(3),
-.metric:nth-child(6) {
+.cue-list div:nth-child(3),
+.roundtable-grid > div:nth-child(3),
+.output-grid > div:nth-child(3) {
   border-color: var(--accent-2);
 }
 
-.benchmark-flow {
+.cue-list p,
+.two-col p,
+.two-col li,
+.roundtable-grid p,
+.output-grid p {
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.two-col {
   display: grid;
-  gap: 12px;
-  grid-template-columns: repeat(6, 1fr);
-  margin-top: 36px;
+  gap: 42px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 42px;
 }
 
-.metric {
-  min-height: 132px;
-}
-
-.metric h3 {
-  margin-bottom: 8px;
-}
-
-.flow-arrow {
-  color: var(--muted);
-  font-size: 0.82rem;
-  font-weight: 800;
-  margin-top: 18px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.stream img {
-  background: white;
-  border: 1px solid var(--line);
-  display: block;
-  height: 245px;
-  object-fit: contain;
-  width: 100%;
-}
-
-.stream h3 {
-  font-size: 1.18rem;
-  margin-top: 16px;
-}
-
-.stream p {
-  margin: 10px 0 12px;
-}
-
-.stream ul {
-  margin: 0;
+.two-col ul {
+  margin: 14px 0 0;
   padding-left: 22px;
 }
 
-.roundtables {
+.two-col li {
+  margin-bottom: 7px;
+}
+
+.bridge {
+  background: var(--panel);
+  border-left: 7px solid var(--accent-2);
+  font-size: 1.12rem;
+  font-weight: 680;
+  line-height: 1.32;
+  margin-top: 34px;
+  max-width: 980px;
+  padding: 17px 20px;
+}
+
+.roundtable-grid {
   display: grid;
   gap: 18px;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 34px;
+  margin-top: 40px;
 }
 
-.roundtables div {
-  background: var(--panel);
-  border-left: 6px solid var(--accent);
-  padding: 18px;
-}
-
-.roundtables div:nth-child(2) {
-  border-color: var(--accent-2);
-}
-
-.roundtables div:nth-child(3) {
-  border-color: var(--muted);
-}
-
-.roundtables strong {
+.roundtable-grid strong,
+.output-grid strong {
   display: block;
-  font-size: 1rem;
+  font-size: 0.98rem;
   margin-bottom: 8px;
 }
 
-.output-strip {
-  border-bottom: 2px solid var(--line);
-  border-top: 2px solid var(--line);
-  color: var(--muted);
+.output-grid {
   display: grid;
-  font-size: 0.78rem;
-  font-weight: 800;
   gap: 18px;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 34px;
-  padding: 12px 0;
-  text-transform: uppercase;
+  margin-top: 30px;
 }
 
 .closing {
   border-left: 7px solid var(--accent-2);
-  font-size: 1.35rem;
-  font-weight: 780;
-  line-height: 1.28;
-  margin-top: 38px;
-  max-width: 960px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.22;
+  margin-top: 42px;
+  max-width: 980px;
   padding-left: 18px;
 }
 
-.sources {
-  min-height: auto;
-}
-
-.sources ul {
-  font-size: 0.82rem;
-  line-height: 1.45;
-  margin-top: 18px;
-  padding-left: 22px;
-}
-
-@media (max-width: 820px) {
+@media (max-width: 850px) {
   body {
     font-size: 18px;
   }
 
-  .talk {
-    padding-left: 18px;
-    padding-right: 18px;
+  .deck {
+    padding: 0 20px;
   }
 
-  .section {
+  .panel,
+  .panel-inner {
     min-height: auto;
-    padding: 42px 0;
   }
 
-  .hero,
-  .news-grid,
-  .cue-grid,
-  .benchmark-flow,
-  .streams,
-  .roundtables,
-  .output-strip {
-    grid-template-columns: 1fr;
+  .panel {
+    padding: 44px 0;
   }
 
   h1 {
@@ -356,178 +239,129 @@ figcaption,
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 
-  .stream img {
-    height: 210px;
+  .cue-list,
+  .two-col,
+  .roundtable-grid,
+  .output-grid {
+    grid-template-columns: 1fr;
   }
 }
 </style>
 
-<main class="talk">
+<main class="deck">
 
-<section class="section hero" id="benqodhi">
-<div>
-<div class="eyebrow">JRC Ispra | 10-11 September 2026</div>
+<section class="panel" id="opening">
+<div class="panel-inner">
+<div class="kicker"><span class="slide-number">1/3</span> Opening</div>
 <h1>BENQODHI</h1>
-<div class="subtitle">
-BENchmarking Quantum Optimization:<br>
-from Datasets to Health Innovation
-</div>
-<div class="one-line">From Bengodi to benchmarks: promises need evidence.</div>
-</div>
-
-<figure class="image-frame">
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Pieter_Bruegel_the_Elder_-_The_Land_of_Cockaigne_-_WGA3507.jpg" alt="Pieter Bruegel the Elder, The Land of Cockaigne">
-<figcaption>Bruegel, <em>The Land of Cockaigne</em>, 1567. Public domain, Wikimedia Commons.</figcaption>
-</figure>
-</section>
-
-<section class="section" id="why-now">
-<div class="eyebrow">Why now</div>
-<h2>A moment when AI, quantum computing and scientific benchmarking are forced to talk to each other</h2>
-<p class="lead">
-AI is already changing scientific work. Quantum computing is a strategic possibility. The useful question is not who wins, but how we compare claims on common problems.
+<p class="subtitle">
+From Bengodi to benchmarks
+</p>
+<p class="main-cue">
+AI and quantum computing are often presented as lands of abundance. The point here is to ask for evidence.
 </p>
 
-<div class="news-grid">
-<div class="news-card">
-<div class="date">Research signal | 8 September 2026</div>
-<h3>OpenAI reports an AI-generated Navier-Stokes result</h3>
-<p>OpenAI says an internal multi-agent system produced a proof with a Lean formalization, using on the order of 10,000 concurrent agents for the Navier-Stokes effort.</p>
-<p>This is exactly why formulation matters: problem statement, assumptions, verification, cost and community validation become part of the scientific object.</p>
-<div class="source-note"><a href="https://openai.com/index/navier-stokes-solution/">OpenAI announcement</a></div>
+<div class="cue-list">
+<div>
+<h3>Bengodi</h3>
+<p>Boccaccio's imagined land of abundance: parmesan hills, rivers of good wine.</p>
 </div>
-
-<div class="cue-grid" style="margin-top: 0;">
-<div class="cue">
-<h3>AI</h3>
-<p>Models, agents, search, coding, summarization and experimental support.</p>
+<div>
+<h3>The warning</h3>
+<p>Promises of automatic discovery, speedups and solutions to very hard problems need to be tested.</p>
 </div>
-<div class="cue">
-<h3>Quantum</h3>
-<p>Optimization, sampling, simulation and hybrid algorithms.</p>
-</div>
-<div class="cue">
-<h3>Evidence</h3>
-<p>Common tasks, strong baselines, transparent resources and reproducible comparisons.</p>
+<div>
+<h3>The activity</h3>
+<p>Benchmarks, comparison and reproducible tests for AI, quantum, hybrid and classical approaches.</p>
 </div>
 </div>
 </div>
 </section>
 
-<section class="section" id="benchmarking">
-<div class="eyebrow">Benchmarking</div>
-<h2>A benchmark is a protocol, not only a dataset</h2>
-<p class="lead">
-The point is to reduce cherry-picking and make progress comparable across classical, AI, quantum and hybrid approaches.
+<section class="panel" id="directions">
+<div class="panel-inner">
+<div class="kicker"><span class="slide-number">2/3</span> Project directions</div>
+<h2>Two complementary directions</h2>
+<p class="subtitle">
+Controlled theoretical problems on one side; real health and life-science bottlenecks on the other.
 </p>
 
-<div class="benchmark-flow">
-<div class="metric">
-<h3>Problem</h3>
-<p>Scientific meaning and mathematical formulation.</p>
-</div>
-<div class="metric">
-<h3>Instances</h3>
-<p>Data, generators, regimes of difficulty and documented structure.</p>
-</div>
-<div class="metric">
-<h3>Baselines</h3>
-<p>Classical, AI, quantum and hybrid methods compared fairly.</p>
-</div>
-<div class="metric">
-<h3>Metrics</h3>
-<p>Quality, accuracy, uncertainty, robustness and domain relevance.</p>
-</div>
-<div class="metric">
-<h3>Resources</h3>
-<p>Runtime, hardware, energy, data, tuning and human effort.</p>
-</div>
-<div class="metric">
-<h3>Repository</h3>
-<p>Reusable evidence, not isolated demonstrations.</p>
-</div>
-</div>
-
-<div class="flow-arrow">problem formulation -> comparable evidence -> shared repository</div>
-</section>
-
-<section class="section" id="work-streams">
-<div class="eyebrow">Two work streams</div>
-<h2>Controlled problems and real bottlenecks</h2>
-
-<div class="streams">
-<article class="stream">
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/2D_ising_model_on_lattice.svg" alt="Two-dimensional Ising model lattice">
-<div class="source-note">Ta2o, 2D Ising model lattice, CC BY 4.0, Wikimedia Commons.</div>
-<h3>Controlled optimization</h3>
-<p>Sapienza collaboration: theoretical instances, especially spin-glass-style problems, with contact points to real hard optimization.</p>
+<div class="two-col">
+<div>
+<h3>Controlled problems</h3>
+<p>Collaboration with Leiden and Sapienza on quantum algorithms and theoretical optimization instances, mainly spin-glass-related problems.</p>
 <ul>
-<li>clean enough to measure performance</li>
-<li>structured enough to study difficulty</li>
-<li>shared repository to avoid cherry-picking</li>
+<li>theoretical, but connected to real complex optimization</li>
+<li>used across quantum computing, computer science and physics</li>
+<li>needs a shared repository with instances, baselines and comparison rules</li>
 </ul>
-</article>
-
-<article class="stream">
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/DNA_sequencing_interferogram.png" alt="DNA sequencing interferogram">
-<div class="source-note">NHGRI, DNA sequencing trace, public domain, Wikimedia Commons.</div>
+</div>
+<div>
 <h3>Health and life sciences</h3>
-<p>A scan of real bottlenecks where AI, quantum or hybrid methods could make a difference in coming years.</p>
+<p>A scan of real problems that are still computational bottlenecks, where AI, quantum or hybrid methods may become relevant.</p>
 <ul>
-<li>genomics, imaging, mechanistic biology, clinical and operational tasks</li>
-<li>portfolio approach, also reusing existing benchmarks</li>
-<li>not limited to quantum-only solutions</li>
+<li>not only optimization: sampling, inference, reconstruction, simulation and learning</li>
+<li>large domains, many kinds of expertise</li>
+<li>portfolio approach, also reusing existing benchmarks when useful</li>
 </ul>
-</article>
+</div>
+</div>
+
+<p class="bridge">
+The workshop composition matters because the problem is not owned by one field: quantum, optimization, AI, statistical physics, genomics, imaging, medicine, infrastructure and policy all enter the discussion.
+</p>
 </div>
 </section>
 
-<section class="section" id="workshop-output">
-<div class="eyebrow">Workshop output</div>
-<h2>Not a final product: a shared formulation exercise</h2>
-<p class="lead">
-Today gives us the landscape. Tomorrow we try to turn it into candidate benchmark problems, repository criteria and policy questions.
+<section class="panel" id="workshop">
+<div class="panel-inner">
+<div class="kicker"><span class="slide-number">3/3</span> Workshop output</div>
+<h2>Not a final product: a formulation exercise</h2>
+<p class="subtitle">
+Today sets the landscape. Tomorrow we try to turn it into candidate benchmark problems, repository criteria and policy questions.
 </p>
 
-<div class="roundtables">
+<div class="roundtable-grid">
 <div>
 <strong>Tables 1-3</strong>
-Candidate benchmark problems in health and life-science domains.
+<p>Identify candidate benchmark problems in health and life-science domains.</p>
 </div>
 <div>
 <strong>Table 4</strong>
-How to compare quantum, AI, hybrid and classical approaches.
+<p>Discuss how to compare quantum algorithms with AI, hybrid and classical methods, including resources.</p>
 </div>
 <div>
 <strong>Table 5</strong>
-Infrastructure, indicators, investment and policy relevance.
+<p>Discuss infrastructure, indicators, investment and policy relevance.</p>
 </div>
 </div>
 
-<div class="output-strip">
-<span>candidate problems</span>
-<span>reusable benchmarks</span>
-<span>repository criteria</span>
-<span>policy implications</span>
+<div class="output-grid">
+<div>
+<strong>Candidate problems</strong>
+<p>What could enter a repository?</p>
+</div>
+<div>
+<strong>Reusable material</strong>
+<p>Which benchmarks or datasets already exist?</p>
+</div>
+<div>
+<strong>Benchmark criteria</strong>
+<p>What should be measured and compared?</p>
+</div>
+<div>
+<strong>AI-assisted work</strong>
+<p>Expert-led discussion, with light support for notes and drafting where useful.</p>
+</div>
 </div>
 
 <p class="closing">
-The goal is to find good problems, and formulate them well enough that others can solve them.
+Let us identify good problems, and formulate them well. Solving them can come after.
 </p>
-</section>
-
-<section class="section sources" id="sources">
-<div class="eyebrow">Sources</div>
-<h2>Image and news credits</h2>
-<ul>
-<li>OpenAI, <a href="https://openai.com/index/navier-stokes-solution/">On the Navier-Stokes Millennium Prize Problem</a>, 8 September 2026.</li>
-<li>Pieter Bruegel the Elder, <a href="https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_The_Land_of_Cockaigne_-_WGA3507.jpg">The Land of Cockaigne</a>, Wikimedia Commons, public domain.</li>
-<li>Ta2o, <a href="https://commons.wikimedia.org/wiki/File:2D_ising_model_on_lattice.svg">2D Ising model on lattice</a>, Wikimedia Commons, CC BY 4.0.</li>
-<li>National Human Genome Research Institute, <a href="https://commons.wikimedia.org/wiki/File:DNA_sequencing_interferogram.png">DNA sequencing interferogram</a>, Wikimedia Commons, public domain.</li>
-</ul>
+</div>
 </section>
 
 </main>
