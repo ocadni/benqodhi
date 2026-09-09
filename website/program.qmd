@@ -77,4 +77,4 @@ The morning working material is available on the
 | 15:30–15:55 | Open discussion and workshop conclusions |
 | 15:55–16:00 | Closing — workshop organisers |
 
-Small companion page: [Day 1 speaker bios](speaker-bios.qmd).
+Small companion pages: [Day 1 speaker bios](speaker-bios.qmd) and [Day 2 speaker bios](speaker-bios_day2.qmd).
