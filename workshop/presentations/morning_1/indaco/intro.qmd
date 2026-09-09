@@ -1,180 +1,533 @@
 ---
+pagetitle: "BENQODHI Introduction"
 format:
-  revealjs:
-    theme: simple
-    css: intro.css
-    transition: none
-    background-transition: none
-    controls: true
-    progress: true
-    slide-number: c
-    width: 1600
-    height: 900
-    margin: 0.06
-    smaller: false
+  html:
+    toc: false
+    page-layout: full
+    embed-resources: false
 ---
 
-## BENQODHI {.title-slide}
+<style>
+:root {
+  --ink: #20252a;
+  --muted: #5b6570;
+  --paper: #fbfaf6;
+  --panel: #f1f3f1;
+  --line: #dfe4e6;
+  --accent: #176f73;
+  --accent-2: #9a5c20;
+  --white: #ffffff;
+}
 
-<div class="eyebrow">JRC Ispra · 10-11 September 2026</div>
+* {
+  box-sizing: border-box;
+}
 
-<div class="title-word">BENQODHI</div>
+html {
+  scroll-behavior: smooth;
+}
 
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Aptos, "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.45;
+  margin: 0;
+}
+
+a {
+  color: var(--accent);
+}
+
+.talk {
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 0 28px 80px;
+}
+
+.section {
+  border-top: 1px solid var(--line);
+  min-height: auto;
+  padding: 76px 0;
+}
+
+.hero {
+  align-items: center;
+  border-top: 0;
+  display: grid;
+  gap: 54px;
+  grid-template-columns: 1fr 0.9fr;
+  padding-top: 96px;
+}
+
+.eyebrow {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0;
+  line-height: 1.08;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5.7rem;
+  font-weight: 850;
+  margin: 22px 0 16px;
+}
+
+h2 {
+  font-size: 2.6rem;
+  font-weight: 790;
+  max-width: 900px;
+}
+
+h3 {
+  color: var(--accent);
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+p {
+  margin: 0;
+}
+
+.subtitle {
+  border-left: 7px solid var(--accent);
+  font-size: 1.38rem;
+  font-weight: 720;
+  line-height: 1.22;
+  margin-top: 18px;
+  padding-left: 18px;
+}
+
+.one-line {
+  border-top: 2px solid var(--line);
+  font-size: 1.35rem;
+  font-weight: 760;
+  margin-top: 42px;
+  padding-top: 18px;
+}
+
+.image-frame {
+  margin: 0;
+}
+
+.image-frame img {
+  border: 1px solid var(--line);
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.hero .image-frame img {
+  aspect-ratio: 1.2;
+  object-fit: cover;
+}
+
+figcaption,
+.source-note {
+  color: var(--muted);
+  font-size: 0.74rem;
+  line-height: 1.3;
+  margin-top: 8px;
+}
+
+.lead {
+  border-left: 7px solid var(--accent);
+  font-size: 1.35rem;
+  font-weight: 620;
+  line-height: 1.35;
+  margin-top: 24px;
+  max-width: 920px;
+  padding-left: 18px;
+}
+
+.news-grid,
+.streams {
+  display: grid;
+  gap: 34px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 36px;
+}
+
+.news-card,
+.cue,
+.metric,
+.stream {
+  border-top: 4px solid var(--line);
+  padding-top: 16px;
+}
+
+.news-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-top: 6px solid var(--accent-2);
+  padding: 20px;
+}
+
+.news-card .date {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.news-card h3 {
+  color: var(--ink);
+  font-size: 1.25rem;
+  margin: 10px 0;
+}
+
+.news-card p,
+.cue p,
+.metric p,
+.stream p,
+.stream li {
+  font-size: 0.95rem;
+}
+
+.news-card p {
+  margin-bottom: 12px;
+}
+
+.cue-grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 36px;
+}
+
+.cue:nth-child(2),
+.metric:nth-child(2),
+.metric:nth-child(5) {
+  border-color: var(--accent);
+}
+
+.cue:nth-child(3),
+.metric:nth-child(3),
+.metric:nth-child(6) {
+  border-color: var(--accent-2);
+}
+
+.benchmark-flow {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(6, 1fr);
+  margin-top: 36px;
+}
+
+.metric {
+  min-height: 132px;
+}
+
+.metric h3 {
+  margin-bottom: 8px;
+}
+
+.flow-arrow {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+  margin-top: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.stream img {
+  background: white;
+  border: 1px solid var(--line);
+  display: block;
+  height: 245px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.stream h3 {
+  font-size: 1.18rem;
+  margin-top: 16px;
+}
+
+.stream p {
+  margin: 10px 0 12px;
+}
+
+.stream ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.roundtables {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 34px;
+}
+
+.roundtables div {
+  background: var(--panel);
+  border-left: 6px solid var(--accent);
+  padding: 18px;
+}
+
+.roundtables div:nth-child(2) {
+  border-color: var(--accent-2);
+}
+
+.roundtables div:nth-child(3) {
+  border-color: var(--muted);
+}
+
+.roundtables strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.output-strip {
+  border-bottom: 2px solid var(--line);
+  border-top: 2px solid var(--line);
+  color: var(--muted);
+  display: grid;
+  font-size: 0.78rem;
+  font-weight: 800;
+  gap: 18px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 34px;
+  padding: 12px 0;
+  text-transform: uppercase;
+}
+
+.closing {
+  border-left: 7px solid var(--accent-2);
+  font-size: 1.35rem;
+  font-weight: 780;
+  line-height: 1.28;
+  margin-top: 38px;
+  max-width: 960px;
+  padding-left: 18px;
+}
+
+.sources {
+  min-height: auto;
+}
+
+.sources ul {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  margin-top: 18px;
+  padding-left: 22px;
+}
+
+@media (max-width: 820px) {
+  body {
+    font-size: 18px;
+  }
+
+  .talk {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .section {
+    min-height: auto;
+    padding: 42px 0;
+  }
+
+  .hero,
+  .news-grid,
+  .cue-grid,
+  .benchmark-flow,
+  .streams,
+  .roundtables,
+  .output-strip {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .stream img {
+    height: 210px;
+  }
+}
+</style>
+
+<main class="talk">
+
+<section class="section hero" id="benqodhi">
+<div>
+<div class="eyebrow">JRC Ispra | 10-11 September 2026</div>
+<h1>BENQODHI</h1>
 <div class="subtitle">
 BENchmarking Quantum Optimization:<br>
 from Datasets to Health Innovation
 </div>
-
-<div class="lead">
-A workshop to define credible shared benchmarks for quantum, AI, hybrid and
-classical approaches in health and the life sciences.
+<div class="one-line">From Bengodi to benchmarks: promises need evidence.</div>
 </div>
 
-::: {.notes}
-Welcome everyone.
+<figure class="image-frame">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Pieter_Bruegel_the_Elder_-_The_Land_of_Cockaigne_-_WGA3507.jpg" alt="Pieter Bruegel the Elder, The Land of Cockaigne">
+<figcaption>Bruegel, <em>The Land of Cockaigne</em>, 1567. Public domain, Wikimedia Commons.</figcaption>
+</figure>
+</section>
 
-Start from the name BENQODHI and from the Boccaccio sentence. The exact sentence
-still needs to be inserted by you. The point is to give a human opening: we are
-not only here for a sequence of talks, but to put different communities in contact
-and build something shared.
+<section class="section" id="why-now">
+<div class="eyebrow">Why now</div>
+<h2>A moment when AI, quantum computing and scientific benchmarking are forced to talk to each other</h2>
+<p class="lead">
+AI is already changing scientific work. Quantum computing is a strategic possibility. The useful question is not who wins, but how we compare claims on common problems.
+</p>
 
-Then move quickly to the practical aim: benchmarks for quantum optimization, from
-datasets to health innovation.
-:::
-
-## Why Now {.briefing-slide}
-
-<div class="section-title">A moment of contact between fields</div>
-
-<div class="briefing">
-  <p><strong>AI is already changing scientific work.</strong> It changes how we
-  model, search, explain, summarize and build tools.</p>
-
-  <p><strong>Quantum computing may change what comes next.</strong> The practical
-  impact is still emerging, but the strategic question is already real.</p>
-
-  <p><strong>The interesting space is the exchange.</strong> AI for quantum,
-  quantum for AI, and both tested against strong classical and hybrid methods.</p>
+<div class="news-grid">
+<div class="news-card">
+<div class="date">Research signal | 8 September 2026</div>
+<h3>OpenAI reports an AI-generated Navier-Stokes result</h3>
+<p>OpenAI says an internal multi-agent system produced a proof with a Lean formalization, using on the order of 10,000 concurrent agents for the Navier-Stokes effort.</p>
+<p>This is exactly why formulation matters: problem statement, assumptions, verification, cost and community validation become part of the scientific object.</p>
+<div class="source-note"><a href="https://openai.com/index/navier-stokes-solution/">OpenAI announcement</a></div>
 </div>
 
-::: {.notes}
-AI has already changed the scientific landscape and the way many of us work.
+<div class="cue-grid" style="margin-top: 0;">
+<div class="cue">
+<h3>AI</h3>
+<p>Models, agents, search, coding, summarization and experimental support.</p>
+</div>
+<div class="cue">
+<h3>Quantum</h3>
+<p>Optimization, sampling, simulation and hybrid algorithms.</p>
+</div>
+<div class="cue">
+<h3>Evidence</h3>
+<p>Common tasks, strong baselines, transparent resources and reproducible comparisons.</p>
+</div>
+</div>
+</div>
+</section>
 
-Quantum computing is not yet at the same practical stage, but a possible quantum
-revolution is foreseen and is already shaping research, infrastructure and policy
-decisions.
+<section class="section" id="benchmarking">
+<div class="eyebrow">Benchmarking</div>
+<h2>A benchmark is a protocol, not only a dataset</h2>
+<p class="lead">
+The point is to reduce cherry-picking and make progress comparable across classical, AI, quantum and hybrid approaches.
+</p>
 
-The opportunity is not AI versus quantum. The opportunity is the exchange between
-fields, and the need for credible ways to compare progress.
-:::
-
-## Why Benchmarks {.briefing-slide}
-
-<div class="section-title">Optimization is central, but the scope is wider</div>
-
-<div class="briefing two-column">
-  <div>
-    <p><strong>Optimization</strong> is one of the main proposed application areas
-    for quantum computing.</p>
-
-    <p>But benchmarkable problems can also include <strong>sampling, inference,
-    simulation, reconstruction</strong> and <strong>learning</strong>.</p>
-  </div>
-
-  <div>
-    <p><strong>Shared benchmarks turn claims into comparable evidence.</strong></p>
-
-    <p>They make it easier to compare methods, track progress, expose assumptions
-    and decide where new approaches are genuinely useful.</p>
-  </div>
+<div class="benchmark-flow">
+<div class="metric">
+<h3>Problem</h3>
+<p>Scientific meaning and mathematical formulation.</p>
+</div>
+<div class="metric">
+<h3>Instances</h3>
+<p>Data, generators, regimes of difficulty and documented structure.</p>
+</div>
+<div class="metric">
+<h3>Baselines</h3>
+<p>Classical, AI, quantum and hybrid methods compared fairly.</p>
+</div>
+<div class="metric">
+<h3>Metrics</h3>
+<p>Quality, accuracy, uncertainty, robustness and domain relevance.</p>
+</div>
+<div class="metric">
+<h3>Resources</h3>
+<p>Runtime, hardware, energy, data, tuning and human effort.</p>
+</div>
+<div class="metric">
+<h3>Repository</h3>
+<p>Reusable evidence, not isolated demonstrations.</p>
+</div>
 </div>
 
-::: {.notes}
-One of the main possible applications of quantum computing is optimization, but we
-should not make the workshop narrower than the science requires.
+<div class="flow-arrow">problem formulation -> comparable evidence -> shared repository</div>
+</section>
 
-For health and biology, the relevant objects may also be sampling, inference,
-simulation, reconstruction or learning, provided that they can be made into clear
-benchmark tasks.
+<section class="section" id="work-streams">
+<div class="eyebrow">Two work streams</div>
+<h2>Controlled problems and real bottlenecks</h2>
 
-The reason benchmarks matter is simple: without common problems, metrics, baselines
-and resource accounting, strong claims remain hard to compare.
-:::
+<div class="streams">
+<article class="stream">
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/2D_ising_model_on_lattice.svg" alt="Two-dimensional Ising model lattice">
+<div class="source-note">Ta2o, 2D Ising model lattice, CC BY 4.0, Wikimedia Commons.</div>
+<h3>Controlled optimization</h3>
+<p>Sapienza collaboration: theoretical instances, especially spin-glass-style problems, with contact points to real hard optimization.</p>
+<ul>
+<li>clean enough to measure performance</li>
+<li>structured enough to study difficulty</li>
+<li>shared repository to avoid cherry-picking</li>
+</ul>
+</article>
 
-## Two Complementary Directions {.briefing-slide}
+<article class="stream">
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/DNA_sequencing_interferogram.png" alt="DNA sequencing interferogram">
+<div class="source-note">NHGRI, DNA sequencing trace, public domain, Wikimedia Commons.</div>
+<h3>Health and life sciences</h3>
+<p>A scan of real bottlenecks where AI, quantum or hybrid methods could make a difference in coming years.</p>
+<ul>
+<li>genomics, imaging, mechanistic biology, clinical and operational tasks</li>
+<li>portfolio approach, also reusing existing benchmarks</li>
+<li>not limited to quantum-only solutions</li>
+</ul>
+</article>
+</div>
+</section>
 
-<div class="section-title">Controlled problems and real problems</div>
+<section class="section" id="workshop-output">
+<div class="eyebrow">Workshop output</div>
+<h2>Not a final product: a shared formulation exercise</h2>
+<p class="lead">
+Today gives us the landscape. Tomorrow we try to turn it into candidate benchmark problems, repository criteria and policy questions.
+</p>
 
-<div class="comparison">
-  <div>
-    <h3>Controlled problems</h3>
-    <p>Theoretical, clean and repeatable.</p>
-    <p>Close enough to real difficulty to be useful, but structured enough to
-    measure performance of new AI, quantum and hybrid methods.</p>
-    <p>Widely used in the literature, but still missing a systematic shared
-    repository.</p>
-  </div>
-
-  <div>
-    <h3>Health and biology problems</h3>
-    <p>Genomics, imaging, mechanistic biology, clinical decisions and operational
-    optimization.</p>
-    <p>Messier, but scientifically meaningful.</p>
-    <p>Inspired by the decathlon idea: a portfolio of challenges, not one problem
-    pretending to represent everything.</p>
-  </div>
+<div class="roundtables">
+<div>
+<strong>Tables 1-3</strong>
+Candidate benchmark problems in health and life-science domains.
+</div>
+<div>
+<strong>Table 4</strong>
+How to compare quantum, AI, hybrid and classical approaches.
+</div>
+<div>
+<strong>Table 5</strong>
+Infrastructure, indicators, investment and policy relevance.
+</div>
 </div>
 
-::: {.notes}
-We thought about two complementary approaches.
-
-On one hand, controlled theoretical problems: these let us measure performance
-carefully, and can connect to real computational difficulty. They are heavily used
-in the literature, but not collected in a systematic way.
-
-On the other hand, we want to build from health and biology. This requires looking
-across different domains and extracting problems that are scientifically meaningful
-and technically benchmarkable.
-
-Daniel Egger's decathlon idea is a useful inspiration: not one benchmark, but a
-portfolio where different challenges test different capabilities.
-:::
-
-## What This Workshop Should Produce {.briefing-slide}
-
-<div class="section-title">From talks to shared outputs</div>
-
-<div class="output-list">
-  <p><strong>Today:</strong> talks as input from quantum, AI, optimization,
-  biology, health, HPC and policy.</p>
-
-  <p><strong>Tomorrow:</strong> five round tables on candidate benchmark problems,
-  repository structure, community mechanisms and policy instruments.</p>
-
-  <p><strong>Method:</strong> human expert discussion, supported where useful by
-  AI-assisted note taking and document preparation.</p>
-
-  <p><strong>Outputs:</strong> candidate problems, datasets or generators, metrics,
-  baselines, resource accounting, repository structure, and possible paper, report,
-  roadmap or policy note.</p>
+<div class="output-strip">
+<span>candidate problems</span>
+<span>reusable benchmarks</span>
+<span>repository criteria</span>
+<span>policy implications</span>
 </div>
 
-<div class="closing-line">
-Better benchmarks can improve comparability, collaboration, R&amp;D direction and
-future public investment decisions.
-</div>
+<p class="closing">
+The goal is to find good problems, and formulate them well enough that others can solve them.
+</p>
+</section>
 
-::: {.notes}
-The challenge is transdisciplinary. This is why the people in the room come from
-different backgrounds: quantum algorithms, AI, optimization, statistical physics,
-genomics, imaging, mechanistic biology, clinical optimization, HPC infrastructure
-and policy.
+<section class="section sources" id="sources">
+<div class="eyebrow">Sources</div>
+<h2>Image and news credits</h2>
+<ul>
+<li>OpenAI, <a href="https://openai.com/index/navier-stokes-solution/">On the Navier-Stokes Millennium Prize Problem</a>, 8 September 2026.</li>
+<li>Pieter Bruegel the Elder, <a href="https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_The_Land_of_Cockaigne_-_WGA3507.jpg">The Land of Cockaigne</a>, Wikimedia Commons, public domain.</li>
+<li>Ta2o, <a href="https://commons.wikimedia.org/wiki/File:2D_ising_model_on_lattice.svg">2D Ising model on lattice</a>, Wikimedia Commons, CC BY 4.0.</li>
+<li>National Human Genome Research Institute, <a href="https://commons.wikimedia.org/wiki/File:DNA_sequencing_interferogram.png">DNA sequencing interferogram</a>, Wikimedia Commons, public domain.</li>
+</ul>
+</section>
 
-The talks today are input. Tomorrow the workshop becomes more experimental: five
-round tables, prepared themes, JRC note takers and facilitators, and AI-assisted
-tools such as Kiro when they are useful.
-
-The final aim is not just to collect presentations, but to leave with candidate
-benchmark problems and a shared direction for the repository and possible follow-up
-outputs.
-:::
+</main>
