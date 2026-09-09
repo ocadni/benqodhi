@@ -2,7 +2,7 @@
 
 **BENQODHI Day 2 morning round tables · 11 September 2026**
 
-*Printable guide for the table. Keep it in front of you during the discussion.*
+*Printable guide for the table.*
 
 ---
 
@@ -38,44 +38,58 @@ reusable public assets, and should earn recognizable credit for doing so.
 
 ## Questions to answer
 
-The table has **two main questions**, then the recommendation and the transversal
-question.
+The table has **three questions**, then the transversal question. The third
+question ends with the single recommendation the paper should carry.
 
-### Main question 1 — What would make the repository last?
+### Q1 — Value
 
-1. **Instruments in place now** — Which existing funding, infrastructure or
-   regulatory instruments could already support a shared benchmark repository?
-   Name them concretely.
-2. **Instruments in the near future** — What is coming, or would have to be
-   created, to sustain it, and who would need to decide?
-3. **Federating what already exists** — Benchmark collections, open-data
-   repositories and research infrastructures already exist. How could BENQODHI
-   federate them rather than build another silo, and what would make that
-   federation work technically and institutionally?
+Why would funders, institutions and the community find a shared benchmarking effort
+worth supporting — for example, being able to assess new projects and claims against
+agreed benchmarks rather than self-reported results?
 
-### Main question 2 — What is the policy value of this kind of output?
+Worth covering:
 
-4. **Value from a DG or policy perspective** — Given what is being built, what is
-   the value of the output of BENQODHI, and of similar projects, to a
-   Directorate-General, a national funding authority or a policy maker? What
-   problem of theirs does it solve?
-5. **Use in funding procedures** — Where could such a repository fit into existing
-   funding procedures: call preparation and topic text, proposal evidence, project
-   reporting, data management plans, evaluation of results?
-6. **Fair comparison to guide investment** — Public investment in quantum, AI and
-   hybrid computing for health depends on telling genuine progress from claims that
-   cannot be reproduced. How could verifiable, like-for-like comparison help steer
-   investment towards approaches that work, and what would make that evidence
-   trustworthy enough to act on?
-7. **Incentives and credit** — How should contributing be recognized, so that
-   depositing problems, data, baselines and algorithms becomes normal practice?
-   Should it stay encouraged, or become an expectation attached to funding, as
-   happened with open access?
+- the value of this kind of output to a Directorate-General, a national funding
+  authority or a policy maker: **what problem of theirs does it solve?**
+- where it could fit in existing funding procedures: call preparation and topic
+  text, proposal evidence, project reporting, data management plans, evaluation of
+  results;
+- how verifiable, like-for-like comparison could help steer public investment
+  towards approaches that work, and what would make that evidence trustworthy
+  enough to act on.
 
-### Recommendation
+### Q2 — Financing and sustaining it
 
-8. **Recommendation** — What single recommendation should the paper, report or
-   roadmap carry?
+How can the shared infrastructure and the contributing community be financed,
+created and kept alive?
+
+Worth covering:
+
+- **instruments that could support it now** — name them concretely: calls, research
+  infrastructures, compute and quantum access, health-data initiatives,
+  standardisation routes;
+- **what new or adapted instruments would be needed**, so that contributing to
+  benchmarks becomes part of funded work rather than volunteer effort, and who
+  would need to decide;
+- who pays for year three, once any seed funding ends;
+- how contribution should be **credited** — citable, versioned, attributed
+  deposits — and whether it stays encouraged or becomes an expectation attached to
+  funding, as happened with open access.
+
+### Q3 — Toward an ecosystem
+
+Could this grow into a connected ecosystem of benchmarks across fields rather than a
+one-off, and what would that take?
+
+Worth covering:
+
+- **federating what already exists** — benchmark collections, open-data
+  repositories and research infrastructures are already there. Which ones, what
+  would BENQODHI have to adopt from them (identifiers, metadata, licensing, deposit
+  routes), and what would each side have to agree to? Federating beats building
+  another silo, but only if the partners are named;
+- **the single concrete recommendation or open policy question** the paper, report
+  or roadmap should carry.
 
 ### Transversal question — answer once for the table
 
@@ -91,16 +105,16 @@ setting and upholding those standards?
 
 ## Expected output
 
-- named instruments that could support the repository now, and those still missing;
-- a route to federate existing repositories and infrastructures;
-- the policy value stated in terms a DG or funding authority could use, including
-  where it fits in funding procedures;
-- how contribution should be credited and the community sustained;
-- one recommendation for the paper, report or roadmap.
+- the value stated in terms a DG or funding authority could use, including where it
+  fits in funding procedures (Q1);
+- named instruments that could support the repository now, those still missing, and
+  how contribution should be credited and the community sustained (Q2);
+- a route to federate existing repositories and infrastructures, and one
+  recommendation for the paper, report or roadmap (Q3);
+- one answer to the transversal governance question.
 
 ---
 
-*Moderator: see `steering-notes.md` in this folder. Note takers: draft answers live
-into `answers.md`. Rapporteur: present the main conclusion, the main infrastructure
-or policy need, why it matters, the most important missing piece, the next action,
-and the governance answer.*
+*Note takers: draft answers live into `answers.md`. Rapporteur: report the main
+conclusion, the main infrastructure or policy need, why it matters, the most
+important missing piece, the next action, and the governance answer.*

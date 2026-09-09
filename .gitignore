@@ -12,3 +12,10 @@ _internal/info_workshop/*.docx
 
 # Internal working folder - kept locally, not published to the online repo
 _internal/
+
+# Generated round-table PDFs, built during the GitHub Pages workflow
+workshop/roundtable/table-*/table-guide.pdf
+
+# Local-only round-table steering notes
+workshop/roundtable/table-5/steering-notes.md
+workshop/roundtable/table-5/steering-notes.pdf

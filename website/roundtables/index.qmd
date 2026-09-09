@@ -22,7 +22,6 @@ mechanisms and policy instruments would make a future benchmark repository or
 ecosystem useful beyond the workshop.
 
 ::: {.idea-actions}
-[Seed problem brief](seed-problem-brief.qmd){.primary-action}
 [Workshop programme](../program.qmd){.secondary-action}
 :::
 
@@ -49,17 +48,19 @@ Pages republishes these HTML pages whenever the site is rebuilt.
 
 | Table | Focus | Answers |
 |---|---|---|
-| 1 | Genomics, molecular biology and life sciences | [Open answers](table-1/answers.html) |
-| 2 | Medical imaging, diagnostics, machine learning and QML | [Open answers](table-2/answers.html) |
-| 3 | Mechanistic medicine, clinical decisions and operational optimization | [Open answers](table-3/answers.html) |
-| 4 | Benchmarking methods and the repository | [Open answers](table-4/answers.html) |
-| 5 | Infrastructure, community and policy instruments | [Open answers](table-5/answers.html) |
+| 1 | Genomics, molecular biology and life sciences | [answers](table-1/answers.html) |
+| 2 | Medical imaging, diagnostics, machine learning and QML | [answers](table-2/answers.html) |
+| 3 | Mechanistic medicine, clinical decisions and operational optimization | [answers](table-3/answers.html) |
+| 4 | Benchmarking methods and the repository | [answers](table-4/answers.html) |
+| 5 | Infrastructure, community and policy instruments | [answers](table-5/answers.html) |
 
 ## Working Material
 
 The [seed problem brief](seed-problem-brief.qmd) collects candidate scientific
 problems, benchmark assets and infrastructure or policy examples. It is intended
 to support expert judgment, not to constrain the discussion.
+
+[Seed problem brief](seed-problem-brief.qmd){.primary-action}
 
 Each table guide and answers page is generated from the canonical Markdown files
 under `workshop/roundtable/table-N/`, so updates to those files become visible on

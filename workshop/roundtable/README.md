@@ -30,14 +30,13 @@ paper, report, roadmap or policy note, and for the Day 2 closing sessions.
 
 - [`answer-template.md`](answer-template.md) — blank template if you need to start a
   fresh document.
-- `table-N/table-guide.md` (with a printable `table-guide.pdf`) — the table's own
-  questions and short guide, extracted from the
+- `table-N/table-guide.md` — the table's own questions and short guide, extracted from the
   [round tables page](../../website/roundtables/index.qmd) so each table has
   only what it needs on the table.
-- [`table-5/steering-notes.md`](table-5/steering-notes.md) (and its PDF) — notes for
-  whoever moderates Table 5.
 - Regenerate the PDFs with `python3 build_table_guides_pdf.py` (needs `markdown` and
-  `weasyprint`).
+  `weasyprint`) if you need local copies.
+- During the GitHub Pages build, printable PDFs are restored from cache or regenerated
+  for changed/missing `table-guide.md` sources, then copied into the published site.
 - [`table-4/answers.md`](table-4/answers.md) is filled in as an **example** to show
   the level of detail expected. The other tables are placeholders ready to
   complete.

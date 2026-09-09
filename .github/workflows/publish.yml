@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -28,6 +30,67 @@ jobs:
         uses: quarto-dev/quarto-actions/render@v2
         with:
           path: website
+
+      - name: Restore round-table PDF cache
+        uses: actions/cache@v4
+        with:
+          path: workshop/roundtable/table-*/table-guide.pdf
+          key: roundtable-pdfs-${{ hashFiles('workshop/roundtable/table-*/table-guide.md') }}
+          restore-keys: |
+            roundtable-pdfs-
+
+      - name: Select round-table PDF sources to build
+        id: pdf-sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          source_file="${RUNNER_TEMP}/roundtable-pdf-sources.txt"
+          changed_file="${RUNNER_TEMP}/roundtable-pdf-changed.txt"
+          zero_sha="0000000000000000000000000000000000000000"
+
+          if [ "${{ github.event_name }}" = "push" ] && [ "${{ github.event.before }}" != "${zero_sha}" ]; then
+            base="${{ github.event.before }}"
+          else
+            base="$(git rev-parse HEAD^ 2>/dev/null || true)"
+          fi
+
+          if [ -n "${base}" ]; then
+            git diff --name-only "${base}" "${{ github.sha }}" -- \
+              'workshop/roundtable/table-*/table-guide.md' \
+              > "${changed_file}"
+          else
+            git ls-files \
+              'workshop/roundtable/table-*/table-guide.md' \
+              > "${changed_file}"
+          fi
+
+          cp "${changed_file}" "${source_file}"
+          while IFS= read -r source; do
+            pdf="${source%.md}.pdf"
+            if [ ! -f "${pdf}" ]; then
+              echo "${source}" >> "${source_file}"
+            fi
+          done < <(git ls-files 'workshop/roundtable/table-*/table-guide.md')
+          sort -u -o "${source_file}" "${source_file}"
+
+          if [ -s "${source_file}" ]; then
+            echo "changed=true" >> "${GITHUB_OUTPUT}"
+            echo "PDF sources to build:"
+            cat "${source_file}"
+          else
+            echo "changed=false" >> "${GITHUB_OUTPUT}"
+            echo "No round-table PDF sources changed or missing."
+          fi
+
+      - name: Install PDF dependencies
+        if: steps.pdf-sources.outputs.changed == 'true'
+        run: python3 -m pip install markdown weasyprint
+
+      - name: Build changed round-table PDFs
+        if: steps.pdf-sources.outputs.changed == 'true'
+        env:
+          PDF_SOURCES_FILE: ${{ runner.temp }}/roundtable-pdf-sources.txt
+        run: python3 workshop/roundtable/build_table_guides_pdf.py --paths-file "${PDF_SOURCES_FILE}"
 
       - name: Publish round-table guides
         run: python3 workshop/roundtable/publish_table_guides.py

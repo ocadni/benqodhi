@@ -2,7 +2,7 @@
 
 **BENQODHI Day 2 morning round tables · 11 September 2026**
 
-*Printable guide for the table. Keep it in front of you during the discussion.*
+*Printable guide for the table.*
 
 ---
 

@@ -2,7 +2,7 @@
 
 **BENQODHI Day 2 morning round tables · 11 September 2026**
 
-*Printable guide for the table. Keep it in front of you during the discussion.*
+*Printable guide for the table.*
 
 ---
 
@@ -30,23 +30,10 @@ to identify which problems would make a future benchmark repository useful.
 ## This table's role
 
 Identify candidate genomics and life-science problems that could become
-benchmarkable. First collect possible candidates (from the prompts below, the
-[problem brief](../../../website/roundtables/seed-problem-brief.qmd), or your own
-expertise), then select the strongest ones and answer the questions for each.
-
-## Problem prompts for discussion
-
-*Starting points only — replace or add to them when stronger candidates emerge.*
-
-- haplotype phasing and related variant-interpretation problems;
-- RNA/DNA sequence similarity, matching, alignment or structure prediction;
-- phylogenetic, hierarchical clustering or MQTC-like tree reconstruction problems;
-- genomic benchmark-data standards, truth sets and difficult genomic regions;
-- molecular or biological-network problems with a clear computational task and
-  domain-relevant metric.
-
-**Focus:** identify which life-science problems are important, computationally
-precise and realistic enough to assess for benchmarkability.
+benchmarkable. First collect possible candidates from the table's own expertise.
+If useful, then consult the problem prompts at the end of this guide and the
+[problem brief](../../../website/roundtables/seed-problem-brief.qmd). Select the
+strongest candidates and answer the questions for each.
 
 ## Questions to answer
 
@@ -57,26 +44,40 @@ precise and realistic enough to assess for benchmarkability.
 2. **Bottleneck** — What is hard computationally?
 3. **Moving ahead** — What is missing, and what is the next practical step?
 
-### Transversal question — answer once for the table
+### Transversal reflection — answer once for the table
 
-**Sustaining the ecosystem (infrastructure, community, scientific governance):**
-BENQODHI only works if what this table produces feeds one connected, durable
-ecosystem rather than a silo. Of the three pillars — the shared **infrastructure**
-that hosts and maintains it, the **community** that keeps contributing, and the
-**scientific governance** that keeps it credible — how can this table best feed the
-third pillar, scientific governance? What would it take for the problems, data and
-baselines from this table to be curated, reviewed and trusted as credible science
-over time, and what governance role should this table's own community play in
-setting and upholding those standards?
+Discuss freely and focus on the aspects where your table has the most useful
+experience, concerns or advice.
+
+Given the three pillars — **infrastructure**, **community** and **governance** —
+what advice, suggestions or lessons from experience would you give for the next
+steps after the workshop, so that BENQODHI can become a living benchmark
+repository and produce useful final outputs? For example, what would be enough to
+start — such as a GitHub repository with a simple website, templates and a few
+benchmark candidates — and what should be the longer-term goal?
 
 ## Expected output
 
 - a short list of selected candidate problems;
 - for each candidate, short answers to the three questions above;
-- one answer to the transversal governance question.
+- one short transversal reflection on next steps for the project.
 
 ---
 
 *Note takers: draft answers live into `answers.md` in this folder. Rapporteur:
 report the main conclusion, main candidate problem, why it matters, the most
-important missing piece, the next action, and the governance answer.*
+important missing piece, the next action, and the transversal next-step advice.*
+
+## Problem prompts for discussion
+
+*Use these only after starting from the table's own expertise and judgment.*
+
+- haplotype phasing and related variant-interpretation problems;
+- RNA/DNA sequence similarity, matching, alignment or structure prediction;
+- phylogenetic, hierarchical clustering or MQTC-like tree reconstruction problems;
+- genomic benchmark-data standards, truth sets and difficult genomic regions;
+- molecular or biological-network problems with a clear computational task and
+  domain-relevant metric.
+
+**Focus:** identify which life-science problems are important, computationally
+precise and realistic enough to assess for benchmarkability.
