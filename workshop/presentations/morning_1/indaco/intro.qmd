@@ -328,7 +328,7 @@ Tomorrow has two parts: morning round tables, then an afternoon policy session.
 <div class="day-flow">
 <div>
 <strong>Morning round tables</strong>
-<p>Candidate health/life-science problems; benchmark methodology; infrastructure and policy needs.</p>
+<p>Candidate problems, benchmark methodology and infrastructure needs; expert-led, with light AI-assisted support where useful.</p>
 </div>
 <div>
 <strong>Afternoon policy session</strong>
