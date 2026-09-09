@@ -11,12 +11,14 @@ arrive. Timings are as currently planned and may still shift slightly.
 ## Internet credentials
 
 Wi-Fi access for workshop participants is provided on the JRC guest network.
+The network name, username and password are printed in the programme handed
+out at registration.
 
 | Item | Detail |
 |---|---|
-| Network (SSID) | check Program Paper copy |
-| username | check Program Paper copy |
-| Password | check Program Paper copy |
+| Network (SSID) | see printed programme |
+| Username | see printed programme |
+| Password | see printed programme |
 | Validity | 10–11 September 2026 |
 
 
