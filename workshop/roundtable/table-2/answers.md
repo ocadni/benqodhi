@@ -1,7 +1,7 @@
 # Table 2 — Medical imaging, diagnostics, machine learning and QML
 
 - **Date:** 11 September 2026
-- **Note takers:**
+- **Note takers: Lea Schuh**
 - **Rapporteur:**
 
 Shortlist around two or three candidate problems. For each candidate, answer the
