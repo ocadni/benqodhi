@@ -57,8 +57,7 @@ setting and upholding those standards?
 
 ---
 
-*A worked example (`answers.md`) and an example slide deck
-(`slides-example.qmd`) live in this folder to show the level of detail expected.
-Note takers: draft answers live into `answers.md`. Rapporteur: present the main
-conclusion, main infrastructure need, why it matters, the most important missing
-piece, the next action, and the governance answer.*
+*A worked example (`answers.md`) lives in this folder to show the level of detail
+expected. Note takers: draft answers live into `answers.md`. Rapporteur: report
+the main conclusion, main infrastructure need, why it matters, the most important
+missing piece, the next action, and the governance answer.*

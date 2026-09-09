@@ -78,5 +78,5 @@ setting and upholding those standards?
 ---
 
 *Note takers: draft answers live into `answers.md` in this folder. Rapporteur:
-present the main conclusion, main candidate problem, why it matters, the most
+report the main conclusion, main candidate problem, why it matters, the most
 important missing piece, the next action, and the governance answer.*
