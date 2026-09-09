@@ -1,0 +1,46 @@
+---
+title: "Speaker Bios"
+subtitle: "Day 2 afternoon speakers"
+---
+
+## Afternoon — Quantum Computing: Technology, Resources and Policy
+
+### Doru Tanasa
+
+**Title:** From scientific excellence to industrial leadership: Europe's path towards the Quantum Act
+
+**Institution:** DG CNECT, European Commission
+
+Bio to be added.
+
+Bio source: to be completed.
+
+### Rene Chatwell
+
+**Title:** Deploying a world-class European quantum computing infrastructure
+
+**Institution:** EuroHPC Joint Undertaking
+
+Bio to be added.
+
+Bio source: to be completed.
+
+### Kyriacos Hatzaras
+
+**Title:** Quantum Computing for Health in Europe: An Overview
+
+**Institution:** DG CNECT, European Commission
+
+Bio to be added.
+
+Bio source: to be completed.
+
+### Vito Palmisano
+
+**Title:** The Quantum Landscape - State of the Art, Architectures and Installations
+
+**Institution:** CINECA, Italy
+
+Bio to be added.
+
+Bio source: to be completed.
