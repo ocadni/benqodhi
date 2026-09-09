@@ -1,11 +1,7 @@
 ---
 title: "Round Tables"
-subtitle: "Day 2 working material for benchmark design"
+subtitle: "Day 2 working material for round tables"
 ---
-
-# BENQODHI Day 2 Morning - Round Tables
-
-*Working page for the Day 2 morning round tables, 11 September 2026.*
 
 ## Aim and Scope
 
@@ -21,7 +17,7 @@ discussion can also include inference, sampling, simulation, reconstruction and
 learning problems when they have a clear health or life-science motivation and a
 plausible route to benchmarkability.
 
-The objective is to identify which problems, infrastructure choices, community
+The objective is also to identify which problems, infrastructure choices, community
 mechanisms and policy instruments would make a future benchmark repository or
 ecosystem useful beyond the workshop.
 
