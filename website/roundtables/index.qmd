@@ -21,12 +21,21 @@ The objective is also to identify which problems, infrastructure choices, commun
 mechanisms and policy instruments would make a future benchmark repository or
 ecosystem useful beyond the workshop.
 
+## How the Tables Will Work
+
+The round tables use an experimental setup: the main value remains the in-person
+expert discussion, enriched by lightweight AI-assisted note taking. One note taker
+captures the main points on the blackboard so the discussion stays visible to
+everyone; the other prepares the shared answer document, using AI-assisted tools
+when useful to enrich the discussion, clarify the answers and prepare the final
+text. The table reviews and finalizes the document together, chooses one
+rapporteur, and presents the main results in plenary after the coffee break.
 
 ## Round Table Division
 
 The detailed questions and discussion prompts are kept in each table's own guide.
-The answers pages expose the live working files that note-takers update during or
-after the session.
+The answers pages collect the working conclusions of each table and can be used to
+follow the results after the session.
 
 | Table | Focus | Participants | Note-takers | Guide |
 |---|---|---|---|---|
@@ -36,12 +45,11 @@ after the session.
 | 4 | Benchmarking methods and the repository | Vito Palmisano; Mario Ceresa; Rene Chatwell | Luca Del Bono; Federico Celauro | [HTML](table-4/table-guide.html) · [PDF](table-4/table-guide.pdf) |
 | 5 | Infrastructure, community and policy instruments | Tobias Wiesenthal; Doru Tanasa; Kyriacos Hatzaras; Yiannos Tolias; Frederic Domps | Mauro Petrillo; Antonio Puertas Gallardo | [HTML](table-5/table-guide.html) · [PDF](table-5/table-guide.pdf) |
 
-Facilitators and rapporteurs are still to be confirmed.
-
 ## Live Table Answers
 
-The editable sources live in `workshop/roundtable/table-N/answers.md`. GitHub
-Pages republishes these HTML pages whenever the site is rebuilt.
+Each table has an answers page where the working conclusions will appear.
+The source files to edit are in the
+[round-table folder on GitHub](https://github.com/ocadni/benqodhi/tree/main/workshop/roundtable).
 
 | Table | Focus | Answers |
 |---|---|---|
@@ -59,6 +67,5 @@ to support expert judgment, not to constrain the discussion.
 
 [Seed problem brief](seed-problem-brief.qmd){.primary-action}
 
-Each table guide and answers page is generated from the canonical Markdown files
-under `workshop/roundtable/table-N/`, so updates to those files become visible on
-the website after the GitHub Pages build.
+The full table guides contain the detailed questions and workflow instructions for
+each table.

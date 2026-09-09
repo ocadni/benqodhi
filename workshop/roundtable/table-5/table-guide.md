@@ -36,10 +36,34 @@ verify; it adds **no new award criterion**. In the same way, projects that depos
 their problem definitions, results and algorithms at the end turn their outputs into
 reusable public assets, and should earn recognizable credit for doing so.
 
+## How the table will work
+
+This table uses an experimental setup: the main value remains the in-person expert
+discussion, enriched by lightweight AI-assisted note taking. The aim is to preserve
+the value of live discussion while using new AI tools to help capture, organize and
+enrich the results.
+
+A suggested way to organize the work is to have one note taker at the blackboard,
+writing the main points of the discussion so everyone can see, correct and refine
+the emerging answers together. Another note taker can keep `answers.md` open on a
+laptop, using Kiro, VS Code or another AI-assisted editor if useful. The laptop
+note taker can use the blackboard, the live discussion and, when useful, help from
+LLMs or internet searches to improve, expand and clarify the written answers. The
+group is small, so the table can self-organize and share these roles naturally
+among note takers and participants. The text should be reviewed continuously by the
+table, corrected when needed and finalized by the participants before the end of
+the session.
+
+At the end, the final `answers.md` is committed and pushed to the repository, so it
+becomes visible online. The table also chooses one rapporteur, who presents the
+results in the plenary after the coffee break, using the finalized answer document
+as the basis for the presentation. The document can also be projected in the room
+during the presentation.
+
 ## Questions to answer
 
-The table has **three questions**, then the transversal question. The third
-question ends with the single recommendation the paper should carry.
+The table has **three questions**, then a final synthesis. The third question ends
+with the single recommendation the paper should carry.
 
 ### Q1 — Value
 
@@ -91,17 +115,17 @@ Worth covering:
 - **the single concrete recommendation or open policy question** the paper, report
   or roadmap should carry.
 
-### Transversal question — answer once for the table
+### Final synthesis — answer once for the table
 
-**Sustaining the ecosystem (infrastructure, community, scientific governance):**
-BENQODHI only works if what this table produces feeds one connected, durable
-ecosystem rather than a silo. Of the three pillars — the shared **infrastructure**
-that hosts and maintains it, the **community** that keeps contributing, and the
-**scientific governance** that keeps it credible — how can this table best feed the
-third pillar, scientific governance? What would it take for the problems, data and
-baselines from this table to be curated, reviewed and trusted as credible science
-over time, and what governance role should this table's own community play in
-setting and upholding those standards?
+Discuss freely and use this as a synthesis of the table's main advice, not as a
+new separate question.
+
+Given the three pillars — **infrastructure**, **community** and **governance** —
+what advice, suggestions or lessons from experience would you give for the next
+steps after the workshop, so that BENQODHI can become a living benchmark
+repository and produce useful final outputs? For example, what would be enough to
+start — such as a GitHub repository with a simple website, templates and a few
+benchmark candidates — and what should be the longer-term goal?
 
 ## Expected output
 
@@ -111,10 +135,10 @@ setting and upholding those standards?
   how contribution should be credited and the community sustained (Q2);
 - a route to federate existing repositories and infrastructures, and one
   recommendation for the paper, report or roadmap (Q3);
-- one answer to the transversal governance question.
+- one short final synthesis on next steps for the project.
 
 ---
 
 *Note takers: draft answers live into `answers.md`. Rapporteur: report the main
 conclusion, the main infrastructure or policy need, why it matters, the most
-important missing piece, the next action, and the governance answer.*
+important missing piece, the next action, and the final next-step advice.*

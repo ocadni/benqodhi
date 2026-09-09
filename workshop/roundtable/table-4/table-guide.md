@@ -17,6 +17,30 @@ We are **not** building the benchmark repository during the workshop. The goal i
 to identify the methods, measures and infrastructure choices that would make a
 future benchmark repository useful and credible.
 
+## How the table will work
+
+This table uses an experimental setup: the main value remains the in-person expert
+discussion, enriched by lightweight AI-assisted note taking. The aim is to preserve
+the value of live discussion while using new AI tools to help capture, organize and
+enrich the results.
+
+A suggested way to organize the work is to have one note taker at the blackboard,
+writing the main points of the discussion so everyone can see, correct and refine
+the emerging answers together. Another note taker can keep `answers.md` open on a
+laptop, using Kiro, VS Code or another AI-assisted editor if useful. The laptop
+note taker can use the blackboard, the live discussion and, when useful, help from
+LLMs or internet searches to improve, expand and clarify the written answers. The
+group is small, so the table can self-organize and share these roles naturally
+among note takers and participants. The text should be reviewed continuously by the
+table, corrected when needed and finalized by the participants before the end of
+the session.
+
+At the end, the final `answers.md` is committed and pushed to the repository, so it
+becomes visible online. The table also chooses one rapporteur, who presents the
+results in the plenary after the coffee break, using the finalized answer document
+as the basis for the presentation. The document can also be projected in the room
+during the presentation.
+
 ## This table's role
 
 Table 4 gathers people experienced in benchmarking computational methods —
@@ -36,28 +60,29 @@ time.
 4. **Online and credible** — What is the simplest route to put benchmark material
    online, and who should maintain or review it?
 
-### Transversal question — answer once for the table
+### Transversal reflection — answer once for the table
 
-**Sustaining the ecosystem (infrastructure, community, scientific governance):**
-BENQODHI only works if what this table produces feeds one connected, durable
-ecosystem rather than a silo. Of the three pillars — the shared **infrastructure**
-that hosts and maintains it, the **community** that keeps contributing, and the
-**scientific governance** that keeps it credible — how can this table best feed the
-third pillar, scientific governance? What would it take for the problems, data and
-baselines from this table to be curated, reviewed and trusted as credible science
-over time, and what governance role should this table's own community play in
-setting and upholding those standards?
+Discuss freely and focus on the aspects where your table has the most useful
+experience, concerns or advice.
+
+Given the three pillars — **infrastructure**, **community** and **governance** —
+what advice, suggestions or lessons from experience would you give for the next
+steps after the workshop, so that BENQODHI can become a living benchmark
+repository and produce useful final outputs? For example, what would be enough to
+start — such as a GitHub repository with a simple website, templates and a few
+benchmark candidates — and what should be the longer-term goal?
 
 ## Expected output
 
 - short answers to the questions above;
 - a list of measures that should be used to compare approaches;
 - a list of current or new methods that should be included;
-- a practical route to put the benchmark material online and keep it credible.
+- a practical route to put the benchmark material online and keep it credible;
+- one short transversal reflection on next steps for the project.
 
 ---
 
 *A worked example (`answers.md`) lives in this folder to show the level of detail
 expected. Note takers: draft answers live into `answers.md`. Rapporteur: report
 the main conclusion, main infrastructure need, why it matters, the most important
-missing piece, the next action, and the governance answer.*
+missing piece, the next action, and the transversal next-step advice.*
