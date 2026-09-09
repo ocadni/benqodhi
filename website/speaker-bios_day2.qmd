@@ -39,8 +39,12 @@ Bio source: to be completed.
 
 **Title:** The Quantum Landscape - State of the Art, Architectures and Installations
 
-**Institution:** CINECA, Italy
+**Institution:** Quantum & HPC Engineer, CINECA, Italy
 
-Bio to be added.
+Vito Palmisano is an engineer specializing in Data Science and Quantum Computing
+within CINECA's Quantum Computing Lab. He focuses on the integration of quantum
+systems with HPC infrastructures, participating in national and European projects
+related to benchmarking, software development, and Quantum Machine Learning
+applications.
 
-Bio source: to be completed.
+Bio source: extracted from information sent by the speaker.
