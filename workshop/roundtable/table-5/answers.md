@@ -6,7 +6,7 @@
 
 ## Answers to the table's questions
 
-### Q1 — Value
+### Q1 — Value What Value ?
 
 Why would funders, institutions and the community find a shared benchmarking effort
 worth supporting — for example, being able to assess new projects and claims
