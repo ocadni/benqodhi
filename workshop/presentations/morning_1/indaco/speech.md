@@ -32,8 +32,12 @@ Tomorrow morning is where we try to turn this diversity into working material. T
 
 For this we will have five round tables: three on candidate problems in health and life sciences, one on benchmarking methodology and comparison between quantum, AI and classical approaches, and one on infrastructure and policy implications.
 
+
 We will also try an experimental setup. The discussion remains human and expert-led, but we will use AI-assisted tools where useful to help with note taking, structuring and drafting. This is connected to the recent test access to tools such as Kiro inside JRC. These tools are useful, but still new, so please be patient if not everything is perfectly smooth.
 
-Let me close with one point. In this period, AI keeps reminding us how fast research practice may change. Today, even more than before, what seems important is the ability to choose the right question, formulate it well, and define the right test.
+Then in the tomorrow afternoon after the guided visit to the quantum labs, the afternoon will then move to the policy session on quantum computing: technology, resources and policy. It will bring short contributions and an open discussion on how the benchmark work connects with European quantum infrastructure, AI-quantum strategy, health, public investment and realistic timelines.
+
+
+Let me close with one point. In this period, news on AI keeps showing us how fast research practice is changing. Today, even more than before, what seems important is the ability to choose the right question, formulate it well, and define the right test.
 
 So the purpose of these two days is simple: let us identify good problems, and formulate them well. Solving them can come after.

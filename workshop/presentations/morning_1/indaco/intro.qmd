@@ -152,7 +152,7 @@ p {
 .cue-list p,
 .two-col p,
 .two-col li,
-.roundtable-grid p,
+.day-flow p,
 .output-grid p {
   font-size: 1rem;
   line-height: 1.35;
@@ -185,14 +185,14 @@ p {
   padding: 17px 20px;
 }
 
-.roundtable-grid {
+.day-flow {
   display: grid;
   gap: 18px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin-top: 40px;
 }
 
-.roundtable-grid strong,
+.day-flow strong,
 .output-grid strong {
   display: block;
   font-size: 0.98rem;
@@ -244,7 +244,7 @@ p {
 
   .cue-list,
   .two-col,
-  .roundtable-grid,
+  .day-flow,
   .output-grid {
     grid-template-columns: 1fr;
   }
@@ -322,21 +322,17 @@ The workshop composition matters because the problem is not owned by one field: 
 <div class="kicker"><span class="slide-number">Page 3/3</span> Workshop output</div>
 <h2>Not a final product: a formulation exercise</h2>
 <p class="subtitle">
-Today sets the landscape. Tomorrow we discuss what could later enter a shared benchmark repository.
+Tomorrow has two parts: morning round tables, then an afternoon policy session.
 </p>
 
-<div class="roundtable-grid">
+<div class="day-flow">
 <div>
-<strong>Tables 1-3</strong>
-<p>Identify candidate benchmark problems in health and life-science domains.</p>
+<strong>Morning round tables</strong>
+<p>Candidate health/life-science problems; benchmark methodology; infrastructure and policy needs.</p>
 </div>
 <div>
-<strong>Table 4</strong>
-<p>Comparison criteria for quantum, AI, hybrid and classical approaches.</p>
-</div>
-<div>
-<strong>Table 5</strong>
-<p>Infrastructure, indicators, investment and policy implications.</p>
+<strong>Afternoon policy session</strong>
+<p>Quantum computing technology, resources and policy: short contributions followed by open discussion.</p>
 </div>
 </div>
 
