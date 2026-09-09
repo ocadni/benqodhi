@@ -14,9 +14,9 @@ Wi-Fi access for workshop participants is provided on the JRC guest network.
 
 | Item | Detail |
 |---|---|
-| Network (SSID) | EC_Guest |
-| username | guest_jrc@jrc |
-| Password | guest_jrc |
+| Network (SSID) | check Program Paper copy |
+| username | check Program Paper copy |
+| Password | check Program Paper copy |
 | Validity | 10–11 September 2026 |
 
 
