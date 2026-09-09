@@ -29,6 +29,8 @@ case "${CMD}" in
     cd "${SITE_DIR}"
     quarto render
     cd "${ROOT_DIR}"
+    python3 workshop/presentations/publish_presentations.py || \
+      echo "WARNING: presentation publication failed; keeping rendered site." >&2
     python3 workshop/roundtable/publish_table_guides.py || \
       echo "WARNING: round-table guide publication failed; keeping rendered site." >&2
     ;;

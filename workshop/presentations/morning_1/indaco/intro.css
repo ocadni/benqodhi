@@ -1,0 +1,366 @@
+:root {
+  --ink: #20242a;
+  --muted: #68717d;
+  --paper: #fbfbf8;
+  --rule: #d7dce2;
+  --teal: #087f8c;
+  --amber: #c46d18;
+  --blue: #3454d1;
+  --red: #b13f4a;
+  --green: #4f8a45;
+}
+
+.reveal {
+  color: var(--ink);
+  font-family: "Aptos", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .slides section {
+  background: var(--paper);
+}
+
+.reveal h2 {
+  color: var(--muted);
+  font-size: 0.62em;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin: 0 0 0.9rem;
+  text-transform: uppercase;
+}
+
+.hero-mark {
+  color: var(--ink);
+  font-size: 4.8em;
+  font-weight: 800;
+  line-height: 0.95;
+  margin-top: 1.5rem;
+}
+
+.hero-subtitle {
+  border-left: 10px solid var(--teal);
+  color: var(--ink);
+  font-size: 1.22em;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 2rem;
+  padding-left: 1.2rem;
+}
+
+.quote-slot {
+  border-top: 2px solid var(--rule);
+  bottom: 1.8rem;
+  color: var(--muted);
+  font-size: 0.72em;
+  font-style: italic;
+  left: 0;
+  padding-top: 0.8rem;
+  position: absolute;
+  width: 62%;
+}
+
+.two-fields {
+  align-items: center;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: 1fr 0.85fr 1fr;
+  margin-top: 3rem;
+}
+
+.field-block,
+.meeting-core,
+.method,
+.benchmark-core,
+.evidence-pill,
+.path-panel,
+.timeline-step,
+.roundtable-band {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.field-block {
+  aspect-ratio: 1;
+  border: 3px solid currentColor;
+  border-radius: 50%;
+  font-size: 2.2em;
+  font-weight: 800;
+  position: relative;
+}
+
+.field-block::before,
+.field-block::after {
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+}
+
+.field-block::before {
+  border: 2px solid currentColor;
+  inset: 12%;
+  opacity: 0.38;
+}
+
+.field-block::after {
+  background:
+    radial-gradient(circle at 22% 30%, currentColor 0 5px, transparent 6px),
+    radial-gradient(circle at 70% 25%, currentColor 0 5px, transparent 6px),
+    radial-gradient(circle at 42% 72%, currentColor 0 5px, transparent 6px),
+    radial-gradient(circle at 76% 70%, currentColor 0 5px, transparent 6px);
+  inset: 0;
+  opacity: 0.72;
+}
+
+.ai-block {
+  color: var(--blue);
+}
+
+.quantum-block {
+  color: var(--red);
+}
+
+.meeting-core {
+  aspect-ratio: 1;
+  background: var(--ink);
+  border-radius: 50%;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 750;
+  line-height: 1.15;
+}
+
+.slide-line {
+  color: var(--ink);
+  font-size: 1.28em;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-top: 3rem;
+}
+
+.benchmark-graphic {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 6.5rem 10rem 4.2rem;
+  margin-top: 2.5rem;
+  position: relative;
+}
+
+.benchmark-graphic::before,
+.benchmark-graphic::after {
+  border-top: 4px solid var(--rule);
+  content: "";
+  left: 13%;
+  position: absolute;
+  right: 13%;
+  top: 8.6rem;
+  z-index: 0;
+}
+
+.benchmark-graphic::after {
+  top: 20.5rem;
+}
+
+.method {
+  border: 3px solid currentColor;
+  border-radius: 999px;
+  font-size: 1.05em;
+  font-weight: 800;
+  min-height: 5rem;
+  z-index: 1;
+}
+
+.method-a {
+  color: var(--blue);
+}
+
+.method-b {
+  color: var(--amber);
+}
+
+.method-c {
+  color: var(--red);
+}
+
+.benchmark-core {
+  align-self: center;
+  background: var(--ink);
+  border-radius: 50%;
+  color: white;
+  font-size: 1.18em;
+  font-weight: 800;
+  grid-column: 2;
+  grid-row: 2;
+  height: 10rem;
+  justify-self: center;
+  line-height: 1.05;
+  width: 10rem;
+  z-index: 1;
+}
+
+.evidence-pill {
+  border: 3px solid var(--green);
+  border-radius: 999px;
+  color: var(--green);
+  font-size: 1em;
+  font-weight: 800;
+  grid-column: 1 / 4;
+  grid-row: 3;
+  justify-self: center;
+  min-height: 4.2rem;
+  padding: 0 2.4rem;
+  z-index: 1;
+}
+
+.paths-grid {
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 0.22fr 1fr;
+  margin-top: 3rem;
+}
+
+.path-panel {
+  aspect-ratio: 1.35;
+  border: 3px solid currentColor;
+  font-size: 1.7em;
+  font-weight: 800;
+  overflow: hidden;
+  position: relative;
+}
+
+.path-panel::before {
+  content: "";
+  inset: 0;
+  opacity: 0.18;
+  position: absolute;
+}
+
+.controlled {
+  color: var(--amber);
+}
+
+.controlled::before {
+  background:
+    linear-gradient(45deg, transparent 47%, currentColor 48% 52%, transparent 53%),
+    linear-gradient(-45deg, transparent 47%, currentColor 48% 52%, transparent 53%);
+  background-size: 3.2rem 3.2rem;
+}
+
+.real {
+  color: var(--teal);
+}
+
+.real::before {
+  background:
+    radial-gradient(circle at 22% 24%, currentColor 0 8px, transparent 9px),
+    radial-gradient(circle at 75% 31%, currentColor 0 8px, transparent 9px),
+    radial-gradient(circle at 34% 70%, currentColor 0 8px, transparent 9px),
+    radial-gradient(circle at 70% 75%, currentColor 0 8px, transparent 9px),
+    linear-gradient(28deg, transparent 48%, currentColor 49% 51%, transparent 52%),
+    linear-gradient(-28deg, transparent 48%, currentColor 49% 51%, transparent 52%);
+}
+
+.plus-sign {
+  color: var(--ink);
+  font-size: 3.6em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.path-caption {
+  color: var(--muted);
+  font-size: 1.08em;
+  font-weight: 700;
+  margin-top: 1.9rem;
+  text-align: center;
+}
+
+.timeline {
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 3rem;
+  position: relative;
+}
+
+.timeline::before {
+  border-top: 5px solid var(--rule);
+  content: "";
+  left: 10%;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  z-index: 0;
+}
+
+.timeline-step {
+  aspect-ratio: 1;
+  background: var(--paper);
+  border: 4px solid var(--ink);
+  border-radius: 50%;
+  color: var(--ink);
+  font-size: 1.45em;
+  font-weight: 850;
+  justify-self: center;
+  width: 14rem;
+  z-index: 1;
+}
+
+.timeline-step:nth-child(1) {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.timeline-step:nth-child(2) {
+  border-color: var(--amber);
+  color: var(--amber);
+}
+
+.timeline-step:nth-child(3) {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.roundtable-band {
+  border: 3px solid var(--teal);
+  color: var(--teal);
+  font-size: 0.95em;
+  font-weight: 800;
+  margin: 2rem auto 0;
+  min-height: 4rem;
+  width: min(78%, 58rem);
+}
+
+.reveal .slide-number {
+  color: var(--muted);
+  font-size: 0.45em;
+}
+
+.reveal .controls {
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .hero-mark {
+    font-size: 3.6em;
+  }
+
+  .two-fields,
+  .paths-grid,
+  .timeline {
+    gap: 1rem;
+  }
+
+  .timeline-step {
+    width: 10rem;
+  }
+}

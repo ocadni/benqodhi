@@ -1,0 +1,145 @@
+---
+format:
+  revealjs:
+    theme: simple
+    css: intro.css
+    transition: fade
+    background-transition: fade
+    controls: true
+    progress: true
+    slide-number: c
+    width: 1600
+    height: 900
+    margin: 0.04
+    smaller: false
+---
+
+## BENQODHI {.opening-slide}
+
+<div class="hero-mark">BENQODHI</div>
+
+<div class="hero-subtitle">
+BENchmarking Quantum Optimization<br>
+from Datasets to Health Innovation
+</div>
+
+<div class="quote-slot">Insert Boccaccio sentence here</div>
+
+::: {.notes}
+Welcome everyone.
+
+Start from the name: BENQODHI is about benchmarking quantum optimization from datasets
+to health innovation.
+
+Use the Boccaccio sentence as a human opening: the workshop is not only technical,
+it is about exchange, uncertainty, and building shared knowledge together.
+:::
+
+## Two Revolutions {.contact-slide}
+
+<div class="two-fields">
+  <div class="field-block ai-block">AI</div>
+  <div class="meeting-core">health<br>biology</div>
+  <div class="field-block quantum-block">Quantum</div>
+</div>
+
+<div class="slide-line">
+AI is changing science now.<br>
+Quantum may change what comes next.
+</div>
+
+::: {.notes}
+AI is already changing the scientific landscape and the way research is done.
+
+Quantum computing is not yet at the same practical stage, but a possible quantum
+revolution is visible.
+
+The interesting opportunity is not to put AI and quantum in opposition. It is to
+ask how the two fields can exchange ideas, tools, questions, and benchmarks.
+:::
+
+## Why Benchmarks {.benchmark-slide}
+
+<div class="benchmark-graphic">
+  <div class="method method-a">AI</div>
+  <div class="method method-b">Hybrid</div>
+  <div class="method method-c">Quantum</div>
+  <div class="benchmark-core">common<br>benchmark</div>
+  <div class="evidence-pill">comparable evidence</div>
+</div>
+
+<div class="slide-line">
+Claims need comparison.<br>
+Comparison needs benchmarks.
+</div>
+
+::: {.notes}
+Optimization is one of the main possible application areas for quantum computing,
+even if it is not the only one.
+
+Sampling, inference, simulation, reconstruction and learning may also matter when
+they are connected to real scientific questions and can be made benchmarkable.
+
+The central point is this: without shared benchmarks, progress is difficult to
+compare. Strong claims need common reference problems, common metrics, and strong
+classical, AI, hybrid and quantum baselines.
+:::
+
+## Two Paths {.paths-slide}
+
+<div class="paths-grid">
+  <div class="path-panel controlled">Controlled</div>
+  <div class="plus-sign">+</div>
+  <div class="path-panel real">Health &amp; bio</div>
+</div>
+
+<div class="path-caption">A portfolio, not one problem.</div>
+
+::: {.notes}
+We see two complementary directions.
+
+The first is controlled theoretical problems: clean enough to measure performance,
+but with many contact points with real optimization difficulty. These are heavily
+used in the literature, but the field still lacks a systematic shared repository.
+
+The second direction is health and biology. These problems are messier, but they
+are scientifically meaningful: genomics, imaging, mechanistic biology, clinical
+decisions, operational optimization.
+
+The inspiration is close to Daniel Egger's decathlon idea: not a single benchmark
+that pretends to represent everything, but a portfolio of different challenges.
+:::
+
+## What We Do Here {.workflow-slide}
+
+<div class="timeline">
+  <div class="timeline-step">Talks</div>
+  <div class="timeline-step">Tables</div>
+  <div class="timeline-step">Outputs</div>
+</div>
+
+<div class="roundtable-band">5 round tables &middot; human discussion &middot; AI-assisted notes</div>
+
+<div class="slide-line">
+Talks today.<br>
+Round tables tomorrow.<br>
+Shared benchmarks after.
+</div>
+
+::: {.notes}
+The talks today are not only presentations. They are input for tomorrow.
+
+Tomorrow the workshop becomes a working session: five round tables, prepared themes,
+JRC facilitators and note takers, and invited experts from different fields.
+
+We also want to experiment with the way the workshop works. The main value remains
+the in-person discussion, but AI-assisted tools such as Kiro can help capture,
+structure and improve the working documents when useful.
+
+The expected output is concrete: candidate benchmark problems, datasets, metrics,
+baselines, repository structure, and a possible paper, report, roadmap or policy note.
+
+The bigger reason is that common benchmarks can improve research comparability and
+collaboration, and can also help public institutions think about infrastructure,
+investment and future policy direction.
+:::

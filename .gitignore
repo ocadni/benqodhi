@@ -16,6 +16,10 @@ _internal/
 # Generated round-table PDFs, built during the GitHub Pages workflow
 workshop/roundtable/table-*/table-guide.pdf
 
+# Generated Quarto presentation output, rebuilt for the public site
+workshop/presentations/morning_1/indaco/intro.html
+workshop/presentations/morning_1/indaco/intro_files/
+
 # Local-only round-table steering notes
 workshop/roundtable/table-5/steering-notes.md
 workshop/roundtable/table-5/steering-notes.pdf
