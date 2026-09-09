@@ -6,11 +6,12 @@
 
 ## Answers to the table's questions
 
-### Q1 — Value What Value ?
+### Q1 — Value: What Would a Durable Repository Be Worth?
 
-Why would funders, institutions and the community find a shared benchmarking effort
-worth supporting — for example, being able to assess new projects and claims
-against agreed benchmarks rather than self-reported results?
+Why should funders, institutions, and the community — including research-funding
+bodies like the European Commission — invest in keeping a shared repository of
+benchmarked Health/Bio problems alive, so that funded projects and claims can be
+assessed against agreed benchmarks rather than self-reported results?
 
 ### Q2 — Financing and sustaining it
 
