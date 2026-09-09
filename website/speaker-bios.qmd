@@ -1,0 +1,222 @@
+---
+title: "Speaker Bios"
+subtitle: "Day 1 speakers"
+---
+
+## Morning — Foundations and Benchmarking Practice
+
+### Tobias Wiesenthal
+
+**Title/session:** Opening and workshop framing
+
+Tobias Wiesenthal is Head of Unit for Digital Health (JRC.F.7) at the European
+Commission's Joint Research Centre. His public research profile links him to JRC
+work in research policy, innovation and digital health-related publications.
+
+Bio source: sourced from public internet information:
+[EU Whoiswho](https://op.europa.eu/en/web/who-is-who/person/-/person/COM_000004CA7)
+and [ResearchGate](https://www.researchgate.net/profile/Tobias-Wiesenthal).
+
+### Marusca Gnecchi
+
+**Title/session:** Opening and workshop framing
+
+Marusca Gnecchi is Deputy Head of the Centre for Advanced Studies at the European
+Commission's Joint Research Centre. Public JRC-related material describes the
+Centre for Advanced Studies as an incubator for forward-looking,
+trans-disciplinary research and strategic networks.
+
+Bio source: sourced from public internet information:
+[LinkedIn profile](https://it.linkedin.com/in/marusca-gnecchi-83727649) and a
+[JRC-related LinkedIn post](https://www.linkedin.com/posts/jolita-butkevi%C4%8Dien%C4%97-444786156_airp-vacancies-all-activity-7467545669055213568-T8YT).
+
+### Vedran Dunjko
+
+**Title:** The Provable Frontier of Quantum Machine Learning
+
+Vedran Dunjko is Professor of Quantum Computing at Leiden University's computer
+science institute, the Leiden Institute of Advanced Computer Science, in close
+collaboration with the Leiden Institute of Physics. He works on quantum
+algorithms, quantum machine learning and AI for quantum computing, and co-founded
+the Applied Quantum Algorithms Leiden initiative.
+
+Bio source: sourced from public internet information:
+[Leiden University](https://www.medewerkers.universiteitleiden.nl/nieuws/2023/11/nieuwe-professor-vedran-dunjko-zoekt-problemen-uit-de-echte-wereld-die-een-quantumcomputer-kan-oplossen)
+and [LIACS](https://liacs.leidenuniv.nl/~dunjkov/).
+
+### Miguel A. González Ballester
+
+**Title:** Quantum computing for interpretable AI in healthcare
+
+Miguel A. González Ballester is an ICREA Research Professor at Universitat Pompeu
+Fabra, founder of BCN Medtech, and a specialist in medical image analysis,
+surgical technologies and quantum machine learning for healthcare. His career
+includes senior research and leadership roles at Toshiba Medical Systems, INRIA,
+the University of Bern and Alma IT Systems, with extensive publications,
+supervision and international conference leadership.
+
+Bio source: extracted from information sent by the speaker.
+
+### Federico Ricci-Tersenghi
+
+**Title:** Spin glass models are good benchmarks for discrete combinatorial optimization
+
+Federico Ricci-Tersenghi is Professor of Theoretical Physics at Sapienza
+University of Rome, working on the statistical physics of strongly disordered
+systems, including spin glasses, structural glasses, constraint satisfaction,
+optimization and inference problems. He completed his PhD at Sapienza under
+Giorgio Parisi and has held visiting positions at several major international
+institutes.
+
+Bio source: sourced from public internet information:
+[Sapienza PhD programme profile](https://phd.uniroma1.it/web/FEDERICO-RICCI-TERSENGHI_nC148_IT.aspx)
+and [Ricerc@Sapienza](https://research.uniroma1.it/researcher/2e2e000e112e921bceee41635ebe0b533384d73ac5d71d45b716df80).
+
+### Daniel J. Egger
+
+**Title:** The Quantum Optimization Benchmarking Library
+
+Daniel J. Egger is a Senior Research Scientist in the Quantum Applications
+Research & Software group at IBM Research Europe - Zurich. His research focuses on
+quantum information processing with superconducting circuits, pulse-level control
+of quantum systems and quantum algorithms, including quantum optimization.
+
+Bio source: sourced from public internet information:
+[IBM Research](https://research.ibm.com/people/daniel-egger) and
+[IBM Quantum](https://www.ibm.com/quantum/blog/quantum-optimization-benchmarking).
+
+## Afternoon — Use Cases, First Session
+
+### Zev Kronenberg
+
+**Title:** Developing a genomic standard using the Platinum Pedigree
+
+Zev Kronenberg is Associate Director of Computational Biology at PacBio, where he
+works on genomic benchmarking and variant analysis using highly accurate long-read
+DNA sequencing. He trained as a postdoctoral researcher with Evan Eichler at the
+University of Washington after completing his PhD at the University of Utah.
+
+Bio source: extracted from information sent by the speaker.
+
+### Aurora Maurizio
+
+**Title:** Where genomics resists quantum speedup: a biologist's POV
+
+Aurora Maurizio is a computational biologist and bioinformatician at the Center
+for Omics Sciences / Center for Translational Genomics and Bioinformatics at IRCCS
+Ospedale San Raffaele in Milan. Her background includes functional and structural
+genomics, transposable-element-mediated structural variants, and high-performance
+computing for biological data.
+
+Bio source: sourced from public internet information:
+[San Raffaele](https://research.hsr.it/en/centers/omics-sciences/aurora-maurizio.html)
+and [Frontiers Loop](https://loop.frontiersin.org/people/2188359/bio).
+
+### Miguel Ponce de Leon
+
+**Title:** Hard Optimization Problems in Mechanistic Biology
+
+Miguel Ponce de Leon is a researcher in the Life Sciences Department at the
+Barcelona Supercomputing Center, working at the intersection of computational
+systems biology, complex systems, epidemiology, data science and AI. His work
+includes multiscale models of cancer and cellular signalling, large-scale
+simulations and HPC-based model exploration workflows.
+
+Bio source: sourced from public internet information:
+[personal website](https://miguel-pdl.com/) and
+[EMBL-EBI training material](https://www.ebi.ac.uk/training/materials/permedcoe-summer-school/trainer-biographies/).
+
+### Carlo Mancini Terracciano
+
+**Title:** From Neural Network Dose Estimation to Clinically Constrained Plans: Radiotherapy Treatment Planning as a Benchmark for Hybrid Optimization
+
+Carlo Mancini Terracciano is a researcher in Sapienza University's Applied
+Radiation Physics Group, with a background in particle physics and a PhD from Roma
+Tre. His work includes hadrontherapy-related modelling and benchmarking, including
+carbon-ion breakup models and instrumentation for tumour resection using beta-minus
+radio tracers.
+
+Bio source: sourced from public internet information:
+[Sapienza Applied Radiation Physics Group](https://arpg.sbai.uniroma1.it/index.php/research-group/permanentstaff).
+
+### Gabriele Spada
+
+**Title:** Quantum Molecular Docking with Neutral Atoms at CINECA
+
+Gabriele Spada is a Quantum Computing Specialist at CINECA in Bologna, working on
+quantum-classical integration and hybrid quantum applications in national and
+European projects. His background is in theoretical particle physics and
+computational quantum physics, including quantum Monte Carlo simulations and
+ultracold atom systems.
+
+Bio source: extracted from information sent by the speaker.
+
+## Afternoon — Use Cases, Second Session
+
+### Hao Wang
+
+**Title:** What Are We Really Benchmarking? Toward Credible Evaluation of Quantum Optimization
+
+Hao Wang is an assistant professor at the Leiden Institute of Advanced Computer
+Science, Leiden University, working on optimization, benchmarking and performance
+analysis of stochastic optimization algorithms. He is co-editor-in-chief of the
+Evolutionary Computation Journal and has received major recognition including the
+PPSN 2016 best paper award and the NeurIPS 2020 black-box optimization
+competition prize.
+
+Bio source: extracted from information sent by the speaker.
+
+### Guglielmo Mazzola
+
+**Title:** From Asymptotic Speedups to Practical Quantum Advantage
+
+Guglielmo Mazzola is Associate Professor at SISSA and a computational
+condensed-matter physicist developing Monte Carlo and quantum Monte Carlo
+algorithms for classical and quantum computers. His research covers practical
+quantum advantage, quantum algorithms for sampling, optimization, chemistry,
+genomics and finance, and the limitations of textbook speedups under realistic
+constraints.
+
+Bio source: sourced from public internet information:
+[SISSA profile](https://cm.sissa.it/people/guglielmo-mazzola) and
+[SISSA course page](https://cm.sissa.it/node/387).
+
+### Francesco Zamponi
+
+**Title:** Machine-Learning-Enhanced Monte Carlo for Combinatorial Optimization and Sampling
+
+Francesco Zamponi is a theoretical physicist at the Department of Physics of
+Sapienza University of Rome, working on the statistical mechanics of disordered
+and complex systems, including glasses, jamming, spin glasses and random
+constraint satisfaction problems. More recently, he has applied these ideas to
+biological fitness landscapes and evolution, connecting sequence variability,
+epistasis and evolutionary dynamics.
+
+Bio source: extracted from information sent by the speaker.
+
+### Diego Reforgiato Recupero
+
+**Title:** From Healthcare to Smart Grids: Exploring Optimization Problems and Quantum Solutions
+
+Diego Reforgiato Recupero is Full Professor of Computer Science at the University
+of Cagliari, working on AI, knowledge graphs, semantic web technologies, large
+language models, NLP, human-robot interaction and intelligent applications in
+energy and healthcare. He leads several AI and semantic web laboratories, chairs
+the KGELL COST Action on Knowledge Graphs and Large Language Models, and has broad
+experience in European and international research projects.
+
+Bio source: extracted from information sent by the speaker.
+
+### Sergio Consoli
+
+**Title:** On the Minimum Quartet Tree Cost problem for the quartet method of hierarchical clustering
+
+Sergio Consoli is a Scientific Project Officer at the European Commission's Joint
+Research Centre, with work spanning digital health, artificial intelligence and
+combinatorial optimization. He has published on the Minimum Quartet Tree Cost
+problem, including an exact algorithm intended to support benchmarking of
+heuristics for the problem.
+
+Bio source: sourced from public internet information:
+[JRC Academia.edu](https://jrc.academia.edu/SergioConsoli) and
+[Tilburg Research Portal](https://research.tilburguniversity.edu/en/publications/an-exact-algorithm-for-the-minimum-quartet-tree-cost-problem/).

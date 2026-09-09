@@ -5,26 +5,25 @@
 - **Rapporteur:**
 
 Shortlist around two or three candidate problems. For each candidate, answer the
-three questions. Use the readiness scale (ready / promising / exploratory / out of
-scope) when answering Q3.
+three questions from the table guide.
 
 ## Candidate 1 — [name]
 
-- **Q1 — Scientific need:** What is the challenge, and why is it worth benchmarking?
-- **Q2 — Computational task:** What is hard, and what kind of task is it (optimization, inference, sampling, simulation, learning)?
-- **Q3 — Readiness and next step:** What exists, what is missing, and the single next step to improve benchmarkability?
+- **Problem:** What health or life-science problem should be benchmarked, and why does it matter?
+- **Bottleneck:** What is hard computationally?
+- **Moving ahead:** What is missing, and what is the next practical step?
 
 ## Candidate 2 — [name]
 
-- **Q1 — Scientific need:**
-- **Q2 — Computational task:**
-- **Q3 — Readiness and next step:**
+- **Problem:**
+- **Bottleneck:**
+- **Moving ahead:**
 
 ## Candidate 3 — [name] (optional)
 
-- **Q1 — Scientific need:**
-- **Q2 — Computational task:**
-- **Q3 — Readiness and next step:**
+- **Problem:**
+- **Bottleneck:**
+- **Moving ahead:**
 
 ## Conclusions for the recap
 
@@ -33,9 +32,11 @@ scope) when answering Q3.
 - **Why it matters:**
 - **Most important missing piece:**
 - **Next benchmark-building action:**
+- **Transversal next-step advice:**
 
-## Transversal governance answer
+## Transversal reflection
 
-<!-- How should the problems, data and baselines from this table be curated,
-     reviewed and trusted as credible science, and what governance role should
-     this table's community play? -->
+<!-- Given the three pillars — infrastructure, community and governance — what
+     advice, suggestions or lessons from experience would you give for the next
+     steps after the workshop, so that BENQODHI can become a living benchmark
+     repository and produce useful final outputs? -->

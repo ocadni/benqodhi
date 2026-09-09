@@ -6,27 +6,34 @@
 
 ## Answers to the table's questions
 
-### Q1 — Value: What Would a Durable Repository Be Worth?
+### Q1 — Value
 
-Why should funders, institutions, and the community — including research-funding
-bodies like the European Commission — invest in keeping a shared repository of
-benchmarked Health/Bio problems alive, so that funded projects and claims can be
-assessed against agreed benchmarks rather than self-reported results?
+Why would funders, institutions and the community find a shared benchmarking effort
+worth supporting — for example, being able to assess new projects and claims
+against agreed benchmarks rather than self-reported results?
+
+<!-- Consider the value to a Directorate-General, national funding authority or
+     policy maker; where it could fit in funding procedures; and how verifiable,
+     like-for-like comparison could help steer investment. -->
 
 ### Q2 — Financing and sustaining it
 
 How can the shared infrastructure and the contributing community be financed,
-created and kept alive? Which existing instruments could support it now (calls,
-research infrastructures, compute and quantum access, health-data initiatives,
-standardisation routes), and what new or adapted ones would be needed so that
-contributing to benchmarks becomes part of funded work rather than volunteer
-effort?
+created and kept alive?
+
+<!-- Consider instruments that could support it now; what new or adapted
+     instruments would be needed; who pays for year three; and how contribution
+     should be credited. -->
 
 ### Q3 — Toward an ecosystem
 
-Could this grow into a connected ecosystem of benchmarks across fields rather than a
-one-off, and what would that take? What single concrete recommendation or open
-policy question should the paper carry?
+Could this grow into a connected ecosystem of benchmarks across fields rather than
+a one-off, and what would that take?
+
+<!-- Consider existing benchmark collections, open-data repositories and research
+     infrastructures to federate with; identifiers, metadata, licensing and
+     deposit routes; and the single recommendation or open policy question the
+     paper, report or roadmap should carry. -->
 
 ## Conclusions for the recap
 
@@ -35,9 +42,11 @@ policy question should the paper carry?
 - **Why it matters:**
 - **Most important missing piece:**
 - **Next action / policy recommendation:**
+- **Final next-step advice:**
 
-## Transversal governance answer
+## Final synthesis
 
-<!-- How should the outputs of this table stay curated, reviewed and trusted as
-     credible science, and what governance role should this table's community
-     play? -->
+<!-- Given the three pillars — infrastructure, community and governance — what
+     advice, suggestions or lessons from experience would you give for the next
+     steps after the workshop, so that BENQODHI can become a living benchmark
+     repository and produce useful final outputs? -->
