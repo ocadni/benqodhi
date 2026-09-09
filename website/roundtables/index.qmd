@@ -21,9 +21,6 @@ The objective is also to identify which problems, infrastructure choices, commun
 mechanisms and policy instruments would make a future benchmark repository or
 ecosystem useful beyond the workshop.
 
-::: {.idea-actions}
-[Workshop programme](../program.qmd){.secondary-action}
-:::
 
 ## Round Table Division
 
