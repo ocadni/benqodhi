@@ -255,7 +255,7 @@ p {
 
 <section class="panel" id="opening">
 <div class="panel-inner">
-<div class="kicker"><span class="slide-number">1/3</span> Opening</div>
+<div class="kicker"><span class="slide-number">Page 1/3</span> Opening</div>
 <h1>BENQODHI</h1>
 <p class="subtitle">
 From Bengodi to benchmarks
@@ -283,7 +283,7 @@ AI and quantum computing are often presented as lands of abundance. The point he
 
 <section class="panel" id="directions">
 <div class="panel-inner">
-<div class="kicker"><span class="slide-number">2/3</span> Project directions</div>
+<div class="kicker"><span class="slide-number">Page 2/3</span> Project directions</div>
 <h2>Two complementary directions</h2>
 <p class="subtitle">
 Controlled theoretical problems on one side; real health and life-science bottlenecks on the other.
@@ -292,9 +292,10 @@ Controlled theoretical problems on one side; real health and life-science bottle
 <div class="two-col">
 <div>
 <h3>Controlled problems</h3>
-<p>Collaboration with Leiden and Sapienza on quantum algorithms and theoretical optimization instances, mainly spin-glass-related problems.</p>
+<p>Two distinct threads: Leiden on quantum algorithms for bioinformatics; La Sapienza on the spin-glass benchmark repository.</p>
 <ul>
-<li>theoretical, but connected to real complex optimization</li>
+<li>La Sapienza: controlled theoretical optimization instances</li>
+<li>mainly spin-glass-related problems, connected to real complex optimization</li>
 <li>used across quantum computing, computer science and physics</li>
 <li>needs a shared repository with instances, baselines and comparison rules</li>
 </ul>
@@ -318,10 +319,10 @@ The workshop composition matters because the problem is not owned by one field: 
 
 <section class="panel" id="workshop">
 <div class="panel-inner">
-<div class="kicker"><span class="slide-number">3/3</span> Workshop output</div>
+<div class="kicker"><span class="slide-number">Page 3/3</span> Workshop output</div>
 <h2>Not a final product: a formulation exercise</h2>
 <p class="subtitle">
-Today sets the landscape. Tomorrow we try to turn it into candidate benchmark problems, repository criteria and policy questions.
+Today sets the landscape. Tomorrow we discuss what could later enter a shared benchmark repository.
 </p>
 
 <div class="roundtable-grid">
@@ -331,30 +332,30 @@ Today sets the landscape. Tomorrow we try to turn it into candidate benchmark pr
 </div>
 <div>
 <strong>Table 4</strong>
-<p>Discuss how to compare quantum algorithms with AI, hybrid and classical methods, including resources.</p>
+<p>Comparison criteria for quantum, AI, hybrid and classical approaches.</p>
 </div>
 <div>
 <strong>Table 5</strong>
-<p>Discuss infrastructure, indicators, investment and policy relevance.</p>
+<p>Infrastructure, indicators, investment and policy implications.</p>
 </div>
 </div>
 
 <div class="output-grid">
 <div>
 <strong>Candidate problems</strong>
-<p>What could enter a repository?</p>
+<p>Which tasks are worth benchmarking?</p>
 </div>
 <div>
-<strong>Reusable material</strong>
-<p>Which benchmarks or datasets already exist?</p>
+<strong>Existing material</strong>
+<p>Which benchmarks or datasets can be reused?</p>
 </div>
 <div>
-<strong>Benchmark criteria</strong>
-<p>What should be measured and compared?</p>
+<strong>Shared criteria</strong>
+<p>What should be measured, compared and reported?</p>
 </div>
 <div>
-<strong>AI-assisted work</strong>
-<p>Expert-led discussion, with light support for notes and drafting where useful.</p>
+<strong>Policy angle</strong>
+<p>Which evidence is useful for infrastructure and investment decisions?</p>
 </div>
 </div>
 
