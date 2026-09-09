@@ -28,6 +28,7 @@ out at registration.
 
 | Time | Item | Location |
 |---|---|---|
+| 08:30–09:15 | Arrival — entrance check | JRC Main entrance |
 | 10:25–10:55 | Coffee break | Building 27B |
 | 12:30–14:00 | Lunch | Building 101 |
 | 15:40–16:10 | Coffee break | Building 27B |
@@ -68,7 +69,7 @@ coordination so that shuttle capacity can be planned.
 
 The JRC Ispra site is an access-controlled facility. Bring a valid photo ID (passport
 or national identity card) matching the name used at registration workshop. Allow extra time for
-the entrance check, in particular on Day 1 (08:30–09:00).
+the entrance check, in particular on Day 1 (08:30–09:15).
 
 ## Social dinner
 
