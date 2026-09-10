@@ -35,17 +35,6 @@ Example answer:
   stochastic;
 - **reproducibility information**, including solver version, parameters and seed.
 
-### Q3 — Methods to include
-
-From your point of view, which best current methods and new approaches should be
-included?
-
-Example answer: each benchmark should include at least one strong classical solver
-or heuristic, one transparent reference implementation and, when relevant, AI-based,
-hybrid or quantum approaches. New methods should be accepted only when their setup,
-parameters and hardware assumptions are reported clearly enough to reproduce or
-audit the result.
-
 ### Q4 — Online and credible
 
 What is the simplest route to put benchmark material online, and who should

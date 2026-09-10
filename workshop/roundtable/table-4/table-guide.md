@@ -55,8 +55,6 @@ time.
    quantum approaches be compared on the same problems?
 2. **What to measure** — Which measures matter most: solution quality, running
    time, efficiency, energy consumption, resources used, reproducibility?
-3. **Methods to include** — From your point of view, which best current methods and
-   new approaches should be included?
 4. **Online and credible** — What is the simplest route to put benchmark material
    online, and who should maintain or review it?
 
@@ -72,15 +70,6 @@ repository and produce useful final outputs? For example, what would be enough t
 start — such as a GitHub repository with a simple website, templates and a few
 benchmark candidates — and what should be the longer-term goal?
 
-## Expected output
-
-- short answers to the questions above;
-- a list of measures that should be used to compare approaches;
-- a list of current or new methods that should be included;
-- a practical route to put the benchmark material online and keep it credible;
-- one short transversal reflection on next steps for the project.
-
----
 
 *A worked example (`answers.md`) lives in this folder to show the level of detail
 expected. Note takers: draft answers live into `answers.md`. Rapporteur: report
