@@ -11,9 +11,7 @@ subtitle: "Day 2 afternoon speakers"
 
 **Institution:** DG CNECT, European Commission
 
-Bio to be added.
-
-Bio source: to be completed.
+Doru Tanasa holds a PhD in Computer Science. He works at the European Commission since 2015, now as a Team Leader in the unit C2, DG CNECT. The unit C2 deals with Quantum Technologies.
 
 ### Rene Chatwell
 
@@ -21,9 +19,9 @@ Bio source: to be completed.
 
 **Institution:** EuroHPC Joint Undertaking
 
-Bio to be added.
-
-Bio source: to be completed.
+Rene holds a PhD in Physics from the Technical University of Berlin (2021). They gained experience implementing national HPC, AI, and QC strategy as a Research Officer at the German Aerospace
+Centre's (DLR) project management branch (2020–2022). Since 2023, they have been serving as the Programme Manager for Quantum Computing at the EuroHPC Joint Undertaking, overseeing quantum system
+procurement and managing quantum-specific R&I grants.
 
 ### Kyriacos Hatzaras
 
@@ -31,9 +29,8 @@ Bio source: to be completed.
 
 **Institution:** DG CNECT, European Commission
 
-Bio to be added.
-
-Bio source: to be completed.
+He works at the European Commission, Directorate-General CNECT (Communication Networks, Content and Technology), in the digital health / AI-in-health space.
+He is a senior member of Unit A6, AI in Health & Life Sciences, at the European AI Office within DG CNECT, focused on digital health and advanced technology policy.
 
 ### Vito Palmisano
 
@@ -47,4 +44,3 @@ systems with HPC infrastructures, participating in national and European project
 related to benchmarking, software development, and Quantum Machine Learning
 applications.
 
-Bio source: extracted from information sent by the speaker.
