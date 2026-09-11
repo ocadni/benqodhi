@@ -26,9 +26,9 @@ enough to beat mature classical bioinformatics software in practice, so raw spee
 should not be the selection criterion. The group's conclusion: what could justify
 quantum is **problem dimension and model complexity**, not runtime.
 
-**The interesting problems appear when you add structure on top of processed data.**
+**The interesting problems appear when you add epistatic interactions in the modeling.**
 FZ pointed to epistatic states layered over alignments, and to interactions between
-mutations of different size, which become extremely hard to process. ZK framed this
+mutations in different sites, which become extremely hard to process. ZK framed this
 as haplotype complexity: the inference itself is hard, and inferring the biological
 interaction between variants is harder still. FZ and ZK agreed that the concrete,
 well-posed and difficult questions are of the form "are these two variants in cis?"
