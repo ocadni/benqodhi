@@ -19,16 +19,15 @@
 converged on the point that current clinical and research pipelines are already fast
 enough. AM noted that even in urgent settings the lab queue and the genetic analyses
 themselves are quick; most of the turnaround time is administrative rather than
-computational. ZK confirmed that under three days is common, with ONT sequencing
-during surgery already at proof-of-concept stage. FZ has never seen a pipeline
+computational. ZK confirmed that rapid WGS test for infants can take as little as 3-5 days. FZ has never seen a pipeline
 requiring months of computation. MC added that Grover's quadratic speed-up is not
 enough to beat mature classical bioinformatics software in practice, so raw speed
 should not be the selection criterion. The group's conclusion: what could justify
 quantum is **problem dimension and model complexity**, not runtime.
 
-**The interesting problems appear when you add epistatic interactions in the modeling.**
+**The interesting problems appear when you add structure on top of processed data.**
 FZ pointed to epistatic states layered over alignments, and to interactions between
-mutations in different sites, which become extremely hard to process. ZK framed this
+mutations of different size, which become extremely hard to process. ZK framed this
 as haplotype complexity: the inference itself is hard, and inferring the biological
 interaction between variants is harder still. FZ and ZK agreed that the concrete,
 well-posed and difficult questions are of the form "are these two variants in cis?"
@@ -43,10 +42,7 @@ approaches exist that tolerate this.
 
 **Scale and data-space questions.** GL asked whether sample size could become a
 reason to move to quantum, contrasting All of Us (around half a million individuals)
-with the millions expected under EHDS. ZK described a related practical gap in All of
-Us: coding versus non-coding regions are not annotated, ORF prediction is confounded
-by sequencing errors that make proteins look truncated, and even with mass
-spectrometry on top there is no true set. He and GL noted that the existing standards
+with the millions expected under EHDS. He and GL noted that the existing standards
 were built by researchers, so they reflect research needs rather than clinical ones;
 AM asked what standards EHDS would need across heterogeneous instruments and
 technologies.
@@ -194,7 +190,10 @@ ZK: predicting proteins from long reads. Building a true set based on sequencing
   coding and non-coding regions are unannotated and sequencing errors make proteins
   appear truncated, with mass spectrometry used on top. Set aside as a benchmark
   candidate because there is no true set, which is precisely what a benchmark requires;
-  the table saw it as an AI problem rather than a quantum one.
+  the table saw it as an AI problem rather than a quantum one.  ZK described a related practical gap in All of
+Us: coding versus non-coding regions are not annotated, ORF prediction is confounded
+by sequencing errors that make proteins look truncated, and even with mass
+spectrometry on top there is no true set.
 - **Genome-wide association studies at EHDS scale.** AM proposed GWAS as a plausible
   area and GL raised whether the jump from All of Us (about half a million) to EHDS
   (millions) changes the picture. Kept as a scale motivation for Candidate 1 rather
