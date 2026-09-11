@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 862" width="780" height="862" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <style>
+    .ink{fill:#1a1a1a}
+    .mut{fill:#6b7280}
+    .h1{fill:#2563eb}
+    .h2{fill:#d97706}
+    .un{fill:#9ca3af}
+    .ttl{font-size:15px;font-weight:700}
+    .ptl{font-size:13px;font-weight:700}
+    .sub{font-size:12px}
+    .cap{font-size:11px}
+    .tny{font-size:10px}
+    .al{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px;font-weight:600;text-anchor:middle}
+    .al2{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;font-weight:600}
+  </style>
+  <defs>
+    <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#9ca3af"/>
+    </marker>
+  </defs>
+  <rect width="780" height="862" fill="#ffffff"/>
+
+  <!-- ================= Section A : the ambiguity ================= -->
+  <text x="24" y="26" class="ttl ink">The phasing problem</text>
+  <text x="24" y="46" class="sub mut">A genotype call tells you which alleles sit at a site, not which of the two chromosome copies carries them.</text>
+
+  <text x="24" y="84" class="tny mut">Observed</text>
+  <text x="24" y="98" class="tny mut">genotypes</text>
+
+  <rect x="121" y="62" width="34" height="48" rx="4" fill="#fff" stroke="#9ca3af"/>
+  <text x="138" y="80" class="al un">A</text><text x="138" y="100" class="al un">G</text>
+  <text x="138" y="124" class="tny mut" text-anchor="middle">s1</text>
+  <rect x="181" y="62" width="34" height="48" rx="4" fill="#fff" stroke="#9ca3af"/>
+  <text x="198" y="80" class="al un">C</text><text x="198" y="100" class="al un">T</text>
+  <text x="198" y="124" class="tny mut" text-anchor="middle">s2</text>
+  <rect x="241" y="62" width="34" height="48" rx="4" fill="#fff" stroke="#9ca3af"/>
+  <text x="258" y="80" class="al un">T</text><text x="258" y="100" class="al un">A</text>
+  <text x="258" y="124" class="tny mut" text-anchor="middle">s3</text>
+
+  <line x1="292" y1="86" x2="322" y2="86" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#arw)"/>
+
+  <text x="392" y="60" class="tny mut" text-anchor="middle">phasing 1</text>
+  <rect x="338" y="68" width="108" height="44" rx="5" fill="#f9fafb" stroke="#d1d5db" stroke-dasharray="3 3"/>
+  <text x="356" y="85" class="al h1">A</text><text x="392" y="85" class="al h1">C</text><text x="428" y="85" class="al h1">T</text>
+  <text x="356" y="105" class="al h2">G</text><text x="392" y="105" class="al h2">T</text><text x="428" y="105" class="al h2">A</text>
+
+  <text x="464" y="93" class="cap mut" text-anchor="middle">or</text>
+
+  <text x="540" y="60" class="tny mut" text-anchor="middle">phasing 2</text>
+  <rect x="486" y="68" width="108" height="44" rx="5" fill="#f9fafb" stroke="#d1d5db" stroke-dasharray="3 3"/>
+  <text x="504" y="85" class="al h1">A</text><text x="540" y="85" class="al h1">T</text><text x="576" y="85" class="al h1">T</text>
+  <text x="504" y="105" class="al h2">G</text><text x="540" y="105" class="al h2">C</text><text x="576" y="105" class="al h2">A</text>
+
+  <text x="612" y="93" class="cap mut">+ 2 more</text>
+
+  <text x="24" y="148" class="cap mut">Three heterozygous sites admit four phasings, and the genotypes alone pick none of them.</text>
+
+  <!-- ================= Panel A : long reads ================= -->
+  <rect x="24" y="176" width="732" height="214" rx="8" fill="#f9fafb" stroke="#e5e7eb"/>
+  <text x="44" y="202" class="ptl ink">A &#183; Long reads &#8212; linkage is observed</text>
+
+  <text x="170" y="220" class="tny mut" text-anchor="middle">s1</text>
+  <text x="300" y="220" class="tny mut" text-anchor="middle">s2</text>
+  <text x="430" y="220" class="tny mut" text-anchor="middle">s3</text>
+  <line x1="120" y1="227" x2="480" y2="227" stroke="#d1d5db"/>
+  <line x1="170" y1="223" x2="170" y2="233" stroke="#9ca3af"/>
+  <line x1="300" y1="223" x2="300" y2="233" stroke="#9ca3af"/>
+  <line x1="430" y1="223" x2="430" y2="233" stroke="#9ca3af"/>
+
+  <rect x="150" y="238" width="170" height="18" rx="9" fill="#fff" stroke="#cbd5e1"/>
+  <text x="170" y="251" class="al h1">A</text><text x="300" y="251" class="al h1">C</text>
+  <rect x="150" y="262" width="170" height="18" rx="9" fill="#fff" stroke="#cbd5e1"/>
+  <text x="170" y="275" class="al h2">G</text><text x="300" y="275" class="al h2">T</text>
+  <rect x="280" y="286" width="170" height="18" rx="9" fill="#fff" stroke="#cbd5e1"/>
+  <text x="300" y="299" class="al h1">C</text><text x="430" y="299" class="al h1">T</text>
+  <rect x="280" y="310" width="170" height="18" rx="9" fill="#fff" stroke="#cbd5e1"/>
+  <text x="300" y="323" class="al h2">T</text><text x="430" y="323" class="al h2">A</text>
+
+  <line x1="488" y1="270" x2="516" y2="270" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#arw)"/>
+
+  <text x="526" y="234" class="tny mut">phased block</text>
+  <rect x="526" y="242" width="112" height="24" rx="5" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="546" y="258" class="al h1">A</text><text x="582" y="258" class="al h1">C</text><text x="618" y="258" class="al h1">T</text>
+  <text x="648" y="258" class="tny h1">hap 1</text>
+  <rect x="526" y="274" width="112" height="24" rx="5" fill="#fffbeb" stroke="#fde68a"/>
+  <text x="546" y="290" class="al h2">G</text><text x="582" y="290" class="al h2">T</text><text x="618" y="290" class="al h2">A</text>
+  <text x="648" y="290" class="tny h2">hap 2</text>
+
+  <text x="44" y="356" class="cap mut">Each read covering two het sites is a hard cis constraint; chaining them extends the block (s1&#8211;s2, then s2&#8211;s3).</text>
+  <text x="44" y="372" class="cap mut">Where no read spans a gap, the block ends and phase restarts &#8212; that break is what switch error counts.</text>
+
+  <!-- ================= Panel B : population data ================= -->
+  <rect x="24" y="406" width="732" height="214" rx="8" fill="#f9fafb" stroke="#e5e7eb"/>
+  <text x="44" y="432" class="ptl ink">B &#183; Population data &#8212; linkage is inferred</text>
+
+  <text x="170" y="450" class="tny mut" text-anchor="middle">s1</text>
+  <text x="300" y="450" class="tny mut" text-anchor="middle">s2</text>
+  <text x="430" y="450" class="tny mut" text-anchor="middle">s3</text>
+  <line x1="120" y1="457" x2="480" y2="457" stroke="#d1d5db"/>
+  <line x1="170" y1="453" x2="170" y2="463" stroke="#9ca3af"/>
+  <line x1="300" y1="453" x2="300" y2="463" stroke="#9ca3af"/>
+  <line x1="430" y1="453" x2="430" y2="463" stroke="#9ca3af"/>
+
+  <rect x="148" y="468" width="44" height="18" rx="9" fill="#fff" stroke="#cbd5e1"/>
+  <text x="170" y="481" class="al un">A</text>
+  <rect x="148" y="492" width="44" height="18" rx="9" fill="#fff" stroke="#cbd5e1"/>
+  <text x="170" y="505" class="al un">G</text>
+  <rect x="278" y="468" width="44" height="18" rx="9" fill="#fff" stroke="#cbd5e1"/>
+  <text x="300" y="481" class="al un">C</text>
+  <rect x="278" y="492" width="44" height="18" rx="9" fill="#fff" stroke="#cbd5e1"/>
+  <text x="300" y="505" class="al un">T</text>
+  <rect x="408" y="468" width="44" height="18" rx="9" fill="#fff" stroke="#cbd5e1"/>
+  <text x="430" y="481" class="al un">T</text>
+  <rect x="408" y="492" width="44" height="18" rx="9" fill="#fff" stroke="#cbd5e1"/>
+  <text x="430" y="505" class="al un">A</text>
+
+  <text x="148" y="528" class="tny mut">no read spans two sites &#8212; no direct constraint</text>
+
+  <line x1="488" y1="490" x2="516" y2="490" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#arw)"/>
+
+  <text x="526" y="450" class="tny mut">reference panel of known haplotypes</text>
+  <rect x="522" y="458" width="130" height="18" rx="4" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="530" y="471" class="al2 h1">A  C  T</text><text x="612" y="471" class="tny h1">0.41</text>
+  <rect x="522" y="480" width="130" height="18" rx="4" fill="#fffbeb" stroke="#fde68a"/>
+  <text x="530" y="493" class="al2 h2">G  T  A</text><text x="612" y="493" class="tny h2">0.38</text>
+  <text x="530" y="515" class="al2 un">A  T  A</text><text x="612" y="515" class="tny mut">0.03</text>
+  <text x="530" y="533" class="al2 un">G  C  T</text><text x="612" y="533" class="tny mut">0.01</text>
+  <text x="668" y="471" class="tny mut">most</text>
+  <text x="668" y="484" class="tny mut">likely</text>
+  <text x="668" y="497" class="tny mut">pair</text>
+
+  <text x="44" y="576" class="cap mut">No read links the sites, so alleles are joined by how often each combination occurs in a panel of known haplotypes.</text>
+  <text x="44" y="592" class="cap mut">The output is a posterior, not a constraint: accuracy tracks how well the panel matches the sample&#8217;s ancestry.</text>
+
+  <!-- ================= Panel C : assembly as ground truth ================= -->
+  <rect x="24" y="636" width="732" height="204" rx="8" fill="#f9fafb" stroke="#e5e7eb"/>
+  <text x="44" y="662" class="ptl ink">C &#183; Assemblies supply the ground truth</text>
+
+  <!-- stage 1: assembly -->
+  <text x="44" y="684" class="tny mut">diploid / pedigree-resolved assembly</text>
+  <rect x="44" y="692" width="140" height="24" rx="5" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="70" y="708" class="al h1">A</text><text x="114" y="708" class="al h1">C</text><text x="158" y="708" class="al h1">T</text>
+  <rect x="44" y="722" width="140" height="24" rx="5" fill="#fffbeb" stroke="#fde68a"/>
+  <text x="70" y="738" class="al h2">G</text><text x="114" y="738" class="al h2">T</text><text x="158" y="738" class="al h2">A</text>
+
+  <text x="218" y="706" class="tny mut" text-anchor="middle">strip</text>
+  <text x="218" y="717" class="tny mut" text-anchor="middle">phase</text>
+  <line x1="200" y1="730" x2="236" y2="730" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#arw)"/>
+
+  <!-- stage 2: instance -->
+  <text x="252" y="684" class="tny mut">instance: phase hidden</text>
+  <rect x="258" y="694" width="28" height="44" rx="4" fill="#fff" stroke="#9ca3af"/>
+  <text x="272" y="711" class="al un">A</text><text x="272" y="731" class="al un">G</text>
+  <rect x="294" y="694" width="28" height="44" rx="4" fill="#fff" stroke="#9ca3af"/>
+  <text x="308" y="711" class="al un">C</text><text x="308" y="731" class="al un">T</text>
+  <rect x="330" y="694" width="28" height="44" rx="4" fill="#fff" stroke="#9ca3af"/>
+  <text x="344" y="711" class="al un">T</text><text x="344" y="731" class="al un">A</text>
+  <text x="372" y="721" class="cap mut">+</text>
+  <rect x="386" y="700" width="58" height="16" rx="8" fill="#fff" stroke="#cbd5e1"/>
+  <text x="415" y="712" class="tny mut" text-anchor="middle">reads</text>
+  <rect x="386" y="722" width="58" height="16" rx="8" fill="#fff" stroke="#cbd5e1"/>
+  <text x="415" y="734" class="tny mut" text-anchor="middle">priors</text>
+
+  <line x1="452" y1="718" x2="480" y2="718" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#arw)"/>
+
+  <!-- stage 3: solver -->
+  <rect x="486" y="696" width="104" height="44" rx="6" fill="#fff" stroke="#cbd5e1"/>
+  <text x="538" y="714" class="tny ink" text-anchor="middle">classical / hybrid</text>
+  <text x="538" y="728" class="tny ink" text-anchor="middle">/ quantum solver</text>
+
+  <line x1="596" y1="718" x2="624" y2="718" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#arw)"/>
+
+  <text x="690" y="684" class="tny mut" text-anchor="middle">prediction</text>
+  <rect x="634" y="692" width="112" height="24" rx="5" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="654" y="708" class="al h1">A</text><text x="690" y="708" class="al h1">C</text><text x="726" y="708" class="al h1">T</text>
+  <rect x="634" y="722" width="112" height="24" rx="5" fill="#fffbeb" stroke="#fde68a"/>
+  <text x="654" y="738" class="al h2">G</text><text x="690" y="738" class="al h2">T</text><text x="726" y="738" class="al h2">A</text>
+
+  <!-- scoring loop -->
+  <path d="M 114 750 L 114 768 L 690 768 L 690 750" fill="none" stroke="#9ca3af" stroke-width="1" stroke-dasharray="3 3"/>
+  <rect x="242" y="760" width="320" height="16" fill="#f9fafb"/>
+  <text x="402" y="772" class="tny mut" text-anchor="middle">score prediction against assembly &#8594; switch error rate</text>
+
+  <text x="44" y="800" class="cap mut">A pedigree-resolved or diploid assembly settles both haplotypes, so the true phase at every site is already known.</text>
+  <text x="44" y="816" class="cap mut">Hide it, hand the solver only genotypes and linkage evidence, and the same instance scores any solver unchanged.</text>
+</svg>
