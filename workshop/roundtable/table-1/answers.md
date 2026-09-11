@@ -141,13 +141,7 @@ ZK: predicting proteins from long reads. Building a true set based on sequencing
   reference is thin. Interactions between mutations of different size, as FZ noted, are
   extremely hard to process, and epistatic interaction between phased variants is a
   second inference layer on top.
-- **Moving ahead:** Missing is a benchmark instance set with genuine ground truth and
-  a clear difficulty gradient. The practical route ZK described is to use deployed,
-  validated assemblies to construct phasing instances whose answer is known, in the
-  spirit of earlier community truth-set standards. Next step: define the instance
-  format (loci, observed variants, available linkage evidence, population priors), fix
-  a domain metric such as switch error rate, and publish a small graded set that a
-  classical, hybrid or quantum solver can all be run against unchanged.
+- **Moving ahead:** What's missing is a benchmark instance set with genuine ground truth and a clear difficulty gradient. Simulation is the obvious shortcut and the wrong one: an instance set generated from a model rewards solvers that recover or over-optimize against the generative model rather than the underlying biology, and any method tuned on it inherits the simulator's assumptions instead of being tested against them. The practical route ZK described is to build phasing instances whose answers are already known, derived from published, validated assemblies — in the spirit of earlier community truth-set standards. Two sources are available today: pedigree-based assemblies, where inheritance constrains the true haplotypes (Platinum Pedigree, GIAB), and population-scale diploid assemblies such as those built at UC Santa Cruz, which extend the same idea across many samples and ancestries. Next step: define the instance format (loci, observed variants, available linkage evidence, population priors), fix a domain metric such as switch error rate, and publish a small graded set that a classical, hybrid, or quantum solver can all be run against unchanged.
 
 ## Candidate 2 — Viral haplotype reconstruction in clonal populations
 
