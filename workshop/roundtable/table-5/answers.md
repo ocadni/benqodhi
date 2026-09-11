@@ -80,3 +80,6 @@ Be ready to revise the scope and objectives as you go and sure you have big play
      advice, suggestions or lessons from experience would you give for the next
      steps after the workshop, so that BENQODHI can become a living benchmark
      repository and produce useful final outputs? -->
+
+BENQODHI's strongest asset is its potential to become the **trusted, shared reference** that de-risks investment and unifies the EU quantum-healthcare ecosystem. The recommended next move is a **well-specified
+public procurement call**, developed through early community consultation, with senior backing and an explicit plan to map and respond to international technological competition.
