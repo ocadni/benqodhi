@@ -2,7 +2,7 @@
 
 - **Date:** 11 September 2026
 - **note taker: Gabriele Leoni**
-- **Rapporteur:**
+- **Rapporteurs: All**
 
 ## Participants
 
