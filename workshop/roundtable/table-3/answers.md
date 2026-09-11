@@ -32,31 +32,9 @@ bottleneck, moving ahead).
 
 ## Candidate 2 — Context-specific metabolic network extraction / reconstruction - Main contact: Miguel Ponce de Leon
 
-- **Problem:** Constraint-based (stoichiometric) modelling of the human metabolic
-  network. Cells express only a subset of the genome-encoded network, so gene and
-  protein expression data must be matched to stoichiometric rules to extract the
-  active, context-specific model. It matters for cancer metabolism, tissue-specific
-  models and drug-target discovery, and the same machinery can infer the full
-  biochemical network of a newly discovered organism from candidate reactions in
-  genome annotations (predicting metabolic needs, minimal media, growth rates and
-  essential genes).
-- **Bottleneck:** The set-covering / reaction-selection step becomes a mixed-integer
-  linear program with tens of thousands of variables and up to ~50,000 constraints,
-  pushing CPLEX and Gurobi to their limits with many local optima (MILP is NP-hard).
-  Separately, sampling the high-dimensional allowed flux space is non-trivial: the
-  polytope is extremely elongated and non-uniform, so Monte Carlo and simplex-style
-  moves suffer very high rejection rates because random steps easily leave the
-  polytope. You must choose a direction before you can move, and the diameter of the
-  polytope makes uniform sampling impractical.
-- **Moving ahead:** Freeze a model version and preprocessing, then define the exact
-  MILP / reaction-selection objective for the benchmark (expert judgment needed
-  here). Anchors exist: Recon3D, Human-GEM/Human1, BiGG, MEMOTE, GTEx/TCGA and
-  COBRA-style tooling. A stochastic sampler that works in high-dimensional,
-  non-uniform, bottlenecked spaces — capturing the fluctuation of the data rather
-  than a single unique solution — would already be a major improvement. Mapping to
-  QUBO is possible in principle but encoding all states/constraints needs thousands
-  of qubits, so exact quantum formulations are out of reach today despite potential
-  logarithmic Hilbert-space benefits.
+- **Problem:** **Problem:** Constraint-based (stoichiometric) modelling of the human metabolic network. Cells express only a subset of the genome-encoded network, so gene and protein expression data must be integrated with stoichiometric mass-balance constraints, thermodynamic information and gene–protein–reaction rules to extract an active, consistent, context-specific model. This is relevant to cancer metabolism, tissue-specific models and drug-target discovery. The same machinery can also be used to infer the metabolic network of a newly discovered organism from candidate reactions derived from genome annotations, enabling predictions of metabolic capabilities, minimal media, growth rates and essential genes.
+- **Bottleneck:** The gap-filling / reaction-selection step becomes a mixed-integer linear program with tens of thousands of variables and up to ~50,000 constraints, pushing CPLEX and Gurobi to their limits as the combinatorial search space and number of alternative optima increase (MILP is NP-hard). Separately, sampling the high-dimensional allowed flux space is non-trivial: the feasible polytope can be extremely elongated and non-uniform, so Monte Carlo and simplex-style moves can mix very slowly because random steps easily leave the polytope. Efficient exploration requires selecting directions compatible with the constraints, while the geometry and large diameter of the polytope make uniform sampling computationally challenging.
+- **Moving ahead:** Freeze a model version and preprocessing, then define the exact MILP / reaction-selection objective for the benchmark (expert judgment needed here). Anchors exist: Recon3D, Human-GEM/Human1, BiGG, MEMOTE, GTEx/TCGA and COBRA-style tooling. A stochastic sampler that works efficiently in high-dimensional, non-uniform, bottlenecked spaces — capturing the fluctuation of the data rather than a single unique solution — would already be a major improvement. A QUBO formulation provides a natural interface to quantum annealing and gate-based variational algorithms, but straightforward encodings can require thousands of binary variables and introduce substantial penalty terms. This makes direct solution of genome-scale instances unrealistic on current hardware, while leaving open the question of whether reduced or structured, biologically realistic instances exhibit useful quantum scaling.
 
 ## Candidate 3 — Radiotherapy beam-angle / beamlet / aperture selection - Main contact: Carlo Mancini Terracciano
 
