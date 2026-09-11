@@ -32,7 +32,12 @@ mutations in different sites, which become extremely hard to process. ZK framed 
 as haplotype complexity: the inference itself is hard, and inferring the biological
 interaction between variants is harder still. FZ and ZK agreed that the concrete,
 well-posed and difficult questions are of the form "are these two variants in cis?"
-and "what is their biological interaction?"
+and "what is their biological interaction?" 
+An example is ancestral sequence reconstruction (ASR), where you can construct benchmarks 
+by inferring a tree and a generative model from data, then using them to generate 
+a synthetic phylogeny to be used as a ground truth, see
+https://arxiv.org/pdf/2606.27942
+In that paper we constructed benchmarks of ASR of varying complexity that could be used to test algorithms.
 
 **Research versus clinic.** AM argued that complicating the model is legitimate in
 research but not in the clinic, and FZ agreed. FZ restated the workshop aim as
