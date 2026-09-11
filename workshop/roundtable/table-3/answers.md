@@ -12,11 +12,10 @@ bottleneck, moving ahead).
 
 - **Problem:** Predict how a ligand binds a receptor, cast as a graph problem
   (maximum-weight clique / maximum independent set over a ligand–receptor
-  compatibility graph). It matters for virtual screening and drug discovery, and
+  compatibility graph or QUBO problem). It matters for drug discovery, and
   it is the most physically "quantum-native" of the candidates: some formulations
   map naturally onto neutral-atom hardware. Molecules are represented through
-  simplified abstractions — pharmacophore points, groups of atoms with spherical
-  approximations and contact/effective potentials rather than full atomic
+  simplified abstractions — pharmacophore points, and contact/effective potentials rather than full atomic
   dynamics.
 - **Bottleneck:** The problem is NP-hard. Combinatorial matching explodes as soon
   as the number of pharmacophore points grows, so larger ligands quickly exceed
@@ -29,8 +28,7 @@ bottleneck, moving ahead).
   footing. Because quantum algorithms return statistical answers, success rate
   (e.g. how many times the correct solution appears out of ~2000 shots) is a good
   metric, rather than raw time-to-solution. Open expert question: how should
-  graph-objective quality be connected to physical docking validity such as pose
-  RMSD?
+  graph-objective quality be connected to physical docking validity?
 
 ## Candidate 2 — Context-specific metabolic network extraction / reconstruction - Main contact: Miguel Ponce de Leon
 
