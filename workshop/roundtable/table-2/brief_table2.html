@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brief on Medical Imaging, Diagnostics, Machine Learning and QML</title>
+<style>
+:root {
+  --ink: #1B2B3A;
+  --muted: #5B6B7A;
+  --paper: #FFFFFF;
+  --wash: #F1F4F6;
+  --rule: #D3DBE2;
+  --accent: #1F6F78;
+  --serif: Charter, "Bitstream Charter", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --sans: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--wash);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+main {
+  max-width: 50rem;
+  margin: 2.5rem auto;
+  padding: 3rem 3.5rem 3.5rem;
+  background: var(--paper);
+  border-top: 6px solid var(--accent);
+}
+h1, h2, h3 { font-family: var(--sans); line-height: 1.25; color: var(--ink); }
+h1 { font-size: 2rem; font-weight: 700; margin: 0 0 1.25rem; letter-spacing: -0.01em; }
+h2 {
+  font-size: 1.35rem; font-weight: 650;
+  margin: 2.75rem 0 1rem; padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+}
+h3 {
+  font-size: 1.1rem; font-weight: 650;
+  margin: 2rem 0 0.75rem; padding-left: 0.75rem;
+  border-left: 3px solid var(--accent);
+}
+p { margin: 0 0 1rem; }
+main.wide { max-width: 64rem; }
+main.wide > p, main.wide > ul, main.wide > ol, main.wide > h1, main.wide > h2, main.wide > h3 {
+  max-width: 48rem; margin-left: auto; margin-right: auto;
+}
+hr + h2 { border-top: 0; padding-top: 0; margin-top: 0; }
+ul, ol { margin: 0 0 1rem; padding-left: 1.4rem; }
+li { margin: 0.3rem 0; }
+li > ul, li > ol { margin: 0.25rem 0 0.4rem; }
+strong { font-weight: 700; }
+em { color: var(--muted); }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+code { font-size: 0.9em; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Document meta block (date, participants, note takers) */
+ul.meta {
+  list-style: none; padding: 1rem 1.25rem; margin: 0 0 1.75rem;
+  background: var(--wash); border-radius: 4px;
+  font-family: var(--sans); font-size: 0.95rem;
+}
+ul.meta li { margin: 0.2rem 0; }
+
+/* Tables */
+.table-wrap { overflow-x: auto; margin: 1rem 0 1.5rem; }
+table { border-collapse: collapse; width: 100%; font-family: var(--sans); font-size: 0.88rem; line-height: 1.45; }
+th, td { text-align: left; vertical-align: top; padding: 0.6rem 0.7rem; border-bottom: 1px solid var(--rule); }
+th { background: var(--ink); color: #fff; font-weight: 600; }
+tbody tr:nth-child(even) td { background: #F8FAFB; }
+td:first-child { font-weight: 600; min-width: 11rem; }
+
+/* Feasibility indicator: coloured dot + text */
+.feas { white-space: nowrap; }
+.feas::before {
+  content: ""; display: inline-block; width: 0.6rem; height: 0.6rem;
+  border-radius: 50%; margin-right: 0.35rem; vertical-align: 0.05rem;
+}
+.feas-low::before { background: #B83B3B; }
+.feas-lowmed::before { background: linear-gradient(90deg, #B83B3B 50%, #C99A1E 50%); }
+.feas-med::before { background: #C99A1E; }
+.feas-medhigh::before { background: linear-gradient(90deg, #C99A1E 50%, #3C8A57 50%); }
+.feas-high::before { background: #3C8A57; }
+.feas-prio::before { background: #9AA6B1; }
+
+/* Evidence tags */
+.tag {
+  display: inline-block; font-family: var(--sans); font-size: 0.72rem; font-weight: 600;
+  line-height: 1.3; padding: 0.08rem 0.45rem; border-radius: 3px; white-space: nowrap;
+  vertical-align: 0.1rem; border: 1px solid transparent;
+}
+.tag-exp { color: #245A39; background: #E4F1E8; border-color: #C3DFCB; }
+.tag-lit { color: #33477F; background: #E7EBF7; border-color: #C8D1EC; }
+.tag-spec { color: #7A4A0C; background: #FAEEDB; border-color: #EDD3A8; }
+.tag-analyst { color: #5E3470; background: #F0E6F4; border-color: #DCC5E6; }
+.tag-note { font-weight: 400; opacity: 0.85; }
+
+@media (max-width: 640px) {
+  body { font-size: 1rem; }
+  main { margin: 0; padding: 1.5rem 1.15rem 2rem; }
+  h1 { font-size: 1.6rem; }
+}
+@media print {
+  body { background: #fff; font-size: 10.5pt; }
+  main { margin: 0; padding: 0; max-width: none; border-top: 0; }
+  h2, h3 { break-after: avoid; }
+  tr, li { break-inside: avoid; }
+  th { background: #fff; color: var(--ink); border-bottom: 2px solid var(--ink); }
+  tbody tr:nth-child(even) td { background: #fff; }
+}
+</style>
+</head>
+<body>
+<main class="wide">
+<h1>Executive Brief: Medical Imaging, Diagnostics, Machine Learning and QML</h1>
+<h2>1. Executive Summary</h2>
+<p>The roundtable aimed to identify candidate benchmarking problems at the intersection of medical imaging, diagnostics, machine learning and quantum machine learning (QML). Participants included experts in classical medical-image processing (with some exploratory QML work), quantum simulation and digital quantum algorithms, private-sector data science and generative AI, and systems-biology modelling. The two facilitators described themselves as non-experts. A participant volunteered to present the table's overview after the coffee break.</p>
+<p>The discussion shifted early from &quot;which problem should we benchmark?&quot; to &quot;what makes a quantum benchmark meaningful at all?&quot; Participants broadly agreed on six points:</p>
+<ul>
+<li><strong>No hardware at relevant scale.</strong> Near-term benchmarking must run on classical simulators, and this limits what can credibly be claimed.</li>
+<li><strong>Quantum-vs-classical comparisons need mature classical baselines.</strong> Participants favoured practically relevant problems (chemistry, medical imaging) that classical methods have already explored thoroughly. Newly invented problems risk inflated advantage claims. A complementary view held that more modest &quot;capability demonstrations&quot; and quantum-vs-quantum benchmarks are still valuable while the technology evolves.</li>
+<li><strong>Supervised QML advantage is not established.</strong> Theory is discouraging, since trainable circuits without barren plateaus tend to be classically simulable. Some participants argued that practical benefits such as better inductive bias or sample efficiency may still exist, by analogy with deep learning's success without formal guarantees.</li>
+<li><strong>Speed is not the clinical bottleneck.</strong> In diagnostic imaging, delays come mostly from hospital process, not computation. Diagnostic quality is the target, and real-time use cases were deprioritised.</li>
+<li><strong>Two candidate benchmark areas were recorded:</strong> (i) medical imaging and diagnostics, notably radiomics, and (ii) drug discovery, covering molecular generation and electronic-structure simulation.</li>
+<li><strong>Readiness is low, but theory is justified now.</strong> Participants saw substantial theoretical work to do before hardware matures.</li>
+</ul>
+<p><strong>Evidence basis and source reconciliation.</strong></p>
+<ul>
+<li><strong>Written notes.</strong> The two copies supplied were identical and are treated as one source. Where the notes were terse or internally inconsistent, the transcript was used to reconstruct context. For example, the notes say both &quot;supervised learning not advantageous for QML&quot; and &quot;not sure.&quot; The transcript shows this was contested, so it is reported as unresolved.</li>
+<li><strong>Transcript.</strong> It is machine-generated, heavily garbled, and mixes English and Italian, with no speaker attribution. For that reason this brief contains <strong>no verbatim quotes</strong>, and most names of cited papers and authors could not be recovered.</li>
+<li><strong>No empirical results were presented.</strong> Statements are labelled as follows:
+<ul>
+<li><strong><span class="tag tag-exp">Exp</span></strong>: a participant's reported project experience</li>
+<li><strong><span class="tag tag-lit">Lit</span></strong>: literature cited in session and not verified here</li>
+<li><strong><span class="tag tag-spec">Spec</span></strong>: speculation, opinion or proposal</li>
+<li><strong><span class="tag tag-analyst">Analyst</span></strong>: the brief author's own assessment</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>2. Use Case Benchmarking Matrix</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Use Case</th>
+<th>Domain</th>
+<th>Time-to-Impact</th>
+<th>Value Potential</th>
+<th>Feasibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quantum generative models for molecular design</td>
+<td>Drug discovery / life sciences</td>
+<td>Near-term for simulation-based benchmarking; long-term for hardware sampling at scale</td>
+<td>High (active industry-linked project) <span class="tag tag-exp">Exp</span></td>
+<td><strong class="feas feas-med">Med</strong></td>
+</tr>
+<tr>
+<td>Quantum-enhanced electronic structure (beyond-DFT for hard molecular systems)</td>
+<td>Drug discovery / quantum chemistry</td>
+<td>Long-term (fault-tolerance dependent)</td>
+<td>High scientific value; widely claimed advantage area <span class="tag tag-spec">Spec</span></td>
+<td><strong class="feas feas-low">Low</strong> (near-term)</td>
+</tr>
+<tr>
+<td>ADME / molecular property prediction</td>
+<td>Drug discovery</td>
+<td>Not stated</td>
+<td>Not stated</td>
+<td>Not assessable. <em>Limited technical detail provided in session notes.</em></td>
+</tr>
+<tr>
+<td>Radiomics feature selection for non-invasive diagnosis</td>
+<td>Diagnostics / radiomics</td>
+<td>Near- to mid-term (research)</td>
+<td>High clinical value (avoid invasive procedures)</td>
+<td><strong class="feas feas-med">Med</strong></td>
+</tr>
+<tr>
+<td>Supervised QML classification of medical images (inductive-bias approach)</td>
+<td>Diagnostics</td>
+<td>Near-term as simulation research; practical advantage unproven</td>
+<td>Med–High, only if quality gains are shown</td>
+<td><strong class="feas feas-lowmed">Low–Med</strong> (contested)</td>
+</tr>
+<tr>
+<td>Quantum loading/encoding of medical images (amplitude, MPS-to-circuit)</td>
+<td>Medical imaging (enabling layer)</td>
+<td>Near-term research; advantage only at scale</td>
+<td>Enabling prerequisite</td>
+<td><strong class="feas feas-med">Med</strong></td>
+</tr>
+<tr>
+<td>Quantum image reconstruction / generation</td>
+<td>Medical imaging</td>
+<td>Long-term</td>
+<td>Med; strong classical incumbents</td>
+<td><strong class="feas feas-low">Low</strong></td>
+</tr>
+<tr>
+<td>Quantum sensing / new imaging modalities</td>
+<td>Imaging physics</td>
+<td>Not stated</td>
+<td>Raised as an open direction</td>
+<td><em>Limited technical detail provided in session notes.</em></td>
+</tr>
+<tr>
+<td>Quantum-inspired ML (tensor networks, circuit-inspired models)</td>
+<td>Machine learning</td>
+<td>Near-term (runs classically)</td>
+<td>Med</td>
+<td><strong class="feas feas-high">High</strong> (no quantum hardware required)</td>
+</tr>
+<tr>
+<td>Instance-space analysis (&quot;when does quantum win?&quot;)</td>
+<td>Benchmarking methodology</td>
+<td>Near-term</td>
+<td>High methodological value</td>
+<td><strong class="feas feas-medhigh">Med–High</strong></td>
+</tr>
+<tr>
+<td>Quantum circuit compilation/transpilation benchmarking</td>
+<td>Quantum software infrastructure</td>
+<td>Near-term</td>
+<td>Med (enabling; quantum-vs-quantum)</td>
+<td><strong class="feas feas-high">High</strong></td>
+</tr>
+<tr>
+<td>Open, maintained benchmark platform for quantum generative models</td>
+<td>Research infrastructure</td>
+<td>Near-term, funding dependent</td>
+<td>High community value</td>
+<td><strong class="feas feas-med">Med</strong> (maintenance/funding constrained)</td>
+</tr>
+<tr>
+<td>Black-box mixed-integer optimisation (e.g., AutoML configuration)</td>
+<td>ML engineering / optimisation</td>
+<td>Not applicable</td>
+<td>Judged not relevant for quantum (written notes)</td>
+<td><strong class="feas feas-low">Low</strong></td>
+</tr>
+<tr>
+<td>Real-time diagnostic image processing</td>
+<td>Clinical workflow</td>
+<td>Deprioritised</td>
+<td>Low at present (computation not the bottleneck)</td>
+<td><strong class="feas feas-prio">Low priority</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong><span class="tag tag-analyst">Analyst</span></strong> No numerical timelines or feasibility scores were stated in the session. The Time-to-Impact and Feasibility entries are the brief author's qualitative classifications, derived from participant statements about hardware availability, classical simulability and classical baseline strength. &quot;Near-term&quot; means work that can proceed today on classical simulators. &quot;Long-term&quot; means work that depends on fault-tolerant, large-scale hardware.</p>
+<hr />
+<h2>3. Deep-Dive: Most Promising Use Cases</h2>
+<p>These four were selected because they received the most discussion, appear in the facilitator's end-of-session summary, or are prerequisites for the others.</p>
+<h3>3.1 Quantum Generative Models for Molecular Design</h3>
+<ul>
+<li><strong>Objective</strong>
+<ul>
+<li>Generate candidate molecules with desired properties against a disease target.</li>
+<li>One participant's life-science project (with external partners) must deliver a comparison of quantum generative models against the state of the art for this task <span class="tag tag-exp">Exp</span>.</li>
+</ul>
+</li>
+<li><strong>Key Constraints</strong>
+<ul>
+<li><strong>Classical training, quantum sampling.</strong> The model uses a shallow, two-layer circuit ansatz, related to the circuits in quantum-supremacy-style sampling experiments and presented at the workshop the previous day <span class="tag tag-exp">Exp</span>.
+<ul>
+<li>Training is efficient on a classical computer because it relies only on computable quantities such as moments and expectation values.</li>
+<li>Sampling molecules from the trained model is believed to be classically hard and therefore needs hardware <span class="tag tag-exp">Exp</span> <span class="tag tag-lit">Lit</span>.</li>
+<li>The model can be trained but not fully exercised at scale.</li>
+</ul>
+</li>
+<li><strong>Credibility requires scaling evidence.</strong> Participants reported that small-qubit demonstrations are not persuasive to the community or partners <span class="tag tag-exp">Exp</span>.</li>
+<li><strong>Evaluation is laborious.</strong> Sampled bitstrings must be decoded and assessed by domain chemists through a complex procedure <span class="tag tag-exp">Exp</span>.</li>
+<li><strong>Faithful noise simulation is itself hard.</strong> Emulating the behaviour of real noisy hardware in simulation was described as difficult <span class="tag tag-exp">Exp</span>.</li>
+</ul>
+</li>
+<li><strong>Use-Case Specific Gaps</strong>
+<ul>
+<li><strong>Dataset.</strong> No agreed dataset exists. The choice requires drug-discovery domain experts, and the notes flag a missing interdisciplinary bridge between quantum and drug discovery.</li>
+<li><strong>Evaluation metric.</strong> It is an open question whether matching a few low-order moments is a sufficient proxy for matching the target distribution in practice. If it is not, the alternative must also be classically computable, since only expectation values are available without hardware <span class="tag tag-exp">Exp</span> <span class="tag tag-spec">Spec</span>.</li>
+<li><strong>Hardness framing.</strong> Theoretical work was cited on the hardness of learning distributions from random-circuit families <span class="tag tag-lit">Lit <span class="tag-note">· authors not recoverable</span></span>. As far as the transcript allows reconstruction, the participant noted that such hardness results concern ensembles of distributions. A single fixed, practically relevant target distribution may not be hard, so benchmark design must be careful about what &quot;hard&quot; means.</li>
+<li><strong>Minimum problem size.</strong> The smallest system size at which a benchmark becomes meaningful is undefined (written notes: &quot;smallest system&quot;).</li>
+</ul>
+</li>
+<li><strong>General Quantum Technology Gaps</strong>
+<ul>
+<li><strong>Qubit count / scale:</strong> insufficient hardware to sample from trained models at the required size.</li>
+<li><strong>Error rates / noise:</strong> noise tolerance was raised, and faithful simulation of hardware noise is difficult.</li>
+<li><strong>Coherence time, control electronics:</strong> not discussed in session.</li>
+<li><strong>Fault tolerance:</strong> not discussed specifically for this use case (see Section 4).</li>
+</ul>
+</li>
+</ul>
+<h3>3.2 Quantum-Enhanced Electronic Structure for Drug Discovery (Beyond-DFT)</h3>
+<ul>
+<li><strong>Objective</strong>
+<ul>
+<li>Improve electronic-structure simulation of molecules where density functional theory (DFT) approximations break down. A participant cited heavier-element and strongly correlated systems <span class="tag tag-spec">Spec</span>.</li>
+<li>This would enable better property predictions in drug design.</li>
+<li>One suggestion was to use quantum computation to improve the DFT functional itself rather than replace DFT <span class="tag tag-spec">Spec</span>.</li>
+<li>The facilitator recorded drug discovery as the second candidate benchmark area.</li>
+</ul>
+</li>
+<li><strong>Key Constraints</strong>
+<ul>
+<li><strong>DFT is an approximation.</strong> It exists because the full many-electron wavefunction cannot be simulated classically. Where exactly classical methods fail is not clearly delineated <span class="tag tag-spec">Spec</span>.</li>
+<li><strong>Classical methods are strong and improving.</strong> Participants cited classical ground-state methods such as neural-network approaches (work attributed to Giuseppe Carleo; name partially transcribed) and gold-standard correlated methods <span class="tag tag-lit">Lit</span>.</li>
+<li><strong>Ground states may be classically approximable.</strong> They are highly structured states, and empirical classical approximations can be very good <span class="tag tag-spec">Spec</span>.</li>
+</ul>
+</li>
+<li><strong>Use-Case Specific Gaps</strong>
+<ul>
+<li><strong>No clear classical–quantum boundary</strong>, which makes a well-posed benchmark difficult to define.</li>
+<li><strong>Unresolved conceptual question.</strong> Participants asked whether a quantum computer has any inherent advantage on problems framed as learning from classical data, when no Hamiltonian information is available. They stated explicitly that they had no answer <span class="tag tag-spec">Spec</span>.</li>
+<li><strong>Possible benchmark template.</strong> A data-science competition built on DFT-derived molecular quantities was cited as a model <span class="tag tag-lit">Lit <span class="tag-note">· name not recoverable</span></span>. The participant acknowledged it does not clearly probe the limits of classical methods.</li>
+<li><strong>ADME.</strong> It appears in the written notes but <em>limited technical detail provided in session notes.</em></li>
+</ul>
+</li>
+<li><strong>General Quantum Technology Gaps</strong>
+<ul>
+<li><strong>Fault tolerance:</strong> considered a prerequisite for chemistry-scale advantage (see Section 4 on logical-qubit overhead).</li>
+<li><strong>Qubit count:</strong> large logical-qubit counts are implied for realistic molecules; no figures were given for this use case.</li>
+<li><strong>Error rates, coherence time, control electronics:</strong> not discussed specifically.</li>
+</ul>
+</li>
+</ul>
+<h3>3.3 Radiomics-Based Non-Invasive Diagnosis (Feature Selection + QML Classification)</h3>
+<ul>
+<li><strong>Objective</strong>
+<ul>
+<li>Determine whether information in medical images can support diagnostic classifications that currently require invasive procedures, such as biopsy-based tumour characterisation.</li>
+<li>Radiomics was framed as a route to avoiding invasive intervention.</li>
+</ul>
+</li>
+<li><strong>Key Constraints</strong>
+<ul>
+<li><strong>Quality, not speed, is the bottleneck.</strong> A participant with clinical-process exposure stated that diagnostic delays stem from hospital bureaucracy rather than computation. Real-time requirements were deprioritised, in contrast to domains like high-frequency finance where milliseconds matter <span class="tag tag-exp">Exp</span>.</li>
+<li><strong>Radiomics yields very large feature vectors.</strong> Selecting an informative subset is a combinatorial problem that can be mapped onto qubit-based (binary) selection formulations <span class="tag tag-spec">Spec</span>. Classical feature-selection methods are mature.</li>
+<li><strong>Supervised QML advantage is unproven.</strong> Participants disagreed on whether supervised QML offers any advantage, and the written notes record both &quot;not advantageous&quot; and &quot;not sure.&quot; Circuits free of barren plateaus were described as generally classically simulable, which removes room for provable advantage <span class="tag tag-lit">Lit</span> <span class="tag tag-spec">Spec</span>.</li>
+</ul>
+</li>
+<li><strong>Use-Case Specific Gaps</strong>
+<ul>
+<li><strong>Evidence.</strong> No consolidated result shows a supervised QML advantage for imaging.</li>
+<li><strong>Data realism.</strong>
+<ul>
+<li>Synthetic or generated datasets carry no guarantee of classical hardness.</li>
+<li>Clinically relevant instances come from specific real-world distributions (COVID-related lung opacities were mentioned as an example) and require expert-labelled data <span class="tag tag-spec">Spec</span>.</li>
+</ul>
+</li>
+<li><strong>Proposed evaluation approach 1: inductive bias</strong> <span class="tag tag-spec">Spec</span>.
+<ul>
+<li>Treat the quantum model as a function class with particular symmetries.</li>
+<li>Test in low-qubit simulation whether it converges better or needs fewer training examples than classical models (e.g., neural networks, SVMs), using standard ML metrics.</li>
+<li><em>Caveat raised by the proposer:</em> at low qubit counts the function is classically simulable, so any scaling benefit is a hope, not a demonstration.</li>
+</ul>
+</li>
+<li><strong>Proposed evaluation approach 2: instance-space analysis</strong> <span class="tag tag-spec">Spec</span>.
+<ul>
+<li>Generate or collect many problem instances and identify where classical methods win and where quantum methods show practical benefit.</li>
+<li>Extract instance features and learn which features indicate when to use which method.</li>
+<li>This removes the need to show quantum superiority on all instances.</li>
+</ul>
+</li>
+<li><strong>Baseline quality.</strong> Prior quantum image-reconstruction papers were criticised for comparing against classical methods that are not the state of the art used in practice <span class="tag tag-spec">Spec</span>. Radiomics benchmarks would need to avoid this.</li>
+<li><strong>Task specification.</strong> Which specific clinical task, modality and label source to use remains open.</li>
+</ul>
+</li>
+<li><strong>General Quantum Technology Gaps</strong>
+<ul>
+<li><strong>Qubit count:</strong> realistic radiomics feature vectors exceed what can be handled natively on current devices.</li>
+<li><strong>Trainability:</strong> barren plateaus remain a core algorithmic risk.</li>
+<li><strong>Error rates / noise tolerance:</strong> raised generally (written notes), not quantified.</li>
+<li><strong>Coherence time, control electronics, fault tolerance:</strong> not discussed for this use case.</li>
+</ul>
+</li>
+</ul>
+<h3>3.4 Quantum Loading and Encoding of Medical Images</h3>
+<ul>
+<li><strong>Objective</strong>
+<ul>
+<li>Encode image data efficiently into quantum states. This is a prerequisite for any quantum imaging or diagnostic algorithm.</li>
+<li>The stated ultimate motivation is advantage when processing many high-resolution images at a scale beyond classical capacity <span class="tag tag-spec">Spec</span>.</li>
+</ul>
+</li>
+<li><strong>Key Constraints</strong>
+<ul>
+<li><strong>Naive encodings are very costly.</strong> Amplitude-encoding pixel intensities (greyscale, or colour via additional amplitudes) was described as highly inefficient in practice <span class="tag tag-exp">Exp</span>.</li>
+<li><strong>An existing pipeline was discussed</strong> <span class="tag tag-lit">Lit <span class="tag-note">· paper details not recoverable</span></span>:
+<ol>
+<li>Apply a singular value decomposition to the image.</li>
+<li>Build a matrix product state (MPS) / tensor-network approximation.</li>
+<li>Convert the MPS into a quantum circuit.</li>
+</ol>
+<ul>
+<li>An open-source MPS-based image loader was also mentioned <span class="tag tag-exp">Exp</span>.</li>
+</ul>
+</li>
+<li><strong>Latent-space alternative.</strong> Many classical generative models do not operate on raw pixels but on latent vectors (e.g., from autoencoders). Quantum models could therefore target compressed features instead of full images <span class="tag tag-spec">Spec</span>.</li>
+</ul>
+</li>
+<li><strong>Use-Case Specific Gaps</strong>
+<ul>
+<li><strong>Pipeline overhead.</strong> The multi-step encoding (written notes: &quot;many steps?&quot;) may erode any downstream advantage.</li>
+<li><strong>No agreed benchmark</strong> for encoding fidelity versus circuit depth and qubit cost.</li>
+<li><strong>Advantage at scale is unshown.</strong> It is unclear whether encoding advantages survive at clinically realistic resolutions and dataset sizes.</li>
+</ul>
+</li>
+<li><strong>General Quantum Technology Gaps</strong>
+<ul>
+<li><strong>Connectivity / compilation:</strong> encoding circuits must be compiled to native gate sets. Limited qubit connectivity adds SWAP overhead and circuit depth.</li>
+<li><strong>Noise tolerance:</strong> deep encoding circuits are sensitive to gate errors; not quantified in session.</li>
+<li><strong>Qubit count:</strong> high-resolution images imply larger registers.</li>
+<li><strong>Coherence time, control electronics:</strong> not discussed.</li>
+<li><strong>Fault tolerance:</strong> see Section 4.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>4. Systemic Quantum Technology Bottlenecks</h2>
+<ul>
+<li>
+<p><strong>Hardware &amp; Scale Gaps</strong> <em>(systemic)</em></p>
+<ul>
+<li><strong>No large-scale hardware.</strong> Credible claims require evidence of scaling, which current devices cannot supply <span class="tag tag-exp">Exp</span>.</li>
+<li><strong>Fault-tolerance overhead.</strong> A participant cautioned against narratives of astronomically large quantum computations while logical qubits require heavy error-correction overhead. Roughly a thousand physical qubits per logical qubit was cited, though the figure is partially garbled in the transcript <span class="tag tag-spec">Spec</span> <span class="tag tag-lit">Lit</span>. Arbitrary-angle rotations additionally require distillation-type overhead in fault-tolerant digital schemes.</li>
+<li><strong>Connectivity and native gates.</strong> Not all qubit pairs are physically connected, so compilation from logical circuits introduces SWAP gates and substantial depth increases (IBM-type devices were the example) <span class="tag tag-exp">Exp</span>.</li>
+<li><strong>Noise.</strong> Tolerance to noise is an open constraint, and faithfully simulating hardware noise classically is hard <span class="tag tag-exp">Exp</span>.</li>
+<li><strong>Not discussed:</strong> coherence times, control electronics, and specific gate-fidelity figures.</li>
+</ul>
+</li>
+<li>
+<p><strong>Software &amp; Algorithmic Gaps</strong></p>
+<ul>
+<li><em>Systemic</em>
+<ul>
+<li><strong>Trainability–simulability tension.</strong> Variational circuits without barren plateaus are generally classically simulable. This leaves little room for provable advantage, though participants argued practical advantage remains possible <span class="tag tag-lit">Lit</span> <span class="tag tag-spec">Spec</span>.</li>
+<li><strong>Optimistic resource extrapolations.</strong> Runtime projections based on logical operation counts were criticised for ignoring architecture and error-correction overhead <span class="tag tag-spec">Spec</span>.</li>
+<li><strong>Unfair classical comparisons.</strong> A participant held that quantum-supremacy-style claims were weakened by the absence of established classical baselines. Benchmarking work on optimisation was cited indicating that current small-scale quantum approaches can be classically emulated, with strong classical solvers setting a high bar <span class="tag tag-lit">Lit <span class="tag-note">· partially garbled</span></span>.</li>
+<li><strong>Classical progress is a moving target.</strong> Classical computing and ML have advanced dramatically, alongside quantum hardware progress <span class="tag tag-spec">Spec</span>.</li>
+</ul>
+</li>
+<li><em>Application-layer</em>
+<ul>
+<li><strong>Evaluation metrics.</strong> Metrics must be computable without hardware, which in practice means expectation values and moments. Whether these suffice is unresolved (Section 3.1).</li>
+<li><strong>Data encoding.</strong> Encoding cost for images remains a major overhead (Section 3.4).</li>
+<li><strong>Formulation mismatch.</strong> Many real optimisation problems, such as black-box mixed-integer configuration tasks, cannot be written as QUBO-type formulations. AutoML was noted as not relevant for quantum.</li>
+<li><strong>Where value lies.</strong> Participants suggested practical value may come from polynomial-order reductions (e.g., cubic to quadratic) on relevant problem sizes rather than exponential advantage <span class="tag tag-spec">Spec</span>.</li>
+<li><strong>Compilation as a benchmark.</strong> Benchmarking compilers and transpilers on gate count and depth was proposed as a hardware-aware, quantum-vs-quantum candidate. The proposer acknowledged it may fall outside the table's scope <span class="tag tag-spec">Spec</span>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Integration &amp; Commercial Readiness</strong></p>
+<ul>
+<li><em>Application-layer</em>
+<ul>
+<li><strong>Interdisciplinarity.</strong> Dataset and metric choices require domain experts (pharma, clinicians) who are not yet embedded in quantum projects.</li>
+<li><strong>Clinical fit.</strong> Diagnostic value lies in classification quality, not runtime. Speed-based advantage narratives do not match current clinical needs <span class="tag tag-exp">Exp</span>.</li>
+<li><strong>Readiness for medical images.</strong> Participants rated readiness for quantum advantage in medical imaging as low. Opinions diverged on whether work should await proofs of advantage or proceed because so much remains to be researched.</li>
+</ul>
+</li>
+<li><em>Systemic</em>
+<ul>
+<li><strong>Benchmark infrastructure sustainability.</strong> One participant argued the critical gap is not identifying benchmark problems but maintaining a shared platform of open datasets and open implementations. Universities lack research engineers and dedicated funding for maintenance <span class="tag tag-exp">Exp</span>.</li>
+<li><strong>Community sentiment and hype cycles.</strong>
+<ul>
+<li>Participants described a shift from early optimism at quantum ML conferences, to discouragement after no-go results, to a more cautious, limitation-aware community today <span class="tag tag-exp">Exp</span>.</li>
+<li>This caution can be mistaken for disbelief in the field.</li>
+<li>The situation was likened to past AI winters, when neural-network research was actively discouraged <span class="tag tag-spec">Spec</span>.</li>
+<li>The community still reacts strongly to any paper claiming advantage.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>5. Next Steps &amp; Recommendations</h2>
+<p><strong>Follow-ups identified by participants</strong></p>
+<ol>
+<li><strong>Session reporting.</strong> The volunteer participant will present the table's overview after the coffee break, working from the facilitator's notes. The facilitator committed to including the discussion of limitations and benchmark validity in the workshop documentation. It was flagged as important for the round table as a whole.</li>
+<li><strong>Record the two candidate benchmark areas:</strong>
+<ul>
+<li>medical imaging and diagnostics, with emphasis on radiomics and non-invasive diagnosis</li>
+<li>drug discovery, covering generative molecular design, electronic structure/DFT and property metrics</li>
+</ul>
+</li>
+<li><strong>Choose the benchmarking frame explicitly.</strong> Options are quantum-vs-classical on established problems with strong classical baselines, or quantum-vs-quantum. The facilitator suggested the latter might make problem identification easier.</li>
+<li><strong>Molecular generation.</strong>
+<ul>
+<li>Select a dataset with drug-discovery experts.</li>
+<li>Determine whether moment matching is a sufficient metric, or identify alternative metrics computable without hardware.</li>
+</ul>
+</li>
+<li><strong>Diagnostics.</strong>
+<ul>
+<li>Identify a specific clinical task where imaging could replace an invasive procedure.</li>
+<li>Evaluate on diagnostic-quality metrics rather than runtime.</li>
+<li>Use real, expert-sourced data rather than synthetic instances.</li>
+</ul>
+</li>
+<li><strong>Adopt instance-level analysis.</strong> Map where classical and quantum methods each perform best, and learn which instance features predict this, rather than seeking blanket superiority.</li>
+<li><strong>Sustain benchmark infrastructure.</strong> Pursue funding and engineering support for a maintained, open repository of datasets and quantum generative-model implementations.</li>
+<li><strong>Continue theoretical work in parallel</strong>, since participants judged it necessary even before hardware is available.</li>
+</ol>
+<p><strong><span class="tag tag-analyst">Analyst</span> Additional recommendations</strong> (derived from session content; not stated as action items by participants)</p>
+<ul>
+<li>Require resource estimates in any benchmark submission to account for hardware architecture, connectivity and error-correction overhead, in line with participants' critique of optimistic extrapolations.</li>
+<li>Benchmark against the classical methods actually used in clinical and industrial practice, not simplified baselines.</li>
+<li>Report simulation scale and classical simulability openly alongside any claimed benefit, to avoid repeating contested advantage claims.</li>
+</ul>
+
+</main>
+</body>
+</html>

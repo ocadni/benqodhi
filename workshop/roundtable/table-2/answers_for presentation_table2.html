@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Table 2 — Medical imaging, diagnostics, machine learning and QML</title>
+<style>
+:root {
+  --ink: #1B2B3A;
+  --muted: #5B6B7A;
+  --paper: #FFFFFF;
+  --wash: #F1F4F6;
+  --rule: #D3DBE2;
+  --accent: #1F6F78;
+  --serif: Charter, "Bitstream Charter", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --sans: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--wash);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+main {
+  max-width: 50rem;
+  margin: 2.5rem auto;
+  padding: 3rem 3.5rem 3.5rem;
+  background: var(--paper);
+  border-top: 6px solid var(--accent);
+}
+h1, h2, h3 { font-family: var(--sans); line-height: 1.25; color: var(--ink); }
+h1 { font-size: 2rem; font-weight: 700; margin: 0 0 1.25rem; letter-spacing: -0.01em; }
+h2 {
+  font-size: 1.35rem; font-weight: 650;
+  margin: 2.75rem 0 1rem; padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+}
+h3 {
+  font-size: 1.1rem; font-weight: 650;
+  margin: 2rem 0 0.75rem; padding-left: 0.75rem;
+  border-left: 3px solid var(--accent);
+}
+p { margin: 0 0 1rem; }
+main.wide { max-width: 64rem; }
+main.wide > p, main.wide > ul, main.wide > ol, main.wide > h1, main.wide > h2, main.wide > h3 {
+  max-width: 48rem; margin-left: auto; margin-right: auto;
+}
+hr + h2 { border-top: 0; padding-top: 0; margin-top: 0; }
+ul, ol { margin: 0 0 1rem; padding-left: 1.4rem; }
+li { margin: 0.3rem 0; }
+li > ul, li > ol { margin: 0.25rem 0 0.4rem; }
+strong { font-weight: 700; }
+em { color: var(--muted); }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+code { font-size: 0.9em; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Document meta block (date, participants, note takers) */
+ul.meta {
+  list-style: none; padding: 1rem 1.25rem; margin: 0 0 1.75rem;
+  background: var(--wash); border-radius: 4px;
+  font-family: var(--sans); font-size: 0.95rem;
+}
+ul.meta li { margin: 0.2rem 0; }
+
+/* Tables */
+.table-wrap { overflow-x: auto; margin: 1rem 0 1.5rem; }
+table { border-collapse: collapse; width: 100%; font-family: var(--sans); font-size: 0.88rem; line-height: 1.45; }
+th, td { text-align: left; vertical-align: top; padding: 0.6rem 0.7rem; border-bottom: 1px solid var(--rule); }
+th { background: var(--ink); color: #fff; font-weight: 600; }
+tbody tr:nth-child(even) td { background: #F8FAFB; }
+td:first-child { font-weight: 600; min-width: 11rem; }
+
+/* Feasibility indicator: coloured dot + text */
+.feas { white-space: nowrap; }
+.feas::before {
+  content: ""; display: inline-block; width: 0.6rem; height: 0.6rem;
+  border-radius: 50%; margin-right: 0.35rem; vertical-align: 0.05rem;
+}
+.feas-low::before { background: #B83B3B; }
+.feas-lowmed::before { background: linear-gradient(90deg, #B83B3B 50%, #C99A1E 50%); }
+.feas-med::before { background: #C99A1E; }
+.feas-medhigh::before { background: linear-gradient(90deg, #C99A1E 50%, #3C8A57 50%); }
+.feas-high::before { background: #3C8A57; }
+.feas-prio::before { background: #9AA6B1; }
+
+/* Evidence tags */
+.tag {
+  display: inline-block; font-family: var(--sans); font-size: 0.72rem; font-weight: 600;
+  line-height: 1.3; padding: 0.08rem 0.45rem; border-radius: 3px; white-space: nowrap;
+  vertical-align: 0.1rem; border: 1px solid transparent;
+}
+.tag-exp { color: #245A39; background: #E4F1E8; border-color: #C3DFCB; }
+.tag-lit { color: #33477F; background: #E7EBF7; border-color: #C8D1EC; }
+.tag-spec { color: #7A4A0C; background: #FAEEDB; border-color: #EDD3A8; }
+.tag-analyst { color: #5E3470; background: #F0E6F4; border-color: #DCC5E6; }
+.tag-note { font-weight: 400; opacity: 0.85; }
+
+@media (max-width: 640px) {
+  body { font-size: 1rem; }
+  main { margin: 0; padding: 1.5rem 1.15rem 2rem; }
+  h1 { font-size: 1.6rem; }
+}
+@media print {
+  body { background: #fff; font-size: 10.5pt; }
+  main { margin: 0; padding: 0; max-width: none; border-top: 0; }
+  h2, h3 { break-after: avoid; }
+  tr, li { break-inside: avoid; }
+  th { background: #fff; color: var(--ink); border-bottom: 2px solid var(--ink); }
+  tbody tr:nth-child(even) td { background: #fff; }
+}
+</style>
+</head>
+<body>
+<main>
+<h1>Table 2 — Medical imaging, diagnostics, machine learning and QML</h1>
+<ul class="meta">
+<li><strong>Date:</strong> 11 September 2026</li>
+<li><strong>Participants:</strong> Hao Wang; Miguel Angel Gonzalez Ballester; Guglielmo Mazzola</li>
+<li><strong>Note takers:</strong> Alessandro Zani; Lea Schuh</li>
+<li><strong>Rapporteur:</strong> Hao Wang </li>
+</ul>
+<p>Shortlist around two or three candidate problems. For each candidate, answer the
+three questions from the table guide.</p>
+<h2>Candidate 1 — Quantum generative models for molecular design</h2>
+<ul>
+<li><strong>Problem:</strong>
+<ul>
+<li><strong>What:</strong> generate candidate molecules with desired properties for a disease target.</li>
+<li><strong>Why it matters:</strong> drug discovery is high value.</li>
+<li><strong>Concrete need:</strong> a participant's life-science project already requires benchmarking quantum generative models against the state of the art. The need is real, not hypothetical.</li>
+</ul>
+</li>
+<li><strong>Bottleneck:</strong>
+<ul>
+<li><strong>Sampling needs hardware we don't have.</strong> The circuit models used can be trained on a classical computer via moments and expectation values. Sampling molecules from them is believed to be classically hard, so the models cannot be fully exercised at scale.</li>
+<li><strong>Metrics are restricted.</strong> Without hardware, only quantities like moments are computable.</li>
+<li><strong>Evaluation is slow.</strong> Judging generated molecules requires chemists and a laborious procedure.</li>
+<li><strong>Noise is hard to emulate.</strong> Simulating realistic hardware noise is itself difficult.</li>
+</ul>
+</li>
+<li><strong>Moving ahead:</strong>
+<ul>
+<li><strong>Missing:</strong>
+<ul>
+<li>an agreed reference dataset, which needs drug-discovery experts</li>
+<li>an evaluation metric, since it is open whether matching a few moments is enough to compare distributions</li>
+<li>the smallest system size at which the benchmark becomes meaningful</li>
+<li>evidence of scaling, since small-qubit results don't convince the community</li>
+</ul>
+</li>
+<li><strong>Next step:</strong>
+<ol>
+<li>Fix a reference dataset together with drug-discovery experts.</li>
+<li>Settle which metrics can be computed without hardware, starting with whether moment matching is sufficient.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h2>Candidate 2 — Radiomics for non-invasive diagnosis</h2>
+<ul>
+<li><strong>Problem:</strong>
+<ul>
+<li><strong>What:</strong> can features extracted from medical images support diagnoses that today require invasive procedures (e.g., biopsy for tumour characterisation)?</li>
+<li><strong>Why it matters:</strong> it reduces patient burden and risk. The value lies in diagnostic quality.</li>
+</ul>
+</li>
+<li><strong>Bottleneck:</strong>
+<ul>
+<li><strong>Feature selection is combinatorial.</strong> Radiomics produces very large feature vectors, and selecting the informative subset is combinatorial. It can be mapped to binary, qubit-based formulations.</li>
+<li><strong>Supervised QML benefit is unproven.</strong> It was contested at the table: circuits that avoid barren plateaus tend to be classically simulable.</li>
+<li><strong>Image encoding is costly.</strong> Encoding images into quantum states is expensive and adds many steps.</li>
+<li><strong>Speed is not the bottleneck.</strong> Diagnostic delays come from hospital processes, not computation.</li>
+</ul>
+</li>
+<li><strong>Moving ahead:</strong>
+<ul>
+<li><strong>Missing:</strong>
+<ul>
+<li>a specific clinical task with expert-labelled real data, since synthetic data gives no guarantee the problem is hard</li>
+<li>comparison against the classical methods actually used in practice</li>
+<li>any evidence of a practical QML benefit</li>
+</ul>
+</li>
+<li><strong>Next step:</strong>
+<ol>
+<li>Choose one concrete clinical task.</li>
+<li>Run an instance-level analysis of where classical wins and where quantum shows benefit, and which data features predict this.</li>
+<li>Test in simulation whether quantum models generalise better or need fewer training examples.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h2>Candidate 3 — Beyond-DFT electronic structure for drug discovery (optional)</h2>
+<ul>
+<li><strong>Problem:</strong>
+<ul>
+<li><strong>What:</strong> accurate simulation of molecules where density functional theory (DFT) approximations fail, e.g., heavier-element or strongly correlated systems.</li>
+<li><strong>Why it matters:</strong> it would give better property predictions for drug design. Chemistry is the area where quantum advantage is most widely expected.</li>
+</ul>
+</li>
+<li><strong>Bottleneck:</strong>
+<ul>
+<li><strong>Classical simulation hits a wall.</strong> The full many-electron wavefunction cannot be simulated classically, and DFT approximations break down for these systems.</li>
+<li><strong>Classical methods are strong and improving.</strong> Examples are neural-network ground-state methods and gold-standard correlated methods.</li>
+<li><strong>The classical–quantum boundary is unclear.</strong></li>
+</ul>
+</li>
+<li><strong>Moving ahead:</strong>
+<ul>
+<li><strong>Missing:</strong>
+<ul>
+<li>a clear definition of where classical methods fail, needed for a well-posed benchmark</li>
+<li>hardware, since this likely requires fault tolerance</li>
+</ul>
+</li>
+<li><strong>Next step:</strong>
+<ol>
+<li>Identify molecule classes where DFT demonstrably fails, to use as benchmark instances.</li>
+<li>Consider an existing DFT-based data competition as a template.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h2>Conclusions for the recap</h2>
+<ul>
+<li><strong>Strongest conclusions:</strong>
+<ul>
+<li><strong>Comparison baselines:</strong> a meaningful benchmark needs a practically relevant problem with a mature classical baseline. Otherwise quantum advantage claims are inflated.</li>
+<li><strong>Simulation limits:</strong> no hardware exists at relevant scale, so benchmarking must start in simulation, which limits what can be claimed.</li>
+<li><strong>Supervised QML:</strong> an advantage for supervised QML is not established.</li>
+<li><strong>Clinical imaging:</strong> diagnostic quality matters, not speed.</li>
+</ul>
+</li>
+<li><strong>Main candidate problem:</strong> Radiomics-based diagnosis (Candidate 2) is the main imaging-specific candidate. </li>
+<li><strong>Why it matters:</strong>
+<ul>
+<li>Drug discovery is high value.</li>
+<li>A concrete project already needs this benchmark.</li>
+<li>The models can be trained classically, so benchmark-building can start now.</li>
+</ul>
+</li>
+<li><strong>Most important missing piece:</strong> an agreed evaluation metric that can be computed without hardware, together with an expert-curated reference dataset.</li>
+<li><strong>Next benchmark-building action:</strong>
+<ol>
+<li>With drug-discovery experts, fix a reference dataset.</li>
+<li>Test whether moment-based metrics are sufficient.</li>
+<li>Include classical generative models as baselines.</li>
+</ol>
+</li>
+<li><strong>Transversal next-step advice:</strong>
+<ul>
+<li>Fund the engineering needed to maintain the repository.</li>
+<li>Involve domain experts from the start.</li>
+<li>Require classical baselines and honest resource reporting in every benchmark.</li>
+</ul>
+</li>
+</ul>
+<h2>Transversal reflection</h2>
+<!-- Given the three pillars — infrastructure, community and governance — what
+     advice, suggestions or lessons from experience would you give for the next
+     steps after the workshop, so that BENQODHI can become a living benchmark
+     repository and produce useful final outputs? -->
+<ul>
+<li><strong>Infrastructure:</strong>
+<ul>
+<li><strong>Maintenance is the real bottleneck, not problem identification.</strong> Universities lack research engineers to keep platforms alive, so dedicated funding is needed.</li>
+<li><strong>Host the full comparison set.</strong> That means open datasets, open reference implementations (e.g., quantum generative models) and the classical baselines alongside them.</li>
+<li><strong>Support simulation-based work.</strong> Provide metrics computable without hardware, since most contributors won't have access to large devices.</li>
+</ul>
+</li>
+<li><strong>Community:</strong>
+<ul>
+<li><strong>Bring domain experts in from the start.</strong> Pharma, clinicians and imaging specialists are essential, because dataset and metric choices depend on them. Interdisciplinarity was flagged as a missing piece.</li>
+<li><strong>Encourage open contributions.</strong> Open implementations that others can reuse and compare against were suggested.</li>
+<li><strong>Value theory and honest results.</strong> Theoretical work is needed even before hardware matures. The community is now more aware of limitations, and the repository should reward careful claims over hype.</li>
+</ul>
+</li>
+<li><strong>Governance</strong> <em>(not discussed explicitly; derived from the table's discussion)</em>:
+<ul>
+<li><strong>Acceptance criteria for problems:</strong>
+<ul>
+<li>practical scientific or clinical relevance</li>
+<li>a mature classical baseline</li>
+<li>expert-curated data</li>
+</ul>
+</li>
+<li><strong>Reporting standards:</strong>
+<ul>
+<li>simulation scale and whether the model is classically simulable</li>
+<li>resource estimates that include hardware architecture and error-correction overhead</li>
+</ul>
+</li>
+<li><strong>Keep classical baselines updated.</strong> Classical computing and ML keep improving, so benchmarks can go stale.</li>
+</ul>
+</li>
+</ul>
+<h2>General considerations</h2>
+<ul>
+<li><strong>Hardware reality:</strong>
+<ul>
+<li>No large-scale hardware is available.</li>
+<li>Small-qubit demonstrations don't convince the community or industry partners.</li>
+<li>Error correction adds a large overhead per logical qubit. Resource extrapolations based on logical operation counts alone are overly optimistic.</li>
+</ul>
+</li>
+<li><strong>Which comparison?</strong> Quantum vs classical requires problems where classical methods are already well explored. Quantum vs quantum was suggested as possibly easier for identifying benchmark problems. Examples are compilation to real hardware (gate counts, connectivity) and image encoding schemes.</li>
+<li><strong>What kind of advantage?</strong>
+<ul>
+<li>Practical gains may matter more than exponential ones: better solution quality, better generalisation from less data, or reducing a polynomial cost (e.g., cubic to quadratic).</li>
+<li>Quantum does not need to win on all instances. Identifying <em>which</em> instances it helps with is already useful.</li>
+</ul>
+</li>
+<li><strong>QML theory vs practice:</strong> trainable circuits tend to be classically simulable, which leaves little room for provable advantage. Several participants argued practical benefits may still exist, as with deep learning, which works without formal guarantees.</li>
+<li><strong>Clinical fit:</strong> in diagnostics, computation time is not the limiting factor, so real-time use cases are not a priority now. Quality of classification is what counts.</li>
+<li><strong>Lower-priority ideas raised:</strong>
+<ul>
+<li>quantum image reconstruction and generation, where earlier studies compared against weak classical baselines</li>
+<li>quantum sensing for new imaging modalities</li>
+<li>quantum-inspired ML (tensor networks)</li>
+<li>black-box mixed-integer problems such as AutoML, judged a poor fit for quantum</li>
+</ul>
+</li>
+<li><strong>Community mood:</strong>
+<ul>
+<li>The field has moved from early optimism to a more cautious, limitation-aware stance. That caution can look like disbelief.</li>
+<li>Participants compared this to past AI winters and argued it is not a reason to stop research.</li>
+</ul>
+</li>
+</ul>
+
+</main>
+</body>
+</html>
