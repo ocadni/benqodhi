@@ -1,7 +1,7 @@
 # Table 1 — Genomics, molecular biology and life sciences
 
 - **Date:** 11 September 2026
-- **Gabriele Leoni:**
+- **note taker: Gabriele Leoni**
 - **Rapporteur:**
 
 ## Participants
