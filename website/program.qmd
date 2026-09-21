@@ -59,9 +59,9 @@ The morning working material is available on the
 |---|---|
 | 08:30–09:00 | Arrival — entrance check |
 | 09:00–09:15 | Introduction |
-| 09:15–10:45 | Parallel focus groups<br>Working material: [round tables page](roundtables/index.qmd) |
+| 09:15–10:45 | Parallel focus groups<br>Working material: [round tables page](roundtables/index.qmd)<br>Outcomes — answers from each table:<br>Table 1, Genomics, molecular biology and life sciences: [answers](roundtables/table-1/answers.html)<br>Table 2, Medical imaging, diagnostics, machine learning and QML: [answers](roundtables/table-2/answers.html)<br>Table 3, Mechanistic medicine, clinical decisions and operational optimization: [answers](roundtables/table-3/answers.html)<br>Table 4, Benchmarking methods and the repository: [answers](roundtables/table-4/answers.html)<br>Table 5, Infrastructure, community and policy instruments: [answers](roundtables/table-5/answers.html) |
 | 10:45–11:15 | *Coffee break* |
-| 11:15–12:15 | Focus-group recap and plenary consolidation<br>Speakers: focus-group rapporteurs and workshop organisers |
+| 11:15–12:15 | Focus-group recap and plenary consolidation<br>Speakers: focus-group rapporteurs and workshop organisers<br>Each rapporteur presented the conclusions recorded in their table's answers, linked above. |
 | 12:15–13:15 | *Lunch* |
 | 13:15–14:00 | Guided visit to the quantum labs<br>Guides: Adam Lewis<br>Institution: European Commission, Joint Research Centre (JRC), Ispra |
 | 14:00–14:10 | Return and transition<br>Return to the room and prepare for the closing session. |
