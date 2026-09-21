@@ -20,6 +20,11 @@ workshop/roundtable/table-*/table-guide.pdf
 workshop/presentations/morning_1/indaco/intro.html
 workshop/presentations/morning_1/indaco/intro_files/
 
+# Speaker decks without publication consent, and superseded versions.
+# Kept locally only - never committed or published.
+workshop/presentations_withheld/
+workshop/presentations_superseded/
+
 # Local-only round-table steering notes
 workshop/roundtable/table-5/steering-notes.md
 workshop/roundtable/table-5/steering-notes.pdf
