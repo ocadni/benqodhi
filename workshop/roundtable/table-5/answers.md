@@ -2,7 +2,7 @@
 
 - **Date:** 11 September 2026
 - **Note takers:** Antonio Puertas Gallardo, Mauro Petrillo
-- **Rapporteur:**
+- **Rapporteur:** Kyriacos Hatzaras
 
 ## Answers to the table's questions
 
@@ -16,13 +16,16 @@ against agreed benchmarks rather than self-reported results?
      policy maker; where it could fit in funding procedures; and how verifiable,
      like-for-like comparison could help steer investment. -->
 
-Is there a value to steer grants/funding to have a repository like benqodhi ? 
-The commisioin taking the lead on buinding 
-Measuring the performance this will allow to the ecosystem to grow
-Allow a equitable and growth balance include small player acrros EU
-For member states will be interested on measure benchmarks againts a consolidate repository built based on the Ecosystem
-I will be used for a procurement for a call. Including conditions on the Funding/grants conditions/specific
-
+- The starting question is whether a repository like BENQODHI has value in helping
+  to steer grants and funding.
+- The Commission taking the lead in building it.
+- Measuring performance would allow the ecosystem to grow.
+- It would allow equitable and balanced growth, including smaller players across
+  the EU.
+- Member states would be interested in measuring benchmarks against a consolidated
+  repository built on the ecosystem.
+- It could be used for a procurement or a call, including conditions attached to
+  funding and grant requirements.
 
 ### Q2 — Financing and sustaining it
 
@@ -33,13 +36,14 @@ created and kept alive?
      instruments would be needed; who pays for year three; and how contribution
      should be credited. -->
 
-Build the case for 
-Procurement + Community -> Project -> Program Initiative on existant legal bases.
-Including a revision of advanges and pitfall between grants and procurement
-Sovreign Procurement should remains along technological EU infrastructure/capabilities 
-
-How is happen in the space sector 
-
+- Build the case for it.
+- Procurement and community, leading to a project, leading to a programme
+  initiative, on existing legal bases.
+- Including a review of the advantages and pitfalls of grants compared with
+  procurement.
+- Sovereign procurement should remain aligned with EU technological infrastructure
+  and capabilities.
+- How does this happen in the space sector?
 
 ### Q3 — Toward an ecosystem
 
@@ -51,28 +55,38 @@ a one-off, and what would that take?
      deposit routes; and the single recommendation or open policy question the
      paper, report or roadmap should carry. -->
 
-Differents Fields shared commonalities like algorithms, data process, so Benchmarks can be reused, mutulalized accros differen fields and act as a cross fertilizer in between.
+Different fields share commonalities, such as algorithms and data processing, so
+benchmarks can be reused and mutualised across different fields and act as a
+cross-fertiliser between them.
 
 ## Conclusions for the recap
 
 - **Strongest conclusions:**
-The repo can be an enabling infrastructure for advanced forms of collaboration that may include new IP generation management leading to an ecosystem growingh  and a market for quantum computing for healthcare products and services.
+  The repository can be an enabling infrastructure for advanced forms of
+  collaboration, potentially including the generation and management of new
+  intellectual property, leading to a growing ecosystem and a market for quantum
+  computing products and services in healthcare.
 
 - **Main infrastructure / policy or instrument need:**
-A procurement like a call for tender ITT with your specific requirements or including collected user inputs.
+  A procurement instrument, such as an invitation to tender (ITT) with specific
+  requirements, or one incorporating collected user input.
 
 - **Why it matters:**
-Because creates and maintain and ecosystem around a new computing paradigm like Quantum Computing
+  Because it creates and maintains an ecosystem around a new computing paradigm
+  such as quantum computing.
 
 - **Most important missing piece:**
-An unknown piece is the pace of technology coming from China/US/Japan. Needs a Mapping.
+  An unknown is the pace of technological development in China, the United States
+  and Japan. This needs to be mapped.
 
 - **Next action / policy recommendation:**
-Start defining the specifications of the call, do a premarket consultation including communities such as quic (European quantum industry consortium) and be clear of what you want. Get the backing of Hierarchy.
+  Start defining the specifications of the call, run a pre-market consultation
+  involving communities such as QuIC (the European Quantum Industry Consortium),
+  and be clear about what is wanted. Secure the backing of senior management.
 
 - **Final next-step advice:**
-Be ready to revise the scope and objectives as you go and sure you have big players in the EU
-
+  Be ready to revise the scope and objectives as the work progresses, and make
+  sure the major EU players are involved.
 
 ## Final synthesis
 
@@ -81,5 +95,8 @@ Be ready to revise the scope and objectives as you go and sure you have big play
      steps after the workshop, so that BENQODHI can become a living benchmark
      repository and produce useful final outputs? -->
 
-BENQODHI's strongest asset is its potential to become the **trusted, shared reference** that de-risks investment and unifies the EU quantum-healthcare ecosystem. The recommended next move is a **well-specified
-public procurement call**, developed through early community consultation, with senior backing and an explicit plan to map and respond to international technological competition.
+BENQODHI's strongest asset is its potential to become the **trusted, shared
+reference** that de-risks investment and unifies the EU quantum-healthcare
+ecosystem. The recommended next move is a **well-specified public procurement
+call**, developed through early community consultation, with senior backing and an
+explicit plan to map and respond to international technological competition.
