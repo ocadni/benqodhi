@@ -287,32 +287,77 @@ def publish_markdown(src: Path, dst_html: Path, title: str) -> str | None:
     return f"{src.name}: Quarto skipped ({warning}); wrote fallback page"
 
 
+def find_answers_source(src_dir: Path) -> Path | None:
+    """Locate a table's answers document.
+
+    Tables name this file inconsistently, and some hand it over as pre-rendered
+    HTML rather than Markdown. Preference order: the canonical answers.md, then
+    any other answers*.md, then any answers*.html.
+    """
+    canonical = src_dir / "answers.md"
+    if canonical.exists():
+        return canonical
+
+    for pattern in ("answers*.md", "answers*.html"):
+        matches = sorted(src_dir.glob(pattern))
+        if matches:
+            return matches[0]
+
+    return None
+
+
 def publish_table(table_id: str, title: str, root: Path) -> list[str]:
     src_dir = root / "workshop" / "roundtable" / table_id
     dst_dir = root / "website" / "_site" / "roundtables" / table_id
     warnings: list[str] = []
 
-    docs = [
-        ("table-guide.md", "table-guide.html", title),
-        ("answers.md", "answers.html", f"{title} - Answers"),
-    ]
-
-    for src_name, output_name, doc_title in docs:
-        src = src_dir / src_name
-        dst_html = dst_dir / output_name
-        if not src.exists():
-            write_fallback_page(
-                dst_html,
-                doc_title,
-                f"# {doc_title}\n\nThe source file `{src.relative_to(root)}` is missing.",
-                notice="This document could not be rendered because the source Markdown file is missing.",
-            )
-            warnings.append(f"{src_name}: missing source, wrote fallback page")
-            continue
-
-        warning = publish_markdown(src, dst_html, doc_title)
+    guide_src = src_dir / "table-guide.md"
+    guide_dst = dst_dir / "table-guide.html"
+    if guide_src.exists():
+        warning = publish_markdown(guide_src, guide_dst, title)
         if warning:
             warnings.append(warning)
+    else:
+        write_fallback_page(
+            guide_dst,
+            title,
+            f"# {title}\n\nThe source file `{guide_src.relative_to(root)}` is missing.",
+            notice="This document could not be rendered because the source Markdown file is missing.",
+        )
+        warnings.append("table-guide.md: missing source, wrote fallback page")
+
+    answers_title = f"{title} - Answers"
+    answers_dst = dst_dir / "answers.html"
+    answers_src = find_answers_source(src_dir)
+
+    if answers_src is None:
+        write_fallback_page(
+            answers_dst,
+            answers_title,
+            f"# {answers_title}\n\nNo answers document was found in "
+            f"`{src_dir.relative_to(root)}`.",
+            notice="This document could not be rendered because no answers file was found.",
+        )
+        warnings.append("answers: no source found, wrote fallback page")
+    elif answers_src.suffix.lower() == ".html":
+        # Already rendered by the table; publish it verbatim.
+        answers_dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(answers_src, answers_dst)
+        if answers_src.name != "answers.html":
+            print(f"  {table_id}: published {answers_src.name} as answers.html")
+    else:
+        warning = publish_markdown(answers_src, answers_dst, answers_title)
+        if warning:
+            warnings.append(warning)
+        if answers_src.name != "answers.md":
+            print(f"  {table_id}: published {answers_src.name} as answers.html")
+
+    # Any additional supporting HTML the table produced, published alongside.
+    for extra in sorted(src_dir.glob("*.html")):
+        if extra == answers_src:
+            continue
+        dst_dir.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(extra, dst_dir / extra.name)
 
     pdf = src_dir / "table-guide.pdf"
     if pdf.exists():
